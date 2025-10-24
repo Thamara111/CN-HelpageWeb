@@ -1,0 +1,182 @@
+[
+  {
+    "id": "cataract-surgeries",
+    "title": "Cataract Surgeries",
+    "minidescription": "Help restore sight with cataract surgeries for elders in need.",
+    "image": "/assets/images/donations/catract.jpg",
+    "link": "/contact.html",
+    "description": "Help restore the gift of sight for elders suffering from cataracts by funding essential surgeries. Your donation ensures that elderly individuals who cannot afford treatment receive life-changing care from our medical partners. These surgeries not only restore vision but also renew confidence and independence in daily life. Many elders who undergo these procedures can once again read, walk safely, and engage with loved ones. Together, we can eliminate avoidable blindness and bring light back into their world.",
+    "amount": "Rs. 25,000.00",
+    "donors": 2710
+  },
+  {
+    "id": "foldable-lenses-medicines",
+    "title": "Foldable Lenses + Medicines",
+    "minidescription": "Support post-surgery care with foldable lenses and essential medicines.",
+    "image": "/assets/images/donations/lenses-1.png",
+    "link": "/contact.html",
+    "description": "Your donation supports the supply of high-quality foldable lenses and medicines for post-surgery care. These essentials are crucial for restoring clear vision and preventing complications after cataract surgeries. By contributing, you help ensure every elder receives complete treatment — from surgery to full recovery. Every lens and medicine kit brings us closer to a world where no one loses sight due to financial hardship. Join us in bringing lasting clarity and comfort to those in need.",
+    "amount": "Rs. 15,000.00",
+    "donors": 3620
+  },
+  {
+    "id": "spectacles",
+    "title": "Spectacles (1 pair)",
+    "minidescription": "Provide a pair of spectacles to help an elder regain their vision clarity.",
+    "image": "/assets/images/donations/Spectacle.jpg",
+    "link": "/contact.html",
+    "description": "Provide a pair of spectacles to help an elder regain their vision clarity. For many, this simple gift transforms daily life — enabling them to read, cook, and interact confidently again. Your donation helps us deliver properly tested and customized lenses to those who cannot afford them. Each pair represents a chance for independence and renewed happiness. With your support, we can help elders see the world more clearly once more.",
+    "amount": "Rs. 1,500.00",
+    "donors": 440
+  },
+  {
+    "id": "wheel-chair",
+    "title": "Cost to provide a Wheel Chair",
+    "minidescription": "Provide mobility and independence through a wheelchair donation.",
+    "image": "/assets/images/donations/3.png",
+    "link": "/contact.html",
+    "description": "Your contribution provides mobility and independence through a wheelchair donation. Many elders rely on wheelchairs to regain freedom after illness or injury. Your help allows them to move around safely, attend appointments, and reconnect with family and friends. A single wheelchair can change an elder’s entire outlook on life. Support this cause and empower them with dignity, comfort, and confidence.",
+    "amount": "Rs. 30,000.00",
+    "donors": 325
+  },
+  {
+    "id": "commode-chair",
+    "title": "Commode Chair",
+    "minidescription": "Help elders live with dignity and comfort by donating a commode chair.",
+    "image": "/assets/images/donations/5.png",
+    "link": "/contact.html",
+    "description": "Help elders live with dignity and comfort by donating a commode chair. These essential aids make daily routines safer and easier for those with limited mobility. Your donation helps prevent accidents and promotes hygiene and independence. Every chair donated gives comfort to someone in need. Support this initiative to improve the quality of life for our senior citizens.",
+    "amount": "Rs. 30,000.00",
+    "donors": 313
+  },
+  {
+    "id": "walking-frame",
+    "title": "Walking Frame",
+    "minidescription": "Assist elders in maintaining mobility and safety with a durable walking frame.",
+    "image": "/assets/images/donations/2.png",
+    "link": "/contact.html",
+    "description": "Assist elders in maintaining mobility and safety with a durable walking frame. These frames provide the balance and confidence needed to move around freely. Your donation can help prevent falls and encourage independence. Every contribution ensures that elders live safer, more active lives. Together, we can make mobility accessible to all who need it.",
+    "amount": "Rs. 10,000.00",
+    "donors": 520
+  },
+  {
+    "id": "hearing-aid",
+    "title": "Hearing Aid",
+    "minidescription": "Bring back the joy of hearing to an elder with your hearing aid donation.",
+    "image": "/assets/images/donations/6.png",
+    "link": "/contact.html",
+    "description": "Bring back the joy of hearing to an elder with your hearing aid donation. Many elderly individuals suffer from untreated hearing loss that isolates them from their communities. Your support helps reconnect them with loved ones and the world around them. Every hearing aid donated brings conversations, laughter, and music back into their lives. Be part of this powerful change by giving the gift of sound.",
+    "amount": "Rs. 5,000.00",
+    "donors": 611
+  },
+  {
+    "id": "crutches",
+    "title": "Crutches",
+    "minidescription": "Support recovery and mobility by donating a pair of sturdy crutches.",
+    "image": "/assets/images/donations/4.png",
+    "link": "/contact.html",
+    "description": "Support recovery and mobility by donating a pair of sturdy crutches. Elders recovering from surgery or injury often rely on these for stability and movement. Your help allows them to regain strength safely and confidently. Crutches may seem simple, but to those in need, they represent freedom and hope. Contribute today to help someone stand tall again.",
+    "amount": "Rs. 5,000.00",
+    "donors": 377
+  },
+  {
+    "id": "walking-stick",
+    "title": "Walking Stick",
+    "minidescription": "Provide stability and confidence to elders by gifting a walking stick.",
+    "image": "/assets/images/donations/1.png",
+    "link": "/contact.html",
+    "description": "Provide stability and confidence to elders by gifting a walking stick. A small act of generosity can prevent falls and enhance mobility. These walking sticks are specially designed for comfort and safety. Each donation helps an elder walk independently with confidence and pride. Join us in supporting safer movement for our elderly community.",
+    "amount": "Rs. 2,500.00",
+    "donors": 1414
+  },
+  {
+    "id": "day-care-centre",
+    "title": "Day Care Centre",
+    "minidescription": "Support our Day Care Centre programs that engage and care for senior citizens.",
+    "image": "/assets/images/donations/8.png",
+    "link": "/contact.html",
+    "description": "Support our Day Care Centre programs that engage and care for senior citizens. The centre offers companionship, meals, and recreational activities to elders who might otherwise be isolated. Your donation helps sustain these vital services and keeps elders socially and emotionally healthy. Each contribution ensures that elders spend their days surrounded by care and kindness. Together, we can make every day brighter for them.",
+    "amount": "Select from the options",
+    "donors": 296,
+    "subDonations": [
+      { "title": "Breakfast (Fish or Egg)", "amount": 9500.00, "description": "x45 Packs" },
+      { "title": "Breakfast (Vegetarian)", "amount": 7500.00, "description": "x45 Packs" },
+      { "title": "Lunch (Vegetarian)", "amount": 10000.00, "description": "x45 Packs" },
+      { "title": "Lunch (Fish)", "amount": 15500.00, "description": "x45 Packs" },
+      { "title": "Lunch (Chicken)", "amount": 16500.00, "description": "x45 Packs" },
+      { "title": "Tea", "amount": 4000.00, "description": "x45 Packs" },
+      { "title": "Maintenance", "amount": 2500.00, "description": "" },
+      { "title": "Full Day", "amount": 30000.00, "description": "" }
+    ]
+  },
+  {
+    "id": "tills-project",
+    "title": "Tills Project",
+    "minidescription": "Encourage small-scale community giving through our tills project.",
+    "image": "/assets/images/donations/till.png",
+    "link": "/contact.html",
+    "description": "Encourage small-scale community giving through our tills project placed in local stores. These tills help collect everyday donations that collectively create a big impact. Even a few rupees can support elder care, medical aid, or food supplies. Your contribution inspires others to give and creates a ripple of compassion. Join this movement to make kindness a daily habit in your community.",
+    "amount": "Rs. 1000.00 - Rs. 5,000.00",
+    "donors": 1915
+  },
+  {
+    "id": "special-projects",
+    "title": "Special Projects",
+    "minidescription": "Support our ongoing special projects aimed at improving elder well-being and healthcare.",
+    "image": "/assets/images/donations/pro.png",
+    "link": "/contact.html",
+    "description": "Support our ongoing special projects aimed at improving elder well-being and healthcare. These include emergency relief, infrastructure improvements, and new outreach programs. Your donation fuels innovation in elder care and allows us to address emerging needs quickly. Whether large or small, every contribution counts towards a greater cause. Be a part of something impactful and lasting.",
+    "amount": "Rs. 1000.00 - Rs. 200,000.00",
+    "donors": 873
+  },
+  {
+    "id": "direct-mail-appeals",
+    "title": "Direct Mail Appeals",
+    "minidescription": "Help us reach more donors and spread awareness through direct mail campaigns.",
+    "image": "/assets/images/donations/mail.png",
+    "link": "/contact.html",
+    "description": "Help us reach more donors and spread awareness through direct mail campaigns. These efforts keep our mission alive and expand our community of supporters. By funding our mail appeals, you help us reach households nationwide with inspiring stories of hope. Each campaign raises vital funds that sustain our ongoing work. Support this initiative and help us connect hearts through words.",
+    "amount": "Rs. 1000.00 - Rs. 200,000.00",
+    "donors": 126
+  },
+  {
+    "id": "greeting-cards",
+    "title": "Greeting Cards",
+    "minidescription": "Purchase or donate towards greeting cards that help fund our elder care programs.",
+    "image": "/assets/images/donations/greeting_cards.png",
+    "link": "/contact.html",
+    "description": "Purchase or donate towards greeting cards that help fund our elder care programs. These cards are beautifully designed and carry meaningful messages of compassion. Every purchase directly supports our charitable activities. Share kindness by sending a card that also changes lives. Your gesture spreads both joy and hope to elders in need.",
+    "amount": "Rs. 100.00 - Rs. 50,000.00",
+    "donors": 60
+  },
+  {
+    "id": "eye-hospital-maintenance",
+    "title": "Maintenance of the Eye Hospital",
+    "minidescription": "Contribute to the upkeep of our Eye Hospital, ensuring sustainable services for those in need.",
+    "image": "/assets/images/donations/7.png",
+    "link": "/contact.html",
+    "description": "Contribute to the upkeep of our Eye Hospital, ensuring sustainable services for those in need. Regular maintenance helps us provide high-quality diagnostics, equipment, and facilities for hundreds of patients each month. Your support keeps our operations smooth and our environment safe and welcoming. Every contribution helps us continue providing vital care and hope to those with visual impairments. Together, we can maintain a centre that truly changes lives.",
+    "amount": "Rs. 1000.00 - Rs. 200,000.00",
+    "donors": 421
+  },
+  {
+    "id": "full-sponsorship-day",
+    "title": "Full Sponsorship per Day (to screen 150 elders)",
+    "minidescription": "Sponsor a full day of screenings to provide free eye checkups for 150 elders.",
+    "image": "/assets/images/donations/sponsorship.png",
+    "link": "/contact.html",
+    "description": "Sponsor an entire day of screenings to provide free eye checkups for 150 elders. A single day of your support brings healthcare access to rural and underserved elders who often neglect eye health due to financial struggles. Each screening day identifies cases needing surgery, glasses, or medication — helping prevent long-term vision loss. By sponsoring a day, you give the gift of vision and empower communities to live healthier lives.",
+    "amount": "Rs. 150,000.00",
+    "donors": 86
+  },
+  {
+    "id": "co-sponsorship-day",
+    "title": "Co-sponsorship per Day (to screen 150 elders)",
+    "minidescription": "Join hands with other donors to co-sponsor a full day of elder eye screenings.",
+    "image": "/assets/images/donations/sponsorship.png",
+    "link": "/contact.html",
+    "description": "Join hands with other donors to co-sponsor a full day of elder eye screenings. This initiative ensures that even small contributions collectively make a big difference. Each co-sponsored day brings hope to dozens of elders awaiting diagnosis and treatment. Your involvement shows the power of unity in giving. Together, we can reach more people and create a brighter, clearer tomorrow for our elders.",
+    "amount": "Rs. 75,000.00",
+    "donors": 51
+  }
+]

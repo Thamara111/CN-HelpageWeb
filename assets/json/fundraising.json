@@ -1,0 +1,107 @@
+[
+    {
+        "id": "share-as-you-earn",
+        "title": "Share as You Earn Programme",
+        "mini_description": "Encouraging individuals and employees to contribute regularly for elderly welfare.",
+        "description": "The 'Share as You Earn' Programme, launched in 1994, was designed to encourage employees and individuals from different organizations to donate a small portion of their monthly income towards the welfare of elderly citizens. These consistent contributions help fund HelpAge’s eye care, medical, and social projects across Sri Lanka. The programme fosters a sense of shared responsibility among the workforce, creating a sustainable model of giving.",
+        "start_date": "September 27, 2017",
+        "funding_status": {
+            "collected": "Rs 0.00",
+            "goal": "Rs 0.00",
+            "percentage": 0
+        },
+        "image": "/assets/images/donations/Share-as-You-Earn-Programme.png",
+        "donation_link": "https://www.helpagesl.org/product-category/donation/",
+        "details_link": "https://www.helpagesl.org/cause/share-as-you-earn-programme/"
+    },
+    {
+        "id": "training-centre-facilities",
+        "title": "HelpAge Sri Lanka Training Centre Facilities",
+        "mini_description": "Empowering communities through education, training, and skill development.",
+        "description": "The HelpAge Sri Lanka Training Centre, located in Boralesgamuwa, offers modern facilities for workshops, seminars, and capacity-building programs. It serves both governmental and private sector organizations, helping to train professionals and volunteers in elderly care. The centre includes lecture halls, residential accommodation, and a cafeteria, making it a hub for education and collaboration.",
+        "start_date": "November 01, 2016",
+        "funding_status": {
+            "collected": "Rs 25,000.00",
+            "goal": "Rs 600,000.00",
+            "percentage": 4
+        },
+        "image": "/assets/images/donations/elder-care-assistant-class-in-sr.png",
+        "donation_link": "https://www.helpagesl.org/product-category/donation/",
+        "details_link": "https://www.helpagesl.org/cause/helpage-sri-lanka-training-centre-facilities/"
+    },
+    {
+        "id": "home-care-assistance",
+        "title": "Home Care Assistance Programme",
+        "mini_description": "Providing trained caregivers to assist elderly citizens in daily living.",
+        "description": "The Home Care Assistance Programme aims to support elderly individuals who prefer to live independently in their own homes. Through a network of professionally trained caregivers, HelpAge Sri Lanka ensures that seniors receive the physical and emotional support they need. The programme also provides continuous training to care assistants under the National Vocational Qualification (NVQ) framework, ensuring quality and reliability of service.",
+        "start_date": "November 01, 2016",
+        "funding_status": {
+            "collected": "Rs 45,000.00",
+            "goal": "Rs 500,000.00",
+            "percentage": 9
+        },
+        "image": "/assets/images/donations/What-Duties-Does-a-Home-Care-Ass.png",
+        "donation_link": "https://www.helpagesl.org/product-category/donation/",
+        "details_link": "https://www.helpagesl.org/cause/paid-home-assistance-programme/"
+    },
+    {
+        "id": "greeting-cards",
+        "title": "Greeting Cards",
+        "mini_description": "Spreading joy while supporting the elderly through seasonal cards.",
+        "description": "Since 1986, the Greeting Cards Project has been one of HelpAge Sri Lanka’s most successful and long-running fundraising initiatives. The organization designs and sells beautifully crafted cards for occasions such as birthdays, anniversaries, New Year, and Christmas. The proceeds from these sales directly fund cataract surgeries, medical checkups, and community-based elder welfare programs.",
+        "start_date": "July 21, 2015",
+        "funding_status": {
+            "collected": "Rs 0.00",
+            "goal": "Rs 0.00",
+            "percentage": 0
+        },
+        "image": "/assets/images/donations/greeting_cards.png",
+        "donation_link": "https://www.helpagesl.org/product-category/donation/",
+        "details_link": "https://www.helpagesl.org/cause/greeting-cards/"
+    },
+    {
+        "id": "direct-mail-appeals",
+        "title": "Direct Mail Appeals",
+        "mini_description": "Reaching out to donors through impactful stories and project updates.",
+        "description": "The Direct Mail Appeals project, initiated in 1991, is one of HelpAge Sri Lanka’s primary sources of fundraising revenue. Personalized letters and leaflets are sent to donors across the country, highlighting ongoing projects, success stories, and upcoming campaigns. The funds collected through these appeals contribute significantly to sustaining HelpAge’s nationwide elder welfare programs.",
+        "start_date": "July 20, 2015",
+        "funding_status": {
+            "collected": "Rs 80,000.00",
+            "goal": "Rs 89,000.00",
+            "percentage": 90
+        },
+        "image": "/assets/images/donations/mail.png",
+        "donation_link": "https://www.helpagesl.org/product-category/donation/",
+        "details_link": "https://www.helpagesl.org/cause/direct-mail-appeals/"
+    },
+    {
+        "id": "tills-project",
+        "title": "Tills Project",
+        "mini_description": "Encouraging micro-donations through nationwide HelpAge collection tills.",
+        "description": "Launched in 1990, the Tills Project encourages everyday citizens to contribute small donations by placing HelpAge collection tills in supermarkets, pharmacies, and retail stores across the country. These contributions, collected periodically, provide essential financial support for HelpAge’s healthcare and community service initiatives, proving that even small acts of kindness make a big difference.",
+        "start_date": "July 20, 2015",
+        "funding_status": {
+            "collected": "Rs 60,000.00",
+            "goal": "Rs 80,000.00",
+            "percentage": 75
+        },
+        "image": "/assets/images/donations/till.png",
+        "donation_link": "https://www.helpagesl.org/product-category/donation/",
+        "details_link": "https://www.helpagesl.org/cause/tills-project/"
+    },
+    {
+        "id": "special-projects",
+        "title": "Special Projects",
+        "mini_description": "Collaborating with corporate partners for sustainable elder welfare projects.",
+        "description": "The Special Projects Department was created in 2011 to strengthen partnerships with the corporate sector. Through Corporate Social Responsibility (CSR) collaborations, HelpAge Sri Lanka raises funds for large-scale projects such as cataract surgery sponsorships, community care programmes, and facility upgrades. These partnerships not only benefit elderly citizens but also help organizations contribute meaningfully to society.",
+        "start_date": "July 20, 2015",
+        "funding_status": {
+            "collected": "Rs 6,000.00",
+            "goal": "Rs 50,000.00",
+            "percentage": 12
+        },
+        "image": "/assets/images/donations/pro.png",
+        "donation_link": "https://www.helpagesl.org/product-category/donation/",
+        "details_link": "https://www.helpagesl.org/cause/special-projects/"
+    }
+]

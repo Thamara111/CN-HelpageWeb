@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="HelpAge Sri Lanka is a non-profit organization dedicated to improving the quality of life for senior citizens across Sri Lanka." />
+    <meta name="keywords" content="HelpAge, Sri Lanka, elderly care, senior citizens, donations, NGO" />
+    <title>HelpAge Sri Lanka | Supporting Elderly Citizens</title>
+    <link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+</head>
+
+<body class="font-['Lexend']">
+    <header class="fixed top-0 left-0 w-full z-50">
+        <div class="container mx-auto flex justify-between items-center py-3 px-6">
+            <div>
+                <img src="/assets/images/logo-sri-lanka.webp" alt="HelpAge Sri Lanka Logo"
+                    class="w-32 h-24 object-contain">
+            </div>
+            <nav>
+                <ul class="headerNav flex space-x-6 text-lg font-medium text-white">
+                    <li>
+                        <a href="/home.html"
+                            class="relative inline-block hover:text-orange-400 after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-orange-400 after:transition-[width] after:duration-300 after:ease-in-out hover:after:w-full">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/about-us.html"
+                            class="relative inline-block hover:text-orange-400 after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-orange-400 after:transition-[width] after:duration-300 after:ease-in-out hover:after:w-full">
+                            About Us
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/w-fundraise.html"
+                            class="relative inline-block hover:text-orange-400 after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-orange-400 after:transition-[width] after:duration-300 after:ease-in-out hover:after:w-full">
+                            Fundraising
+                        </a>
+                    </li>
+                    <li>
+                        <a href="w-donation.html"
+                            class="relative inline-block hover:text-orange-400 after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-orange-400 after:transition-[width] after:duration-300 after:ease-in-out hover:after:w-full">
+                            Donations
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/contact.html"
+                            class="relative inline-block hover:text-orange-400 after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-orange-400 after:transition-[width] after:duration-300 after:ease-in-out hover:after:w-full">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+
+            </nav>
+            <div>
+                <button
+                    class="headerDonate bg-white text-black px-6 py-3 rounded-full border-2 border-transparent hover:bg-white hover:text-red-600 transition duration-300" onclick="window.location.href='w-donation.html'">
+                    Donate Now
+                </button>
+
+            </div>
+        </div>
+    </header>
+
+    <section class="bg-[url('/assets/images/woman-cupping-palms-close-up.png')] bg-cover bg-center min-h-screen">
+        <div class="bg-black bg-opacity-50 min-h-screen flex items-center">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6">Supporting Elderly Citizens in
+                    Sri Lanka</h1>
+                <p class="text-lg md:text-xl text-white mb-8">Join us in our mission to improve the quality of life for
+                    senior citizens across the country.</p>
+                <a href="w-donation.html"
+                    class="group inline-flex items-center bg-white text-black pl-4 pr-2 py-2 rounded-full hover:bg-red-700 hover:text-white transition duration-300">
+                    Donations
+                    <i
+                        class="fa-solid fa-arrow-right bg-black text-white p-3 rounded-full ml-3 transition duration-300 group-hover:bg-white  group-hover:text-black"></i>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="flex p-2">
+                <div class="flex justify-center items-center px-4">
+                </div>
+                <div>
+                    <h3 class="font-semibold text-lg">Supporting Hands that Heal</h3>
+                    <p class="text-gray-700 text-sm">Your contribution helps us provide essential care, medical aid, and
+                        emotional support to elders who need it most.</p>
+                </div>
+            </div>
+            <div class="flex p-2">
+                <div class="flex justify-center items-center px-4">
+                </div>
+                <div>
+                    <h3 class="font-semibold text-lg">Nourishing Lives with Love</h3>
+                    <p class="text-gray-700 text-sm">Every donation ensures a warm meal and dignity for our senior
+                        citizens who
+                        often go hungry and unseen.</p>
+                </div>
+            </div>
+            <div class="flex p-2">
+                <div class="flex justify-center items-center px-4">
+                </div>
+                <div>
+                    <h3 class="font-semibold text-lg">Building Safe Havens for the Elderly</h3>
+                    <p class="text-gray-700 text-sm">Help us create comfortable living spaces where elders feel valued,
+                        respected, and cared for every day.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="container mx-auto border-t border-gray-300 my-4">
+
+    <section>
+        <div class="container mx-auto px-6 py-12 md:h-screen ">
+            <div class="grid grid-cols-1 grid-cols-1 md:grid-cols-2 lg:gap-6">
+                <div>
+                    <h4 class="text-red-600 mb-4 md:mb-6 lg:mb-6 xl:mb-6 2xl:mb-8">Creating sustainable impact together.</h4>
+                    <h2 class="text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold mb-4 md:mb-6 lg:mb-6 xl:mb-6 2xl:mb-8">Opportunity to change the lives of others</h2>
+                    <p class="text-gray-700 mb-4 md:mb-6 lg:mb-6 xl:mb-6 2xl:mb-8">We partner with local teams to reach those in need. Together, we
+                        share
+                        vital resources and help build futures filled with hope, care, dignity, lasting positive change,
+                        resilience, empowerment, unity, compassion, and strength.</p>
+
+                    <ul class=" mb-4 md:mb-6 lg:mb-6 xl:mb-6 2xl:mb-8">
+                        <li class="my-4"><i class="fa-solid fa-check bg-green-500 p-2 rounded-lg mx-2"></i>500m liters
+                            of water provided through communities</li>
+                        <li class="my-4"><i class="fa-solid fa-check bg-green-500 p-2 rounded-lg mx-2"></i>4000+ houses
+                            built for the poor people</li>
+                        <li class="my-4"><i class="fa-solid fa-check bg-green-500 p-2 rounded-lg mx-2"></i>700+ schools
+                            built for underserved children</li>
+                    </ul>
+
+                    <a href="w-donation.html"
+                        class="group inline-flex items-center bg-red-600 text-white pl-4 pr-2 py-2 rounded-full hover:bg-white hover:text-black transition duration-300">
+                        Donations
+                        <i
+                            class="fa-solid fa-arrow-right bg-white text-red-600 p-3 rounded-full ml-3 transition duration-300 group-hover:bg-red-600 group-hover:text-white"></i>
+                    </a>
+
+                </div>
+                <div>
+                    <img src="/assets/images/Charity-bro.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container mx-auto px-6 py-12">
+            <div class="grid grid-cols-3 md:grid-cols-6 gap-4">
+                <div class="flex justify-center items-center p-4">
+                    <img src="/assets/images/logo-01.png" alt="Partner 1"
+                        class="max-h-18 object-contain hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="flex justify-center items-center p-4">
+                    <img src="/assets/images/logo-07.png" alt="Partner 2"
+                        class="max-h-18 object-contain hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="flex justify-center items-center p-4">
+                    <img src="/assets/images/logo-04.png" alt="Partner 3"
+                        class="max-h-18 object-contain hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="flex justify-center items-center p-4">
+                    <img src="/assets/images/logo-08.png" alt="Partner 4"
+                        class="max-h-18 object-contain hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="flex justify-center items-center p-4">
+                    <img src="/assets/images/logo-09.png" alt="Partner 5"
+                        class="max-h-18 object-contain hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="flex justify-center items-center p-4">
+                    <img src="/assets/images/logo-06.png" alt="Partner 6"
+                        class="max-h-18 object-contain hover:scale-105 transition-transform duration-300">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-red-50">
+        <div class="container mx-auto px-6 py-12">
+            <div class="grid grid-cols-1 grid-cols-1 md:grid-cols-2 lg:gap-6">
+                <div>
+                    <img src="/assets/images/Humanitarian Help-bro.png" alt="">
+                </div>
+                <div>
+                    <h4 class="text-red-600 mb-4 md:mb-6 lg:mb-6 xl:mb-6 2xl:mb-8">Working together for a better world.</h4>
+                    <h2 class="text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold mb-4 md:mb-6 lg:mb-6 xl:mb-6 2xl:mb-8">Every action creates lasting change in someone’s
+                        life.</h2>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="bg-white p-4 rounded-xl">
+                            <h3 class="text-md md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl font-bold text-gray-800">1. Volunteering</h3>
+                            <p class="text-gray-700">Your time and energy can change lives. Together, we bring hope,
+                                strength, and positive community transformation.</p>
+
+                        </div>
+
+                        <div class="bg-white p-4 rounded-xl">
+                            <h3 class="text-md md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl font-bold text-gray-800">2. Charity</h3>
+                            <p class="text-gray-700">Giving to others uplifts hearts and creates opportunities.
+                                Every act of kindness builds stronger support systems.</p>
+
+                        </div>
+                        <div class="bg-white p-4 rounded-xl">
+                            <h3 class="text-md md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl font-bold text-gray-800">3. Emergency</h3>
+                            <p class="text-gray-700">In urgent times, we respond fast. Delivering help, care, and safety
+                                for people facing life’s hardest moments.</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-xl">
+                            <h3 class="text-md md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl font-bold text-gray-800">4. Donation</h3>
+                            <p class="text-gray-700">Your donation fuels real change. Supporting causes,
+                                transforming futures, and creating lasting impact with care.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container mx-auto px-6 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                    <h2 class="text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold mb-12">Join Our Campaigns to Transform Lives</h2>
+                    <p class="text-gray-700 mb-12">Become a valued member and help us transform lives in need.</p>
+                </div>
+                <div>
+                    <p class="text-gray-700 mb-12">From building schools to providing clean water, our donation programs
+                        empower vulnerable communities around the world. Every contribution, big or small, creates a
+                        real difference.</p>
+                    <a href="w-donation.html"
+                        class="group inline-flex items-center border-2 border-black bg-white text-black pl-4 pr-2 py-2 rounded-full hover:bg-black hover:text-white transition duration-300 mb-4">
+                        View Donations
+                        <i
+                            class="fa-solid fa-arrow-right bg-black text-white p-3 rounded-full ml-3 transition duration-300 group-hover:bg-white  group-hover:text-black"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div class="flex flex-col justify-center border-2 border-gray-300 rounded-lg p-4">
+                    <img src="/assets/images/donations/catract.jpg" alt="" class="rounded-lg w-full h-48 object-cover">
+                    <h3 class="font-semibold text-lg mt-4">Cataract Surgery Camp</h3>
+                    <p class="text-gray-700 text-sm mt-4">Providing free cataract surgeries to restore vision for
+                        elderly
+                        individuals in underserved communities.</p>
+                    <p class="text-red-800 text-lg mt-4">Rs. 10,000.00</p>
+                    <a href="#donate"
+                        class="mt-4 inline-block bg-white border-2 border-black text-center text-black hover:bg-black hover:text-white py-2 px-4 rounded">Donate
+                        Now</a>
+                </div>
+                <div class="flex flex-col justify-center border-2 border-gray-300 rounded-lg p-4">
+                    <img src="/assets/images/donations/6.png" alt="" class="rounded-lg w-full h-48 object-cover">
+                    <h3 class="font-semibold text-lg mt-4">Cataract Surgery Camp</h3>
+                    <p class="text-gray-700 text-sm mt-4">Providing free cataract surgeries to restore vision for
+                        elderly
+                        individuals in underserved communities.</p>
+                    <p class="text-red-800 text-lg mt-4">Rs. 10,000.00</p>
+                    <a href="#donate"
+                        class="mt-4 inline-block bg-white border-2 border-black text-center text-black hover:bg-black hover:text-white py-2 px-4 rounded">Donate
+                        Now</a>
+                </div>
+                <div class="flex flex-col justify-center border-2 border-gray-300 rounded-lg p-4">
+                    <img src="/assets/images/donations/4.png" alt="" class="rounded-lg w-full h-48 object-cover">
+                    <h3 class="font-semibold text-lg mt-4">Cataract Surgery Camp</h3>
+                    <p class="text-gray-700 text-sm mt-4">Providing free cataract surgeries to restore vision for
+                        elderly
+                        individuals in underserved communities.</p>
+                    <p class="text-red-800 text-lg mt-4">Rs. 10,000.00</p>
+                    <a href="#donate"
+                        class="mt-4 inline-block bg-white border-2 border-black text-center text-black hover:bg-black hover:text-white py-2 px-4 rounded">Donate
+                        Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container mx-auto px-6 py-12">
+            <div class="relative w-full">
+                <video id="myVideo" class="w-full rounded-lg shadow-lg">
+                    <source src="https://demo.gloriathemes.com/faun/demo/wp-content/uploads/2025/07/home-1-video.mp4"
+                        type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+
+                <!-- Play/Pause Button -->
+                <button id="playButton"
+                    class="absolute inset-0 flex items-center justify-center text-red-800 text-5xl bg-black/40 rounded-lg transition duration-300 hover:bg-black/60">
+                    <i
+                        class="fa-solid fa-play p-4 bg-red-100 rounded-full flex items-center justify-center w-32 h-32 animate-pulse"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+   
+
+    <section class="bg-[url('/assets/images/donate.png')] bg-center bg-cover">
+        <div class="bg-black bg-opacity-50 py-12">
+            <div class="container mx-auto px-6 py-12 backdrop-blur-md rounded-2xl">
+                <div class="grid grid-cols-1 grid-cols-1 md:grid-cols-2 lg:gap-6">
+                    <div>
+                        <h4 class="text-red-200 mb-4 md:mb-6 lg:mb-6 xl:mb-6 2xl:mb-8">Every gift makes a ripple.</h4>
+                        <h2 class="text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold mb-4 md:mb-6 lg:mb-6 xl:mb-6 2xl:mb-8 text-white">Let your generosity help shape a
+                            brighter future for all.</h2>
+                        <p class="text-gray-400 mb-12">Your support brings clean water, food, and shelter to those in
+                            need. Even the smallest amount helps build lasting change and hope.</p>
+
+
+                    </div>
+                    <div class="flex items-center justify-center w-full">
+                        <form id="donationForm"
+                            class="relative w-[80%] mx-auto bg-white p-6 rounded-2xl shadow-md overflow-hidden">
+
+                            <!-- STEP 1: Select Amount -->
+                            <div class="form-step active">
+                                <h2 class="text-xl font-semibold mb-4 text-gray-800">Select Your Donation Amount</h2>
+                                <div class="grid grid-cols-3 gap-4">
+                                    <label class="cursor-pointer">
+                                        <input type="radio" name="donation_amount" value="1000" class="hidden peer">
+                                        <div
+                                            class="border-2 border-gray-300 peer-checked:border-red-600 peer-checked:bg-red-50 rounded-lg text-center py-3 font-medium transition">
+                                            Rs. 1,000
+                                        </div>
+                                    </label>
+                                    <label class="cursor-pointer">
+                                        <input type="radio" name="donation_amount" value="2000" class="hidden peer">
+                                        <div
+                                            class="border-2 border-gray-300 peer-checked:border-red-600 peer-checked:bg-red-50 rounded-lg text-center py-3 font-medium transition">
+                                            Rs. 2,000
+                                        </div>
+                                    </label>
+                                    <label class="cursor-pointer">
+                                        <input type="radio" name="donation_amount" value="5000" class="hidden peer">
+                                        <div
+                                            class="border-2 border-gray-300 peer-checked:border-red-600 peer-checked:bg-red-50 rounded-lg text-center py-3 font-medium transition">
+                                            Rs. 5,000
+                                        </div>
+                                    </label>
+
+                                    <label class="cursor-pointer col-span-3">
+                                        <input type="radio" name="donation_amount" value="custom" id="custom-option"
+                                            class="hidden peer">
+                                        <div
+                                            class="border-2 border-gray-300 peer-checked:border-red-600 peer-checked:bg-red-50 rounded-lg text-center py-3 font-medium transition">
+                                            Enter Custom Amount
+                                        </div>
+                                    </label>
+
+                                    <div id="customAmountContainer" class="hidden col-span-3">
+                                        <input type="number" id="customAmount" name="custom_amount"
+                                            placeholder="Enter your amount (Rs.)"
+                                            class="w-full border-2 border-red-500 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-red-600 text-gray-700">
+                                    </div>
+                                </div>
+                                <div class="mt-6 text-right">
+                                    <button type="button"
+                                        class="next-btn bg-red-600 text-white font-semibold py-3 px-6 rounded-full hover:bg-red-700 transition">
+                                        Next
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- STEP 2: Personal Details -->
+                            <div class="form-step hidden">
+                                <h2 class="text-xl font-semibold mb-4 text-gray-800">Your Details</h2>
+                                <div class="space-y-4">
+                                    <input type="text" name="name" placeholder="Full Name" required
+                                        class="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-red-600">
+                                    <input type="email" name="email" placeholder="Email Address" required
+                                        class="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-red-600">
+                                    <textarea name="description" placeholder="Write a short message..." rows="3"
+                                        class="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-red-600"></textarea>
+                                </div>
+                                <div class="mt-6 flex justify-between">
+                                    <button type="button"
+                                        class="prev-btn bg-gray-200 text-gray-700 font-semibold py-3 px-6 rounded-full hover:bg-gray-300 transition">
+                                        Previous
+                                    </button>
+                                    <button type="button"
+                                        class="next-btn bg-red-600 text-white font-semibold py-3 px-6 rounded-full hover:bg-red-700 transition">
+                                        Next
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- STEP 3: Payment Details -->
+                            <div class="form-step hidden">
+                                <h2 class="text-xl font-semibold mb-4 text-gray-800">Payment Details</h2>
+                                <div class="space-y-4">
+                                    <input type="text" name="card_number" placeholder="Card Number" required
+                                        class="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-red-600">
+                                    <div class="grid grid-cols-2 gap-4">
+                                        <input type="text" name="expiry" placeholder="MM/YY" required
+                                            class="border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-red-600">
+                                        <input type="text" name="cvv" placeholder="CVV" required
+                                            class="border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-red-600">
+                                    </div>
+                                </div>
+                                <div class="mt-6 flex justify-between">
+                                    <button type="button"
+                                        class="prev-btn bg-gray-200 text-gray-700 font-semibold py-3 px-6 rounded-full hover:bg-gray-300 transition">
+                                        Previous
+                                    </button>
+                                    <button type="submit"
+                                        class="bg-red-600 text-white font-semibold py-3 px-6 rounded-full hover:bg-red-700 transition">
+                                        Donate Now
+                                    </button>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section>
+        <div class="container mx-auto px-6 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                    <h2 class="text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold mb-12">What's New</h2>
+                    <p class="text-gray-700 mb-12">Every helping hand truly brings us closer to meaningful, lasting
+                        change.</p>
+                </div>
+                <div>
+                    <p class="text-gray-700 mb-4">Our volunteers are the heart of our mission. With their time, energy,
+                        and compassion, they help build stronger communities and brighter futures. We’re proud to
+                        highlight those who turn kindness into action every day.</p>
+                    <a href="w-donation.html"
+                        class="group inline-flex items-center border-2 border-black bg-white text-black pl-4 pr-2 py-2 rounded-full hover:bg-black hover:text-white transition duration-300 mb-4">
+                        View More
+                        <i
+                            class="fa-solid fa-arrow-right bg-black text-white p-3 rounded-full ml-3 transition duration-300 group-hover:bg-white  group-hover:text-black"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="flex flex-col justify-center rounded-lg">
+                    <img src="/assets/images/news.png" alt="" class="rounded-lg w-full h-62 object-cover">
+                    <div class="flex justify-start items-center mt-2 space-x-4">
+                        <p class="text-gray-700 text-sm mt-2">by <a href="#"
+                                class="font-semibold text-gray-900 hover:text-red-600">Helena Wallin</a></p>
+                        <p class="text-gray-700 text-sm mt-2">5 months Ago</p>
+                        <p class="text-gray-700 text-sm mt-2">4 Min Read</p>
+                    </div>
+                    <a href="#" class="font-semibold text-3xl mt-4 hover:text-red-600 transition duration-300">Emma
+                        Blake</a>
+                    <p class="text-gray-700 text-sm mt-2">Planning is powerful. Discover how collaboration, energy, and
+                        purpose-driven teamwork turn ideas into real impact in our volunteer programs.</p>
+                    <hr class="container mx-auto border-t border-gray-300 my-4">
+
+                </div>
+                <div class="flex flex-col justify-center rounded-lg">
+                    <img src="/assets/images/news.png" alt="" class="rounded-lg w-full h-62 object-cover">
+                    <div class="flex justify-start items-center mt-2 space-x-4">
+                        <p class="text-gray-700 text-sm mt-2">by <a href="#"
+                                class="font-semibold text-gray-900 hover:text-red-600">Helena Wallin</a></p>
+                        <p class="text-gray-700 text-sm mt-2">5 months Ago</p>
+                        <p class="text-gray-700 text-sm mt-2">4 Min Read</p>
+                    </div>
+                    <a href="#" class="font-semibold text-3xl mt-4 hover:text-red-600 transition duration-300">Emma
+                        Blake</a>
+                    <p class="text-gray-700 text-sm mt-2">Planning is powerful. Discover how collaboration, energy, and
+                        purpose-driven teamwork turn ideas into real impact in our volunteer programs.</p>
+                    <hr class="container mx-auto border-t border-gray-300 my-4">
+
+                </div>
+                <div class="flex flex-col justify-center rounded-lg">
+                    <img src="/assets/images/news.png" alt="" class="rounded-lg w-full h-62 object-cover">
+                    <div class="flex justify-start items-center mt-2 space-x-4">
+                        <p class="text-gray-700 text-sm mt-2">by <a href="#"
+                                class="font-semibold text-gray-900 hover:text-red-600">Helena Wallin</a></p>
+                        <p class="text-gray-700 text-sm mt-2">5 months Ago</p>
+                        <p class="text-gray-700 text-sm mt-2">4 Min Read</p>
+                    </div>
+                    <a href="#" class="font-semibold text-3xl mt-4 hover:text-red-600 transition duration-300">Emma
+                        Blake</a>
+                    <p class="text-gray-700 text-sm mt-2">Planning is powerful. Discover how collaboration, energy, and
+                        purpose-driven teamwork turn ideas into real impact in our volunteer programs.</p>
+                    <hr class="container mx-auto border-t border-gray-300 my-4">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-red-800 text-white py-16">
+        <div class="container mx-auto px-6">
+            <!-- Top Section -->
+            <div class="text-center py-6">
+                <h4 class="text-white mb-4 text-lg uppercase tracking-wide">Get in Touch</h4>
+                <h2 class="text-4xl md:text-6xl font-bold mb-8">We’d Love to Hear from You</h2>
+                <p class="text-gray-200 max-w-2xl mx-auto mb-10">
+                    We’re here to listen, support, and collaborate. Whether it’s a simple question or a big idea — don’t
+                    hesitate to reach out.
+                </p>
+
+                <a href="w-donation.html"
+                    class="inline-flex items-center bg-white text-black px-6 py-3 rounded-full font-medium hover:bg-black hover:text-white transition duration-300">
+                    Contact With Us
+                </a>
+            </div>
+
+            <!-- Divider -->
+            <hr class="border-t border-gray-400 my-12">
+
+            <!-- Bottom Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 text-sm">
+                <!-- Logo & About -->
+                <div>
+                    <img src="/assets/images/logo-sri-lanka.webp" alt="HelpAge Sri Lanka Logo"
+                        class="w-32 h-24 object-contain mb-4">
+                    <p class="text-gray-200 leading-relaxed">
+                        At HelpAge Sri Lanka, we stand beside the forgotten and underserved. Through community
+                        projects, emergency aid, and long-term support, we aim to restore hope where it’s needed most.
+                    </p>
+                </div>
+
+                <!-- Quick Links 1 -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="/home.html" class="hover:text-gray-300">Home</a></li>
+                        <li><a href="/about-us.html" class="hover:text-gray-300">About</a></li>
+                        <li><a href="/w-fundraise.html" class="hover:text-gray-300">Fundraising</a></li>
+                        <li><a href="/w-donation.html" class="hover:text-gray-300">Donations</a></li>
+                        <li><a href="/contact.html" class="hover:text-gray-300">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Quick Links 2 -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Resources</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-gray-300">Donate</a></li>
+                        <li><a href="#" class="hover:text-gray-300">Events</a></li>
+                        <li><a href="#" class="hover:text-gray-300">Blog</a></li>
+                        <li><a href="#" class="hover:text-gray-300">Volunteer</a></li>
+                        <li><a href="#" class="hover:text-gray-300">FAQs</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Contact Us</h3>
+                    <p class="text-gray-200 mb-2">123 Charity St, Colombo, Sri Lanka</p>
+                    <p class="text-gray-200 mb-2">Email: <a href="mailto:info@charity.org"
+                            class="hover:text-gray-300">info@charity.org</a></p>
+                    <p class="text-gray-200">Phone: +94 11 234 5678</p>
+                </div>
+            </div>
+
+            <!-- Bottom Text -->
+            <div class="text-center mt-12 text-gray-300 text-sm">
+                © 2025 HelpAge Sri Lanka. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 200) {
+                    $('header').addClass('bg-white shadow-lg transition-colors duration-500');
+                    $('.headerNav a')
+                        .removeClass('text-white')
+                        .addClass('text-gray-900');
+                    $('.headerDonate')
+                        .removeClass('bg-white text-black')
+                        .addClass('bg-red-600 text-white border-2 border-red-600 shadow-lg transition-colors duration-500');
+                } else {
+                    $('header').removeClass('bg-white shadow-lg transition-colors duration-500');
+                    $('.headerNav a')
+                        .removeClass('text-gray-900')
+                        .addClass('text-white');
+                    $('.headerDonate')
+                        .removeClass('bg-red-600 text-white border-2 border-red-600 shadow-lg transition-colors duration-500')
+                        .addClass('bg-white text-black');
+                }
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            const video = $('#myVideo')[0];
+            const button = $('#playButton');
+
+            button.on('click', function () {
+                if (video.paused) {
+                    video.play();
+                    $(this).find('i').removeClass('fa-play').addClass('fa-pause');
+                    $(this).addClass('opacity-0 pointer-events-none'); // hide button after play
+                } else {
+                    video.pause();
+                    $(this).find('i').removeClass('fa-pause').addClass('fa-play');
+                    $(this).removeClass('opacity-0 pointer-events-none'); // show button again
+                }
+            });
+
+            // When video is paused manually, show button again
+            $(video).on('pause', function () {
+                button.removeClass('opacity-0 pointer-events-none');
+                button.find('i').removeClass('fa-pause').addClass('fa-play');
+            });
+
+            // Hide play button when playing
+            $(video).on('play', function () {
+                button.addClass('opacity-0 pointer-events-none');
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            let currentStep = 0;
+            const steps = $(".form-step");
+
+            function showStep(index) {
+                steps.addClass("hidden").removeClass("active");
+                steps.eq(index).removeClass("hidden").addClass("active");
+            }
+
+            $(".next-btn").click(function () {
+                if (currentStep < steps.length - 1) {
+                    currentStep++;
+                    showStep(currentStep);
+                }
+            });
+
+            $(".prev-btn").click(function () {
+                if (currentStep > 0) {
+                    currentStep--;
+                    showStep(currentStep);
+                }
+            });
+
+            $('input[name="donation_amount"]').change(function () {
+                if ($(this).val() === 'custom') {
+                    $('#customAmountContainer').slideDown(300);
+                    $('#customAmount').focus();
+                } else {
+                    $('#customAmountContainer').slideUp(300);
+                }
+            });
+
+            $('#donationForm').submit(function (e) {
+                e.preventDefault();
+                let amount = $('input[name="donation_amount"]:checked').val();
+                if (amount === 'custom') amount = $('#customAmount').val();
+                alert('Donation submitted! Amount: Rs. ' + amount);
+            });
+        });
+    </script>
+</body>
+
+</html>

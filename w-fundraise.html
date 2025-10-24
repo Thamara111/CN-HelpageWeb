@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="HelpAge Sri Lanka is a non-profit organization dedicated to improving the quality of life for senior citizens across Sri Lanka." />
+    <meta name="keywords" content="HelpAge, Sri Lanka, elderly care, senior citizens, donations, NGO" />
+    <title>HelpAge Sri Lanka | Supporting Elderly Citizens</title>
+    <link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body class="font-['Lexend']">
+    <!-- Header -->
+    <header class="fixed top-0 left-0 w-full bg-white shadow-md">
+        <div class="container mx-auto flex justify-between items-center py-3 px-6">
+            <div>
+                <img src="/assets/images/logo-sri-lanka.webp" alt="HelpAge Sri Lanka Logo"
+                    class="w-32 h-24 object-contain" />
+            </div>
+            <nav>
+                <ul class="headerNav flex space-x-6 text-lg font-medium text-black">
+                    <li>
+                        <a href="/home.html"
+                            class="relative inline-block hover:text-orange-400 after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-orange-400 after:transition-[width] after:duration-300 after:ease-in-out hover:after:w-full">Home</a>
+                    </li>
+                    <li>
+                        <a href="/about-us.html"
+                            class="relative inline-block hover:text-orange-400 after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-orange-400 after:transition-[width] after:duration-300 after:ease-in-out hover:after:w-full">About
+                            Us</a>
+                    </li>
+                    <li>
+                        <a href="/w-fundraise.html"
+                            class="relative inline-block hover:text-orange-400 after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-orange-400 after:transition-[width] after:duration-300 after:ease-in-out hover:after:w-full">Fundraising</a>
+                    </li>
+                    <li>
+                        <a href="/w-donation.html"
+                            class="relative inline-block hover:text-orange-400 after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-orange-400 after:transition-[width] after:duration-300 after:ease-in-out hover:after:w-full">Donations</a>
+                    </li>
+                    <li>
+                        <a href="/contact.html"
+                            class="relative inline-block hover:text-orange-400 after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-orange-400 after:transition-[width] after:duration-300 after:ease-in-out hover:after:w-full">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <button
+                    class="headerDonate text-white bg-red-600 px-6 py-3 rounded-full border-2 border-red-600 hover:bg-white hover:text-red-600 transition duration-300"
+                    onclick="window.location.href='w-donation.html'">
+                    Donate Now
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="mt-32">
+        <div class="container mx-auto px-6 py-12">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl md:text-6xl font-bold mb-4">Fundraising</h2>
+                <p class="text-gray-500 mb-12 max-w-2xl mx-auto">
+                    Your support empowers us to create lasting change for elderly citizens in Sri Lanka. Through
+                    dedicated fundraising efforts, we can provide essential services, healthcare, and community
+                    programs that enhance their quality of life.
+                </p>
+            </div>
+            <div id="fund-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+            <div id="loading-state" class="text-center text-gray-500 mt-8">Loading funds...</div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-red-800 text-white py-16">
+        <div class="container mx-auto px-6">
+            <div class="text-center py-6">
+                <h4 class="text-white mb-4 text-lg uppercase tracking-wide">
+                    Get in Touch
+                </h4>
+                <h2 class="text-4xl md:text-6xl font-bold mb-8">
+                    We’d Love to Hear from You
+                </h2>
+                <p class="text-gray-200 max-w-2xl mx-auto mb-10">
+                    We’re here to listen, support, and collaborate. Whether it’s a
+                    simple question or a big idea — don’t hesitate to reach out.
+                </p>
+
+                <a href="w-donation.html"
+                    class="inline-flex items-center bg-white text-black px-6 py-3 rounded-full font-medium hover:bg-black hover:text-white transition duration-300">
+                    Contact With Us
+                </a>
+            </div>
+
+            <hr class="border-t border-gray-400 my-12" />
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 text-sm">
+                <!-- Logo & About -->
+                <div>
+                    <img src="/assets/images/logo-sri-lanka.webp" alt="HelpAge Sri Lanka Logo"
+                        class="w-32 h-24 object-contain mb-4" />
+                    <p class="text-gray-200 leading-relaxed">
+                        At HelpAge Sri Lanka, we stand beside the forgotten and
+                        underserved. Through community projects, emergency aid, and
+                        long-term support, we aim to restore hope where it’s needed most.
+                    </p>
+                </div>
+
+                <!-- Quick Links 1 -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="/home.html" class="hover:text-gray-300">Home</a></li>
+                        <li>
+                            <a href="/about-us.html" class="hover:text-gray-300">About</a>
+                        </li>
+                        <li>
+                            <a href="/w-fundraise.html" class="hover:text-gray-300">Fundraising</a>
+                        </li>
+                        <li>
+                            <a href="/w-donation.html" class="hover:text-gray-300">Donations</a>
+                        </li>
+                        <li>
+                            <a href="/contact.html" class="hover:text-gray-300">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Quick Links 2 -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Resources</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-gray-300">Donate</a></li>
+                        <li><a href="#" class="hover:text-gray-300">Events</a></li>
+                        <li><a href="#" class="hover:text-gray-300">Blog</a></li>
+                        <li><a href="#" class="hover:text-gray-300">Volunteer</a></li>
+                        <li><a href="#" class="hover:text-gray-300">FAQs</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Contact Us</h3>
+                    <p class="text-gray-200 mb-2">123 Charity St, Colombo, Sri Lanka</p>
+                    <p class="text-gray-200 mb-2">
+                        Email:
+                        <a href="mailto:info@charity.org" class="hover:text-gray-300">info@charity.org</a>
+                    </p>
+                    <p class="text-gray-200">Phone: +94 11 234 5678</p>
+                </div>
+            </div>
+
+            <div class="text-center mt-12 text-gray-300 text-sm">
+                © 2025 HelpAge Sri Lanka. All rights reserved.
+            </div>
+        </div>
+    </footer>
+    <script src="/assets/js/w-fundraising.js"></script>
+
+</body>
+
+</html>
