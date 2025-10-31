@@ -8,7 +8,7 @@ $(document).ready(function () {
         $.each(data, function (index, item) {
             const card = `
             
-            <div class="relative flex flex-col justify-center border-2 border-gray-300 rounded-lg p-4">
+            <div class="relative flex flex-col justify-center border-2 border-gray-300 rounded-2xl p-4">
                     <label class="absolute top-4 right-4 flex items-center space-x-2">
                     <input 
                         type="checkbox"
@@ -19,11 +19,11 @@ $(document).ready(function () {
                     >
                     </label>
                     <img src="${item.image}" alt="" class="rounded-lg w-full h-48 object-cover" data-id="${item.id}">
-                    <h3 class="font-semibold text-lg mt-4">${item.title}</h3>
+                    <h3 class="font-semibold text-lg mt-4 truncate">${item.title}</h3>
                     <p class="text-gray-700 text-sm mt-4">${item.minidescription}</p>
                     <p class="text-green-800 text-lg mt-4">${item.amount}</p>
                     <a href="/w-donation-details.html?donation=${item.id}"
-                        class="mt-4 inline-block bg-white border-2 border-black text-center text-black hover:bg-black hover:text-white py-2 px-4 rounded">Proceed to Donate</a>
+                        class="mt-4 inline-block bg-white border-2 border-black text-center text-black hover:bg-black hover:text-white py-2 px-4 rounded-2xl">Proceed to Donate</a>
                 </div>`;
             
             container.append(card);

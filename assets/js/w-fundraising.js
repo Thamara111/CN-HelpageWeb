@@ -9,7 +9,7 @@ $(document).ready(function () {
         // Loop through each fundraising item
         $.each(data, function (index, item) {
             const card = `
-            <div class="fund-card flex flex-col justify-center border-2 border-gray-300 rounded-lg p-4 hover:shadow-lg transition duration-300">
+            <div class="fund-card flex flex-col justify-center border-2 border-gray-300 rounded-2xl p-4 hover:shadow-lg transition duration-300">
                 <img src="${item.image}" alt="${item.title}" class="rounded-lg w-full h-48 object-cover">
 
                 <h3 class="font-semibold text-lg mt-4 truncate">${item.title}</h3>
@@ -35,7 +35,7 @@ $(document).ready(function () {
                 <!-- Buttons -->
                 <div class="w-full mt-6 flex flex-col sm:flex-row justify-center gap-3">
                     <a href="/w-fundraising-details.html?fund=${item.id}"
-                        class="w-full mt-4 inline-block bg-white border-2 border-black text-center text-black hover:bg-black hover:text-white py-2 px-4 rounded">View Details</a>
+                        class="w-full mt-4 inline-block bg-white border-2 border-black text-center text-black hover:bg-black hover:text-white py-2 px-4 rounded-2xl">View Details</a>
                 </div>
             </div>`;
 
