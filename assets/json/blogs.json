@@ -1,0 +1,199 @@
+[
+    {
+        "id": "Mobile-Medical-and-Eye-Care-Unit",
+        "image": "/assets/images/mobile-med.png",
+        "title": "Mobile Medical and Eye Care Unit",
+        "subheading": "MOBILE MEDICAL UNIT (MMU)",
+        "mini_description": "Mobile healthcare service bringing medical and eye care directly to remote villages for elderly Sri Lankans",
+        "main_content": "Thousands of elderly Sri Lankans suffer needlessly because they lack access to medical and eye care mainly due to mobility and financial issues. HASL has embarked on a project since 2006 to provide medical and eye care facilities to needy elders in their own villages through the Mobile Medical Unit (MMU).",
+        "key_details": {
+            "year_started": "2006",
+            "capacity": "150 elders per camp (75 eye + 75 medical screenings)",
+            "equipment": "Latest medical and eye care equipment",
+            "staff": "Dedicated doctors, nurses, and orderlies",
+            "cost": "Rs. 130,000 (single), Rs. 260,000 (double), Rs. 390,000 (triple)",
+            "target_group": "Elderly in remote villages",
+            "location": "Island-wide rural areas"
+        },
+        "focus_areas": [
+            "Medical screening",
+            "Eye screening",
+            "Free spectacles",
+            "Cataract surgery referrals"
+        ],
+        "key_issues": [
+            "Lack of access to medical and eye care",
+            "Mobility and financial barriers",
+            "Need for rural health services"
+        ],
+        "program_benefits": [
+            "Brings healthcare to remote elders",
+            "Improves quality of life",
+            "Provides free spectacles and surgery referrals",
+            "Scalable based on available funds"
+        ],
+        "activities": [
+            "Mobile health camps",
+            "On-site screenings",
+            "Follow-up for cataract surgeries"
+        ],
+        "achievements": [
+            "Capacity to screen up to 450 elders per day with extended staff"
+        ],
+        "statistics": {
+            "capacity_single_camp": 150,
+            "cost_single_camp": "Rs. 130,000"
+        },
+        "date": "February 15, 2025"
+    },
+    {
+        "id": "HelpAge-Eye-Hospital",
+        "image":"/assets/images/eye-hosplital.jpeg",
+        "title": "HelpAge Eye Hospital",
+        "subheading": "FLAGSHIP EYE CARE FACILITY",
+        "mini_description": "Sri Lanka's only private hospital providing free daily cataract surgeries for underprivileged seniors",
+        "main_content": "Located in Wellawatte, Colombo 6, the HelpAge Eye Hospital is the flagship project of HelpAge Sri Lanka, providing free cataract surgeries using advanced phacoemulsification systems since 2009.",
+        "key_details": {
+            "year_started": "2009",
+            "location": "Wellawatte, Colombo 6",
+            "methods_used": "Phacoemulsification with Stellaris Vision Enhancement system",
+            "equipment": "Bausch and Lomb, USA",
+            "staff": "Three Eye Specialists, 16 total staff",
+            "target_group": "Senior citizens above 55 years",
+            "capacity": "20 cataract surgeries per day (300 per month)"
+        },
+        "focus_areas": [
+            "Cataract surgery",
+            "Vision restoration",
+            "Free eye care for elders"
+        ],
+        "key_issues": [
+            "Lack of affordable eye care",
+            "Risk of blindness due to delayed surgeries",
+            "Financial barriers among elders"
+        ],
+        "program_benefits": [
+            "Restores sight to underprivileged elders",
+            "Helps elders regain independence",
+            "Improves quality of life"
+        ],
+        "activities": [
+            "Daily clinics (Mon–Fri)",
+            "Free cataract surgeries",
+            "Eye health awareness"
+        ],
+        "achievements": [
+            "Over 46,000 cataract surgeries performed since 2009"
+        ],
+        "date": "March 10, 2025"
+    },
+    {
+        "id": "Youth-Education-Programmes",
+        "image": "/assets/images/youth-ed.png",
+        "title": "Youth Education Programmes",
+        "subheading": "YOUTH EDUCATION PROGRAMME (YEP)",
+        "mini_description": "Building bridges between generations through awareness and education in schools",
+        "main_content": "The Youth Education Programme (YEP) aims to connect the younger generation with elders by fostering respect, empathy, and awareness about ageing issues through school-based initiatives.",
+        "key_details": {
+            "location": "Nationwide schools",
+            "target_group": "School children, teachers, principals",
+            "staff": "YEP Division trainers and volunteers"
+        },
+        "focus_areas": [
+            "Awareness on elderly issues",
+            "Bridging intergenerational gaps",
+            "Caring for older persons",
+            "Preparing youth for old age"
+        ],
+        "key_issues": [
+            "Lack of youth awareness",
+            "Intergenerational disconnect"
+        ],
+        "program_benefits": [
+            "Encourages empathy among youth",
+            "Reduces elderly isolation",
+            "Creates responsible future citizens"
+        ],
+        "activities": [
+            "Training of Trainers Programmes",
+            "Seminars and workshops",
+            "Study tours to elder homes",
+            "Annual art competitions"
+        ],
+        "achievements": [
+            "Reached hundreds of schools island-wide"
+        ],
+        "date": "April 5, 2025"
+    },
+    {
+        "id": "The-Struggle-for-Survival",
+        "image":"/assets/images/img3.png",
+        "title": "The Struggle for Survival: An Urgent Call for Action to Save Sri Lanka's Senior Citizens",
+        "subheading": "ECONOMIC CRISIS RESPONSE",
+        "mini_description": "Addressing the severe impact of Sri Lanka's economic collapse on vulnerable elderly population",
+        "main_content": "Sri Lanka's ongoing economic crisis has severely impacted older people, limiting access to food, medicine, and basic necessities. HelpAge Sri Lanka calls for urgent interventions to protect this vulnerable group.",
+        "key_details": {
+            "year_started": "2022",
+            "location": "Sri Lanka (national coverage)",
+            "target_group": "Older men and women affected by the crisis"
+        },
+        "focus_areas": [
+            "Economic relief",
+            "Food security",
+            "Medical access",
+            "Social protection"
+        ],
+        "key_issues": [
+            "Inflation and food insecurity",
+            "Shortage of medicines and essentials",
+            "Lack of elderly-specific social support"
+        ],
+        "program_benefits": [
+            "Highlights urgent elder issues during crisis",
+            "Promotes government and community response"
+        ],
+        "activities": [
+            "Rapid assessment studies",
+            "Community awareness",
+            "Policy recommendations"
+        ],
+        "achievements": [],
+        "date": "May 12, 2025"
+    },
+    {
+        "id": "Medirigiriya-Eye-Hospital-Outreach",
+        "image":"/assets/images/elder.png",
+        "title": "Elders in Remote Villages Around Medirigiriya Reap Benefit from HelpAge Eye Hospital",
+        "subheading": "RURAL OUTREACH INITIATIVE",
+        "mini_description": "Extending free cataract surgery services to remote villages in the Medirigiriya region",
+        "main_content": "HelpAge Eye Hospital extended its free cataract surgery program to underserved elders in Medirigiriya, performing over 100 surgeries for villagers who lacked access to timely medical attention.",
+        "key_details": {
+            "year_started": "2022",
+            "location": "Medirigiriya, 22 km from Polonnaruwa",
+            "target_group": "Underprivileged elders from surrounding villages"
+        },
+        "focus_areas": [
+            "Rural eye care",
+            "Cataract surgery outreach"
+        ],
+        "key_issues": [
+            "Delay in surgeries at government hospitals",
+            "Limited transport and resources"
+        ],
+        "program_benefits": [
+            "Restored vision for rural elders",
+            "Reduced travel burden for patients",
+            "Empowered local communities"
+        ],
+        "activities": [
+            "Special clinics on 10th Dec 2022 and 7th Jan 2023",
+            "Transport and meals provided by local volunteers"
+        ],
+        "achievements": [
+            "Over 100 surgeries performed",
+            "More than 400 elders identified for treatment",
+            "Over 50 patients attended special clinics"
+        ],
+        "date": "June 8, 2025"
+    }
+]
