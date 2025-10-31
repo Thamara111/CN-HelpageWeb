@@ -19,7 +19,7 @@ $(document).ready(function () {
                     >
                     </label>
                     <img src="${item.image}" alt="" class="rounded-lg w-full h-48 object-cover" data-id="${item.id}">
-                    <h3 class="font-semibold text-lg mt-4 truncate">${item.title}</h3>
+                    <h3 class="font-semibold text-lg mt-4 truncate "  title="${item.title}">${item.title}</h3>
                     <p class="text-gray-700 text-sm mt-4">${item.minidescription}</p>
                     <p class="text-green-800 text-lg mt-4">${item.amount}</p>
                     <a href="/w-donation-details.html?donation=${item.id}"

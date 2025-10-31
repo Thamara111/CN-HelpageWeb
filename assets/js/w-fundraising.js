@@ -12,7 +12,7 @@ $(document).ready(function () {
             <div class="fund-card flex flex-col justify-center border-2 border-gray-300 rounded-2xl p-4 hover:shadow-lg transition duration-300">
                 <img src="${item.image}" alt="${item.title}" class="rounded-lg w-full h-48 object-cover">
 
-                <h3 class="font-semibold text-lg mt-4 truncate">${item.title}</h3>
+                <h3 class="font-semibold text-lg mt-4 truncate"  title="${item.title}">${item.title}</h3>
                 <p class="text-gray-700 text-sm mt-3">${item.mini_description}</p>
 
                 <!-- Progress Bar -->
@@ -24,7 +24,7 @@ $(document).ready(function () {
 
                     <div class="relative w-full h-2 bg-gray-200 rounded-full overflow-hidden">
                         <div class="absolute left-0 top-0 h-full bg-green-600 transition-all duration-500"
-                             style="width: ${item.funding_status.percentage}%;"></div>
+                            style="width: ${item.funding_status.percentage}%;"></div>
                     </div>
 
                     <div class="text-center text-sm text-gray-700 mt-2">
