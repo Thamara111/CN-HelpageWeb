@@ -18,8 +18,8 @@ $(document).ready(function () {
                 <!-- Progress Bar -->
                 <div class="mt-6">
                     <div class="flex justify-between text-sm text-gray-600 mb-2">
-                        <span>Goal: ${item.funding_status.goal}</span>
                         <span>Raised: ${item.funding_status.collected}</span>
+                        <span>Funded: ${item.funding_status.percentage}% </span>
                     </div>
 
                     <div class="relative w-full h-2 bg-gray-200 rounded-full overflow-hidden">
@@ -27,9 +27,6 @@ $(document).ready(function () {
                             style="width: ${item.funding_status.percentage}%;"></div>
                     </div>
 
-                    <div class="text-center text-sm text-gray-700 mt-2">
-                        ${item.funding_status.percentage}% Funded
-                    </div>
                 </div>
 
                 <!-- Buttons -->

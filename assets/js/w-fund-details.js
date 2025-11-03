@@ -35,13 +35,14 @@ $(document).ready(function () {
 
                         <p class="text-gray-700 mb-6 text-sm md:text-base leading-relaxed">${fund.description}</p>
 
-                        <div class="w-full bg-gray-200 rounded-full h-2.5 mb-4">
+                        <div class="flex flex-col md:flex-row items-center space-x-4 w-full">
+                        <div class="w-2/3 bg-gray-200 rounded-full h-2.5 mb-4">
                             <div class="bg-green-600 h-2.5 rounded-full transition-all duration-500" style="width: ${percentage}%;"></div>
                         </div>
-                        <div class="flex justify-between text-sm text-gray-600 mb-6">
-                            <span>Goal: ${fund.funding_status.goal}</span>
+                        <div class="flex justify-between w-1/3 text-sm text-gray-600 mb-6">
                             <span>Raised: ${fund.funding_status.collected}</span>
-                        </div>
+                        </div></div>
+                        
                     </div>
 
                     <div id="fund" class="col-span-1 bg-white border-2 border-gray-100 rounded-xl p-8 shadow-lg max-w-md w-full hover:shadow-xl transition-shadow duration-300">
