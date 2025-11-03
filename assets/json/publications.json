@@ -1,0 +1,82 @@
+[
+    {
+        "id": "2024-annual-report",
+        "image": "/assets/images/pdf-covers/2024.png",
+        "pdf": "/assets/pdf/HelpAge_Annual_Report_2023-24.pdf",
+        "title": "HelpAge Annual Report 2023-24",
+        "subheading": "MOBILE MEDICAL UNIT (MMU)",
+        "mini_description": "Mobile healthcare service bringing medical and eye care directly to remote villages for elderly Sri Lankans."
+    },
+    {
+        "id": "2023-annual-report",
+        "image": "/assets/images/pdf-covers/2023.png",
+        "pdf": "/assets/pdf/HelpAge_Annual_Report_2022-23.pdf",
+        "title": "HelpAge Annual Report 2022-23",
+        "subheading": "ELDER EMPOWERMENT INITIATIVE",
+        "mini_description": "Focused on creating self-help groups and training sessions to strengthen independence among older citizens."
+    },
+    {
+        "id": "2022-annual-report",
+        "image": "/assets/images/pdf-covers/2022.png",
+        "pdf": "/assets/pdf/HelpAge_Annual_Report_2021-22.pdf",
+        "title": "HelpAge Annual Report 2021-22",
+        "subheading": "AGE-FRIENDLY COMMUNITIES PROGRAM",
+        "mini_description": "Promoting inclusive urban design and accessible services for senior citizens in major Sri Lankan cities."
+    },
+    {
+        "id": "2021-annual-report",
+        "image": "/assets/images/pdf-covers/2021.png",
+        "pdf": "/assets/pdf/HelpAge_Annual_Report_2020-21.pdf",
+        "title": "HelpAge Annual Report 2020-21",
+        "subheading": "COVID-19 RESPONSE & CARE",
+        "mini_description": "Delivered essential medical aid and food packages to thousands of isolated elderly individuals during the pandemic."
+    },
+    {
+        "id": "2020-annual-report",
+        "image": "/assets/images/pdf-covers/2020.png",
+        "pdf": "/assets/pdf/HelpAge_Annual_Report_2019-20.pdf",
+        "title": "HelpAge Annual Report 2019-20",
+        "subheading": "EYE CARE EXPANSION PROJECT",
+        "mini_description": "Increased the reach of free cataract surgeries and vision screening clinics across rural communities."
+    },
+    {
+        "id": "2019-annual-report",
+        "image": "/assets/images/pdf-covers/2019.png",
+        "pdf": "/assets/pdf/HelpAge_Annual_Report_2018-19.pdf",
+        "title": "HelpAge Annual Report 2018-19",
+        "subheading": "INTERGENERATIONAL SOLIDARITY CAMPAIGN",
+        "mini_description": "Encouraged youth participation in elderly care through awareness programs and volunteer networks."
+    },
+    {
+        "id": "2018-annual-report",
+        "image": "/assets/images/pdf-covers/2018.png",
+        "pdf": "/assets/pdf/HelpAge_Annual_Report_2017-18.pdf",
+        "title": "HelpAge Annual Report 2017-18",
+        "subheading": "HEALTH AWARENESS & SCREENING DRIVE",
+        "mini_description": "Organized large-scale public health screenings for early detection of diabetes, hypertension, and vision issues."
+    },
+    {
+        "id": "2016-annual-report",
+        "image": "/assets/images/pdf-covers/2016.png",
+        "pdf": "/assets/pdf/HelpAge_Annual_Report_2015-16.pdf",
+        "title": "HelpAge Annual Report 2015-16",
+        "subheading": "HEALTHY AGEING THROUGH EDUCATION",
+        "mini_description": "Introduced workshops and community talks on nutrition, exercise, and preventive healthcare for seniors."
+    },
+    {
+        "id": "2015-annual-report",
+        "image": "/assets/images/pdf-covers/2015.png",
+        "pdf": "/assets/pdf/HelpAge_Annual Report_2014-15.pdf",
+        "title": "HelpAge Annual Report 2014-15",
+        "subheading": "SENIOR RIGHTS ADVOCACY PROGRAM",
+        "mini_description": "Worked with policymakers to protect the rights and welfare of senior citizens through new legal frameworks."
+    },
+    {
+        "id": "2014-annual-report",
+        "image": "/assets/images/pdf-covers/2014.png",
+        "pdf": "/assets/pdf/HelpAge_Annual Report_2013-14.pdf",
+        "title": "HelpAge Annual Report 2013-14",
+        "subheading": "COMMUNITY MOBILIZATION FOR ELDERLY CARE",
+        "mini_description": "Built stronger community networks to provide emotional, social, and physical support for the elderly."
+    }
+]
