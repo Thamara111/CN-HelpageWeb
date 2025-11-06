@@ -1,338 +1,240 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="HelpAge Sri Lanka is a non-profit organization dedicated to improving the quality of life for senior citizens across Sri Lanka."
-    />
-    <meta
-      name="keywords"
-      content="HelpAge, Sri Lanka, elderly care, senior citizens, donations, NGO"
-    />
-    <title>HelpAge Sri Lanka | Supporting Elderly Citizens</title>
-    <link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-    />
-  </head>
 
-  <body class="font-['Lexend']">
-    <!-- blur part -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="HelpAge Sri Lanka is a non-profit organization dedicated to improving the quality of life for senior citizens across Sri Lanka." />
+  <meta name="keywords" content="HelpAge, Sri Lanka, elderly care, senior citizens, donations, NGO" />
+  <title>HelpAge Sri Lanka | Supporting Elderly Citizens</title>
+  <link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+</head>
+
+<body class="font-['Lexend']">
+  <!-- blur part -->
+  <div
+    class="fixed bottom-0 left-1/2 transform -translate-x-1/2 w-full h-[3rem] md:h-[6rem] bg-gradient-to-t from-white via-white/60 to-transparent backdrop-blur-full rounded-t-6xl shadow-lg px-4 sm:px-6 py-2 flex justify-center items-center z-30">
+  </div>
+
+  <!-- header -->
+  <header class="fixed bottom-0 md:bottom-4 left-1/2 transform -translate-x-1/2 w-full md:w-[50%] 2xl:w-[35%] z-40">
     <div
-      class="fixed bottom-0 left-1/2 transform -translate-x-1/2 w-full h-[3rem] md:h-[6rem] bg-gradient-to-t from-white via-white/60 to-transparent backdrop-blur-full rounded-t-6xl shadow-lg px-4 sm:px-6 py-2 flex justify-center items-center z-30"
-    ></div>
+      class="flex justify-center items-center py-2 sm:py-3 px-4 sm:px-6 bg-gradient-to-r from-orange-400 to-red-600 shadow-md rounded-t-2xl md:rounded-full">
+      <nav class="w-full relative">
+        <ul
+          class="flex flex-wrap justify-center items-center gap-3 sm:gap-6 text-sm sm:text-base md:text-lg font-medium text-white text-center">
+          <!-- Projects -->
+          <li>
+            <a href="#"
+              class="relative flex flex-col justify-center items-center md:inline-block text-xs md:text-md hover:text-black transition-colors duration-200">
+              <i class="fa-solid fa-briefcase inline-block md:hidden mb-1 text-white text-lg"></i>
+              <span class="text-xs md:text-base">Projects</span>
+            </a>
+          </li>
 
-    <!-- header -->
-    <header
-      class="fixed bottom-0 md:bottom-4 left-1/2 transform -translate-x-1/2 w-full md:w-[50%] 2xl:w-[35%] z-40"
-    >
-      <div
-        class="flex justify-center items-center py-2 sm:py-3 px-4 sm:px-6 bg-gradient-to-r from-orange-400 to-red-600 shadow-md rounded-t-2xl md:rounded-full"
-      >
-        <nav class="w-full relative">
-          <ul
-            class="flex flex-wrap justify-center items-center gap-3 sm:gap-6 text-sm sm:text-base md:text-lg font-medium text-white text-center"
-          >
-            <!-- Projects -->
-            <li>
-              <a
-                href="#"
-                class="relative flex flex-col justify-center items-center md:inline-block text-xs md:text-md hover:text-black transition-colors duration-200"
-              >
-                <i
-                  class="fa-solid fa-briefcase inline-block md:hidden mb-1 text-white text-lg"
-                ></i>
-                <span class="text-xs md:text-base">Projects</span>
-              </a>
-            </li>
+          <!-- About Us -->
+          <li>
+            <a href="/about-us.html"
+              class="relative flex flex-col justify-center items-center md:inline-block text-xs md:text-md hover:text-black transition-colors duration-200">
+              <i class="fa-solid fa-info-circle inline-block md:hidden mb-1 text-white text-lg"></i>
+              <span class="text-xs md:text-base">About Us</span>
+            </a>
+          </li>
 
-            <!-- About Us -->
-            <li>
-              <a
-                href="/about-us.html"
-                class="relative flex flex-col justify-center items-center md:inline-block text-xs md:text-md hover:text-black transition-colors duration-200"
-              >
-                <i
-                  class="fa-solid fa-info-circle inline-block md:hidden mb-1 text-white text-lg"
-                ></i>
-                <span class="text-xs md:text-base">About Us</span>
-              </a>
-            </li>
+          <!-- Donate Now Button -->
+          <li>
+            <button
+              class="bg-white text-red-600 px-4 sm:px-6 py-2 sm:py-3 rounded-full hover:bg-red-700 hover:text-white transition-all duration-300 text-sm sm:text-base flex items-center justify-center gap-2 transform hover:scale-105 shadow-lg"
+              onclick="window.location.href='w-donation.html'">
+              <span class="hidden md:inline">Donate Now</span>
+              <i class="fa-solid fa-heart md:hidden animate-pulse text-red-600 text-lg"></i>
+            </button>
+          </li>
 
-            <!-- Donate Now Button -->
-            <li>
-              <button
-                class="bg-white text-red-600 px-4 sm:px-6 py-2 sm:py-3 rounded-full hover:bg-red-700 hover:text-white transition-all duration-300 text-sm sm:text-base flex items-center justify-center gap-2 transform hover:scale-105 shadow-lg"
-                onclick="window.location.href='w-donation.html'"
-              >
-                <span class="hidden md:inline">Donate Now</span>
-                <i
-                  class="fa-solid fa-heart md:hidden animate-pulse text-red-600 text-lg"
-                ></i>
-              </button>
-            </li>
+          <!-- Fundraising -->
+          <li>
+            <a href="/w-fundraise.html"
+              class="relative flex flex-col justify-center items-center md:inline-block text-xs md:text-md hover:text-black transition-colors duration-200">
+              <i class="fa-solid fa-hand-holding-heart inline-block md:hidden mb-1 text-white text-lg"></i>
+              <span class="text-xs md:text-base">Fundraising</span>
+            </a>
+          </li>
 
-            <!-- Fundraising -->
-            <li>
-              <a
-                href="/w-fundraise.html"
-                class="relative flex flex-col justify-center items-center md:inline-block text-xs md:text-md hover:text-black transition-colors duration-200"
-              >
-                <i
-                  class="fa-solid fa-hand-holding-heart inline-block md:hidden mb-1 text-white text-lg"
-                ></i>
-                <span class="text-xs md:text-base">Fundraising</span>
-              </a>
-            </li>
+          <!-- More -->
+          <li class="relative group" id="moreMenu">
+            <a id="menu"
+              class="cursor-pointer relative flex flex-col justify-center items-center md:inline-block text-xs md:text-md hover:text-black transition-colors duration-200">
+              <i class="fa-solid fa-ellipsis-h inline-block md:hidden mb-1 text-white text-lg"></i>
+              <span class="text-xs md:text-base">More</span>
+            </a>
 
-            <!-- More -->
-            <li class="relative group" id="moreMenu">
-              <a
-                id="menu"
-                class="cursor-pointer relative flex flex-col justify-center items-center md:inline-block text-xs md:text-md hover:text-black transition-colors duration-200"
-              >
-                <i
-                  class="fa-solid fa-ellipsis-h inline-block md:hidden mb-1 text-white text-lg"
-                ></i>
-                <span class="text-xs md:text-base">More</span>
-              </a>
-
-              <!-- Enhanced Desktop Menu -->
-              <div
-                id="desktopMenu"
-                class="hidden absolute bottom-16 left-1/2 transform -translate-x-1/2 bg-white text-black rounded-2xl shadow-2xl border border-gray-200 w-[42rem] h-[28rem] overflow-hidden z-50 transition-all duration-300 opacity-0 scale-95 group-hover:opacity-100 group-hover:scale-100"
-              >
-                <!-- Container for side-by-side layout -->
-                <div class="flex h-full">
-                  <!-- Left: Image Section -->
-                  <div
-                    class="w-1/2 relative bg-gradient-to-br from-red-50 to-orange-50"
-                  >
-                    <img
-                      src="./assets/images/manu.JPG"
-                      class="w-full h-full object-cover"
-                      alt="HelpAge Sri Lanka"
-                    />
-                    <div
-                      class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6"
-                    >
-                      <h3 class="text-white text-xl font-bold mb-2">
-                        HelpAge Sri Lanka
-                      </h3>
-                      <p class="text-white/90 text-sm">
-                        Supporting Elderly Citizens Nationwide
-                      </p>
-                    </div>
+            <!-- Enhanced Desktop Menu -->
+            <div id="desktopMenu"
+              class="hidden absolute bottom-16 left-1/2 transform -translate-x-1/2 bg-white text-black rounded-2xl shadow-2xl border border-gray-200 w-[42rem] h-[28rem] overflow-hidden z-50 transition-all duration-300 opacity-0 scale-95 group-hover:opacity-100 group-hover:scale-100">
+              <!-- Container for side-by-side layout -->
+              <div class="flex h-full">
+                <!-- Left: Image Section -->
+                <div class="w-1/2 relative bg-gradient-to-br from-red-50 to-orange-50">
+                  <img src="./assets/images/manu.JPG" class="w-full h-full object-cover" alt="HelpAge Sri Lanka" />
+                  <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6">
+                    <h3 class="text-white text-xl font-bold mb-2">
+                      HelpAge Sri Lanka
+                    </h3>
+                    <p class="text-white/90 text-sm">
+                      Supporting Elderly Citizens Nationwide
+                    </p>
                   </div>
+                </div>
 
-                  <!-- Right: Navigation Links -->
-                  <div class="w-1/2 bg-white flex flex-col">
-                    <!-- Navigation Content -->
-                    <div class="flex-1 flex items-center justify-center py-6">
-                      <ul class="space-y-2 w-full max-w-xs">
-                        <li>
-                          <a
-                            href="/home.html"
-                            class="flex items-center px-6 py-3 hover:bg-red-50 text-base font-medium text-gray-700 hover:text-red-600 transition-all duration-200 group rounded-lg border-l-4 border-transparent hover:border-red-500"
-                          >
-                            <i
-                              class="fa-solid fa-house mr-4 text-red-500 group-hover:scale-110 transition-transform duration-200"
-                            ></i>
-                            <span>Home</span>
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href="#"
-                            class="flex items-center px-6 py-3 hover:bg-red-50 text-base font-medium text-gray-700 hover:text-red-600 transition-all duration-200 group rounded-lg border-l-4 border-transparent hover:border-red-500"
-                          >
-                            <i
-                              class="fa-solid fa-images mr-4 text-red-500 group-hover:scale-110 transition-transform duration-200"
-                            ></i>
-                            <span>Gallery</span>
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href="#"
-                            class="flex items-center px-6 py-3 hover:bg-red-50 text-base font-medium text-gray-700 hover:text-red-600 transition-all duration-200 group rounded-lg border-l-4 border-transparent hover:border-red-500"
-                          >
-                            <i
-                              class="fa-solid fa-blog mr-4 text-red-500 group-hover:scale-110 transition-transform duration-200"
-                            ></i>
-                            <span>Blogs</span>
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href="/volunteer.html"
-                            class="flex items-center px-6 py-3 hover:bg-red-50 text-base font-medium text-gray-700 hover:text-red-600 transition-all duration-200 group rounded-lg border-l-4 border-transparent hover:border-red-500"
-                          >
-                            <i
-                              class="fa-solid fa-handshake-angle mr-4 text-red-500 group-hover:scale-110 transition-transform duration-200"
-                            ></i>
-                            <span>Volunteer</span>
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href="#"
-                            class="flex items-center px-6 py-3 hover:bg-red-50 text-base font-medium text-gray-700 hover:text-red-600 transition-all duration-200 group rounded-lg border-l-4 border-transparent hover:border-red-500"
-                          >
-                            <i
-                              class="fa-solid fa-circle-question mr-4 text-red-500 group-hover:scale-110 transition-transform duration-200"
-                            ></i>
-                            <span>FAQs</span>
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href="/contact.html"
-                            class="flex items-center px-6 py-3 hover:bg-red-50 text-base font-medium text-gray-700 hover:text-red-600 transition-all duration-200 group rounded-lg border-l-4 border-transparent hover:border-red-500"
-                          >
-                            <i
-                              class="fa-solid fa-phone mr-4 text-red-500 group-hover:scale-110 transition-transform duration-200"
-                            ></i>
-                            <span>Contact Us</span>
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
+                <!-- Right: Navigation Links -->
+                <div class="w-1/2 bg-white flex flex-col">
+                  <!-- Navigation Content -->
+                  <div class="flex-1 flex items-center justify-center py-6">
+                    <ul class="space-y-2 w-full max-w-xs">
+                      <li>
+                        <a href="/home.html"
+                          class="flex items-center px-6 py-3 hover:bg-red-50 text-base font-medium text-gray-700 hover:text-red-600 transition-all duration-200 group rounded-lg border-l-4 border-transparent hover:border-red-500">
+                          <i
+                            class="fa-solid fa-house mr-4 text-red-500 group-hover:scale-110 transition-transform duration-200"></i>
+                          <span>Home</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#"
+                          class="flex items-center px-6 py-3 hover:bg-red-50 text-base font-medium text-gray-700 hover:text-red-600 transition-all duration-200 group rounded-lg border-l-4 border-transparent hover:border-red-500">
+                          <i
+                            class="fa-solid fa-images mr-4 text-red-500 group-hover:scale-110 transition-transform duration-200"></i>
+                          <span>Gallery</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#"
+                          class="flex items-center px-6 py-3 hover:bg-red-50 text-base font-medium text-gray-700 hover:text-red-600 transition-all duration-200 group rounded-lg border-l-4 border-transparent hover:border-red-500">
+                          <i
+                            class="fa-solid fa-blog mr-4 text-red-500 group-hover:scale-110 transition-transform duration-200"></i>
+                          <span>Blogs</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="/volunteer.html"
+                          class="flex items-center px-6 py-3 hover:bg-red-50 text-base font-medium text-gray-700 hover:text-red-600 transition-all duration-200 group rounded-lg border-l-4 border-transparent hover:border-red-500">
+                          <i
+                            class="fa-solid fa-handshake-angle mr-4 text-red-500 group-hover:scale-110 transition-transform duration-200"></i>
+                          <span>Volunteer</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#"
+                          class="flex items-center px-6 py-3 hover:bg-red-50 text-base font-medium text-gray-700 hover:text-red-600 transition-all duration-200 group rounded-lg border-l-4 border-transparent hover:border-red-500">
+                          <i
+                            class="fa-solid fa-circle-question mr-4 text-red-500 group-hover:scale-110 transition-transform duration-200"></i>
+                          <span>FAQs</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="/contact.html"
+                          class="flex items-center px-6 py-3 hover:bg-red-50 text-base font-medium text-gray-700 hover:text-red-600 transition-all duration-200 group rounded-lg border-l-4 border-transparent hover:border-red-500">
+                          <i
+                            class="fa-solid fa-phone mr-4 text-red-500 group-hover:scale-110 transition-transform duration-200"></i>
+                          <span>Contact Us</span>
+                        </a>
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
+            </div>
 
-              <!-- Mobile Menu -->
-              <ul
-                id="mobileMenu"
-                class="hidden fixed bottom-20 right-4 bg-white text-black rounded-2xl shadow-2xl flex-col py-4 w-48 text-center md:hidden z-50 border border-gray-200"
-              >
-                <li>
-                  <a
-                    href="/home.html"
-                    class="flex items-center px-4 py-3 hover:bg-red-50 text-sm font-medium text-gray-700 hover:text-red-600 transition-all duration-200 group"
-                  >
-                    <i class="fa-solid fa-house mr-3 text-red-500"></i>
-                    <span>Home</span>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="flex items-center px-4 py-3 hover:bg-red-50 text-sm font-medium text-gray-700 hover:text-red-600 transition-all duration-200 group"
-                  >
-                    <i class="fa-solid fa-images mr-3 text-red-500"></i>
-                    <span>Gallery</span>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="flex items-center px-4 py-3 hover:bg-red-50 text-sm font-medium text-gray-700 hover:text-red-600 transition-all duration-200 group"
-                  >
-                    <i class="fa-solid fa-blog mr-3 text-red-500"></i>
-                    <span>Blogs</span>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="flex items-center px-4 py-3 hover:bg-red-50 text-sm font-medium text-gray-700 hover:text-red-600 transition-all duration-200 group"
-                  >
-                    <i
-                      class="fa-solid fa-handshake-angle mr-3 text-red-500"
-                    ></i>
-                    <span>Volunteer</span>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="flex items-center px-4 py-3 hover:bg-red-50 text-sm font-medium text-gray-700 hover:text-red-600 transition-all duration-200 group"
-                  >
-                    <i
-                      class="fa-solid fa-circle-question mr-3 text-red-500"
-                    ></i>
-                    <span>FAQs</span>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/contact.html"
-                    class="flex items-center px-4 py-3 hover:bg-red-50 text-sm font-medium text-gray-700 hover:text-red-600 transition-all duration-200 group"
-                  >
-                    <i class="fa-solid fa-phone mr-3 text-red-500"></i>
-                    <span>Contact Us</span>
-                  </a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+            <!-- Mobile Menu -->
+            <ul id="mobileMenu"
+              class="hidden fixed bottom-20 right-4 bg-white text-black rounded-2xl shadow-2xl flex-col py-4 w-48 text-center md:hidden z-50 border border-gray-200">
+              <li>
+                <a href="/home.html"
+                  class="flex items-center px-4 py-3 hover:bg-red-50 text-sm font-medium text-gray-700 hover:text-red-600 transition-all duration-200 group">
+                  <i class="fa-solid fa-house mr-3 text-red-500"></i>
+                  <span>Home</span>
+                </a>
+              </li>
+              <li>
+                <a href="#"
+                  class="flex items-center px-4 py-3 hover:bg-red-50 text-sm font-medium text-gray-700 hover:text-red-600 transition-all duration-200 group">
+                  <i class="fa-solid fa-images mr-3 text-red-500"></i>
+                  <span>Gallery</span>
+                </a>
+              </li>
+              <li>
+                <a href="#"
+                  class="flex items-center px-4 py-3 hover:bg-red-50 text-sm font-medium text-gray-700 hover:text-red-600 transition-all duration-200 group">
+                  <i class="fa-solid fa-blog mr-3 text-red-500"></i>
+                  <span>Blogs</span>
+                </a>
+              </li>
+              <li>
+                <a href="#"
+                  class="flex items-center px-4 py-3 hover:bg-red-50 text-sm font-medium text-gray-700 hover:text-red-600 transition-all duration-200 group">
+                  <i class="fa-solid fa-handshake-angle mr-3 text-red-500"></i>
+                  <span>Volunteer</span>
+                </a>
+              </li>
+              <li>
+                <a href="#"
+                  class="flex items-center px-4 py-3 hover:bg-red-50 text-sm font-medium text-gray-700 hover:text-red-600 transition-all duration-200 group">
+                  <i class="fa-solid fa-circle-question mr-3 text-red-500"></i>
+                  <span>FAQs</span>
+                </a>
+              </li>
+              <li>
+                <a href="/contact.html"
+                  class="flex items-center px-4 py-3 hover:bg-red-50 text-sm font-medium text-gray-700 hover:text-red-600 transition-all duration-200 group">
+                  <i class="fa-solid fa-phone mr-3 text-red-500"></i>
+                  <span>Contact Us</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <script>
-      $(document).ready(function () {
-        // MOBILE: open/close menu on click
-        $("#menu").on("click", function (e) {
-          if ($(window).width() < 768) {
-            e.preventDefault();
-            e.stopPropagation();
-            $("#mobileMenu").stop(true, true).fadeToggle(200);
+  <script>
+    $(document).ready(function () {
+      // MOBILE: open/close menu on click
+      $("#menu").on("click", function (e) {
+        if ($(window).width() < 768) {
+          e.preventDefault();
+          e.stopPropagation();
+          $("#mobileMenu").stop(true, true).fadeToggle(200);
+        }
+      });
+
+      // DESKTOP: Better hover handling
+      let hideTimeout;
+
+      $("#moreMenu").hover(
+        function () {
+          clearTimeout(hideTimeout);
+          if ($(window).width() >= 768) {
+            $("#desktopMenu").removeClass("hidden");
+            setTimeout(() => {
+              $("#desktopMenu")
+                .addClass("opacity-100 scale-100")
+                .removeClass("opacity-0 scale-95");
+            }, 10);
           }
-        });
-
-        // DESKTOP: Better hover handling
-        let hideTimeout;
-
-        $("#moreMenu").hover(
-          function () {
-            clearTimeout(hideTimeout);
-            if ($(window).width() >= 768) {
-              $("#desktopMenu").removeClass("hidden");
-              setTimeout(() => {
-                $("#desktopMenu")
-                  .addClass("opacity-100 scale-100")
-                  .removeClass("opacity-0 scale-95");
-              }, 10);
-            }
-          },
-          function () {
-            if ($(window).width() >= 768) {
-              hideTimeout = setTimeout(function () {
-                $("#desktopMenu")
-                  .removeClass("opacity-100 scale-100")
-                  .addClass("opacity-0 scale-95");
-                setTimeout(() => {
-                  $("#desktopMenu").addClass("hidden");
-                }, 300);
-              }, 300);
-            }
-          }
-        );
-
-        // Keep menu open when hovering over it
-        $("#desktopMenu").hover(
-          function () {
-            clearTimeout(hideTimeout);
-          },
-          function () {
+        },
+        function () {
+          if ($(window).width() >= 768) {
             hideTimeout = setTimeout(function () {
               $("#desktopMenu")
                 .removeClass("opacity-100 scale-100")
@@ -342,302 +244,442 @@
               }, 300);
             }, 300);
           }
-        );
+        }
+      );
 
-        // Close mobile menu when clicking outside
-        $(document).on("click", function (e) {
-          if (!$(e.target).closest("#menu, #mobileMenu").length) {
-            $("#mobileMenu").fadeOut(200);
-          }
-        });
+      // Keep menu open when hovering over it
+      $("#desktopMenu").hover(
+        function () {
+          clearTimeout(hideTimeout);
+        },
+        function () {
+          hideTimeout = setTimeout(function () {
+            $("#desktopMenu")
+              .removeClass("opacity-100 scale-100")
+              .addClass("opacity-0 scale-95");
+            setTimeout(() => {
+              $("#desktopMenu").addClass("hidden");
+            }, 300);
+          }, 300);
+        }
+      );
 
-        // Close mobile menu when clicking a link
-        $("#mobileMenu a").on("click", function () {
+      // Close mobile menu when clicking outside
+      $(document).on("click", function (e) {
+        if (!$(e.target).closest("#menu, #mobileMenu").length) {
           $("#mobileMenu").fadeOut(200);
-        });
+        }
       });
-    </script>
 
-    <section class="bg-gray-50 py-12 px-6 md:px-12 lg:px-24">
-      <div class="max-w-5xl mx-auto text-gray-800">
-        <h2 class="text-3xl md:text-4xl font-bold text-center mb-8">
-          Four Decades of Dedicated Service to Sri Lanka’s Elderly
+      // Close mobile menu when clicking a link
+      $("#mobileMenu a").on("click", function () {
+        $("#mobileMenu").fadeOut(200);
+      });
+    });
+  </script>
+
+  <section class="bg-gray-50 py-12 px-6 md:px-12 lg:px-24">
+    <div class="max-w-5xl mx-auto text-gray-800">
+
+      <div class="space-y-6 leading-relaxed text-justify">
+        <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-8">
+          Executive Director’s Message
         </h2>
-        <p class="text-center text-gray-600 mb-12 italic">
-          A Message from the Executive Director – Dr. Harsha Bandara
-        </p>
-
-        <div class="space-y-6 leading-relaxed text-justify">
-          <p>
-            It is with great pleasure that I pen this message to the HelpAge
-            Website for information of the viewers.
-          </p>
-          <p>
-            The first World Assembly on Ageing held in Vienna in 1982 involving
-            member states of the United Nations focused on addressing
-            ageing-related challenges and led to 62 recommendations for
-            research, education, health, welfare, and income security of the
-            elderly.
-          </p>
-          <p>
-            Following these principles, HelpAge International (UK) was founded
-            in 1983, and HelpAge Sri Lanka was established in 1986 to ensure
-            older persons lead dignified, active, and healthy lives. In 2010,
-            HelpAge Sri Lanka became an affiliate of HelpAge International,
-            England, and has since served the nation’s elders for nearly four
-            decades.
-          </p>
-
-          <h3 class="text-2xl font-semibold mt-10">
-            Key Services and Programmes
-          </h3>
-
-          <ul class="list-disc pl-6 space-y-4">
-            <li>
-              <strong>Eye Hospital:</strong> Located in Wellawatte, performs
-              over 400 free cataract surgeries per month, totaling 50,000 by May
-              2024.
-            </li>
-            <li>
-              <strong>Mobile Medical Unit (MMU):</strong> Provides free medical
-              and eye care across the island through two mobile buses.
-            </li>
-            <li>
-              <strong>Training Facility Centre:</strong> Offers lecture halls,
-              accommodation, and catering for workshops and training.
-            </li>
-            <li>
-              <strong>Ayurvedic Clinic:</strong> Provides free herbal medicines
-              weekly for elders.
-            </li>
-            <li>
-              <strong>Youth Education Programme (YEP):</strong> Educates
-              schoolchildren on caring for parents and elders.
-            </li>
-            <li>
-              <strong>Day Care Centre (DCC):</strong> Offers meals, activities,
-              and medical checkups for elders in Ratmalana.
-            </li>
-            <li>
-              <strong>Home Care Service:</strong> Trains and deploys home carers
-              with NVQ certification to assist senior citizens.
-            </li>
-            <li>
-              <strong>Advocacy Service:</strong> Supports the Government in
-              improving elder welfare and rights.
-            </li>
-          </ul>
-
-          <h3 class="text-2xl font-semibold mt-10">Fundraising Activities</h3>
-          <p>
-            HelpAge Sri Lanka conducts multiple projects to sustain its mission:
-          </p>
-          <ul class="list-disc pl-6 space-y-2">
-            <li>Greeting Cards Project (since 1986)</li>
-            <li>Tills Project (since 1990)</li>
-            <li>Direct Mail Campaigns (since 1991)</li>
-            <li>Special CSR Projects (since 2011)</li>
-            <li>Give the Gift of Sight initiative</li>
-          </ul>
-
-          <h3 class="text-2xl font-semibold mt-10">
-            Foreign Funded Programmes
-          </h3>
-          <p>
-            Implements donor-funded projects for livelihood support, leadership
-            training, and community development, improving the lives of senior
-            citizens nationwide.
-          </p>
-
-          <p class="mt-8 text-gray-700 font-medium">
-            HelpAge Sri Lanka is proud of its four decades of service to the
-            elderly and remains committed to continuing and expanding these
-            invaluable efforts.
-          </p>
-
-          <div class="mt-12 text-left">
-            <p class="font-bold text-lg">Dr. Harsha Bandara</p>
-            <p class="text-gray-600">Executive Director</p>
-            <p class="text-gray-600">HelpAge Sri Lanka</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <footer class="bg-red-800 text-white py-16">
-      <div class="container mx-auto px-6">
-        <!-- Top Section -->
-        <div class="text-center py-6">
-          <h4 class="text-white mb-3 text-base uppercase tracking-wide">
-            Get in Touch
-          </h4>
-          <h2 class="text-3xl md:text-5xl font-bold mb-6 leading-tight">
-            We’d Love to Hear from You
-          </h2>
-          <p class="text-gray-200 max-w-2xl mx-auto mb-8 text-sm md:text-base">
-            We’re here to listen, support, and collaborate. Whether it’s a
-            simple question or a big idea — don’t hesitate to reach out.
-          </p>
-
-          <a
-            href="w-donation.html"
-            class="inline-flex items-center bg-white text-black px-5 py-2.5 rounded-full font-medium hover:bg-black hover:text-white transition duration-300 text-sm md:text-base"
-          >
-            Contact With Us
-          </a>
-        </div>
-
-        <!-- Divider -->
-        <hr class="border-t border-gray-400 my-10" />
-
-        <!-- Bottom Grid -->
-        <div
-          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 text-sm"
-        >
-          <!-- Logo & About -->
-          <div class="text-center md:text-left">
-            <img
-              src="/assets/images/logo-sri-lanka.webp"
-              alt="HelpAge Sri Lanka Logo"
-              class="w-28 h-20 object-contain mx-auto md:mx-0 mb-4"
-            />
-            <p class="text-gray-200 leading-relaxed text-sm md:text-base">
-              At HelpAge Sri Lanka, we stand beside the forgotten and
-              underserved. Through community projects, emergency aid, and
-              long-term support, we aim to restore hope where it’s needed most.
+        <div class="flex justify-center items-center space-x-0 md:space-x-4 flex-col md:flex-row">
+          <div
+            class="space-y-6 flex flex-col justify-center items-center text-justify order-2 md:order-none  w-full md:w-1/2">
+            <h3 class="text-2xl font-semibold mt-10">Ageing Population from a
+              Sri Lankan Perspective</h3>
+            <p>
+              Recent statistics show that the ageing population in
+              Sri Lanka especially those exceeding 60 years of age is
+              currently 17.2% of the total population. The percentage
+              of older people worldwide is increasing and it is likely
+              to go up to 25% by around 2041 which is a growing
+              concern. This is primarily due to increasing life
+              expectancy along with a shift in demographic patterns,
+              improvements in living standards, advances in medical
+              care and a decline in fertility rates. For a developing
+              country such as Sri Lanka, the challenges are immense
+              and tackling the associated issues will be formidable.
             </p>
           </div>
-
-          <!-- Quick Links 1 -->
-          <div class="text-center md:text-left">
-            <h3 class="text-lg font-semibold mb-3">Quick Links</h3>
-            <ul class="space-y-2">
-              <li><a href="/home.html" class="hover:text-gray-300">Home</a></li>
-              <li>
-                <a href="/about-us.html" class="hover:text-gray-300">About</a>
-              </li>
-              <li>
-                <a href="/w-fundraise.html" class="hover:text-gray-300"
-                  >Fundraising</a
-                >
-              </li>
-              <li>
-                <a href="/w-donation.html" class="hover:text-gray-300"
-                  >Donations</a
-                >
-              </li>
-              <li>
-                <a href="/contact.html" class="hover:text-gray-300">Contact</a>
-              </li>
-            </ul>
-          </div>
-
-          <!-- Quick Links 2 -->
-          <div class="text-center md:text-left">
-            <h3 class="text-lg font-semibold mb-3">Resources</h3>
-            <ul class="space-y-2">
-              <li><a href="#" class="hover:text-gray-300">Donate</a></li>
-              <li><a href="#" class="hover:text-gray-300">Events</a></li>
-              <li><a href="#" class="hover:text-gray-300">Blog</a></li>
-              <li><a href="#" class="hover:text-gray-300">Volunteer</a></li>
-              <li><a href="#" class="hover:text-gray-300">FAQs</a></li>
-            </ul>
-          </div>
-
-          <!-- Contact -->
-          <div class="text-center md:text-left">
-            <ul class="space-y-5">
-              <!-- Address -->
-              <li
-                class="flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left"
-              >
-                <span
-                  class="flex justify-center items-center w-10 h-10 bg-red-100 rounded-lg mb-3 sm:mb-0 sm:mr-4 flex-shrink-0"
-                >
-                  <i class="fa-solid fa-location-dot text-red-600 text-lg"></i>
-                </span>
-                <p class="text-gray-200 text-sm leading-relaxed">
-                  P.O. BOX 09, 102 Pemananda Mawatha,<br />
-                  Raththanapitiya, Boralesgamuwa, Sri Lanka<br />
-                  <span class="text-xs text-gray-400"
-                    >(Adjoining Sri Jayawardenapura University Premises)</span
-                  >
-                </p>
-              </li>
-
-              <!-- Phone -->
-              <li
-                class="flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left"
-              >
-                <span
-                  class="flex justify-center items-center w-10 h-10 bg-red-100 rounded-lg mb-3 sm:mb-0 sm:mr-4 flex-shrink-0"
-                >
-                  <i class="fa-solid fa-phone text-red-600 text-lg"></i>
-                </span>
-                <div class="text-gray-200 text-sm space-y-1">
-                  <div>
-                    <a href="tel:+94112803752" class="hover:text-red-100"
-                      >+94 11 2803752</a
-                    >
-                    |
-                    <a href="tel:+94112803753" class="hover:text-red-100"
-                      >+94 11 2803753</a
-                    >
-                    |
-                    <a href="tel:+94112803754" class="hover:text-red-100"
-                      >+94 11 2803754</a
-                    >
-                  </div>
-                  <div>
-                    <a href="tel:+94117418977" class="hover:text-red-100"
-                      >+94 11 7418977</a
-                    >
-                    |
-                    <a href="tel:+94117418981" class="hover:text-red-100"
-                      >+94 11 7418981</a
-                    >
-                  </div>
-                </div>
-              </li>
-
-              <!-- Email -->
-              <li
-                class="flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left"
-              >
-                <span
-                  class="flex justify-center items-center w-10 h-10 bg-red-100 rounded-lg mb-3 sm:mb-0 sm:mr-4 flex-shrink-0"
-                >
-                  <i class="fa-solid fa-envelope text-red-600 text-lg"></i>
-                </span>
-                <a
-                  href="mailto:helpage@sltnet.lk"
-                  class="text-gray-200 hover:text-red-100 transition duration-300 text-sm flex items-center"
-                >
-                  helpage@sltnet.lk
-                </a>
-              </li>
-            </ul>
+          <div class="flex justify-center items-center order-1 md:order-none  w-full md:w-1/2 mb-4 bd:mb-0">
+            <img src="/assets/images/ed.png" alt="Chairman" class="rounded-2xl border-2 border-gray-400" />
           </div>
         </div>
+        <p>
+          The Ageing Index which refers to the population over
+          60 years as against children under 15 years shows a
+          tremendous increase. Sri Lanka’s 1981 census statistics
+          show that for every 100 children under the age of 15
+          years there were 21 persons over the age of 60 years.
+          The figure of 21 increased to 42 in 2012.
+        </p>
+        <p>
+          The World Bank and other international aid
+          organisations have emphasised the need for countries
+          to have policies supporting the elderly such as
+          retirement income support and continuous health care.
+          In Sri Lanka, there is an uneven distribution of the older
+          population with 31% residing in the Western Province,
+          13.1% in the Southern Province and 3.8% in the Central
+          Province while in other provinces the figure is around
+          5% each. One of the key factors for this has been
+          internal migration across districts. This is a significant
+          challenge which the Government of Sri Lanka should
+          address when formulating national policies on social
+          support systems for ensuring a healthy future for the
+          elderly population.
+        </p>
 
-        <!-- Bottom Text -->
-        <div
-          class="flex flex-col md:flex-row justify-between items-center mt-12 mb-12 text-center md:text-left space-y-4 md:space-y-0"
-        >
-          <p class="text-gray-200 text-sm">
-            © 2024 HelpAge Sri Lanka. All rights reserved.
-          </p>
-          <div class="text-gray-200 text-sm space-x-2">
-            <a href="/terms.html" class="hover:text-gray-50 hover:underline"
-              >Privacy Policy</a
-            >
-            <span>|</span>
-            <a href="/terms.html" class="hover:text-gray-50 hover:underline"
-              >Terms & Conditions</a
-            >
-          </div>
+        <h3 class="text-2xl font-semibold mt-10">
+          Sectoral Performance
+        </h3>
+        <h4 class="text-lg font-semibold mt-10">
+          Eye Hospital
+        </h4>
+
+        <p>HASL completed 52,000 free cataract surgeries to
+          destitute older citizens at the state-of-the-art,
+          six storey Eye Hospital located in Wellawatte,
+          (Colombo 6) as of May 2024. This milestone event was
+          commemorated in July 2024. By the end of the FY
+          2024/25, HASL completed 52,249 cataract surgeries.</p>
+
+        <h4 class="text-lg font-semibold mt-10">
+          Mobile Medical Unit – MMU Camps
+        </h4>
+
+        <p> HASL MMU camps are conducted every week
+          throughout the country following the requests
+          received from the Senior Citizens’ Committees, District
+          Secretariats etc. HASL has two buses facilitating mobile
+          medical camps. Eye and medical care are provided to
+          at least 150 older persons at each camp. HASL has now
+          provided eye and medical care to 500,000 elders
+          island-wide and distributed 250,000 bifocal spectacles
+          since the inception of the programme in 2006. HASL
+          conducted 145 Eye and Medical Camps during the year
+          ending 31 March 2025.</p>
+
+        <h4 class="text-xl font-semibold mt-10">
+          Ayurveda Clinic
+        </h4>
+        <p> The HASL Ayurveda Clinic in Boralesgamuwa provides
+          free indigenous medicine to senior citizens weekly
+          through a qualified Ayurvedic Doctor. At least 40 elders
+          benefit each week. While around 2,000 patients were
+          treated during the year, cumulatively about 32,000
+          patients received free medicine since the Clinic’s
+          establishment in 2004. </p>
+
+        <h4 class="text-xl font-semibold mt-10">
+          Youth Education Programme (YEP)
+        </h4>
+
+        <p>Under this programme, awareness programmes are
+          conducted at selected government schools, private
+          schools and international schools around the country to
+          the students to highlight the issues faced by the elderly.
+          These awareness programmes were conducted in 25
+          schools during the year under review.
+          Further, one Training of Trainers (TOT) programme was
+          conducted in Polonnaruwa for 110 school principals in
+          the Polonnaruwa education zone. The school principals
+          are required to conduct awareness programmes for
+          students in their respective schools.</p>
+
+        <h4 class="text-xl font-semibold mt-10">
+          H. P. Gooneratne HelpAge Elders Day Care
+          Centre (DCC) </h4>
+
+        <p>The HASL Day Care Centre is located in Ratmalana and
+          has been in operation since 1988 providing care and
+          free meals to needy senior citizens during the day time.
+          They are expected to engage in various recreational and
+          income generating activities to keep them occupied.
+          Around 30 to 35 senior citizens between the age of
+          55 to 80 years visit the Centre daily.</p>
+
+        <h4 class="text-xl font-semibold mt-10">
+          Home Care Service
+        </h4>
+
+        <p>HASL has been providing trained home carers to assist
+          needy elders to engage in daily living activities based on
+          the requests received from the clients. HASL provided
+          1,889 carers to serve senior citizens during the year
+          under review. </p>
+
+        <h4 class="text-xl font-semibold mt-10">
+          Projects </h4>
+
+        <p>HASL projects are handled by the Programme Division
+          through the foreign donor funded programmes. During
+          the year the following programmes were implemented:</p>
+
+
+        <ul class="list-disc pl-6 space-y-4">
+          <li>
+            Advocacy campaign for elders rights, active ageing
+            programmes, training home care volunteers through
+            Senior Citizens’ Committees (SCCs).
+          </li>
+          <li>
+            Disaster Response Project supported by HelpAge
+            International’s (HAI) Global Emergency Fund (GEF)
+            and the United Nations Fund for Population Activities
+            (UNFPA) to provide urgent needs such as food items,
+            non-food items and disability equipment to those
+            affected by floods, drought, and other disasters.
+          </li>
+          <li>
+            Capacity Building Programmes to strengthen SCCs
+            to promote active ageing through the support
+            of HelpAge Deutschland (HAD). This project will
+            continue into FY 2025/26.
+          </li>
+          <li>
+            Livelihood projects for SCCs through Sponsor a
+            Grandparent (SAG) Programme of HAI.
+          </li>
+          <li>
+            Training programmes through the Strengthening
+            Humanitarian Assessment and Participatory
+            Empowerment (SHAPE) project, India.
+          </li>
+          <li>
+            World Health Survey plus (WHS+) programme to
+            conduct an island-wide survey to obtain evidence
+            based data collection initiated by the World Health
+            Organization (WHO) in collaboration with the
+            Ministry of Health and the University of Colombo.
+          </li>
+          <li>
+            In March 2025 the JECO Foundation, Canada provided
+            funds for cataract surgeries – this programme will
+            commence in FY 2025/26.
+          </li>
+          <li>
+            The total number of Senior Citizens’ Committees
+            (SCC) registered with HASL stood at 2,013 by the
+            end March 2025 and arrangements are underway to
+            increase this number by establishing more SCCs in
+            areas that have no such committees.
+          </li>
+        </ul>
+
+        <h4 class="text-lg font-semibold mt-10">Fundraising – Community Relations
+        </h4>
+        <p>
+          Fundraising is handled by the Community Relations
+          Division which has many subdivisions viz, Greeting
+          Cards, Give the Gift of Sight, Direct Mail, Tills and
+          Special Projects. These divisions carry out various
+          projects and campaigns to raise funds for the services
+          provided by HASL to senior citizens. </p>
+
+
+        <h4 class="text-lg font-semibold mt-10">
+          Improvements and Renovations
+        </h4>
+        <p>
+          Much needed renovations and improvements were
+          carried out at the HASL Eye Hospital in Wellawatte,
+          Colombo, the Day Care Centre in Ratmalana, the head
+          office building and the new Training Facility Centre in
+          Boralesgamuwa towards the latter part of FY 2024/25.
+        </p>
+
+        <p>
+          HASL commenced renovating the existing buildings at
+          the Moratuwa property donated by Walana (Negombo)
+          Lakshmi Niwasa Buddhist Society Limited in March 2025
+          to establish another Day Care Centre for needy elders.
+        </p>
+
+        <h4 class="text-lg font-semibold mt-10">
+          Appreciation
+        </h4>
+
+        <p> I was appointed General Manager (Executive Director
+          designate) on 1 January 2025 and assumed duties as the
+          Executive Director on 1 February 2025 succeeding
+          Mr. Samantha Liyanawaduge who retired from active
+          service at the HASL. I extend my best wishes to
+          Mr. Liyanawaduge for a happy retirement.</p>
+        <p> I extend my heartfelt gratitude to HASL Chairman,
+          Deshabandu Tilak de Zoysa and all other members of
+          the Council of Management for the confidence placed in
+          me and for the valuable guidance given.</p>
+        <p> I wish to thank HelpAge International (HAI) Regional
+          Director, Mr. Eduardo Klien for all the support extended
+          to HASL at all times.</p>
+        <p> My sincere thanks to all our invaluable donors local and
+          foreign and all the donor agencies for the confidence
+          placed in HASL. If not for their generosity, HASL could
+          not have served the destitute elders successfully for the
+          past so many decades.</p>
+        <p> I also thank HASL’s bankers, company secretaries,
+          internal auditors, external auditors, printers and all
+          other stakeholders for the support extended and
+          valuable services provided.</p>
+        <p>Last but not least, HASL’s achievements are due to
+          the unstinted support and dedication of the Heads
+          of Divisions, Managers, Executives and all other staff
+          members at HASL and my thanks are due to them. As we
+          are completing four decades of great service to needy
+          elders in Sri Lanka by the end of the next financial year,
+          the commitment of all HASL staff is expected in the
+          same vein to overcome whatever challenges HASL may
+          face in serving the elders more effectively.</p>
+
+        <div class="mt-12 text-left">
+          <p class="font-bold text-lg">Dr. Harsha Bandara</p>
+          <p class="text-gray-600">Executive Director</p>
+          <p class="text-gray-600">HelpAge Sri Lanka</p>
         </div>
       </div>
-    </footer>
-  </body>
+    </div>
+  </section>
+
+  <footer class="bg-red-800 text-white py-16">
+    <div class="container mx-auto px-6">
+      <!-- Top Section -->
+      <div class="text-center py-6">
+        <h4 class="text-white mb-3 text-base uppercase tracking-wide">
+          Get in Touch
+        </h4>
+        <h2 class="text-3xl md:text-5xl font-bold mb-6 leading-tight">
+          We’d Love to Hear from You
+        </h2>
+        <p class="text-gray-200 max-w-2xl mx-auto mb-8 text-sm md:text-base">
+          We’re here to listen, support, and collaborate. Whether it’s a
+          simple question or a big idea — don’t hesitate to reach out.
+        </p>
+
+        <a href="w-donation.html"
+          class="inline-flex items-center bg-white text-black px-5 py-2.5 rounded-full font-medium hover:bg-black hover:text-white transition duration-300 text-sm md:text-base">
+          Contact With Us
+        </a>
+      </div>
+
+      <!-- Divider -->
+      <hr class="border-t border-gray-400 my-10" />
+
+      <!-- Bottom Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 text-sm">
+        <!-- Logo & About -->
+        <div class="text-center md:text-left">
+          <img src="/assets/images/logo-sri-lanka.webp" alt="HelpAge Sri Lanka Logo"
+            class="w-28 h-20 object-contain mx-auto md:mx-0 mb-4" />
+          <p class="text-gray-200 leading-relaxed text-sm md:text-base">
+            At HelpAge Sri Lanka, we stand beside the forgotten and
+            underserved. Through community projects, emergency aid, and
+            long-term support, we aim to restore hope where it’s needed most.
+          </p>
+        </div>
+
+        <!-- Quick Links 1 -->
+        <div class="text-center md:text-left">
+          <h3 class="text-lg font-semibold mb-3">Quick Links</h3>
+          <ul class="space-y-2">
+            <li><a href="/home.html" class="hover:text-gray-300">Home</a></li>
+            <li>
+              <a href="/about-us.html" class="hover:text-gray-300">About</a>
+            </li>
+            <li>
+              <a href="/w-fundraise.html" class="hover:text-gray-300">Fundraising</a>
+            </li>
+            <li>
+              <a href="/w-donation.html" class="hover:text-gray-300">Donations</a>
+            </li>
+            <li>
+              <a href="/contact.html" class="hover:text-gray-300">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Quick Links 2 -->
+        <div class="text-center md:text-left">
+          <h3 class="text-lg font-semibold mb-3">Resources</h3>
+          <ul class="space-y-2">
+            <li><a href="#" class="hover:text-gray-300">Donate</a></li>
+            <li><a href="#" class="hover:text-gray-300">Events</a></li>
+            <li><a href="#" class="hover:text-gray-300">Blog</a></li>
+            <li><a href="#" class="hover:text-gray-300">Volunteer</a></li>
+            <li><a href="#" class="hover:text-gray-300">FAQs</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div class="text-center md:text-left">
+          <ul class="space-y-5">
+            <!-- Address -->
+            <li class="flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left">
+              <span
+                class="flex justify-center items-center w-10 h-10 bg-red-100 rounded-lg mb-3 sm:mb-0 sm:mr-4 flex-shrink-0">
+                <i class="fa-solid fa-location-dot text-red-600 text-lg"></i>
+              </span>
+              <p class="text-gray-200 text-sm leading-relaxed">
+                P.O. BOX 09, 102 Pemananda Mawatha,<br />
+                Raththanapitiya, Boralesgamuwa, Sri Lanka<br />
+                <span class="text-xs text-gray-400">(Adjoining Sri Jayawardenapura University Premises)</span>
+              </p>
+            </li>
+
+            <!-- Phone -->
+            <li class="flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left">
+              <span
+                class="flex justify-center items-center w-10 h-10 bg-red-100 rounded-lg mb-3 sm:mb-0 sm:mr-4 flex-shrink-0">
+                <i class="fa-solid fa-phone text-red-600 text-lg"></i>
+              </span>
+              <div class="text-gray-200 text-sm space-y-1">
+                <div>
+                  <a href="tel:+94112803752" class="hover:text-red-100">+94 11 2803752</a>
+                  |
+                  <a href="tel:+94112803753" class="hover:text-red-100">+94 11 2803753</a>
+                  |
+                  <a href="tel:+94112803754" class="hover:text-red-100">+94 11 2803754</a>
+                </div>
+                <div>
+                  <a href="tel:+94117418977" class="hover:text-red-100">+94 11 7418977</a>
+                  |
+                  <a href="tel:+94117418981" class="hover:text-red-100">+94 11 7418981</a>
+                </div>
+              </div>
+            </li>
+
+            <!-- Email -->
+            <li class="flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left">
+              <span
+                class="flex justify-center items-center w-10 h-10 bg-red-100 rounded-lg mb-3 sm:mb-0 sm:mr-4 flex-shrink-0">
+                <i class="fa-solid fa-envelope text-red-600 text-lg"></i>
+              </span>
+              <a href="mailto:helpage@sltnet.lk"
+                class="text-gray-200 hover:text-red-100 transition duration-300 text-sm flex items-center">
+                helpage@sltnet.lk
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Bottom Text -->
+      <div
+        class="flex flex-col md:flex-row justify-between items-center mt-12 mb-12 text-center md:text-left space-y-4 md:space-y-0">
+        <p class="text-gray-200 text-sm">
+          © 2024 HelpAge Sri Lanka. All rights reserved.
+        </p>
+        <div class="text-gray-200 text-sm space-x-2">
+          <a href="/terms.html" class="hover:text-gray-50 hover:underline">Privacy Policy</a>
+          <span>|</span>
+          <a href="/terms.html" class="hover:text-gray-50 hover:underline">Terms & Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>
