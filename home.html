@@ -42,12 +42,127 @@
                     class="flex flex-wrap justify-center items-center gap-3 sm:gap-6 text-sm sm:text-base md:text-lg font-medium text-white text-center">
 
                     <!-- Projects -->
-                    <li>
-                        <a href="#"
-                            class="relative flex flex-col justify-center items-center md:inline-block text-xs md:text-md hover:text-black transition-colors duration-200">
-                            <i class="fa-solid fa-briefcase inline-block md:hidden mb-1 text-white text-lg"></i>
-                            <span class="text-xs md:text-base">Projects</span>
+                    <li class="relative group" id="moreMenuPrograms">
+                        <a id="menuPrograms"
+                            class="cursor-pointer relative flex flex-col justify-center items-center md:inline-block text-xs md:text-md hover:text-black transition-colors duration-200">
+                            <i class="fa-solid fa-diagram-project inline-block md:hidden mb-1 text-white text-lg"></i>
+                            <span class="text-xs md:text-base">Programs</span>
                         </a>
+
+                        <!-- Desktop Dropdown -->
+                        <div id="desktopMenuPrograms"
+                            class="hidden absolute bottom-16 left-1/2 transform -translate-x-1/2 bg-white text-black rounded-2xl shadow-2xl border border-gray-200 w-[42rem] h-[28rem] overflow-hidden z-50 transition-all duration-300 opacity-0 scale-95 group-hover:opacity-100 group-hover:scale-100">
+
+                            <div class="flex h-full">
+                                <!-- Left: Image -->
+                                <div class="w-1/2 relative bg-gradient-to-br from-red-50 to-orange-50">
+                                    <img src="./assets/images/manu.JPG" class="w-full h-full object-cover"
+                                        alt="HelpAge Sri Lanka" />
+                                    <div
+                                        class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6">
+                                        <h3 class="text-white text-xl font-bold mb-2">HelpAge Sri Lanka</h3>
+                                        <p class="text-white/90 text-sm">Supporting Elderly Citizens Nationwide</p>
+                                    </div>
+                                </div>
+
+                                <!-- Right: Links -->
+                                <div class="w-1/2 bg-white flex flex-col justify-center">
+                                    <ul class="space-y-2 w-full max-w-xs mx-auto">
+                                        <li>
+                                            <a href="/programs/health.html"
+                                                class="flex items-center w-full justify-start px-6 py-3 hover:bg-red-50 rounded-lg text-base font-medium text-gray-700 hover:text-red-600 transition-all duration-200 group border-l-4 border-transparent hover:border-red-500 text-left">
+                                                <i
+                                                    class="fa-solid fa-heart-pulse mr-4 text-red-500 group-hover:scale-110 transition-transform duration-200"></i>
+                                                <span>Health & Medical</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/programs/community.html"
+                                                class="flex items-center px-6 py-3 hover:bg-red-50 rounded-lg text-base font-medium text-gray-700 hover:text-red-600 transition-all duration-200 group border-l-4 border-transparent hover:border-red-500 text-left">
+                                                <i
+                                                    class="fa-solid fa-people-roof mr-4 text-red-500 group-hover:scale-110 transition-transform duration-200"></i>
+                                                <span>Community & Elder Care</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/programs/emergency.html"
+                                                class="flex items-center px-6 py-3 hover:bg-red-50 rounded-lg text-base font-medium text-gray-700 hover:text-red-600 transition-all duration-200 group border-l-4 border-transparent hover:border-red-500 text-left">
+                                                <i
+                                                    class="fa-solid fa-handshake-angle mr-4 text-red-500 group-hover:scale-110 transition-transform duration-200"></i>
+                                                <span>Emergency & Humanitarian</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/programs/education.html"
+                                                class="flex items-center px-6 py-3 hover:bg-red-50 rounded-lg text-base font-medium text-gray-700 hover:text-red-600 transition-all duration-200 group border-l-4 border-transparent hover:border-red-500 text-left">
+                                                <i
+                                                    class="fa-solid fa-graduation-cap mr-4 text-red-500 group-hover:scale-110 transition-transform duration-200"></i>
+                                                <span>Education & Awareness</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/programs/fundraising.html"
+                                                class="flex items-center px-6 py-3 hover:bg-red-50 rounded-lg text-base font-medium text-gray-700 hover:text-red-600 transition-all duration-200 group border-l-4 border-transparent hover:border-red-500 text-left">
+                                                <i
+                                                    class="fa-solid fa-hand-holding-heart mr-4 text-red-500 group-hover:scale-110 transition-transform duration-200"></i>
+                                                <span>Fundraising & Community Relations</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/programs/internal.html"
+                                                class="flex items-center px-6 py-3 hover:bg-red-50 rounded-lg text-base font-medium text-gray-700 hover:text-red-600 transition-all duration-200 group border-l-4 border-transparent hover:border-red-500 text-left">
+                                                <i
+                                                    class="fa-solid fa-people-carry-box mr-4 text-red-500 group-hover:scale-110 transition-transform duration-200"></i>
+                                                <span>Human Resources & Internal Events</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Mobile Dropdown -->
+                        <ul id="mobileMenuPrograms"
+                            class="hidden fixed bottom-20 left-0 bg-white text-black rounded-2xl shadow-2xl flex-col py-4 w-56 text-center md:hidden z-50 border border-gray-200">
+                            <li>
+                                <a href="/programs/health.html"
+                                    class="flex items-center px-4 py-3 hover:bg-red-50 text-sm font-medium text-gray-700 hover:text-red-600 text-left">
+                                    <i class="fa-solid fa-heart-pulse mr-3 text-red-500"></i> Health & Medical
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/programs/community.html"
+                                    class="flex items-center px-4 py-3 hover:bg-red-50 text-sm font-medium text-gray-700 hover:text-red-600 text-left">
+                                    <i class="fa-solid fa-people-roof mr-3 text-red-500"></i> Community & Elder Care
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/programs/emergency.html"
+                                    class="flex items-center px-4 py-3 hover:bg-red-50 text-sm font-medium text-gray-700 hover:text-red-600 text-left">
+                                    <i class="fa-solid fa-handshake-angle mr-3 text-red-500"></i> Emergency &
+                                    Humanitarian
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/programs/education.html"
+                                    class="flex items-center px-4 py-3 hover:bg-red-50 text-sm font-medium text-gray-700 hover:text-red-600 text-left">
+                                    <i class="fa-solid fa-graduation-cap mr-3 text-red-500"></i> Education & Awareness
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/programs/fundraising.html"
+                                    class="flex items-center px-4 py-3 hover:bg-red-50 text-sm font-medium text-gray-700 hover:text-red-600 text-left">
+                                    <i class="fa-solid fa-hand-holding-heart mr-3 text-red-500"></i> Fundraising &
+                                    Community
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/programs/internal.html"
+                                    class="flex items-center px-4 py-3 hover:bg-red-50 text-sm font-medium text-gray-700 hover:text-red-600 text-left">
+                                    <i class="fa-solid fa-people-carry-box mr-3 text-red-500"></i> HR & Internal Events
+                                </a>
+                            </li>
+                        </ul>
                     </li>
 
                     <!-- About Us -->
@@ -80,8 +195,8 @@
                     </li>
 
                     <!-- More -->
-                    <li class="relative group" id="moreMenu">
-                        <a id="menu"
+                    <li class="relative group" id="moreMenuMore">
+                        <a id="menuMore"
                             class="cursor-pointer relative flex flex-col justify-center items-center md:inline-block text-xs md:text-md hover:text-black transition-colors duration-200">
                             <i class="fa-solid fa-ellipsis-h inline-block md:hidden mb-1 text-white text-lg"></i>
                             <span class="text-xs md:text-base">More</span>
@@ -150,7 +265,7 @@
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="#"
+                                                <a href="/faq.html"
                                                     class="flex items-center px-6 py-3 hover:bg-red-50 text-base font-medium text-gray-700 hover:text-red-600 transition-all duration-200 group rounded-lg border-l-4 border-transparent hover:border-red-500">
                                                     <i
                                                         class="fa-solid fa-circle-question mr-4 text-red-500 group-hover:scale-110 transition-transform duration-200"></i>
@@ -210,7 +325,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="#"
+                                <a href="/faq.html"
                                     class="flex items-center px-4 py-3 hover:bg-red-50 text-sm font-medium text-gray-700 hover:text-red-600 transition-all duration-200 group">
                                     <i class="fa-solid fa-circle-question mr-3 text-red-500"></i>
                                     <span>FAQs</span>
@@ -232,8 +347,17 @@
 
     <script>
         $(document).ready(function () {
-            // MOBILE: open/close menu on click
-            $('#menu').on('click', function (e) {
+            // MOBILE: toggle Programs menu
+            $('#menuPrograms').on('click', function (e) {
+                if ($(window).width() < 768) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    $('#mobileMenuPrograms').stop(true, true).fadeToggle(200);
+                }
+            });
+
+            // MOBILE: toggle More menu
+            $('#menuMore').on('click', function (e) {
                 if ($(window).width() < 768) {
                     e.preventDefault();
                     e.stopPropagation();
@@ -241,59 +365,74 @@
                 }
             });
 
-            // DESKTOP: Better hover handling
-            let hideTimeout;
-
-            $('#moreMenu').hover(
-                function () {
-                    clearTimeout(hideTimeout);
-                    if ($(window).width() >= 768) {
-                        $('#desktopMenu').removeClass('hidden');
-                        setTimeout(() => {
-                            $('#desktopMenu').addClass('opacity-100 scale-100').removeClass('opacity-0 scale-95');
-                        }, 10);
-                    }
-                },
-                function () {
-                    if ($(window).width() >= 768) {
-                        hideTimeout = setTimeout(function () {
-                            $('#desktopMenu').removeClass('opacity-100 scale-100').addClass('opacity-0 scale-95');
+            // DESKTOP hover logic for both dropdowns
+            function setupHover(menuId, dropdownId) {
+                let hideTimeout;
+                $(menuId).hover(
+                    function () {
+                        clearTimeout(hideTimeout);
+                        if ($(window).width() >= 768) {
+                            $(dropdownId).removeClass('hidden');
                             setTimeout(() => {
-                                $('#desktopMenu').addClass('hidden');
+                                $(dropdownId)
+                                    .addClass('opacity-100 scale-100')
+                                    .removeClass('opacity-0 scale-95');
+                            }, 10);
+                        }
+                    },
+                    function () {
+                        if ($(window).width() >= 768) {
+                            hideTimeout = setTimeout(function () {
+                                $(dropdownId)
+                                    .removeClass('opacity-100 scale-100')
+                                    .addClass('opacity-0 scale-95');
+                                setTimeout(() => {
+                                    $(dropdownId).addClass('hidden');
+                                }, 300);
+                            }, 300);
+                        }
+                    }
+                );
+
+                // Keep dropdown open when hovering inside
+                $(dropdownId).hover(
+                    function () {
+                        clearTimeout(hideTimeout);
+                    },
+                    function () {
+                        hideTimeout = setTimeout(function () {
+                            $(dropdownId)
+                                .removeClass('opacity-100 scale-100')
+                                .addClass('opacity-0 scale-95');
+                            setTimeout(() => {
+                                $(dropdownId).addClass('hidden');
                             }, 300);
                         }, 300);
                     }
-                }
-            );
+                );
+            }
 
-            // Keep menu open when hovering over it
-            $('#desktopMenu').hover(
-                function () {
-                    clearTimeout(hideTimeout);
-                },
-                function () {
-                    hideTimeout = setTimeout(function () {
-                        $('#desktopMenu').removeClass('opacity-100 scale-100').addClass('opacity-0 scale-95');
-                        setTimeout(() => {
-                            $('#desktopMenu').addClass('hidden');
-                        }, 300);
-                    }, 300);
-                }
-            );
+            // Initialize hover for both menus
+            setupHover('#moreMenuPrograms', '#desktopMenuPrograms');
+            setupHover('#moreMenuMore', '#desktopMenu');
 
-            // Close mobile menu when clicking outside
+            // Close menus when clicking outside
             $(document).on('click', function (e) {
-                if (!$(e.target).closest('#menu, #mobileMenu').length) {
+                if (!$(e.target).closest('#menuPrograms, #mobileMenuPrograms').length) {
+                    $('#mobileMenuPrograms').fadeOut(200);
+                }
+                if (!$(e.target).closest('#menuMore, #mobileMenu').length) {
                     $('#mobileMenu').fadeOut(200);
                 }
             });
 
-            // Close mobile menu when clicking a link
-            $('#mobileMenu a').on('click', function () {
-                $('#mobileMenu').fadeOut(200);
+            // Close mobile menus when link is clicked
+            $('#mobileMenuPrograms a, #mobileMenu a').on('click', function () {
+                $('#mobileMenuPrograms, #mobileMenu').fadeOut(200);
             });
         });
     </script>
+
 
     <!-- hero -->
     <section class="relative min-h-screen">
