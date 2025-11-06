@@ -1,0 +1,533 @@
+{
+  "HelpAge_SriLanka_Events_And_Programs_2024_25": [
+    {
+      "category": "Health & Medical",
+      "programs": [
+        {
+          "id": "free-cataract-surgery-2024-25",
+          "name": "Free Cataract Surgery Project",
+          "donor": "JECO Foundation (coordinated via Amico Corporation)",
+          "budget": {
+            "amount": "USD 25,000",
+            "currency": "USD"
+          },
+          "beneficiaries": "Approx. 500 individuals per month (250 surgeries at HASL Eye Hospital, 250 in government hospitals)",
+          "locations": [
+            "HASL Eye Hospital (Wellawatte, Colombo 6)",
+            "Selected government hospitals island-wide"
+          ],
+          "mini_date": "March 2025",
+          "date": "March 2025 (project start / sponsorship period reported in FY 2024/25)",
+          "mini_description": "Donor-funded programme to provide free cataract surgery + lens implantation for low-income elders, restoring sight and independence.",
+          "description": "The Free Cataract Surgery Project was sponsored by the Jeco Foundation (coordinated through Amico Corporation). Reported in FY 2024/25, the project is described as providing around 500 free cataract surgeries per month — roughly 250 at the HelpAge Eye Hospital and 250 at partner government hospitals. The sponsorship supports surgical costs and lenses for low-income elders, contributing to the Eye Hospital’s ongoing mission to eliminate cataract-related blindness among disadvantaged senior citizens. The project and related donor visits and coordination are discussed in the Eye Hospital section of the Annual Report. (pages: 19, 23, 24, 25)",
+          "page_numbers": [
+            19,
+            23,
+            24,
+            25
+          ]
+        },
+        {
+          "id": "help-age-eye-hospital-50000-surgeries",
+          "name": "HelpAge Eye Hospital – 50,000+ Surgeries (Milestone)",
+          "donor": "Multiple donors; hospital fundraising and in-kind support acknowledged (see donor lists)",
+          "budget": {
+            "amount": "Cash & In-kind donations totalling Rs. 1,939,793 (reported for Eye Hospital FY 2024/25)",
+            "currency": "LKR"
+          },
+          "beneficiaries": "52,249 total cataract surgeries completed since inception (reported by end of FY 2024/25)",
+          "locations": [
+            "HelpAge Eye Hospital, Sinsapa Road, Wellawatte, Colombo 6"
+          ],
+          "mini_date": "July 2024",
+          "date": "July 2024 (milestone celebration); cumulative surgeries reported through March 2025",
+          "mini_description": "Commemorative milestone and hospital operations summary highlighting 52,249 free cataract surgeries to date and hospital capacity.",
+          "description": "The HelpAge Eye Hospital (established as a full hospital in 2009) celebrated reaching the 50,000+ free cataract surgeries milestone during the year under review (milestone event July 2024). By the end of FY 2024/25 the report records 52,249 cataract surgeries performed since inception. The hospital operates free surgery slots Monday–Thursday (up to 20 free cataract surgeries per day reported) and a clinic day on Friday. The Annual Report notes purchase of a new phacoemulsification machine (2 Aug 2024) and a visiting consultant ophthalmologist (Prof. Harminder Singh Dua, 3 Feb 2025). Total cash + in-kind donations to the Eye Hospital for FY 2024/25 are reported as Rs. 1,939,793. The milestone event included dignitaries (Minister of Health and HASL leadership) and extensive media coverage. (pages: 25, 26, 60)",
+          "page_numbers": [
+            25,
+            26,
+            60
+          ]
+        },
+        {
+          "id": "mobile-medical-unit-camps",
+          "name": "Mobile Medical Unit (MMU) Camps",
+          "donor": "HelpAge Sri Lanka (HASL) with corporate sponsors (e.g., Supreme Global Holdings, others)",
+          "budget": {
+            "amount": "Funded through HASL operations with donor-sponsored camps (various in-kind and cash support reported)",
+            "currency": "Multiple (LKR & donor support)"
+          },
+          "beneficiaries": "145 camps in FY 2024/25; weekly camps screening ~150–300 elders; cumulative programme has reached ~500,000 elders since inception",
+          "locations": [
+            "Colombo",
+            "Galle",
+            "Kalutara",
+            "Kegalle",
+            "Anuradhapura",
+            "Trincomalee",
+            "Jaffna",
+            "Matara",
+            "Ampara",
+            "Hambantota",
+            "Kurunegala",
+            "Kandy",
+            "and other districts on request"
+          ],
+          "mini_date": "Ongoing",
+          "date": "Ongoing (145 camps conducted during year ending 31 March 2025); double camps held most Saturdays across year",
+          "mini_description": "Two mobile medical/eye buses deliver free weekly medical and eye camps island-wide (screenings, spectacles, referral for surgery).",
+          "description": "HASL operates two Mobile Medical Unit buses that run weekly across the country following requests from Senior Citizens’ Committees and local authorities. In FY 2024/25 HASL conducted 145 eye and medical camps. Typical attendance is 150–300 elders per camp; the Annual Report lists outputs such as 11,449 medical screenings, 15,820 eye screenings, distribution of 12,178 spectacles and identification of 3,604 cataracts during the review period (figures aggregated across MMU and project-sponsored camps). Supreme Global Holdings is noted as a major sponsor (sponsoring 50 MMU camps). The MMU programme is a major frontline service, linking screening to the Eye Hospital and referral networks. (pages: 5, 12, 20, 21)",
+          "page_numbers": [
+            5,
+            12,
+            20,
+            21
+          ]
+        },
+        {
+          "id": "ayurveda-clinic-boralesgamuwa",
+          "name": "Ayurveda Clinic (Boralesgamuwa)",
+          "donor": "HASL operational support and donor contributions (Community Relations initiatives)",
+          "budget": {
+            "amount": "Supported under HASL programme budgets and community fundraising streams",
+            "currency": "LKR"
+          },
+          "beneficiaries": "Approximately 2,000 elders treated in FY 2024/25; about 32,000 cumulative since 2004",
+          "locations": [
+            "Boralesgamuwa (HASL Ayurveda Clinic)"
+          ],
+          "mini_date": "Ongoing weekly service",
+          "date": "Ongoing weekly service (Clinic operational since 2004; FY 2024/25 stats reported)",
+          "mini_description": "Weekly free indigenous medicine clinic for elders run by a qualified Ayurvedic doctor — part of HASL’s holistic health services.",
+          "description": "The HASL Ayurveda Clinic in Boralesgamuwa provides free indigenous treatment to senior citizens on a weekly basis under the supervision of a qualified Ayurvedic doctor. The Annual Report records approximately 40 elders benefiting each week, totalling around 2,000 treatments in FY 2024/25 and roughly 32,000 patients since the clinic’s establishment in 2004. The clinic forms part of the organisation's integrated care offering complementary to the Eye Hospital and MMU services. (page: 5)",
+          "page_numbers": [
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Community & Elder Care",
+      "programs": [
+        {
+          "id": "hpg-gooneratne-day-care-centre",
+          "name": "H. P. Gooneratne HelpAge Elders’ Day Care Centre (DCC)",
+          "donor": "Community donations and targeted fundraising (various donors support meal provision and activities)",
+          "budget": {
+            "amount": "Funded under HASL programme budgets and donor contributions (no single project budget line quoted)",
+            "currency": "LKR"
+          },
+          "beneficiaries": "Average 30–35 senior citizens attend daily (age range 55–80+); day-care beneficiaries recorded in FY 2024/25",
+          "locations": [
+            "Borupana Road, Ratmalana (Day Care Centre)"
+          ],
+          "mini_date": "Ongoing",
+          "date": "Operational since 1988; activities reported for FY 2024/25",
+          "mini_description": "Non-residential day-care providing meals, recreation, medical checks and income-generation activities for disadvantaged elders.",
+          "description": "The H. P. Gooneratne HelpAge Elders’ Day Care Centre (DCC) in Ratmalana offers non-residential day care for disadvantaged elders aged 55+, operating Monday–Saturday. An average of 30–35 elders attended daily during FY 2024/25. The Centre provides breakfast, lunch and afternoon tea (donor-funded), recreational activities (exercise, yoga, indoor games), religious activities, income-generation projects (envelopes, lamp wicks, carpets from rags) whose proceeds are shared among participants, and regular medical/eye clinics. The DCC also organises cultural events, pilgrimages and entertainment for members. (pages: 27, 28, 29)",
+          "page_numbers": [
+            27,
+            28,
+            29
+          ]
+        },
+        {
+          "id": "home-care-service-2024-25",
+          "name": "Home Care Service",
+          "donor": "HASL programme funding, community donations and CSR partnerships",
+          "budget": {
+            "amount": "Operates under HASL Programme & Home Care Division budgets (no single-sum donor budget listed in report)",
+            "currency": "LKR"
+          },
+          "beneficiaries": "1,889 elders served in FY 2024/25; 740 new client requests recorded; 172 carers trained (reported)",
+          "locations": [
+            "Services delivered to clients across multiple districts (based on requests)"
+          ],
+          "mini_date": "Ongoing",
+          "date": "Ongoing service; FY 2024/25 performance statistics reported",
+          "mini_description": "Trained home-carer service assisting elders with daily living tasks, supervised via monitoring visits and supported by caregiver training.",
+          "description": "HASL's Home Care Service supplied trained carers to assist needy elders with daily living activities. In FY 2024/25 the service provided assistance to 1,889 elders (with 740 new client requests). The report records 172 carers trained and 1,073 monitoring visits conducted; client satisfaction was reported at approximately 70%. The Home Care Division also organised CSR activities (e.g., Poson Poya lunch distribution to road cleaning staff across Colombo, Kotte and Maharagama areas on 21 June 2024). The service is supervised through monthly field visits and supported by donors and internal programme budgets. (pages: 32, 33, 34)",
+          "page_numbers": [
+            32,
+            33,
+            34
+          ]
+        },
+        {
+          "id": "sponsor-a-grandparent-programme-2024-25",
+          "name": "Sponsor a Grandparent (SaG) Programme",
+          "donor": "HelpAge International (HAI)",
+          "budget": {
+            "amount": "GBP 39,629",
+            "currency": "GBP"
+          },
+          "beneficiaries": "Multiple SCCs supported; 112 elders received livelihood microloans (Rs. 1,325,000 distributed); 41 MMU camps under SaG; 50 executives trained (National Senior Citizens’ Federation)",
+          "locations": [
+            "Ampara",
+            "Anuradhapura",
+            "Badulla",
+            "Colombo",
+            "Gampaha",
+            "Galle",
+            "Hambantota",
+            "Jaffna",
+            "Kalutara",
+            "Kandy",
+            "Kegalle",
+            "Kurunegala",
+            "Monaragala",
+            "Trincomalee",
+            "and other districts listed in programme reports"
+          ],
+          "mini_date": "April 2024 onwards",
+          "date": "Programme renewed 1 April 2024 for FY 2024/25 (activities through FY 2024/25 and into Jan–Nov 2024/25 reporting period)",
+          "mini_description": "HAI-funded holistic support for senior committees: capacity building, livelihood microloans, MMU camps and advocacy for elders’ rights.",
+          "description": "The Sponsor a Grandparent (SaG) Programme was renewed from 1 April 2024 for FY 2024/25 with funding from HelpAge International (budget GBP 39,629). Key activities included a 3-day residential capacity-building training for 50 National Senior Citizens’ Federation executives (26–28 Nov 2024), leadership and bookkeeping training, an International Day of Older Persons celebration in Kegalle with public awareness activities, 41 mobile medical and eye camps across multiple districts, home-care volunteer training (50 participants, Jan 2025) and livelihood support through microloans (112 beneficiaries received a total of Rs. 1,325,000 to start small income-generating activities). The project emphasized promotion of elders’ rights, community advocacy and strengthening SCC governance. (pages: 11, 12, 13)",
+          "page_numbers": [
+            11,
+            12,
+            13
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Emergency & Humanitarian",
+      "programs": [
+        {
+          "id": "flood-response-gef-hai-2024",
+          "name": "Flood Response Project – Global Emergency Fund (GEF) – HAI",
+          "donor": "HelpAge International (Global Emergency Fund)",
+          "budget": {
+            "amount": "USD 50,000 (Project 01) — multiple GEF projects reported (combined GEF funding noted in report text)",
+            "currency": "USD"
+          },
+          "beneficiaries": "Project 01: 1,167 flood-affected families (dry food & non-food packs); combined two GEF projects supported 1,967 families as referenced elsewhere in the report",
+          "locations": [
+            "Kalutara (Bulathsinhala, Palindanuwara)",
+            "Gampaha (Dompe, Ja-Ela)",
+            "Galle (Baddegama, Galle Four Gravets, Nagoda, Niyagama, Welivitiya-Divithura)",
+            "Matara (Athuraliya, Kamburupitiya, Malimbada, Thihagoda)",
+            "and other severely affected DS divisions"
+          ],
+          "mini_date": "June 2024 to September 2024",
+          "date": "June 2024 to September 2024 (GEF Project 01 distribution period); FY 2024/25 reported activities",
+          "mini_description": "HAI-Global Emergency Fund supported distribution of dry food and essential non-food items to flood-affected older-person-headed families across multiple districts.",
+          "description": "HASL implemented flood-response activities funded by HelpAge International’s Global Emergency Fund. One GEF project (Project 01) ran June–September 2024 distributing dry food packs and non-food packs (e.g., rice, dhal, hygiene items, buckets, soap, sarongs) to 1,167 families across Western, Gampaha, Southern and Matara districts (detailed distribution tables provided in the report). The report references two GEF projects with combined support reaching a larger total (1,967 families referenced in summary sections). Dry food pack contents and district-level distribution breakdowns are included in the Annual Report. These interventions targeted households headed by older persons and aimed to meet immediate needs after flooding. (pages: 13, 14)",
+          "page_numbers": [
+            13,
+            14
+          ]
+        },
+        {
+          "id": "flood-response-unfpa-hygiene-kits-2024-25",
+          "name": "Flood Response Project – UNFPA (Hygiene Kits for Older Women)",
+          "donor": "United Nations Population Fund (UNFPA)",
+          "budget": {
+            "amount": "USD 123,733.63 (USD 50,000 cited for hygiene kits in some breakdowns; the report provides project-level figures and distribution counts)",
+            "currency": "USD"
+          },
+          "beneficiaries": "1,268 hygiene kits distributed to senior women (Jaffna and Ampara distribution: 634 kits Jaffna, 634 kits Ampara)",
+          "locations": [
+            "Jaffna (Delft, Kayts, Point Pedro)",
+            "Ampara (Addalachchenai, Akkaraipattu, Pottuvil)"
+          ],
+          "mini_date": "December 2024 to March 2025",
+          "date": "December 2024 – March 2025 (distribution period reported)",
+          "mini_description": "UNFPA-funded hygiene-kit distribution supporting older women affected by floods in Jaffna and Ampara districts.",
+          "description": "Supported by UNFPA funding, HASL distributed 1,268 hygiene kits to older women affected by floods across the Northern (Jaffna) and Eastern (Ampara) provinces between December 2024 and March 2025. The report provides a detailed breakdown showing 634 kits allocated to Jaffna DS divisions (Delft, Kayts, Point Pedro) and 634 to Ampara DS divisions (Addalachchenai, Akkaraipattu, Pottuvil). The hygiene kits were part of an emergency response to restore dignity and address menstrual and hygiene needs for older women in disaster-affected areas. (pages: 15, 16)",
+          "page_numbers": [
+            15,
+            16
+          ]
+        },
+        {
+          "id": "shape-project-hai-2024",
+          "name": "Strategic Humanitarian Assessment and Participatory Empowerment (SHAPE) Project",
+          "donor": "HelpAge International (HAI)",
+          "budget": {
+            "amount": "USD 7,949",
+            "currency": "USD"
+          },
+          "beneficiaries": "HASL staff capacity building (project management, finance, M&E, safeguarding); subsequent staff training cascaded to wider HASL team",
+          "locations": [
+            "Kathmandu (international training)",
+            "Ramadia Ranmal Holiday Resort (in-country staff training)",
+            "HASL Head Office (follow-up sessions)"
+          ],
+          "mini_date": "Sep 2024",
+          "date": "International training 23–27 Sep 2024; in-country training 11–12 Nov 2024; FY 2024/25 programme activity",
+          "mini_description": "Capacity-building grant to strengthen HASL’s humanitarian response capabilities, including international training and follow-up in Sri Lanka.",
+          "description": "The SHAPE Project (HelpAge International) provided USD 7,949 to strengthen HASL’s humanitarian preparedness and response capacity. Three HASL staff attended a 5-day training in Kathmandu (23–27 Sep 2024) covering project management; upon return they delivered in-country training (11–12 Nov 2024) in finance, monitoring & evaluation and safeguarding. SHAPE aimed to institutionalise improved processes for emergency response and programme management. (page: 17)",
+          "page_numbers": [
+            16,
+            17
+          ]
+        },
+        {
+          "id": "hasop-project-helpage-deutschland-bmz-2024-25",
+          "name": "HASOP Project – HelpAge Deutschland (HAD) / BMZ (Germany)",
+          "donor": "HelpAge Deutschland (funding via BMZ / Germany)",
+          "budget": {
+            "amount": "EUR 133,333.25",
+            "currency": "EUR"
+          },
+          "beneficiaries": "Marginalised elders across Galle, Matara, Hambantota DS divisions; SCC members and local stakeholders in multiple DS divisions",
+          "locations": [
+            "Southern Province: Galle (Elpitiya, Four Gravets, Niyagama, Welivitiya Divithura), Matara (Kamburupitiya, Thihagoda, Weligama), Hambantota (Lunugamwehera, Sooriyawewa, Tissamaharama)"
+          ],
+          "mini_date": "1 December 2024 to 30 November 2025",
+          "date": "Project period: 1 December 2024 – 30 November 2025 (HASL activities reported during FY 2024/25)",
+          "mini_description": "BMZ-backed holistic SCC capacity-building and empowerment project in Southern Province (training, introductory meetings, governance and leadership support).",
+          "description": "The HASOP Project (supported by HelpAge Deutschland and BMZ) allocated EUR 133,333.25 for a holistic capacity-building approach targeting marginalised older people and Senior Citizens’ Committees (SCCs) across Southern Province districts (Galle, Matara, Hambantota). Activities included staff training on safeguards and HR, multiple introductory meetings with SCC members across DS divisions, leadership and governance training, and targeted community engagement. Participant lists and district-by-district meetings are shown in the report. The project runs from 1 Dec 2024 to 30 Nov 2025 and aims to strengthen local governance and the empowerment of elders. (pages: 17, 18, 19)",
+          "page_numbers": [
+            17,
+            18,
+            19
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Education & Awareness",
+      "programs": [
+        {
+          "id": "youth-education-programme-2024-25",
+          "name": "Youth Education Programme (YEP)",
+          "donor": "HASL Programme Division (supported by project funds and local partners)",
+          "budget": {
+            "amount": "Operates under Programme Division budget lines (no single donor amount quoted)",
+            "currency": "LKR"
+          },
+          "beneficiaries": "Students in 25 schools (direct), teachers/principals via ToT multiplier effect",
+          "locations": [
+            "Kandy",
+            "Polonnaruwa",
+            "Colombo",
+            "Negombo",
+            "Wattala",
+            "and other selected government and private schools"
+          ],
+          "mini_date": "FY 2024/25",
+          "date": "FY 2024/25 (activities reported during the review year)",
+          "mini_description": "School-based awareness sessions to teach respect for elders and ageing issues; linked ToT activities extend reach.",
+          "description": "The Youth Education Programme delivered awareness sessions in 25 selected schools across various districts to educate students about ageing, respect for elders and intergenerational understanding. The programme is supported by the Programme Division and aligns with HASL’s advocacy objectives to build empathy and long-term social support for seniors. (pages: 30, 31)",
+          "page_numbers": [
+            30,
+            31
+          ]
+        },
+        {
+          "id": "tot-polonnaruwa-2025",
+          "name": "Training of Trainers (ToT) Programme (Polonnaruwa)",
+          "donor": "Programme Division (HASL) and project funding sources",
+          "budget": {
+            "amount": "Included in Programme Division budgets (no single donor budget line quoted)",
+            "currency": "LKR"
+          },
+          "beneficiaries": "110 school principals trained (Polonnaruwa education zone); expected multiplier impact to ~10,000 schoolchildren",
+          "locations": [
+            "Polonnaruwa education zone"
+          ],
+          "mini_date": "February 2025",
+          "date": "February 2025 (ToT session reported in FY 2024/25)",
+          "mini_description": "ToT for principals to cascade elder-awareness sessions to schools — large multiplier impact planned.",
+          "description": "A Training of Trainers session in Polonnaruwa (February 2025) trained 110 school principals on ageing-related awareness so they can implement elder-respect programmes in their respective schools. The ToT was part of HASL’s Youth Education Programme strategies to scale awareness activities through existing education leadership. The report indicates the programme aims to reach approximately 10,000 students via trained principals. (pages: 30, 31)",
+          "page_numbers": [
+            30,
+            31
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Fundraising & Community Relations",
+      "programs": [
+        {
+          "id": "gift-of-sight-campaign-2024-25",
+          "name": "Gift of Sight Campaign",
+          "donor": "Community Relations / multiple donors (individuals, corporates, associations)",
+          "budget": {
+            "amount": "Budgeted sub-category: Rs. 6,000,000; actual income reported Rs. 8,281,045 (Give the Gift of Sight sub-budget results FY 2024/25)",
+            "currency": "LKR"
+          },
+          "beneficiaries": "Funds channelled primarily to support cataract surgeries and Eye Hospital services (indirect beneficiaries: cataract surgery patients)",
+          "locations": [
+            "Nationwide donor engagement; Eye Hospital beneficiaries across Colombo & referred districts"
+          ],
+          "mini_date": "FY 2024/25",
+          "date": "Campaign activities across FY 2024/25 (campaigns and events November–December 2024 highlighted)",
+          "mini_description": "Fundraising campaign within the Greeting Cards division that successfully raised above-budget income to support cataract surgeries and eye-care services.",
+          "description": "The 'Gift of Sight' campaign was implemented under the Greeting Cards/Community Relations Division as an additional revenue stream to support free cataract surgeries and Eye Hospital services. In FY 2024/25 the Give the Gift of Sight sub-budget was Rs. 6,000,000 (budgeted) and actual income recorded was Rs. 8,281,045. The campaign attracted individual, corporate and association donors (notable donors and top contributors are listed in the report) and generated strong publicity linked to World Sight Day and International Elders’ Day. (pages: 34, 35, 39)",
+          "page_numbers": [
+            34,
+            35,
+            39
+          ]
+        },
+        {
+          "id": "greeting-cards-pre-vesak-seasonal-sales-2024-25",
+          "name": "Greeting Cards / Pre-Vesak & Seasonal Sales",
+          "donor": "Community donors, temple sales, hotel & mall partnerships (various)",
+          "budget": {
+            "amount": "Greeting Cards Division budget lines shown (e.g., greeting cards budget 11,550,000; Community events sub-budget 2,450,000) — results shown as actual income lines",
+            "currency": "LKR"
+          },
+          "beneficiaries": "Fundraising proceeds support HASL programmes (Eye Hospital, Day Care Centre, community services)",
+          "locations": [
+            "Kalutara Temple",
+            "Bellanwila Temple",
+            "Cinnamon Grand (Santapaws Xmas Bazaar)",
+            "Kingsbury Hotel (Churros outlet card corner)",
+            "Crescat Mall",
+            "Laugfs Head Office",
+            "and other seasonal outlets"
+          ],
+          "mini_date": "November 2024 to December 2024",
+          "date": "Seasonal events Nov–Dec 2024; FY 2024/25 campaign year",
+          "mini_description": "Greeting-card sales and seasonal event sales that raise funds for HASL services; includes temple sales and corporate mall corners.",
+          "description": "The Greeting Cards division ran seasonal sales (Pre-Vesak, Christmas and other campaigns) and participated in bazaars and hotel/mall corners during Nov–Dec 2024 to raise funds. Examples include the Santapaws Xmas Bazaar at Cinnamon Grand (1 Dec 2024), Kingsbury Hotel card corner (12 Dec 2024 – 6 Jan 2025), Crescat Mall (16–20 Dec 2024) and Laugfs Head Office sale (29 Nov 2024). Greeting cards sales (target vs actual) and campaign performance are detailed in the report (Card target 85,000; sold 47,909). Pre-Vesak Poya card sales are specifically recorded (1,469 cards; Rs. 146,900 revenue cited elsewhere in the report). Revenue from these activities contributes to core HASL programmes including Eye Hospital services. (pages: 36, 37, 38, 41)",
+          "page_numbers": [
+            36,
+            37,
+            38,
+            41
+          ]
+        },
+        {
+          "id": "tills-project-2024-25",
+          "name": "Tills Project",
+          "donor": "HASL Community Relations / Tills Project operations with retail partnerships",
+          "budget": {
+            "amount": "Budgeted income 7,579,693 (Rs.) for FY 2024/25; actual income reported 6,705,856 (Rs.)",
+            "currency": "LKR"
+          },
+          "beneficiaries": "Revenue supports Eye Hospital cataract surgeries and HASL programmes (beneficiaries are indirect: programme beneficiaries such as surgery patients and community services)",
+          "locations": [
+            "Tills placed islandwide (notable outlets: Cargills Food City, Keells, SPAR, Sarasavi Bookshops, Rajya Osusala)",
+            "New placements reported in Western & Southern Provinces; expansion to Jaffna"
+          ],
+          "mini_date": "Ongoing",
+          "date": "Continuous programme (till placement review Sep 2024; FY 2024/25 performance reported)",
+          "mini_description": "Longstanding micro-donation tills placed in retail outlets and public spaces to collect small donations — a core HASL fundraising stream.",
+          "description": "The Tills Project (established 1990) collected micro-donations through physical tills placed in high-footfall retail outlets and public locations. During FY 2024/25 the project recorded a budgeted income of Rs. 7,579,693 and an actual income of Rs. 6,705,856. A placement audit in September 2024 found 2,033 tills in the Western Province, declining to 1,612 active tills by 31 March 2025; 51 new tills were placed in targeted outlets during the year and a QR code system for electronic cash collection was introduced to modernise collections. Top revenue outlets included Cargills, Keells and SPAR supermarket chains. (pages: 47, 48, 49)",
+          "page_numbers": [
+            47,
+            48,
+            49
+          ]
+        },
+        {
+          "id": "seasonal-corporate-sales-events-2024-25",
+          "name": "Seasonal & Corporate Sales Events (Special Projects)",
+          "donor": "Community Relations & Special Projects (collaboration with corporate partners and event hosts)",
+          "budget": {
+            "amount": "Fundraising and event-specific budgets under Special Projects and Community Relations divisions (examples of event participation recorded rather than single-line budgets)",
+            "currency": "LKR"
+          },
+          "beneficiaries": "Fundraising proceeds support HASL programmes; increased public awareness and donor acquisition",
+          "locations": [
+            "Cinnamon Grand (Santapaws Xmas Bazaar)",
+            "Kingsbury Hotel",
+            "Crescat Mall",
+            "Various corporate offices & walk-in events"
+          ],
+          "mini_date": "November 2024 to December 2024",
+          "date": "Seasonal events mainly Nov–Dec 2024 (campaigns run through FY 2024/25)",
+          "mini_description": "Participation in seasonal bazaars and hotel/mall sales to raise funds and increase visibility (e.g., Santapaws Bazaar, Kingsbury Churros corner).",
+          "description": "To sustain fundraising, HASL engaged in seasonal and corporate sales initiatives including Santapaws Xmas Bazaar (Cinnamon Grand, 1 Dec 2024), sales corners at Kingsbury Hotel (Dec 2024–Jan 2025), Crescat Mall sales (16–20 Dec 2024) and other events. These activities generated both revenue and public engagement, contributing to campaigns such as Gift of Sight and the Greeting Cards division. (pages: 37, 38, 41)",
+          "page_numbers": [
+            37,
+            38,
+            41
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Human Resources & Internal Events",
+      "events": [
+        {
+          "id": "sinhala-tamil-new-year-celebration-avurudu-ulela-2024",
+          "name": "Sinhala and Tamil New Year Celebration (Avurudu Ulela)",
+          "donor": "HASL Human Resources / staff budget (internal event)",
+          "budget": {
+            "amount": "Organised under HR event budgets (no separate donor budget line provided)",
+            "currency": "LKR"
+          },
+          "beneficiaries": "Staff and families (approx. 110 participants attended)",
+          "locations": [
+            "Aqua Pearl Hotel, Ratmalana"
+          ],
+          "mini_date": "April 2024",
+          "date": "26 April 2024",
+          "mini_description": "Annual staff & family New Year celebration organised by HR with cultural games and staff appreciation.",
+          "description": "The HR Division organised the 'Avurudu Ulela' (Sinhala & Tamil New Year celebration) on 26 April 2024 at Aqua Pearl Hotel, Ratmalana. Approximately 110 staff members and their families attended. The event included cultural games, traditional food, staff appreciation and social activities for employees and their families. (page: 42)",
+          "page_numbers": [
+            42
+          ]
+        },
+        {
+          "id": "vesak-programme-mobile-camp-2024",
+          "name": "Vesak Programme and Mobile Camp (internal outreach / screening)",
+          "donor": "Programme Division / HASL operations",
+          "budget": {
+            "amount": "Conducted under Programme Division budgets (no separate donor budget quoted)",
+            "currency": "LKR"
+          },
+          "beneficiaries": "Around 300 elders screened; 39 identified for cataract surgery (Vesak screening activity reported)",
+          "locations": [
+            "Vesak mobile-camp locations (local community outreach sites; specific DS divisions noted in screening reports)"
+          ],
+          "mini_date": "May 2024",
+          "date": "May 2024 (Vesak activity reported in FY 2024/25)",
+          "mini_description": "Health screening during Vesak outreach yielded referrals for surgery and identification of priority cases.",
+          "description": "During Vesak programme activities (May 2024), HASL conducted mobile screening camps that screened approximately 300 elders and identified 39 individuals requiring cataract surgery. The activity linked festival outreach with medical screening and referral pathways to the Eye Hospital and MMUs. (page: 28)",
+          "page_numbers": [
+            28
+          ]
+        },
+        {
+          "id": "christmas-party-salina-alwis-elders-home-2024",
+          "name": "Christmas Party – Salina Alwis Elders’ Home",
+          "donor": "HASL internal programmes & donor support for resident activities",
+          "budget": {
+            "amount": "Event supported through internal programme budgets and donated gifts (no single-sum budget line quoted)",
+            "currency": "LKR"
+          },
+          "beneficiaries": "27 residents of Salina Alwis Elders’ Home",
+          "locations": [
+            "Salina Alwis Elders’ Home (location referenced in internal events)"
+          ],
+          "mini_date": "December 2024",
+          "date": "20 December 2024",
+          "mini_description": "Christmas celebrations for elders with gifts, music and lunch — part of HASL’s resident care & seasonal activities.",
+          "description": "The Christmas Party at Salina Alwis Elders’ Home took place on 20 December 2024. The event included gift-giving, singing and a festive lunch for 27 residents. It formed part of the HR / welfare activities supporting long-term residents and demonstrating HASL’s seasonal care programming. (page: 43)",
+          "page_numbers": [
+            43
+          ]
+        },
+        {
+          "id": "founders-21st-death-anniversary-h-p-gooneratne-2024",
+          "name": "Founder’s 21st Death Anniversary – H. P. Gooneratne",
+          "donor": "HASL internal commemoration (staff & Council-led event)",
+          "budget": {
+            "amount": "Commemorative event supported by HASL (no separate budget line provided)",
+            "currency": "LKR"
+          },
+          "beneficiaries": "Staff, Council members and DCC/Day Care Centre beneficiaries attending the commemoration",
+          "locations": [
+            "HASL Head Office and Day Care Centre (DCC)"
+          ],
+          "mini_date": "December 2024",
+          "date": "9 December 2024",
+          "mini_description": "Annual commemorative event remembering the founder with almsgiving and staff participation.",
+          "description": "HASL observed the 21st death anniversary of founder H. P. Gooneratne on 9 December 2024 with almsgiving ceremonies at the HASL Head Office and Day Care Centre. The commemoration included staff, Council members and Day Care Centre participants, reflecting on the organisation’s history and the founder’s legacy. (page: 28)",
+          "page_numbers": [
+            28
+          ]
+        }
+      ]
+    }
+  ]
+}

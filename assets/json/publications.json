@@ -1,4 +1,12 @@
 [
+     {
+        "id": "2025-annual-report",
+        "image": "/assets/images/pdf-covers/2024.png",
+        "pdf": "/assets/pdf/HelpAge_Annual_Report_2023-24.pdf",
+        "title": "HelpAge Annual Report 2024-25",
+        "subheading": "MOBILE MEDICAL UNIT (MMU)",
+        "mini_description": "Mobile healthcare service bringing medical and eye care directly to remote villages for elderly Sri Lankans."
+    },
     {
         "id": "2024-annual-report",
         "image": "/assets/images/pdf-covers/2024.png",

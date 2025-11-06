@@ -1,0 +1,44 @@
+{
+    "donation_faqs": [
+        {
+            "question": "How can I make a donation?",
+            "answer": "We accept donations online via credit/debit cards, PayPal, and bank transfers. You can also donate in person or by mail."
+        },
+        {
+            "question": "Is my donation tax-deductible?",
+            "answer": "Yes, donations to our organization are tax-deductible. We will provide a receipt for your contribution."
+        },
+        {
+            "question": "Can I make a recurring donation?",
+            "answer": "Absolutely! You can set up monthly, quarterly, or yearly recurring donations through our secure donation portal."
+        },
+        {
+            "question": "Where does my donation go?",
+            "answer": "Your donation directly supports our programs and initiatives, including [specific projects], and helps us cover operational costs to serve more people."
+        },
+        {
+            "question": "Can I donate in someone’s name?",
+            "answer": "Yes, you can make a donation in honor or memory of someone, and we will send a personalized acknowledgment to the recipient if you wish."
+        },
+        {
+            "question": "Are my payment details secure?",
+            "answer": "Yes, all transactions are encrypted and processed through trusted, secure payment gateways."
+        },
+        {
+            "question": "Can I volunteer instead of donating money?",
+            "answer": "Definitely! We welcome volunteers. Please visit our “Volunteer” page to see current opportunities."
+        },
+        {
+            "question": "Can I donate goods or services instead of money?",
+            "answer": "Yes, we accept certain goods and professional services. Please contact us to see what donations are currently needed."
+        },
+        {
+            "question": "How can I track the impact of my donation?",
+            "answer": "We provide updates through newsletters, annual reports, and our website, showing how donations are used and the outcomes achieved."
+        },
+        {
+            "question": "Can I cancel or change my recurring donation?",
+            "answer": "Yes, you can manage your recurring donations anytime by logging into your account or contacting our support team."
+        }
+    ]
+}
