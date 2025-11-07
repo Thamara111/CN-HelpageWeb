@@ -28,7 +28,7 @@
                         <div class="flex h-full">
                             <!-- Left: Image -->
                             <div class="w-1/2 relative bg-gradient-to-br from-red-50 to-orange-50">
-                                <img src="./assets/images/manu.JPG" class="w-full h-full object-cover"
+                                <img src="./assets/images/help3.JPG" class="w-full h-full object-cover"
                                     alt="HelpAge Sri Lanka" />
                                 <div
                                     class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6">
