@@ -43,7 +43,7 @@
 
                     <!-- About Us -->
                     <li>
-                        <a href="/about-us.html"
+                        <a href="/about"
                             class="relative flex flex-col justify-center items-center md:inline-block text-xs md:text-md hover:text-black transition-colors duration-200">
                             <i class="fa-solid fa-info-circle inline-block md:hidden mb-1 text-white text-lg"></i>
                             <span class="text-xs md:text-base">About Us</span>
@@ -54,7 +54,7 @@
                     <li>
                         <button
                             class="bg-white text-red-600 px-4 sm:px-6 py-2 sm:py-3 rounded-full hover:bg-red-700 hover:text-white transition-all duration-300 text-sm sm:text-base flex items-center justify-center gap-2 transform hover:scale-105 shadow-lg"
-                            onclick="window.location.href='w-donation.html'">
+                            onclick="window.location.href='/w-donation'">
                             <span class="hidden md:inline">Donate Now</span>
                             <i class="fa-solid fa-heart md:hidden animate-pulse text-red-600 text-lg"></i>
                         </button>
@@ -62,7 +62,7 @@
 
                     <!-- Fundraising -->
                     <li>
-                        <a href="/w-fundraise.html"
+                        <a href="/w-fundraise"
                             class="relative flex flex-col justify-center items-center md:inline-block text-xs md:text-md hover:text-black transition-colors duration-200">
                             <i
                                 class="fa-solid fa-hand-holding-heart inline-block md:hidden mb-1 text-white text-lg"></i>
@@ -104,7 +104,7 @@
                                     <div class="flex-1 flex items-center justify-center py-6">
                                         <ul class="space-y-2 w-full max-w-xs">
                                             <li>
-                                                <a href="/home.html"
+                                                <a href="//home"
                                                     class="flex items-center px-6 py-3 hover:bg-red-50 text-base font-medium text-gray-700 hover:text-red-600 transition-all duration-200 group rounded-lg border-l-4 border-transparent hover:border-red-500">
                                                     <i
                                                         class="fa-solid fa-house mr-4 text-red-500 group-hover:scale-110 transition-transform duration-200"></i>
@@ -161,7 +161,7 @@
                         <ul id="mobileMenu"
                             class="hidden fixed bottom-20 right-4 bg-white text-black rounded-2xl shadow-2xl flex-col py-4 w-48 text-center md:hidden z-50 border border-gray-200">
                             <li>
-                                <a href="/home.html"
+                                <a href="//home"
                                     class="flex items-center px-4 py-3 hover:bg-red-50 text-sm font-medium text-gray-700 hover:text-red-600 transition-all duration-200 group">
                                     <i class="fa-solid fa-house mr-3 text-red-500"></i>
                                     <span>Home</span>
@@ -284,15 +284,16 @@
     <section class="">
         <div class="container mx-auto px-6 py-12">
             <div class="text-center mb-12">
-                <h2 class="text-4xl md:text-6xl font-bold mb-4">Community & Elder Care</h2>
+                <h2 class="text-4xl md:text-6xl font-bold mb-4">Education & Awareness</h2>
                 <p class="text-gray-500 mb-12 max-w-2xl mx-auto">
-                    Our community and elder care initiatives aim to provide essential support and services to elderly citizens
-                    across Sri Lanka. From regular health check-ups to specialized medical care, we ensure our seniors
-                    receive the attention they deserve.
+                    Our education and awareness initiatives aim to provide essential information and resources to
+                    elderly citizens
+                    across Sri Lanka. From health education to legal rights awareness, we ensure our seniors
+                    receive the knowledge they need to live with dignity.
                 </p>
             </div>
             <section class="w-full px-4 md:px-8  bg-white">
-                <div id="community-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div id="education-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                 </div>
                 <div id="loading-state" class="text-center text-gray-500 mt-8">
                     Loading...
@@ -317,7 +318,7 @@
                     simple question or a big idea — don’t hesitate to reach out.
                 </p>
 
-                <a href="w-donation.html"
+                <a href="/w-donation"
                     class="inline-flex items-center bg-white text-black px-5 py-2.5 rounded-full font-medium hover:bg-black hover:text-white transition duration-300 text-sm md:text-base">
                     Contact With Us
                 </a>
@@ -343,15 +344,15 @@
                 <div class="text-center md:text-left">
                     <h3 class="text-lg font-semibold mb-3">Quick Links</h3>
                     <ul class="space-y-2">
-                        <li><a href="/home.html" class="hover:text-gray-300">Home</a></li>
+                        <li><a href="//home" class="hover:text-gray-300">Home</a></li>
                         <li>
-                            <a href="/about-us.html" class="hover:text-gray-300">About</a>
+                            <a href="/about" class="hover:text-gray-300">About</a>
                         </li>
                         <li>
-                            <a href="/w-fundraise.html" class="hover:text-gray-300">Fundraising</a>
+                            <a href="/w-fundraise" class="hover:text-gray-300">Fundraising</a>
                         </li>
                         <li>
-                            <a href="/w-donation.html" class="hover:text-gray-300">Donations</a>
+                            <a href="/w-donation" class="hover:text-gray-300">Donations</a>
                         </li>
                         <li>
                             <a href="/contact.html" class="hover:text-gray-300">Contact</a>
@@ -442,16 +443,16 @@
 
     <script>
         $(document).ready(function () {
-            const container = $("#community-container");
+            const container = $("#education-container");
             $.getJSON('/assets/json/projects.json', function (data) {
 
-                // Filter only "Community & Elder Care" category
-                const communityData = data.HelpAge_SriLanka_Events_And_Programs_2024_25
-                    .filter(cat => cat.category === "Community & Elder Care")
+                // Filter only "Education & Awareness" category
+                const educationData = data.HelpAge_SriLanka_Events_And_Programs_2024_25
+                    .filter(cat => cat.category === "Education & Awareness")
                     .flatMap(cat => cat.programs); // flatten the programs array
 
                 // Loop through filtered programs
-                $.each(communityData, function (index, item) {
+                $.each(educationData, function (index, item) {
                     const card = `
                 <div class="bg-gray-100 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300 p-6">
                     <div class="flex flex-wrap items-center gap-4 mb-3">
@@ -468,7 +469,7 @@
 
                     <!-- Buttons -->
                     <div class="w-full mt-6 flex flex-col sm:flex-row justify-center gap-3">
-                        <a href="/programs/community-details.html?community=${item.id}"
+                        <a href="/programs/education-details.html?education=${item.id}"
                             class="w-full mt-4 inline-block bg-white border-2 border-black text-center text-black hover:bg-black hover:text-white py-2 px-4 rounded-2xl">View Details</a>
                     </div>
                 </div>`;

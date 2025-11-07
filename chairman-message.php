@@ -17,6 +17,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
 </head>
 
 <body class="font-['Lexend']">
@@ -43,7 +44,7 @@
 
           <!-- About Us -->
           <li>
-            <a href="/about-us.html"
+            <a href="/about"
               class="relative flex flex-col justify-center items-center md:inline-block text-xs md:text-md hover:text-black transition-colors duration-200">
               <i class="fa-solid fa-info-circle inline-block md:hidden mb-1 text-white text-lg"></i>
               <span class="text-xs md:text-base">About Us</span>
@@ -54,7 +55,7 @@
           <li>
             <button
               class="bg-white text-red-600 px-4 sm:px-6 py-2 sm:py-3 rounded-full hover:bg-red-700 hover:text-white transition-all duration-300 text-sm sm:text-base flex items-center justify-center gap-2 transform hover:scale-105 shadow-lg"
-              onclick="window.location.href='w-donation.html'">
+              onclick="window.location.href='/w-donation'">
               <span class="hidden md:inline">Donate Now</span>
               <i class="fa-solid fa-heart md:hidden animate-pulse text-red-600 text-lg"></i>
             </button>
@@ -62,7 +63,7 @@
 
           <!-- Fundraising -->
           <li>
-            <a href="/w-fundraise.html"
+            <a href="/w-fundraise"
               class="relative flex flex-col justify-center items-center md:inline-block text-xs md:text-md hover:text-black transition-colors duration-200">
               <i class="fa-solid fa-hand-holding-heart inline-block md:hidden mb-1 text-white text-lg"></i>
               <span class="text-xs md:text-base">Fundraising</span>
@@ -101,7 +102,7 @@
                   <div class="flex-1 flex items-center justify-center py-6">
                     <ul class="space-y-2 w-full max-w-xs">
                       <li>
-                        <a href="/home.html"
+                        <a href="//home"
                           class="flex items-center px-6 py-3 hover:bg-red-50 text-base font-medium text-gray-700 hover:text-red-600 transition-all duration-200 group rounded-lg border-l-4 border-transparent hover:border-red-500">
                           <i
                             class="fa-solid fa-house mr-4 text-red-500 group-hover:scale-110 transition-transform duration-200"></i>
@@ -158,7 +159,7 @@
             <ul id="mobileMenu"
               class="hidden fixed bottom-20 right-4 bg-white text-black rounded-2xl shadow-2xl flex-col py-4 w-48 text-center md:hidden z-50 border border-gray-200">
               <li>
-                <a href="/home.html"
+                <a href="//home"
                   class="flex items-center px-4 py-3 hover:bg-red-50 text-sm font-medium text-gray-700 hover:text-red-600 transition-all duration-200 group">
                   <i class="fa-solid fa-house mr-3 text-red-500"></i>
                   <span>Home</span>
@@ -277,25 +278,168 @@
     });
   </script>
 
-  <!-- Contact Section -->
-  <section class="">
-    <div class="container mx-auto px-6 py-12">
-      <div class="text-center mb-12">
-        <h2 class="text-4xl md:text-6xl font-bold mb-4">Donations</h2>
-        <p class="text-gray-500 mb-12 max-w-2xl mx-auto">
-          Your generosity fuels our mission to support elderly citizens across
-          Sri Lanka. Every donation, big or small, makes a significant impact
-          in improving their quality of life.
+  <section class="bg-gray-50 py-12 px-6 md:px-12 lg:px-24">
+    <div class="max-w-5xl mx-auto text-gray-800">
+      <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-8">
+        Chairman’s Message
+      </h2>
+
+      <div class="space-y-6 text-gray-700 leading-relaxed">
+        <div class="flex justify-center items-center space-x-0 md:space-x-4 flex-col md:flex-row">
+          <div class="space-y-6 flex justify-center items-center text-justify order-2 md:order-none  w-full md:w-1/2">
+            <p>
+              In <strong>1986</strong>, our invaluable and unforgettable <strong>Founder
+                Chairman, the late Mr. H. P. Gooneratne</strong> and his
+              Committee members, established <strong>HelpAge Sri Lanka</strong>
+              and began its modest journey. This was inspired by
+              <strong>Mr. John F. Pearson of HelpAge International (HAI)</strong> to
+              further develop the facilities provided in Sri Lanka
+              for its elders, not only to be cared for, but also to be
+              empowered to lead lives with <strong>dignity and respect</strong>.
+              Over the past four decades, <strong>HASL</strong> has grown to be the
+              leading <strong>“Non-Government Organization”</strong> dedicated,
+              to improving the quality of life of <strong>senior citizens</strong>,
+              irrespective of race, religion, social or economic
+              background.
+            </p>
+          </div>
+          <div class="flex justify-center items-center order-1 md:order-none  w-full md:w-1/2 mb-4 bd:mb-0">
+            <img src="/assets/images/chairman.png" alt="Chairman" class="rounded-2xl border-2 border-gray-400" />
+          </div>
+        </div>
+
+
+        <p class=" text-justify">
+          Throughout the past 40 years, <strong>HASL</strong> has made
+          significant strides. Its flagship, the <strong>HelpAge Eye
+            Hospital, Colombo 6</strong>, has performed <strong>52,249 cataract
+            surgeries</strong> on a free of charge basis and our
+          <strong>Mobile Medical Units</strong> have provided thousands of
+          medical consultations to the needy elders, who would
+          have otherwise, been neglected without the required
+          medical care. <strong>HASL’s livelihood support, elders’ rights
+            advocacy, and health awareness campaigns</strong> have
+          touched the lives of countless individuals, giving them
+          <strong>hope and dignity</strong>, where and when it is most needed.
         </p>
+        <p class=" text-justify">
+          In recent years, we have also taken bold steps, to
+          address the emerging challenges of an ageing society.
+          With Sri Lanka’s elderly population expected to reach
+          <strong>25% by 2040</strong>, <strong>HASL’s responsibility</strong>
+          is more challenging than before. The demographic shift presents,
+          both a setback as well as an opportunity, which requires
+          <strong>more inclusive policies, intergenerational solidarity</strong> and
+          a collective reimaging of how Sri Lankans and <strong>HASL</strong>,
+          value and care for its <strong>Senior Citizens</strong>.
+        </p>
+
+        <p class=" text-justify">
+          <strong>HASL</strong> is also indebted to all its <strong>Corporate and Individual
+            donors</strong> in Sri Lanka and Overseas. I deeply value and
+          appreciate the unstinted co-operation, received from
+          the <strong>Members of the Council</strong>. The efforts of each and
+          every Council member, working together as a team, has
+          so far enabled us to achieve, all our objectives and goals.
+        </p>
+
+        <p class=" text-justify">
+          I would at this stage, take a moment to convey our
+          thanks to <strong>Mr. Samantha Liyanawaduge</strong> who retired,
+          after, a productive and effective term, as the <strong>Executive Director
+            of HelpAge Sri Lanka</strong>.
+        </p>
+
+        <p class=" text-justify">
+          Having said that, I am overwhelmed and very happy
+          to welcome, <strong>Dr. Harsha Bandara</strong>, who has already,
+          proactively begun his important role, as the newly
+          appointed <strong>Executive Director of HelpAge Sri Lanka</strong>.
+        </p>
+
+        <p class=" text-justify">
+          It is with much regret, that I place on record the
+          resignation of our Council member <strong>Mr. Nimal Dias
+            Jayasinha</strong>. During his tenure of <strong>18 years</strong>, he made an extremely positive
+          contribution,
+          enhancing the growth of <strong>HASL</strong>. In addition to this, he made an unexpected
+          donation of a <strong>three-story building valued at over Rs. 50 Million</strong>.
+          This building is currently being used as a <strong>Training Centre
+            for the Home Care Division</strong>, which he himself, introduced,
+          a few years back. <strong>HelpAge Sri Lanka</strong>, will always be indebted to
+          <strong>Mr. Nimal Dias Jayasinha</strong> for his exemplary loyalty and enhancing
+          the stature of <strong>HASL</strong>.
+        </p>
+
+        <p class=" text-justify">
+          I wish to thank <strong>Dr. Vijith Kannangara</strong> the Chairman of
+          Smart Media, for providing complimentary services,
+          for designing and printing of our <strong>Annual Report</strong>. I also
+          wish to convey my appreciation, to <strong>Ceylon Secretarial
+            Services (Pvt) Limited</strong> and to our Auditors, <strong>Wijeyeratne & Company</strong>,
+          for their most trusted services, since the establishment of
+          <strong>HelpAge Sri Lanka</strong> in 1986.
+        </p>
+
+        <p class=" text-justify">
+          Whilst being very grateful to <strong>Dr. (Mrs.) Champa
+            Banagala</strong>, for overlooking our <strong>Eye Hospital</strong>, I am equally
+          indebted to <strong>Ms. Yasmin Raheem</strong> and <strong>Ms. Anosha
+            Subasinghe</strong>, for editing and compiling our <strong>Annual Report</strong>,
+          continuously, on a year on year, basis.
+        </p>
+
+        <p class=" text-justify">
+          I would also, like to extend our sincere most thanks to
+          <strong>Mr. Sanjeev Gardiner</strong> for his guidance and for hosting all
+          our <strong>Council meetings</strong> at the <strong>Galle Face Hotel</strong>.
+        </p>
+
+        <p class=" text-justify">
+          Finally, I extend my heartfelt gratitude to <strong>Mr. Maithri
+            Wickremesinghe P.C.</strong>, <strong>Mr. Nishantha Gooneratne</strong> and
+          <strong>Mr. Krishan Balendra</strong>, for their deep commitment
+          and more importantly for sharing their invaluable
+          knowledge, in the fields of, <strong>management, finance and legal matters</strong>.
+        </p class=" text-justify">
+
+        <p class=" text-justify">
+          As we commemorate the <strong>40th anniversary</strong>, we convey
+          our gratitude to <strong>HelpAge International (HAI)</strong> and <strong>Age
+            UK</strong>, for having made our celebration a reality. Together,
+          we have built more than just an Institution, but a legacy
+          of care, advocacy, and hope for a future, where ageing is
+          not feared but embraced with <strong>dignity and security</strong>.
+        </p>
+
+        <p class=" text-justify">
+          In a recent press release by <strong>Mr. Cherian Mathews
+            the CEO of HelpAge International (HAI) U.K.</strong>, who
+          was on a visit to Sri Lanka, in 2025, had stated that,
+          <strong>HelpAge Sri Lanka</strong>, is calling for the <strong>Protection of the Rights of Elders Act No. 09
+            of 2000</strong>,
+          to be updated and strengthened, alongside the development of national
+          strategies on <strong>Healthy Ageing, Social Pensions, and Social Protection</strong>.
+        </p>
+
+        <p class=" text-justify">
+          Let us continue to move forward with renewed purpose,
+          honouring our past and building a better tomorrow for
+          the <strong>Elders of Sri Lanka</strong>.
+        </p>
+
+        <div class="mt-10 text-gray-800">
+          <p class="font-semibold">Deshabandu Tilak de Zoysa</p>
+          <p>Chairman</p>
+          <p>HelpAge Sri Lanka</p>
+          <p>Global Ambassador, HelpAge International</p>
+        </div>
       </div>
-      <div id="donation-container"
-        class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-4 gap-8 mt-8">
-        <!-- Additional donation cards can be added here -->
-      </div>
+
+
     </div>
   </section>
 
-  <!-- Footer -->
   <footer class="bg-red-800 text-white py-16">
     <div class="container mx-auto px-6">
       <!-- Top Section -->
@@ -311,7 +455,7 @@
           simple question or a big idea — don’t hesitate to reach out.
         </p>
 
-        <a href="w-donation.html"
+        <a href="/w-donation"
           class="inline-flex items-center bg-white text-black px-5 py-2.5 rounded-full font-medium hover:bg-black hover:text-white transition duration-300 text-sm md:text-base">
           Contact With Us
         </a>
@@ -337,15 +481,15 @@
         <div class="text-center md:text-left">
           <h3 class="text-lg font-semibold mb-3">Quick Links</h3>
           <ul class="space-y-2">
-            <li><a href="/home.html" class="hover:text-gray-300">Home</a></li>
+            <li><a href="//home" class="hover:text-gray-300">Home</a></li>
             <li>
-              <a href="/about-us.html" class="hover:text-gray-300">About</a>
+              <a href="/about" class="hover:text-gray-300">About</a>
             </li>
             <li>
-              <a href="/w-fundraise.html" class="hover:text-gray-300">Fundraising</a>
+              <a href="/w-fundraise" class="hover:text-gray-300">Fundraising</a>
             </li>
             <li>
-              <a href="/w-donation.html" class="hover:text-gray-300">Donations</a>
+              <a href="/w-donation" class="hover:text-gray-300">Donations</a>
             </li>
             <li>
               <a href="/contact.html" class="hover:text-gray-300">Contact</a>
@@ -432,8 +576,6 @@
       </div>
     </div>
   </footer>
-
-  <script src="/assets/js/w-main.js"></script>
 </body>
 
 </html>

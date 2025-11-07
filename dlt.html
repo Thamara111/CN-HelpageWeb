@@ -1,32 +1,349 @@
-<div class="rounded-lg hover:shadow-lg transition-shadow duration-300 donation-card h-full" data-id="${item.id}">
-    <div
-        class="relative h-full rounded-lg hover:shadow-lg transition-shadow duration-300 bg-white border border-gray-200 overflow-hidden">
-        <img src="${item.image}"
-            class="w-full h-48 rounded-t-lg hover:scale-105 transition-transform duration-300 object-cover object-center"
-            alt="${item.title}">
-
-
-        <div class="p-4">
-            <div class="flex flex-col justify-start items-start space-y-2">
-                <h2 class="text-xl font-bold text-gray-800 truncate max-w-full">${item.title}</h2>
-                <p class="text-sm font-semibold text-gray-600 max-w-full">${item.minidescription}</p>
-                <h2 class="text-lg font-semibold text-green-600 whitespace-nowrap">${item.amount}</h2>
-                <a href="/donation-details.html?donation=${item.id}"
-                    class="inline-block bg-red-500 text-white px-4 py-2 rounded-lg hover:bg-red-600 transition-colors duration-300 font-medium text-sm border border-gray-300 ">
-                    Proceed to Donate
-                </a>
-            </div>
-        </div>
-    </div>
-</div>
-
-  // "additional_fundraising_activities": [
-    //     "Raffle draws",
-    //     "Car wash events",
-    //     "Charity musical shows",
-    //     "Door to door fundraising campaigns",
-    //     "Tele calling campaigns",
-    //     "Mobile cash programme with Mobitel (Pvt) Ltd",
-    //     "Sale of Christmas decorations",
-    //     "Pen Project"
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Enhanced Cursor Following Dot</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
     
+    body {
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+      color: #fff;
+      min-height: 100vh;
+      overflow-x: hidden;
+      cursor: none;
+    }
+    
+    .cursor-dot {
+      position: fixed;
+      top: 0;
+      left: 0;
+      pointer-events: none;
+      z-index: 9999;
+      will-change: transform;
+      mix-blend-mode: difference;
+    }
+    
+    .cursor-ring {
+      position: fixed;
+      top: 0;
+      left: 0;
+      pointer-events: none;
+      z-index: 9998;
+      will-change: transform;
+      mix-blend-mode: difference;
+    }
+    
+    .cursor-trail {
+      position: fixed;
+      top: 0;
+      left: 0;
+      pointer-events: none;
+      z-index: 9997;
+      will-change: transform, opacity;
+      mix-blend-mode: difference;
+    }
+    
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+    
+    .hero {
+      text-align: center;
+      padding: 4rem 2rem;
+    }
+    
+    .hero h1 {
+      font-size: 3.5rem;
+      font-weight: 800;
+      margin-bottom: 1rem;
+      background: linear-gradient(90deg, #6ee7b7, #3b82f6, #8b5cf6);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    
+    .hero p {
+      font-size: 1.25rem;
+      color: #cbd5e1;
+      max-width: 600px;
+      margin: 0 auto 2rem;
+    }
+    
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin: 4rem 0;
+    }
+    
+    .feature-card {
+      background: rgba(30, 41, 59, 0.6);
+      backdrop-filter: blur(10px);
+      border-radius: 1rem;
+      padding: 2rem;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .feature-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    }
+    
+    .feature-card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: #6ee7b7;
+    }
+    
+    .controls {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+      margin: 2rem 0;
+    }
+    
+    .btn {
+      padding: 0.75rem 1.5rem;
+      border-radius: 0.5rem;
+      font-weight: 600;
+      border: none;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      background: rgba(30, 41, 59, 0.8);
+      color: white;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    }
+    
+    .btn-primary {
+      background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+    }
+    
+    .btn-secondary {
+      background: linear-gradient(90deg, #10b981, #059669);
+    }
+    
+    .btn-danger {
+      background: linear-gradient(90deg, #ef4444, #dc2626);
+    }
+    
+    .footer {
+      text-align: center;
+      padding: 2rem;
+      margin-top: 4rem;
+      color: #94a3b8;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2.5rem;
+      }
+      
+      .features {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="hero">
+      <h1>Enhanced Cursor Following Dot</h1>
+      <p>Experience a smooth, responsive cursor with trailing effects that closely follow your movements</p>
+      
+      <div class="controls">
+        <button id="toggleTrail" class="btn btn-primary">Toggle Trail</button>
+        <button id="changeColor" class="btn btn-secondary">Change Color</button>
+        <button id="toggleCursor" class="btn btn-danger">Toggle Cursor</button>
+      </div>
+    </div>
+    
+    <div class="features">
+      <div class="feature-card">
+        <h3>Close Following</h3>
+        <p>The rounded elements follow your cursor more closely with reduced easing for a tighter, more responsive feel.</p>
+      </div>
+      
+      <div class="feature-card">
+        <h3>Trailing Effect</h3>
+        <p>Multiple trailing dots create a beautiful comet-like effect that enhances the visual experience.</p>
+      </div>
+      
+      <div class="feature-card">
+        <h3>Interactive Controls</h3>
+        <p>Customize the cursor behavior with controls to toggle effects, change colors, and show/hide the cursor.</p>
+      </div>
+    </div>
+    
+    <div class="footer">
+      <p>Move your cursor around to see the enhanced following effect</p>
+    </div>
+  </div>
+
+  <!-- Cursor elements -->
+  <div id="cursorDot" class="cursor-dot w-3 h-3 rounded-full bg-white shadow-lg"></div>
+  <div id="cursorRing" class="cursor-ring w-8 h-8 rounded-full border-2 border-white"></div>
+  
+  <!-- Trail container -->
+  <div id="trailContainer"></div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const cursorDot = document.getElementById('cursorDot');
+      const cursorRing = document.getElementById('cursorRing');
+      const trailContainer = document.getElementById('trailContainer');
+      
+      // Configuration
+      const config = {
+        dotEase: 0.15, // Reduced for closer following
+        ringEase: 0.08, // Reduced for closer following
+        trailEnabled: true,
+        trailCount: 6,
+        colors: ['#ffffff', '#6ee7b7', '#3b82f6', '#8b5cf6', '#f59e0b'],
+        currentColorIndex: 0
+      };
+      
+      let mouseX = window.innerWidth / 2;
+      let mouseY = window.innerHeight / 2;
+      let posX = mouseX;
+      let posY = mouseY;
+      let ringX = mouseX;
+      let ringY = mouseY;
+      let isCursorVisible = true;
+      let trailElements = [];
+      let trailPositions = [];
+      
+      // Initialize trail elements
+      for (let i = 0; i < config.trailCount; i++) {
+        trailPositions.push({ x: mouseX, y: mouseY });
+        const trail = document.createElement('div');
+        trail.className = 'cursor-trail w-2 h-2 rounded-full bg-white opacity-0';
+        trailContainer.appendChild(trail);
+        trailElements.push(trail);
+      }
+      
+      // Update mouse position
+      document.addEventListener('mousemove', function(e) {
+        mouseX = e.clientX;
+        mouseY = e.clientY;
+        
+        if (isCursorVisible) {
+          cursorDot.style.opacity = '1';
+          cursorRing.style.opacity = '0.7';
+        }
+      });
+      
+      // Hide cursor when leaving window
+      document.addEventListener('mouseleave', function() {
+        cursorDot.style.opacity = '0';
+        cursorRing.style.opacity = '0';
+        trailElements.forEach(trail => trail.style.opacity = '0');
+      });
+      
+      // Click animations
+      document.addEventListener('mousedown', function() {
+        cursorDot.style.transform = `translate(${mouseX}px, ${mouseY}px) scale(1.5)`;
+        cursorRing.style.transform = `translate(${mouseX}px, ${mouseY}px) scale(1.3)`;
+      });
+      
+      document.addEventListener('mouseup', function() {
+        cursorDot.style.transform = `translate(${mouseX}px, ${mouseY}px) scale(1)`;
+        cursorRing.style.transform = `translate(${mouseX}px, ${mouseY}px) scale(1)`;
+      });
+      
+      // Interactive elements hover effects
+      const interactiveElements = document.querySelectorAll('button, a, .feature-card');
+      interactiveElements.forEach(el => {
+        el.addEventListener('mouseenter', function() {
+          cursorDot.style.transform = `translate(${mouseX}px, ${mouseY}px) scale(1.8)`;
+          cursorRing.style.transform = `translate(${mouseX}px, ${mouseY}px) scale(1.5)`;
+        });
+        
+        el.addEventListener('mouseleave', function() {
+          cursorDot.style.transform = `translate(${mouseX}px, ${mouseY}px) scale(1)`;
+          cursorRing.style.transform = `translate(${mouseX}px, ${mouseY}px) scale(1)`;
+        });
+      });
+      
+      // Control buttons functionality
+      document.getElementById('toggleTrail').addEventListener('click', function() {
+        config.trailEnabled = !config.trailEnabled;
+        this.textContent = config.trailEnabled ? 'Disable Trail' : 'Enable Trail';
+      });
+      
+      document.getElementById('changeColor').addEventListener('click', function() {
+        config.currentColorIndex = (config.currentColorIndex + 1) % config.colors.length;
+        const newColor = config.colors[config.currentColorIndex];
+        cursorDot.style.backgroundColor = newColor;
+        cursorRing.style.borderColor = newColor;
+        trailElements.forEach(trail => trail.style.backgroundColor = newColor);
+      });
+      
+      document.getElementById('toggleCursor').addEventListener('click', function() {
+        isCursorVisible = !isCursorVisible;
+        const opacity = isCursorVisible ? 1 : 0;
+        cursorDot.style.opacity = opacity;
+        cursorRing.style.opacity = opacity * 0.7;
+        this.textContent = isCursorVisible ? 'Hide Cursor' : 'Show Cursor';
+      });
+      
+      // Animation loop
+      function animate() {
+        // Update dot position with minimal easing for close following
+        posX += (mouseX - posX) * config.dotEase;
+        posY += (mouseY - posY) * config.dotEase;
+        
+        // Update ring position with even less easing for closer following
+        ringX += (mouseX - ringX) * config.ringEase;
+        ringY += (mouseY - ringY) * config.ringEase;
+        
+        // Apply transforms to cursor elements
+        cursorDot.style.transform = `translate(${posX}px, ${posY}px)`;
+        cursorRing.style.transform = `translate(${ringX}px, ${ringY}px)`;
+        
+        // Update trail if enabled
+        if (config.trailEnabled) {
+          // Shift trail positions
+          for (let i = config.trailCount - 1; i > 0; i--) {
+            trailPositions[i] = { ...trailPositions[i-1] };
+          }
+          trailPositions[0] = { x: posX, y: posY };
+          
+          // Update trail elements with staggered opacity
+          trailElements.forEach((trail, i) => {
+            const pos = trailPositions[i];
+            const opacity = 0.7 - (i / config.trailCount);
+            
+            trail.style.transform = `translate(${pos.x}px, ${pos.y}px)`;
+            trail.style.opacity = `${opacity}`;
+          });
+        } else {
+          trailElements.forEach(trail => trail.style.opacity = '0');
+        }
+        
+        requestAnimationFrame(animate);
+      }
+      
+      // Start animation
+      animate();
+    });
+  </script>
+</body>
+</html>

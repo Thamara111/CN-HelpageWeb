@@ -43,7 +43,7 @@
 
           <!-- About Us -->
           <li>
-            <a href="/about-us.html"
+            <a href="/about"
               class="relative flex flex-col justify-center items-center md:inline-block text-xs md:text-md hover:text-black transition-colors duration-200">
               <i class="fa-solid fa-info-circle inline-block md:hidden mb-1 text-white text-lg"></i>
               <span class="text-xs md:text-base">About Us</span>
@@ -54,7 +54,7 @@
           <li>
             <button
               class="bg-white text-red-600 px-4 sm:px-6 py-2 sm:py-3 rounded-full hover:bg-red-700 hover:text-white transition-all duration-300 text-sm sm:text-base flex items-center justify-center gap-2 transform hover:scale-105 shadow-lg"
-              onclick="window.location.href='w-donation.html'">
+              onclick="window.location.href='/w-donation'">
               <span class="hidden md:inline">Donate Now</span>
               <i class="fa-solid fa-heart md:hidden animate-pulse text-red-600 text-lg"></i>
             </button>
@@ -62,7 +62,7 @@
 
           <!-- Fundraising -->
           <li>
-            <a href="/w-fundraise.html"
+            <a href="/w-fundraise"
               class="relative flex flex-col justify-center items-center md:inline-block text-xs md:text-md hover:text-black transition-colors duration-200">
               <i class="fa-solid fa-hand-holding-heart inline-block md:hidden mb-1 text-white text-lg"></i>
               <span class="text-xs md:text-base">Fundraising</span>
@@ -101,7 +101,7 @@
                   <div class="flex-1 flex items-center justify-center py-6">
                     <ul class="space-y-2 w-full max-w-xs">
                       <li>
-                        <a href="/home.html"
+                        <a href="//home"
                           class="flex items-center px-6 py-3 hover:bg-red-50 text-base font-medium text-gray-700 hover:text-red-600 transition-all duration-200 group rounded-lg border-l-4 border-transparent hover:border-red-500">
                           <i
                             class="fa-solid fa-house mr-4 text-red-500 group-hover:scale-110 transition-transform duration-200"></i>
@@ -158,7 +158,7 @@
             <ul id="mobileMenu"
               class="hidden fixed bottom-20 right-4 bg-white text-black rounded-2xl shadow-2xl flex-col py-4 w-48 text-center md:hidden z-50 border border-gray-200">
               <li>
-                <a href="/home.html"
+                <a href="//home"
                   class="flex items-center px-4 py-3 hover:bg-red-50 text-sm font-medium text-gray-700 hover:text-red-600 transition-all duration-200 group">
                   <i class="fa-solid fa-house mr-3 text-red-500"></i>
                   <span>Home</span>
@@ -277,62 +277,62 @@
     });
   </script>
 
-  <!-- Health Program Details Section -->
+  <!-- Education Program Details Section -->
   <div class="max-w-7xl mx-auto px-4 py-12 grid grid-cols-1 lg:grid-cols-3 gap-8">
-    
-    <!-- Main Health Program Content -->
+
+    <!-- Main Education Program Content -->
     <div class="lg:col-span-2">
-      <div id="health-container" class="bg-white shadow-lg rounded-2xl overflow-hidden"></div>
+      <div id="education-container" class="bg-white shadow-lg rounded-2xl overflow-hidden"></div>
       <div id="loading-state" class="text-center py-8 text-gray-500">Loading program details...</div>
     </div>
 
-    <!-- Other Health Programs Sidebar -->
+    <!-- Other Education Programs Sidebar -->
     <div class="space-y-6">
-      <h3 class="text-xl font-bold mb-4 text-red-600">Other Health Programs</h3>
+      <h3 class="text-xl font-bold mb-4 text-red-600">Other Education Programs</h3>
       <div id="other-programs" class="space-y-4"></div>
     </div>
   </div>
 
   <script>
-  $(document).ready(async function() {
+    $(document).ready(async function () {
       const params = new URLSearchParams(window.location.search);
-      const programId = params.get("health");
+      const programId = params.get("education");
 
       try {
-          const response = await fetch('/assets/json/projects.json');
-          const data = await response.json();
-          
-          // Find the specific health program
-          let program = null;
-          data.HelpAge_SriLanka_Events_And_Programs_2024_25.forEach(category => {
-              if (category.category === "Health & Medical" && category.programs) {
-                  const found = category.programs.find(p => p.id === programId);
-                  if (found) program = found;
-              }
-          });
+        const response = await fetch('/assets/json/projects.json');
+        const data = await response.json();
 
-          // Render main program
-          if(program) {
-              $("#health-container").html(renderProgramHTML(program));
-          } else {
-              $("#health-container").html('<p class="text-red-500 text-center">Program not found.</p>');
+        // Find the specific Education program
+        let program = null;
+        data.HelpAge_SriLanka_Events_And_Programs_2024_25.forEach(category => {
+          if (category.category === "Education & Awareness" && category.programs) {
+            const found = category.programs.find(p => p.id === programId);
+            if (found) program = found;
           }
+        });
 
-          // Get other health programs
-          const otherPrograms = [];
-          data.HelpAge_SriLanka_Events_And_Programs_2024_25.forEach(category => {
-              if (category.category === "Health & Medical" && category.programs) {
-                  category.programs.forEach(p => {
-                      if (p.id !== programId) {
-                          otherPrograms.push(p);
-                      }
-                  });
+        // Render main program
+        if (program) {
+          $("#education-container").html(renderProgramHTML(program));
+        } else {
+          $("#education-container").html('<p class="text-red-500 text-center">Program not found.</p>');
+        }
+
+        // Get other education programs
+        const otherPrograms = [];
+        data.HelpAge_SriLanka_Events_And_Programs_2024_25.forEach(category => {
+          if (category.category === "Education & Awareness" && category.programs) {
+            category.programs.forEach(p => {
+              if (p.id !== programId) {
+                otherPrograms.push(p);
               }
-          });
+            });
+          }
+        });
 
-          // Render other programs (show top 5)
-          const otherProgramsHTML = otherPrograms.slice(0, 5).map(p => `
-              <a href="?health=${p.id}" class="flex items-center bg-white shadow rounded-xl overflow-hidden hover:shadow-xl transition-shadow duration-300 p-4">
+        // Render other programs (show top 5)
+        const otherProgramsHTML = otherPrograms.slice(0, 5).map(p => `
+              <a href="?education=${p.id}" class="flex items-center bg-white shadow rounded-xl overflow-hidden hover:shadow-xl transition-shadow duration-300 p-4">
                   <div class="flex-1">
                       <h4 class="font-semibold text-gray-800 hover:text-red-600 text-sm mb-1">${p.name}</h4>
                       <p class="text-gray-500 text-xs">${p.mini_date}</p>
@@ -340,17 +340,17 @@
                   </div>
               </a>
           `).join('');
-          $("#other-programs").html(otherProgramsHTML);
+        $("#other-programs").html(otherProgramsHTML);
 
-      } catch(err) {
-          $("#health-container").html('<p class="text-red-500 text-center">Failed to load program data.</p>');
-          console.error(err);
+      } catch (err) {
+        $("#education-container").html('<p class="text-red-500 text-center">Failed to load program data.</p>');
+        console.error(err);
       } finally {
-          $('#loading-state').fadeOut(300, function() { $(this).remove(); });
+        $('#loading-state').fadeOut(300, function () { $(this).remove(); });
       }
 
       function renderProgramHTML(program) {
-          return `
+        return `
           <div class="bg-white shadow-lg rounded-2xl overflow-hidden">
               <div class="p-6">
                   <div class="flex flex-wrap items-center gap-4 mb-4">
@@ -405,7 +405,7 @@
               </div>
           </div>`;
       }
-  });
+    });
   </script>
 
   <!-- Footer -->
@@ -424,7 +424,7 @@
           simple question or a big idea — don't hesitate to reach out.
         </p>
 
-        <a href="w-donation.html"
+        <a href="/w-donation"
           class="inline-flex items-center bg-white text-black px-5 py-2.5 rounded-full font-medium hover:bg-black hover:text-white transition duration-300 text-sm md:text-base">
           Contact With Us
         </a>
@@ -450,15 +450,15 @@
         <div class="text-center md:text-left">
           <h3 class="text-lg font-semibold mb-3">Quick Links</h3>
           <ul class="space-y-2">
-            <li><a href="/home.html" class="hover:text-gray-300">Home</a></li>
+            <li><a href="//home" class="hover:text-gray-300">Home</a></li>
             <li>
-              <a href="/about-us.html" class="hover:text-gray-300">About</a>
+              <a href="/about" class="hover:text-gray-300">About</a>
             </li>
             <li>
-              <a href="/w-fundraise.html" class="hover:text-gray-300">Fundraising</a>
+              <a href="/w-fundraise" class="hover:text-gray-300">Fundraising</a>
             </li>
             <li>
-              <a href="/w-donation.html" class="hover:text-gray-300">Donations</a>
+              <a href="/w-donation" class="hover:text-gray-300">Donations</a>
             </li>
             <li>
               <a href="/contact.html" class="hover:text-gray-300">Contact</a>
