@@ -215,7 +215,7 @@
 
             latest3.forEach(item => {
                 $('#latestDonations').append(`
-            <div class="relative flex flex-col justify-center border-2 border-gray-300 rounded-2xl p-4">
+            <div class="relative flex flex-col justify-center bg-gradient-to-r from-gray-50 to-gray-200 border-2 border-gray-300 rounded-2xl ">
                     <label class="absolute top-4 right-4 flex items-center space-x-2">
                     <input 
                         type="checkbox"
@@ -225,12 +225,12 @@
                         data-id="${item.id}"
                     >
                     </label>
-                    <img src="${item.image}" alt="" class="rounded-lg w-full h-48 object-cover" data-id="${item.id}">
-                    <h3 class="font-semibold text-lg mt-4 truncate">${item.title}</h3>
-                    <p class="text-gray-700 text-sm mt-4">${item.minidescription}</p>
-                    <p class="text-green-800 text-lg mt-4">${item.amount}</p>
+                    <img src="${item.image}" alt="" class="rounded-t-lg w-full h-48 object-cover" data-id="${item.id}">
+                    <h3 class="font-semibold text-lg mt-4 truncate px-6">${item.title}</h3>
+                    <p class="text-gray-700 text-sm mt-4 px-6">${item.minidescription}</p>
+                    <p class="text-green-800 text-lg mt-4 px-6">${item.amount}</p>
                     <a href="//w-donation-details?donation=${item.id}"
-                        class="mt-4 inline-block bg-white border-2 border-black text-center text-black hover:bg-black hover:text-white py-2 px-4 rounded-2xl">Proceed to Donate</a>
+                        class="mt-4 inline-block bg-gray-50 border-2 border-black text-center text-black hover:bg-black hover:text-white py-2 px-4 rounded-2xl mb-4 mx-4">Proceed to Donate</a>
                 </div>
         `);
             });
@@ -245,33 +245,36 @@
 
             latest3.forEach(item => {
                 $('#latestFundraising').append(`
-            <div class="fund-card bg-gradient-to-r from-gray-50 to-gray-200 flex flex-col justify-center border-2 border-gray-300 rounded-2xl p-4 hover:shadow-lg transition duration-300">
-                <img src="${item.image}" alt="${item.title}" class="rounded-lg w-full h-48 object-cover">
-
-                <h3 class="font-semibold text-lg mt-4 truncate">${item.title}</h3>
-                <p class="text-gray-700 text-sm mt-3">${item.mini_description}</p>
+            <div class="fund-card bg-gradient-to-r from-gray-50 to-gray-200 flex flex-col justify-center border-2 border-gray-300 rounded-2xl hover:shadow-lg transition duration-300">
+                <img src="${item.image}" alt="${item.title}" class="rounded-t-lg w-full h-52 object-cover">
+                <div class="p-4">
+                    <h3 class="font-semibold text-lg mt-4 truncate">${item.title}</h3>
+                    <p class="text-gray-700 text-sm mt-3">${item.mini_description}</p>
 
                 <!-- Progress Bar -->
                 <div class="mt-6">
                     <div class="flex justify-between text-sm text-gray-600 mb-2">
-                        <span>Goal: ${item.funding_status.goal}</span>
                         <span>Raised: ${item.funding_status.collected}</span>
+                        <div class="text-center text-sm text-gray-700 mt-2">
+                        ${item.funding_status.percentage}% Funded
+                    </div>
                     </div>
 
-                    <div class="relative w-full h-2 bg-gray-200 rounded-full overflow-hidden">
+                    <div class="relative max-w-5xl h-2 bg-gray-200 rounded-full overflow-hidden">
                         <div class="absolute left-0 top-0 h-full bg-green-600 transition-all duration-500"
                             style="width: ${item.funding_status.percentage}%;"></div>
                     </div>
 
-                    <div class="text-center text-sm text-gray-700 mt-2">
-                        ${item.funding_status.percentage}% Funded
-                    </div>
+                    
                 </div>
 
                 <!-- Buttons -->
-                <div class="w-full mt-6 flex flex-col sm:flex-row justify-center gap-3">
+                <div class="w-full mt-6 flex flex-col sm:flex-row justify-between gap-3">
                     <a href="//w-fundraising-details?fund=${item.id}"
-                        class="w-full mt-4 inline-block bg-white border-2 border-black text-center text-black hover:bg-black hover:text-white py-2 px-4 rounded-2xl">View Details</a>
+                        class="w-full mt-4 inline-block bg-gray-50 border-2 border-black text-center text-black hover:bg-black hover:text-white py-2 px-4 rounded-2xl  mb-4 mx-4">View More</a>
+                        <a href="//w-fundraising-details?fund=${item.id}"
+                        class="w-full mt-4 inline-block bg-black border-2 border-black text-center text-white hover:bg-white hover:text-black py-2 px-4 rounded-2xl  mb-4 mx-4">Donate Now</a>
+                </div>
                 </div>
             </div>
         `);
