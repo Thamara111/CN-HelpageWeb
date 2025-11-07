@@ -35,24 +35,24 @@ require_once 'layouts/header.php';
 
       $.each(data, function (index, item) {
         const card = `
-          <div class="bg-gray-100 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300 p-6">
-            <div class="aspect-video w-full rounded-xl overflow-hidden mb-4">
-              <img src="${item.image}" alt="${item.title}" class="rounded-lg w-full h-full object-cover">
+          <div class="bg-gradient-to-r from-gray-50 to-gray-200 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
+            <div class="aspect-video w-full rounded-t-xl overflow-hidden mb-4">
+              <img src="${item.image}" alt="${item.title}" class="rounded-t-xl w-full h-full object-cover">
             </div>
 
-            <div class="flex flex-wrap items-center gap-4 mb-3">
+            <div class="flex flex-wrap items-center gap-4 mb-3 px-6">
               <p class="text-gray-500 text-sm">${item.date}</p>
             </div>
 
-            <h3 class="font-semibold text-lg md:text-xl text-gray-900 mb-3 truncate" title="${item.title}">
+            <h3 class="font-semibold text-lg md:text-xl text-gray-900 mb-3 truncate px-6" title="${item.title}">
             ${item.title}
             </h3>
 
-            <p class="text-gray-700 text-sm leading-relaxed line-clamp-3">
+            <p class="text-gray-700 text-sm leading-relaxed line-clamp-3 px-6">
               ${item.main_content}
             </p>
             <!-- Buttons -->
-                <div class="w-full mt-6 flex flex-col sm:flex-row justify-center gap-3">
+                <div class="w-full mt-6 flex flex-col sm:flex-row justify-center gap-3 px-6 mb-6">
                     <a href="/blog-details?blog=${item.id}"
                         class="w-full mt-4 inline-block bg-white border-2 border-black text-center text-black hover:bg-black hover:text-white py-2 px-4 rounded-2xl">View Details</a>
                 </div>
