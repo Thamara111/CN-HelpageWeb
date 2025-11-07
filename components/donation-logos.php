@@ -10,7 +10,7 @@
                     class="group flex-none flex justify-center items-center p-4 bg-white rounded-2xl hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
                     <div class="relative">
                         <img src="/assets/images/who.png" alt="World Health Organization"
-                            class="max-h-14 object-contain transition-all duration-300 group-hover:scale-105 group-hover:brightness-110">
+                            class="max-h-20 object-contain transition-all duration-300 group-hover:scale-105 group-hover:brightness-110">
                         <div
                             class="absolute inset-0 bg-blue-500 opacity-0 group-hover:opacity-5 rounded-lg transition-opacity duration-300">
                         </div>
