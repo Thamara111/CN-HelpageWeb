@@ -6,6 +6,7 @@
         {
           "id": "free-cataract-surgery-2024-25",
           "name": "Free Cataract Surgery Project",
+          "image": "/assets/images/help3.JPG",
           "donor": "JECO Foundation (coordinated via Amico Corporation)",
           "budget": {
             "amount": "USD 25,000",
@@ -30,6 +31,7 @@
         {
           "id": "help-age-eye-hospital-50000-surgeries",
           "name": "HelpAge Eye Hospital – 50,000+ Surgeries (Milestone)",
+          "image": "./assets/images/help3.JPG",
           "donor": "Multiple donors; hospital fundraising and in-kind support acknowledged (see donor lists)",
           "budget": {
             "amount": "Cash & In-kind donations totalling Rs. 1,939,793 (reported for Eye Hospital FY 2024/25)",
@@ -52,6 +54,7 @@
         {
           "id": "mobile-medical-unit-camps",
           "name": "Mobile Medical Unit (MMU) Camps",
+          "image": "./assets/images/help3.JPG",
           "donor": "HelpAge Sri Lanka (HASL) with corporate sponsors (e.g., Supreme Global Holdings, others)",
           "budget": {
             "amount": "Funded through HASL operations with donor-sponsored camps (various in-kind and cash support reported)",
@@ -87,6 +90,7 @@
         {
           "id": "ayurveda-clinic-boralesgamuwa",
           "name": "Ayurveda Clinic (Boralesgamuwa)",
+          "image": "./assets/images/help3.JPG",
           "donor": "HASL operational support and donor contributions (Community Relations initiatives)",
           "budget": {
             "amount": "Supported under HASL programme budgets and community fundraising streams",
@@ -112,6 +116,7 @@
         {
           "id": "hpg-gooneratne-day-care-centre",
           "name": "H. P. Gooneratne HelpAge Elders’ Day Care Centre (DCC)",
+          "image": "./assets/images/help3.JPG",
           "donor": "Community donations and targeted fundraising (various donors support meal provision and activities)",
           "budget": {
             "amount": "Funded under HASL programme budgets and donor contributions (no single project budget line quoted)",
@@ -134,6 +139,7 @@
         {
           "id": "home-care-service-2024-25",
           "name": "Home Care Service",
+          "image": "./assets/images/help3.JPG",
           "donor": "HASL programme funding, community donations and CSR partnerships",
           "budget": {
             "amount": "Operates under HASL Programme & Home Care Division budgets (no single-sum donor budget listed in report)",
@@ -156,6 +162,7 @@
         {
           "id": "sponsor-a-grandparent-programme-2024-25",
           "name": "Sponsor a Grandparent (SaG) Programme",
+          "image": "./assets/images/help3.JPG",
           "donor": "HelpAge International (HAI)",
           "budget": {
             "amount": "GBP 39,629",
@@ -197,6 +204,7 @@
         {
           "id": "flood-response-gef-hai-2024",
           "name": "Flood Response Project – Global Emergency Fund (GEF) – HAI",
+          "image": "./assets/images/help3.JPG",
           "donor": "HelpAge International (Global Emergency Fund)",
           "budget": {
             "amount": "USD 50,000 (Project 01) — multiple GEF projects reported (combined GEF funding noted in report text)",
@@ -222,6 +230,7 @@
         {
           "id": "flood-response-unfpa-hygiene-kits-2024-25",
           "name": "Flood Response Project – UNFPA (Hygiene Kits for Older Women)",
+          "image": "./assets/images/help3.JPG",
           "donor": "United Nations Population Fund (UNFPA)",
           "budget": {
             "amount": "USD 123,733.63 (USD 50,000 cited for hygiene kits in some breakdowns; the report provides project-level figures and distribution counts)",
@@ -244,6 +253,7 @@
         {
           "id": "shape-project-hai-2024",
           "name": "Strategic Humanitarian Assessment and Participatory Empowerment (SHAPE) Project",
+          "image": "./assets/images/help3.JPG",
           "donor": "HelpAge International (HAI)",
           "budget": {
             "amount": "USD 7,949",
@@ -267,6 +277,7 @@
         {
           "id": "hasop-project-helpage-deutschland-bmz-2024-25",
           "name": "HASOP Project – HelpAge Deutschland (HAD) / BMZ (Germany)",
+          "image": "./assets/images/help3.JPG",
           "donor": "HelpAge Deutschland (funding via BMZ / Germany)",
           "budget": {
             "amount": "EUR 133,333.25",
@@ -294,6 +305,7 @@
         {
           "id": "youth-education-programme-2024-25",
           "name": "Youth Education Programme (YEP)",
+          "image": "./assets/images/help3.JPG",
           "donor": "HASL Programme Division (supported by project funds and local partners)",
           "budget": {
             "amount": "Operates under Programme Division budget lines (no single donor amount quoted)",
@@ -321,6 +333,7 @@
           "id": "tot-polonnaruwa-2025",
           "name": "Training of Trainers (ToT) Programme (Polonnaruwa)",
           "donor": "Programme Division (HASL) and project funding sources",
+          "image": "./assets/images/help3.JPG",
           "budget": {
             "amount": "Included in Programme Division budgets (no single donor budget line quoted)",
             "currency": "LKR"
@@ -346,6 +359,7 @@
         {
           "id": "gift-of-sight-campaign-2024-25",
           "name": "Gift of Sight Campaign",
+          "image": "./assets/images/help3.JPG",
           "donor": "Community Relations / multiple donors (individuals, corporates, associations)",
           "budget": {
             "amount": "Budgeted sub-category: Rs. 6,000,000; actual income reported Rs. 8,281,045 (Give the Gift of Sight sub-budget results FY 2024/25)",
@@ -368,6 +382,7 @@
         {
           "id": "greeting-cards-pre-vesak-seasonal-sales-2024-25",
           "name": "Greeting Cards / Pre-Vesak & Seasonal Sales",
+          "image": "./assets/images/help3.JPG",
           "donor": "Community donors, temple sales, hotel & mall partnerships (various)",
           "budget": {
             "amount": "Greeting Cards Division budget lines shown (e.g., greeting cards budget 11,550,000; Community events sub-budget 2,450,000) — results shown as actual income lines",
@@ -397,6 +412,7 @@
         {
           "id": "tills-project-2024-25",
           "name": "Tills Project",
+          "image": "./assets/images/help3.JPG",
           "donor": "HASL Community Relations / Tills Project operations with retail partnerships",
           "budget": {
             "amount": "Budgeted income 7,579,693 (Rs.) for FY 2024/25; actual income reported 6,705,856 (Rs.)",
@@ -420,6 +436,7 @@
         {
           "id": "seasonal-corporate-sales-events-2024-25",
           "name": "Seasonal & Corporate Sales Events (Special Projects)",
+          "image": "././assets/images/help3.JPG",
           "donor": "Community Relations & Special Projects (collaboration with corporate partners and event hosts)",
           "budget": {
             "amount": "Fundraising and event-specific budgets under Special Projects and Community Relations divisions (examples of event participation recorded rather than single-line budgets)",
@@ -450,6 +467,7 @@
         {
           "id": "sinhala-tamil-new-year-celebration-avurudu-ulela-2024",
           "name": "Sinhala and Tamil New Year Celebration (Avurudu Ulela)",
+          "image": "./assets/images/help3.JPG",
           "donor": "HASL Human Resources / staff budget (internal event)",
           "budget": {
             "amount": "Organised under HR event budgets (no separate donor budget line provided)",
@@ -470,6 +488,7 @@
         {
           "id": "vesak-programme-mobile-camp-2024",
           "name": "Vesak Programme and Mobile Camp (internal outreach / screening)",
+          "image": "./assets/images/help3.JPG",
           "donor": "Programme Division / HASL operations",
           "budget": {
             "amount": "Conducted under Programme Division budgets (no separate donor budget quoted)",
@@ -490,6 +509,7 @@
         {
           "id": "christmas-party-salina-alwis-elders-home-2024",
           "name": "Christmas Party – Salina Alwis Elders’ Home",
+          "image": "./assets/images/help3.JPG",
           "donor": "HASL internal programmes & donor support for resident activities",
           "budget": {
             "amount": "Event supported through internal programme budgets and donated gifts (no single-sum budget line quoted)",
@@ -510,6 +530,7 @@
         {
           "id": "founders-21st-death-anniversary-h-p-gooneratne-2024",
           "name": "Founder’s 21st Death Anniversary – H. P. Gooneratne",
+          "image": "./assets/images/help3.JPG",
           "donor": "HASL internal commemoration (staff & Council-led event)",
           "budget": {
             "amount": "Commemorative event supported by HASL (no separate budget line provided)",
