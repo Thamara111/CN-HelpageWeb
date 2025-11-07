@@ -206,7 +206,7 @@ $(document).ready(function () {
                     localStorage.setItem("donationTitles", JSON.stringify(donationTitles));
                     localStorage.setItem("subDonations", JSON.stringify(selectedSubDonations));
 
-                    window.location.href = "/donate.html";
+                    window.location.href = "/pay-safe";
                 });
             } else {
                 $("#donation-details").html("<p class='text-center text-gray-600 text-lg'>Donation not found. Please select a valid donation.</p>");

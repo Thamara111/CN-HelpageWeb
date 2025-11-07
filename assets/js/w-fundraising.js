@@ -1,14 +1,14 @@
 $(document).ready(function () {
-    const container = $("#fund-container"); // renamed from #donation-container
-    let fundData = []; // renamed from donationData
+  const container = $("#fund-container"); // renamed from #donation-container
+  let fundData = []; // renamed from donationData
 
-    // Fetch fundraising data
-    $.getJSON("/assets/json/fundraising.json", function (data) {
-        fundData = data;
+  // Fetch fundraising data
+  $.getJSON("/assets/json/fundraising.json", function (data) {
+    fundData = data;
 
-        // Loop through each fundraising item
-        $.each(data, function (index, item) {
-            const card = `
+    // Loop through each fundraising item
+    $.each(data, function (index, item) {
+      const card = `
             <div class="fund-card flex flex-col justify-center border-2 border-gray-300 rounded-2xl p-4 hover:shadow-lg transition duration-300">
                 <img src="${item.image}" alt="${item.title}" class="rounded-lg w-full h-48 object-cover">
 
@@ -31,36 +31,36 @@ $(document).ready(function () {
 
                 <!-- Buttons -->
                 <div class="w-full mt-6 flex flex-col sm:flex-row justify-center gap-3">
-                    <a href="/w-fundraising-details.html?fund=${item.id}"
+                    <a href="/w-fundraising-details?fund=${item.id}"
                         class="w-full mt-4 inline-block bg-white border-2 border-black text-center text-black hover:bg-black hover:text-white py-2 px-4 rounded-2xl">View Details</a>
                 </div>
             </div>`;
 
-            container.append(card);
-        });
-
-        // Remove loading spinner or message
-        $('#loading-state').fadeOut(300, function () {
-            $(this).remove();
-        });
-
-    }).fail(function () {
-        console.error("Failed to load fundraising data.");
-        $('#loading-state').html('<p class="text-red-500">Failed to load fund campaigns. Please try again later.</p>');
+      container.append(card);
     });
 
-
-    // 🔍 Search Functionality
-    $('#search-input').on('input', function () {
-        const searchTerm = $(this).val().toLowerCase();
-
-        $('.fund-card').each(function () {
-            const title = $(this).find('h3').text().toLowerCase();
-            if (title.includes(searchTerm)) {
-                $(this).show();
-            } else {
-                $(this).hide();
-            }
-        });
+    // Remove loading spinner or message
+    $("#loading-state").fadeOut(300, function () {
+      $(this).remove();
     });
+  }).fail(function () {
+    console.error("Failed to load fundraising data.");
+    $("#loading-state").html(
+      '<p class="text-red-500">Failed to load fund campaigns. Please try again later.</p>'
+    );
+  });
+
+  // 🔍 Search Functionality
+  $("#search-input").on("input", function () {
+    const searchTerm = $(this).val().toLowerCase();
+
+    $(".fund-card").each(function () {
+      const title = $(this).find("h3").text().toLowerCase();
+      if (title.includes(searchTerm)) {
+        $(this).show();
+      } else {
+        $(this).hide();
+      }
+    });
+  });
 });

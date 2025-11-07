@@ -102,7 +102,7 @@ $(document).ready(function () {
                     localStorage.setItem("fundId", fund.id);
 
                     // redirect to next page
-                    window.location.href = "/donate.html";
+                    window.location.href = "/pay-safe";
                 });
 
             } else {
