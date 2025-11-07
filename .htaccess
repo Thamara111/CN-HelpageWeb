@@ -1,0 +1,60 @@
+<IfModule mime_module>
+  AddHandler application/x-httpd-ea-php81 .php .php8 .phtml
+</IfModule>
+
+Options -MultiViews
+
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule . - [L]
+
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule . - [L]
+
+RewriteRule ^home/?$ home.php [L]
+RewriteRule ^about/?$ about-us.php [L]
+RewriteRule ^contact/?$ contact.php [L]
+RewriteRule ^w-donation/?$ w-donation.php [L]
+RewriteRule ^w-donation-details/?$ w-donation-details.php [L]
+RewriteRule ^w-fundraising/?$ w-fundraise.php [L]
+RewriteRule ^w-fundraising-details/?$ w-fundraising-details.php [L]
+RewriteRule ^gallery/?$ gallery.php [L]
+RewriteRule ^blogs/?$ blog.php [L]
+RewriteRule ^blog-details/?$ blog-details.php [L]
+RewriteRule ^volunteering/?$ volunteer.php [L]
+RewriteRule ^faqs/?$ faq.php [L]
+RewriteRule ^chairman-message/?$ chairman-message.php [L]
+RewriteRule ^ed-message/?$ ed-message.php [L]
+RewriteRule ^publications/?$ Reports.php [L]
+RewriteRule ^privacy-policy/?$ privacy-policy.php [L]
+RewriteRule ^terms-conditions/?$ terms.php [L]
+RewriteRule ^community-details/?$ programs/community-details.php [L]
+RewriteRule ^community/?$ programs/community.php [L]
+RewriteRule ^education-details/?$ programs/education-details.php [L]
+RewriteRule ^education/?$ programs/education.php [L]
+RewriteRule ^emergency-details/?$ programs/emergency-details.php [L]
+RewriteRule ^emergency/?$ programs/emergency.php [L]
+RewriteRule ^fundraising-details/?$ programs/fundraising-details.php [L]
+RewriteRule ^fundraising/?$ programs/fundraising.php [L]
+RewriteRule ^health-details/?$ programs/health-details.php [L]
+RewriteRule ^health/?$ programs/health.php [L]
+RewriteRule ^internal-details/?$ programs/internal-details.php [L]
+RewriteRule ^internal/?$ programs/internal.php [L]
+RewriteRule ^pay-safe/?$ donate.php [L]
+
+
+
+
+RewriteRule ^cms_view/?$ CMS/cms_view.php [L]
+RewriteRule ^cms_ctrl/?$ CMS/cms_ctrl.php [L]
+RewriteRule ^cms_login/?$ CMS/cms_login.php [L]
+RewriteRule ^cms_type_blog/?$ CMS/cms_type_blog.php [L]
+RewriteRule ^cms_type_promo/?$ CMS/cms_type_promo.php [L]
+RewriteRule ^cms_type_meta/?$ CMS/cms_type_meta.php [L]
+RewriteRule ^cms_class/?$ CMS/cms_class.php [L]
+
+
+
+
+RewriteRule ^(.*)$ index.php [QSA,L]
