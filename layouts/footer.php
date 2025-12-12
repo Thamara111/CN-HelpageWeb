@@ -35,7 +35,7 @@
             <div class="text-center md:text-left">
                 <h3 class="text-lg font-semibold mb-3">Quick Links</h3>
                 <ul class="space-y-2">
-                    <li><a href="/home" class="hover:text-gray-300">Home</a></li>
+                    <li><a href="/" class="hover:text-gray-300">Home</a></li>
                     <li><a href="/about" class="hover:text-gray-300">About Us</a></li>
                     <li><a href="/w-fundraise" class="hover:text-gray-300">Fundraising</a></li>
                     <li><a href="/w-donation" class="hover:text-gray-300">Donations</a></li>
@@ -215,7 +215,7 @@
 
             latest3.forEach(item => {
                 $('#latestDonations').append(`
-            <div class="relative flex flex-col justify-center bg-gradient-to-r from-gray-50 to-gray-200 border-2 border-gray-300 rounded-2xl ">
+            <div class="relative flex flex-col justify-center bg-gradient-to-r from-gray-50 to-gray-200 border border-gray-300 rounded-2xl shadow hover:shadow-xl transition-shadow duration-300 ">
                     <label class="absolute top-4 right-4 flex items-center space-x-2">
                     <input 
                         type="checkbox"
@@ -229,7 +229,7 @@
                     <h3 class="font-semibold text-lg mt-4 truncate px-6">${item.title}</h3>
                     <p class="text-gray-700 text-sm mt-4 px-6">${item.minidescription}</p>
                     <p class="text-green-800 text-lg mt-4 px-6">${item.amount}</p>
-                    <a href="//w-donation-details?donation=${item.id}"
+                    <a href="/w-donation-details?donation=${item.id}"
                         class="mt-4 inline-block bg-gray-50 border-2 border-black text-center text-black hover:bg-black hover:text-white py-2 px-4 rounded-2xl mb-4 mx-4">Proceed to Donate</a>
                 </div>
         `);
@@ -245,7 +245,7 @@
 
             latest3.forEach(item => {
                 $('#latestFundraising').append(`
-            <div class="fund-card bg-gradient-to-r from-gray-50 to-gray-200 flex flex-col justify-center border-2 border-gray-300 rounded-2xl hover:shadow-lg transition duration-300">
+            <div class="fund-card bg-gradient-to-r from-gray-50 to-gray-200 flex flex-col justify-center border border-gray-300 rounded-2xl hover:shadow-xl transition-shadow duration-300">
                 <img src="${item.image}" alt="${item.title}" class="rounded-t-lg w-full h-52 object-cover">
                 <div class="p-4">
                     <h3 class="font-semibold text-lg mt-4 truncate">${item.title}</h3>

@@ -23,7 +23,7 @@
 
                     <!-- Desktop Dropdown -->
                     <div id="desktopMenuPrograms"
-                        class="hidden absolute bottom-16 left-1/2 transform -translate-x-1/2 bg-white text-black rounded-2xl shadow-2xl border border-gray-200 w-[42rem] h-[28rem] overflow-hidden z-50 transition-all duration-300 opacity-0 scale-95 group-hover:opacity-100 group-hover:scale-100">
+                        class="hidden absolute bottom-16 left-1/2 transform -translate-x-1/2 bg-white text-black rounded-2xl shadow-2xl border border-gray-200 w-[42rem] h-[32rem] overflow-hidden z-50 transition-all duration-300 opacity-0 scale-95 group-hover:opacity-100 group-hover:scale-100">
 
                         <div class="flex h-full">
                             <!-- Left: Image -->
@@ -88,6 +88,14 @@
                                             <span>Human Resources & Internal Events</span>
                                         </a>
                                     </li>
+                                    <li>
+                                        <a href="/special-projects"
+                                            class="flex items-center px-6 py-3 hover:bg-red-50 rounded-lg text-base font-medium text-gray-700 hover:text-red-600 transition-all duration-200 group border-l-4 border-transparent hover:border-red-500 text-left">
+                                            <i
+                                                class="fa-solid fa-people-carry-box mr-4 text-red-500 group-hover:scale-110 transition-transform duration-200"></i>
+                                            <span>Special Projects</span>
+                                        </a>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -134,16 +142,121 @@
                                 <i class="fa-solid fa-people-carry-box mr-3 text-red-500"></i> HR & Internal Events
                             </a>
                         </li>
+                        <li>
+                            <a href="/special-projects"
+                                class="flex items-center px-4 py-3 hover:bg-red-50 text-sm font-medium text-gray-700 hover:text-red-600 text-left">
+                                <i class="fa-solid fa-people-carry-box mr-3 text-red-500"></i> Special Projects
+                            </a>
+                        </li>
                     </ul>
                 </li>
 
-                <!-- About Us -->
-                <li>
-                    <a href="/about"
-                        class="relative flex flex-col justify-center items-center md:inline-block text-xs md:text-md hover:text-black transition-colors duration-200">
-                        <i class="fa-solid fa-info-circle inline-block md:hidden mb-1 text-white text-lg"></i>
-                        <span class="text-xs md:text-base">About Us</span>
+                <!-- Services -->
+                <li class="relative group" id="moreMenuServices">
+                    <a id="menuServices"
+                        class="cursor-pointer relative flex flex-col justify-center items-center md:inline-block text-xs md:text-md hover:text-black transition-colors duration-200">
+                        <i class="fa-solid fa-stethoscope inline-block md:hidden mb-1 text-white text-lg"></i>
+                        <span class="text-xs md:text-base">Services</span>
                     </a>
+
+                    <!-- Desktop Dropdown -->
+                    <div id="desktopMenuServices"
+                        class="hidden absolute bottom-16 left-1/2 transform -translate-x-1/2 bg-white text-black rounded-2xl shadow-2xl border border-gray-200 w-[42rem] h-[28rem] overflow-hidden z-50 transition-all duration-300 opacity-0 scale-95 group-hover:opacity-100 group-hover:scale-100">
+
+                        <div class="flex h-full">
+                            <!-- Left: Image -->
+                            <div class="w-1/2 relative bg-gradient-to-br from-red-50 to-orange-50">
+                                <img src="./assets/images/help3.JPG" class="w-full h-full object-cover"
+                                    alt="HelpAge Sri Lanka" />
+                                <div
+                                    class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6">
+                                    <h3 class="text-white text-xl font-bold mb-2">HelpAge Sri Lanka</h3>
+                                    <p class="text-white/90 text-sm">Supporting Elderly Citizens Nationwide</p>
+                                </div>
+                            </div>
+
+                            <!-- Right: Links -->
+                            <div class="w-1/2 bg-white flex flex-col justify-center">
+                                <ul class="space-y-2 w-full max-w-xs mx-auto">
+                                    <li>
+                                        <a href="/service-mobile-medical-unit"
+                                            class="flex items-center w-full justify-start px-6 py-3 hover:bg-red-50 rounded-lg text-base font-medium text-gray-700 hover:text-red-600 transition-all duration-200 group border-l-4 border-transparent hover:border-red-500 text-left">
+                                            <i
+                                                class="fa-solid fa-heart-pulse mr-4 text-red-500 group-hover:scale-110 transition-transform duration-200"></i>
+                                            <span>Mobile Medical Unit</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/service-distribution-of-disability-equipment"
+                                            class="flex items-center px-6 py-3 hover:bg-red-50 rounded-lg text-base font-medium text-gray-700 hover:text-red-600 transition-all duration-200 group border-l-4 border-transparent hover:border-red-500 text-left">
+                                            <i
+                                                class="fa-solid fa-people-roof mr-4 text-red-500 group-hover:scale-110 transition-transform duration-200"></i>
+                                            <span>Distribution of Disability Equipment</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/service-eye-hospital"
+                                            class="flex items-center px-6 py-3 hover:bg-red-50 rounded-lg text-base font-medium text-gray-700 hover:text-red-600 transition-all duration-200 group border-l-4 border-transparent hover:border-red-500 text-left">
+                                            <i
+                                                class="fa-solid fa-handshake-angle mr-4 text-red-500 group-hover:scale-110 transition-transform duration-200"></i>
+                                            <span>Eye Hospital</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/service-ayurvedic-center"
+                                            class="flex items-center px-6 py-3 hover:bg-red-50 rounded-lg text-base font-medium text-gray-700 hover:text-red-600 transition-all duration-200 group border-l-4 border-transparent hover:border-red-500 text-left">
+                                            <i
+                                                class="fa-solid fa-graduation-cap mr-4 text-red-500 group-hover:scale-110 transition-transform duration-200"></i>
+                                            <span>Ayurvedic Center</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/service-day-center"
+                                            class="flex items-center px-6 py-3 hover:bg-red-50 rounded-lg text-base font-medium text-gray-700 hover:text-red-600 transition-all duration-200 group border-l-4 border-transparent hover:border-red-500 text-left">
+                                            <i
+                                                class="fa-solid fa-hand-holding-heart mr-4 text-red-500 group-hover:scale-110 transition-transform duration-200"></i>
+                                            <span>Day center</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mobile Dropdown -->
+                    <ul id="mobileMenuServices"
+                        class="hidden fixed bottom-20 left-0 bg-white text-black rounded-2xl shadow-2xl flex-col py-4 w-56 text-center md:hidden z-50 border border-gray-200">
+                        <li>
+                            <a href="/service-mobile-medical-unit"
+                                class="flex items-center px-4 py-3 hover:bg-red-50 text-sm font-medium text-gray-700 hover:text-red-600 text-left">
+                                <i class="fa-solid fa-heart-pulse mr-3 text-red-500"></i><span> Mobile Medical Unit</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/service-distribution-of-disability-equipment"
+                                class="flex items-center px-4 py-3 hover:bg-red-50 text-sm font-medium text-gray-700 hover:text-red-600 text-left">
+                                <i class="fa-solid fa-people-roof mr-3 text-red-500"></i><span> Distribution of Disability Equipment</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/service-eye-hospital"
+                                class="flex items-center px-4 py-3 hover:bg-red-50 text-sm font-medium text-gray-700 hover:text-red-600 text-left">
+                                <i class="fa-solid fa-handshake-angle mr-3 text-red-500"></i> <span>Eye Hospital</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/service-ayurvedic-center"
+                                class="flex items-center px-4 py-3 hover:bg-red-50 text-sm font-medium text-gray-700 hover:text-red-600 text-left">
+                                <i class="fa-solid fa-graduation-cap mr-3 text-red-500"></i> <span>Ayurvedic Center</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/service-day-center"
+                                class="flex items-center px-4 py-3 hover:bg-red-50 text-sm font-medium text-gray-700 hover:text-red-600 text-left">
+                                <i class="fa-solid fa-hand-holding-heart mr-3 text-red-500"></i> <span>Day Center</span>
+                            </a>
+                        </li>
+                    </ul>
                 </li>
 
                 <!-- Donate Now Button -->
@@ -175,7 +288,7 @@
 
                     <!-- Enhanced Desktop Menu -->
                     <div id="desktopMenu"
-                        class="hidden absolute bottom-16 left-1/2 transform -translate-x-1/2 bg-white text-black rounded-2xl shadow-2xl border border-gray-200 w-[42rem] h-[28rem] overflow-hidden z-50 transition-all duration-300 opacity-0 scale-95 group-hover:opacity-100 group-hover:scale-100">
+                        class="hidden absolute bottom-16 left-1/2 transform -translate-x-1/2 bg-white text-black rounded-2xl shadow-2xl border border-gray-200 w-[42rem] h-[32rem] overflow-hidden z-50 transition-all duration-300 opacity-0 scale-95 group-hover:opacity-100 group-hover:scale-100">
 
                         <!-- Container for side-by-side layout -->
                         <div class="flex h-full">
@@ -196,11 +309,19 @@
                                 <div class="flex-1 flex items-center justify-center py-6">
                                     <ul class="space-y-2 w-full max-w-xs">
                                         <li>
-                                            <a href="/home"
+                                            <a href="/"
                                                 class="flex items-center px-6 py-3 hover:bg-red-50 text-base font-medium text-gray-700 hover:text-red-600 transition-all duration-200 group rounded-lg border-l-4 border-transparent hover:border-red-500">
                                                 <i
                                                     class="fa-solid fa-house mr-4 text-red-500 group-hover:scale-110 transition-transform duration-200"></i>
                                                 <span>Home</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/about"
+                                                class="flex items-center px-6 py-3 hover:bg-red-50 text-base font-medium text-gray-700 hover:text-red-600 transition-all duration-200 group rounded-lg border-l-4 border-transparent hover:border-red-500">
+                                                <i
+                                                    class="fa-solid fa-info-circle mr-4 text-red-500 group-hover:scale-110 transition-transform duration-200"></i>
+                                                <span>About Us</span>
                                             </a>
                                         </li>
                                         <li>
@@ -261,10 +382,17 @@
                     <ul id="mobileMenu"
                         class="hidden fixed bottom-20 right-4 bg-white text-black rounded-2xl shadow-2xl flex-col py-4 w-48 text-center md:hidden z-50 border border-gray-200">
                         <li>
-                            <a href="/home"
+                            <a href="/"
                                 class="flex items-center px-4 py-3 hover:bg-red-50 text-sm font-medium text-gray-700 hover:text-red-600 transition-all duration-200 group">
                                 <i class="fa-solid fa-house mr-3 text-red-500"></i>
                                 <span>Home</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/about"
+                                class="flex items-center px-4 py-3 hover:bg-red-50 text-sm font-medium text-gray-700 hover:text-red-600 transition-all duration-200 group">
+                                <i class="fa-solid fa-info-circle mr-3 text-red-500"></i>
+                                <span>About Us</span>
                             </a>
                         </li>
                         <li>
@@ -326,6 +454,13 @@
                 $('#mobileMenuPrograms').stop(true, true).fadeToggle(200);
             }
         });
+        $('#menuServices').on('click', function (e) {
+            if ($(window).width() < 768) {
+                e.preventDefault();
+                e.stopPropagation();
+                $('#mobileMenuServices').stop(true, true).fadeToggle(200);
+            }
+        });
 
         // MOBILE: toggle More menu
         $('#menuMore').on('click', function (e) {
@@ -385,6 +520,7 @@
 
         // Initialize hover for both menus
         setupHover('#moreMenuPrograms', '#desktopMenuPrograms');
+        setupHover('#moreMenuServices', '#desktopMenuServices');
         setupHover('#moreMenuMore', '#desktopMenu');
 
         // Close menus when clicking outside
@@ -392,14 +528,17 @@
             if (!$(e.target).closest('#menuPrograms, #mobileMenuPrograms').length) {
                 $('#mobileMenuPrograms').fadeOut(200);
             }
+            if (!$(e.target).closest('#menuServices, #mobileMenuServices').length) {
+                $('#mobileMenuServices').fadeOut(200);
+            }
             if (!$(e.target).closest('#menuMore, #mobileMenu').length) {
                 $('#mobileMenu').fadeOut(200);
             }
         });
 
         // Close mobile menus when link is clicked
-        $('#mobileMenuPrograms a, #mobileMenu a').on('click', function () {
-            $('#mobileMenuPrograms, #mobileMenu').fadeOut(200);
+        $('#mobileMenuPrograms a, #mobileMenuServices a, #mobileMenu a').on('click', function () {
+            $('#mobileMenuPrograms, #mobileMenuServices, #mobileMenu').fadeOut(200);
         });
     });
 </script>
