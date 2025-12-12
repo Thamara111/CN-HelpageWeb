@@ -41,7 +41,17 @@ RewriteRule ^health-details/?$ programs/health-details.php [L]
 RewriteRule ^health/?$ programs/health.php [L]
 RewriteRule ^internal-details/?$ programs/internal-details.php [L]
 RewriteRule ^internal/?$ programs/internal.php [L]
+RewriteRule ^special-projects-details/?$ programs/special-projects-details.php [L]
+RewriteRule ^special-projects/?$ programs/special-projects.php [L]
 RewriteRule ^pay-safe/?$ donate.php [L]
+RewriteRule ^multiple-donation/?$ multiple-donation.php [L]
+RewriteRule ^donation-details/?$ donation-details.php [L]
+RewriteRule ^service-mobile-medical-unit/?$ services/mobile-medical-unit.php [L]
+RewriteRule ^service-distribution-of-disability-equipment/?$ services/distribution-of-disability-equipment.php [L]
+RewriteRule ^service-eye-hospital/?$ services/eye-hospital.php [L]
+RewriteRule ^service-ayurvedic-center/?$ services/ayurvedic-center.php [L]
+RewriteRule ^service-day-center/?$ services/day-center.php [L]
+
 
 
 
