@@ -30,7 +30,7 @@
 
         <!-- Hero Section -->
          <section class="bg-gradient-to-r from-orange-700 to-red-800 text-white">
-            <a href="/index.html" class="flex justify-center items-center">
+            <a href="/" class="flex justify-center items-center">
                 <img src="/assets/images/logo-sri-lanka.webp" alt="HelpAge Sri Lanka Logo" class="w-32 h-24 py-2">
             </a>
          </section>
@@ -284,7 +284,7 @@ $(document).ready(function () {
             localStorage.setItem("donationTotal", total);
             localStorage.setItem("donationTitles", JSON.stringify(titles));
 
-            window.location.href = "/donate.html";
+            window.location.href = "/pay-safe";
         });
 
     }).fail(function () {

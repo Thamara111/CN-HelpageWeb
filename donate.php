@@ -17,7 +17,7 @@
 <body class="bg-gray-50">
   <!-- Header -->
   <section class="bg-gradient-to-r from-orange-700 to-red-800 text-white">
-    <a href="/index.html" class="flex justify-center items-center">
+    <a href="/" class="flex justify-center items-center">
       <img src="/assets/images/logo-sri-lanka.webp" alt="HelpAge Sri Lanka Logo" 
            class="w-24 md:w-32 h-20 md:h-24 py-2 transition-all duration-300" />
     </a>
@@ -116,7 +116,7 @@
           </p>
         </div>
         <div>
-          <a href="/terms.html" class="text-gray-400 hover:text-gray-200 text-sm md:text-base transition-colors duration-200">
+          <a href="/terms-conditions" class="text-gray-400 hover:text-gray-200 text-sm md:text-base transition-colors duration-200">
             Terms & Conditions
           </a>
         </div>
