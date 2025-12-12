@@ -3,27 +3,81 @@ require_once '../layouts/head.php';
 require_once '../layouts/header.php';
 ?>
 
+<section class="relative h-screen flex items-center justify-center text-center text-white overflow-hidden">
+    <!-- Background video -->
 
+    <img class="absolute inset-0 w-full h-full object-cover" src="/assets/images/projects/education.jpg" alt="">
+
+    <!-- Overlay (optional for better readability) -->
+    <div class="absolute inset-0 bg-black/50"></div>
+
+    <!-- Hero content -->
+    <div class="relative z-10 px-4">
+        <h2 class="text-4xl md:text-6xl font-bold mb-4">Education & Awareness</h2>
+        <p class="text-gray-200 mb-12 max-w-2xl mx-auto">
+            Our education and awareness initiatives aim to provide essential information and resources to
+            elderly citizens
+            across Sri Lanka. From health education to legal rights awareness, we ensure our seniors
+            receive the knowledge they need to live with dignity.
+        </p>
+        <a href=""
+            class="group inline-flex items-center bg-white text-black pl-4 pr-2 py-2 rounded-full hover:bg-black hover:text-white transition duration-300 mb-4">
+            Get Started
+            <i
+                class="fa-solid fa-arrow-right bg-black text-white p-3 rounded-full ml-3 transition duration-300 group-hover:bg-white group-hover:text-black"></i>
+        </a>
+    </div>
+</section>
+
+<?php require_once '../components/counter.php' ?>
+
+<section>
+    <div class="container mx-auto px-6 py-12">
+        <div class="grid grid-cols-1 grid-cols-1 md:grid-cols-2 lg:gap-6">
+            <div>
+                <h4 class="text-red-600 mb-4">Education & Awareness</h4>
+                <h2 class="text-2xl md:text-3xl 2xl:text-6xl font-bold mb-4 md:mb-6 lg:mb-6 xl:mb-6 2xl:mb-8">
+                    Empowering Our Elders Through Knowledge</h2>
+                <p class="text-gray-700 mb-4 md:mb-6 lg:mb-6 xl:mb-6 2xl:mb-8 text-justify">
+                    HelpAge Sri Lanka is dedicated to enhancing the knowledge and skills of senior citizens through various educational programs. We focus on critical areas such as health literacy, legal rights, and digital skills to empower our elders to navigate the modern world confidently.
+                </p>
+
+                <ul class="mb-4 md:mb-6 lg:mb-6 xl:mb-6 2xl:mb-8">
+                    <li class="my-4"><i class="fa-solid fa-check bg-green-500 p-2 rounded-xl mx-2"></i>Workshops on health and wellness topics</li>
+                    <li class="my-4"><i class="fa-solid fa-check bg-green-500 p-2 rounded-xl mx-2"></i>Legal rights education and advocacy</li>
+                    <li class="my-4"><i class="fa-solid fa-check bg-green-500 p-2 rounded-xl mx-2"></i>Digital literacy training for seniors</li>
+                    <li class="my-4"><i class="fa-solid fa-check bg-green-500 p-2 rounded-xl mx-2"></i>Community outreach programs to raise awareness</li>
+                </ul>
+
+                <p class="text-gray-700 mb-4">
+                    Recent impact: Over 5,000 seniors educated through workshops, 1,000+ participants in digital literacy programs, and numerous community events held to promote awareness.
+                </p>
+
+                <!-- <a href="/w-donation"
+                    class="group inline-flex items-center bg-red-600 text-white pl-4 pr-2 py-2 rounded-full hover:bg-white hover:text-black transition duration-300 mb-4 md:mb-2">
+                    Support Health Programs
+                    <i
+                        class="fa-solid fa-arrow-right bg-white text-red-600 p-3 rounded-full ml-3 transition duration-300 group-hover:bg-red-600 group-hover:text-white"></i>
+                </a> -->
+
+            </div>
+            <div>
+                <img src="/assets/images/sec-1.png" alt="" class="rounded-2xl">
+            </div>
+        </div>
+    </div>
+</section>
 
 <!-- Contact Section -->
 <section class="">
     <div class="container mx-auto px-6 py-12">
-        <div class="text-center mb-12">
-            <h2 class="text-4xl md:text-6xl font-bold mb-4">Education & Awareness</h2>
-            <p class="text-gray-500 mb-12 max-w-2xl mx-auto">
-                Our education and awareness initiatives aim to provide essential information and resources to
-                elderly citizens
-                across Sri Lanka. From health education to legal rights awareness, we ensure our seniors
-                receive the knowledge they need to live with dignity.
-            </p>
-        </div>
-        <section class="w-full px-4 md:px-8  bg-white">
-            <div id="education-container" class="grid grid-cols-1 sm:grid-cols-2  gap-8">
+        <div class="w-full px-4 md:px-8  bg-white">
+            <div id="education-container" class="grid grid-cols-1  gap-8">
             </div>
             <div id="loading-state" class="text-center text-gray-500 mt-8">
                 Loading...
             </div>
-        </section>
+        </div>
     </div>
 </section>
 
@@ -42,8 +96,9 @@ require_once '../layouts/header.php';
 
             // Loop through filtered programs
             $.each(educationData, function (index, item) {
+                const flexClass = index % 2 === 0 ? 'flex-row' : 'flex-row-reverse';
                 const card = `
-                <div class="flex rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300 h-64 bg-white overflow-hidden">
+                <div class="flex ${flexClass} rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300 h-64 bg-white overflow-hidden">
     
     <!-- Left: Image -->
     <div class="w-1/2 relative">
@@ -68,7 +123,7 @@ require_once '../layouts/header.php';
         </p>
 
         <!-- Button -->
-        <a href="/education-details?education=${item.id}" 
+        <a href="/emergency-details?emergency=${item.id}" 
            class="inline-block bg-black text-white hover:bg-gray-800 py-2 px-4 rounded-2xl text-sm w-max">
            View Details
         </a>

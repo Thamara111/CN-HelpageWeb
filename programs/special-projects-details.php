@@ -3,62 +3,63 @@ require_once '../layouts/head.php';
 require_once '../layouts/header.php';
 ?>
 
-<!-- Fundraising & Community Relations Program Details Section -->
+
+<!-- Special Projects Program Details Section -->
 <div class="max-w-7xl mx-auto px-4 py-12 grid grid-cols-1 lg:grid-cols-3 gap-8">
 
-  <!-- Main Fundraising & Community Relations Program Content -->
-  <div class="lg:col-span-2">
-    <div id="fundraising-container" class=""></div>
-    <div id="loading-state" class="text-center py-8 text-gray-500">Loading program details...</div>
-  </div>
+    <!-- Main Special Projects Content -->
+    <div class="lg:col-span-2">
+        <div id="special-projects-container" class=""></div>
+        <div id="loading-state" class="text-center py-8 text-gray-500">Loading program details...</div>
+    </div>
 
-  <!-- Other Fundraising & Community Relations Programs Sidebar -->
-  <div class="space-y-6">
-    <h3 class="text-xl font-bold mb-4 text-red-600">Other Fundraising & Community Relations Programs</h3>
-    <div id="other-programs" class="space-y-4"></div>
-  </div>
+    <!-- Other Special Projects Sidebar -->
+    <div class="space-y-6">
+        <h3 class="text-xl font-bold mb-4 text-red-600">Other Special Projects</h3>
+        <div id="other-programs" class="space-y-4"></div>
+    </div>
 </div>
 
 <script>
-  $(document).ready(async function () {
-    const params = new URLSearchParams(window.location.search);
-    const programId = params.get("fundraising");
+    $(document).ready(async function () {
+        const params = new URLSearchParams(window.location.search);
+        const programId = params.get("special-projects");
 
-    try {
-      const response = await fetch('/assets/json/projects.json');
-      const data = await response.json();
+        try {
+            const response = await fetch('/assets/json/projects.json');
+            const data = await response.json();
 
-      // Find the specific Fundraising & Community Relations program
-      let program = null;
-      data.HelpAge_SriLanka_Events_And_Programs_2024_25.forEach(category => {
-        if (category.category === "Fundraising & Community Relations" && category.programs) {
-          const found = category.programs.find(p => p.id === programId);
-          if (found) program = found;
-        }
-      });
+            // Find the specific special projects program
+            let program = null;
+            data.HelpAge_SriLanka_Events_And_Programs_2024_25.forEach(category => {
+                if (category.category === "Special Projects" && category.programs) {
+                    const found = category.programs.find(p => p.id === programId);
+                    if (found) program = found;
+                }
+            });
 
-      // Render main program
-      if (program) {
-        $("#fundraising-container").html(renderProgramHTML(program));
-      } else {
-        $("#fundraising-container").html('<p class="text-red-500 text-center">Program not found.</p>');
-      }
-
-      // Get other Fundraising & Community Relations programs
-      const otherPrograms = [];
-      data.HelpAge_SriLanka_Events_And_Programs_2024_25.forEach(category => {
-        if (category.category === "Fundraising & Community Relations" && category.programs) {
-          category.programs.forEach(p => {
-            if (p.id !== programId) {
-              otherPrograms.push(p);
+            // Render main program
+            if (program) {
+                $("#special-projects-container").html(renderProgramHTML(program));
+            } else {
+                $("#special-projects-container").html('<p class="text-red-500 text-center">Program not found.</p>');
             }
-          });
-        }
-      });
 
-      // Render other programs (show top 5)
-      const otherProgramsHTML = otherPrograms.slice(0, 5).map(p => `
-              <a href="?fundraising=${p.id}" class="flex items-center bg-white shadow rounded-xl overflow-hidden hover:shadow-xl transition-shadow duration-300 p-4">
+            // Get other special projects programs
+            const otherPrograms = [];
+            data.HelpAge_SriLanka_Events_And_Programs_2024_25.forEach(category => {
+                if (category.category === "Special Projects" && category.programs) {
+                    category.programs.forEach(p => {
+                        if (p.id !== programId) {
+                            otherPrograms.push(p);
+                        }
+                    });
+                }
+            });
+
+            // Render other programs (show top 5)
+            const otherProgramsHTML = otherPrograms.slice(0, 5).map(p => `
+              <a href="?special-projects=${p.id}" class="flex items-center bg-white shadow rounded-xl overflow-hidden hover:shadow-xl transition-shadow duration-300 p-4">
                   <div class="flex-1">
                       <h4 class="font-semibold text-gray-800 hover:text-red-600 text-sm mb-1">${p.name}</h4>
                       <p class="text-gray-500 text-xs">${p.mini_date}</p>
@@ -66,16 +67,16 @@ require_once '../layouts/header.php';
                   </div>
               </a>
           `).join('');
-      $("#other-programs").html(otherProgramsHTML);
+            $("#other-programs").html(otherProgramsHTML);
 
-    } catch (err) {
-      $("#fundraising-container").html('<p class="text-red-500 text-center">Failed to load program data.</p>');
-      console.error(err);
-    } finally {
-      $('#loading-state').fadeOut(300, function () { $(this).remove(); });
-    }
+        } catch (err) {
+            $("#special-projects-container").html('<p class="text-red-500 text-center">Failed to load program data.</p>');
+            console.error(err);
+        } finally {
+            $('#loading-state').fadeOut(300, function () { $(this).remove(); });
+        }
 
-    function renderProgramHTML(program) {
+        function renderProgramHTML(program) {
     // Helper to check if budget exists
     const hasBudget = program.budget && program.budget.amount;
 
@@ -250,7 +251,7 @@ require_once '../layouts/header.php';
 </div>
 `;
 }
-  });
+    });
 </script>
 
 <?php include '../layouts/footer.php'; ?>
