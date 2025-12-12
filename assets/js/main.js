@@ -21,7 +21,7 @@ $(document).ready(function () {
                 <h2 class="text-xl font-bold text-gray-800 truncate max-w-full">${item.title}</h2>
                 <p class="text-sm font-semibold text-gray-600 max-w-full">${item.minidescription}</p>
                 <h2 class="text-lg font-semibold text-green-600 whitespace-nowrap">${item.amount}</h2>
-                <a href="/donation-details.html?donation=${item.id}"
+                <a href="/donation-details?donation=${item.id}"
                     class="inline-block bg-red-500 text-white px-4 py-2 rounded-lg hover:bg-red-600 transition-colors duration-300 font-medium text-sm border border-gray-300 ">
                     Proceed to Donate
                 </a>

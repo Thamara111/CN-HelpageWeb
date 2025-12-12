@@ -9,7 +9,7 @@ $(document).ready(function () {
     // Loop through each fundraising item
     $.each(data, function (index, item) {
       const card = `
-            <div class="fund-card bg-gradient-to-r from-gray-50 to-gray-200 flex flex-col justify-center border-2 border-gray-300 rounded-2xl hover:shadow-lg transition duration-300">
+            <div class="fund-card bg-gradient-to-r from-gray-50 to-gray-200 flex flex-col justify-center border-2 border-gray-300 rounded-2xl hover:shadow-xl transition-shadow duration-300">
                 <img src="${item.image}" alt="${item.title}" class="rounded-t-lg w-full h-52 object-cover">
                 <div class="p-4">
                     <h3 class="font-semibold text-lg mt-4 truncate">${item.title}</h3>
@@ -34,9 +34,9 @@ $(document).ready(function () {
 
                 <!-- Buttons -->
                 <div class="w-full mt-6 flex flex-col sm:flex-row justify-between gap-3">
-                    <a href="//w-fundraising-details?fund=${item.id}"
+                    <a href="/w-fundraising-details?fund=${item.id}"
                         class="w-full mt-4 inline-block bg-gray-50 border-2 border-black text-center text-black hover:bg-black hover:text-white py-2 px-4 rounded-2xl  mb-4 mx-4">View More</a>
-                        <a href="//w-fundraising-details?fund=${item.id}"
+                        <a href="/w-fundraising-details?fund=${item.id}"
                         class="w-full mt-4 inline-block bg-black border-2 border-black text-center text-white hover:bg-white hover:text-black py-2 px-4 rounded-2xl  mb-4 mx-4">Donate Now</a>
                 </div>
                 </div>
