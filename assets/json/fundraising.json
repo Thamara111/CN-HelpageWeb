@@ -70,7 +70,7 @@
             "goal": "Rs 89,000.00",
             "percentage": 90
         },
-        "image": "/assets/images/donations/mail.png",
+        "image": "/assets/images/donations/mail.webp",
         "donation_link": "https://www.helpagesl.org/product-category/donation/",
         "details_link": "https://www.helpagesl.org/cause/direct-mail-appeals/"
     },
@@ -85,7 +85,7 @@
             "goal": "Rs 80,000.00",
             "percentage": 75
         },
-        "image": "/assets/images/donations/till.png",
+        "image": "/assets/images/donations/till.webp",
         "donation_link": "https://www.helpagesl.org/product-category/donation/",
         "details_link": "https://www.helpagesl.org/cause/tills-project/"
     },
@@ -100,7 +100,7 @@
             "goal": "Rs 50,000.00",
             "percentage": 12
         },
-        "image": "/assets/images/donations/pro.png",
+        "image": "/assets/images/donations/pro.webp",
         "donation_link": "https://www.helpagesl.org/product-category/donation/",
         "details_link": "https://www.helpagesl.org/cause/special-projects/"
     }
