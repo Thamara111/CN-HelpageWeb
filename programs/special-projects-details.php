@@ -225,33 +225,65 @@ require_once '../layouts/header.php';
         </div>
         ` : ''}
 
-        ${/* 5. NEW: Image Gallery Section */ ''}
         ${program.image_gallery && program.image_gallery.length > 0 ? `
-        <div class="mt-8 pt-8 border-t border-gray-100">
+        <div class="mt-8 pt-8 border-t border-gray-200">
             <h2 class="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-2">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                </svg>
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                        </svg>
                 Gallery Highlights
-                <span class="text-sm font-normal text-gray-400 ml-2">(${program.image_gallery.length} images)</span>
+                        <span class="text-sm font-normal text-gray-400 ml-2">(${program.image_gallery.length} images)</span>
             </h2>
-            
+
             <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                 ${program.image_gallery.map((img, index) => `
-                <div class="relative group overflow-hidden rounded-xl aspect-square bg-gray-100 shadow-sm cursor-pointer">
-                    <img src="${img}" loading="lazy" alt="Gallery image ${index + 1}" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500 ease-in-out">
-                    <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300"></div>
+                    <div class="relative group overflow-hidden rounded-xl aspect-square bg-gray-100 shadow-sm cursor-pointer gallery-item" data-src="${img}">
+                    <img src="${img}" loading="lazy" alt="Gallery image ${index + 1}"
+                        class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors"></div>
                 </div>
                 `).join('')}
             </div>
         </div>
+
+        <!-- Image Modal -->
+        <div id="imageModal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/80">
+            <button id="closeModal"
+                class="absolute top-5 right-5 text-white text-3xl font-bold">&times;</button>
+            <img id="modalImage" class="max-w-[90%] max-h-[90%] rounded-xl shadow-2xl">
+        </div>
         ` : ''}
 
-    </div>
-</div>
+
+            </div>
+        </div>
 `;
-}
+        }
     });
 </script>
+<script>
+    $(document).on('click', '.gallery-item', function () {
+        const imgSrc = $(this).data('src');
+        $('#modalImage').attr('src', imgSrc);
+        $('#imageModal').removeClass('hidden').addClass('flex');
+    });
+
+    $(document).on('click', '#closeModal, #imageModal', function (e) {
+        if (e.target.id === 'imageModal' || e.target.id === 'closeModal') {
+            $('#imageModal').addClass('hidden').removeClass('flex');
+            $('#modalImage').attr('src', '');
+        }
+    });
+
+    // ESC key support
+    $(document).on('keydown', function (e) {
+        if (e.key === 'Escape') {
+            $('#imageModal').addClass('hidden').removeClass('flex');
+            $('#modalImage').attr('src', '');
+        }
+    });
+</script>
+
 
 <?php include '../layouts/footer.php'; ?>

@@ -4,61 +4,61 @@ require_once '../layouts/header.php';
 ?>
 
 
-  <!-- Health Program Details Section -->
-  <div class="max-w-7xl mx-auto px-4 py-12 grid grid-cols-1 lg:grid-cols-3 gap-8">
+<!-- Health Program Details Section -->
+<div class="max-w-7xl mx-auto px-4 py-12 grid grid-cols-1 lg:grid-cols-3 gap-8">
 
     <!-- Main Health Program Content -->
     <div class="lg:col-span-2">
-      <div id="health-container" class=""></div>
-      <div id="loading-state" class="text-center py-8 text-gray-500">Loading program details...</div>
+        <div id="health-container" class=""></div>
+        <div id="loading-state" class="text-center py-8 text-gray-500">Loading program details...</div>
     </div>
 
     <!-- Other Health Programs Sidebar -->
     <div class="space-y-6">
-      <h3 class="text-xl font-bold mb-4 text-red-600">Other Health Programs</h3>
-      <div id="other-programs" class="space-y-4"></div>
+        <h3 class="text-xl font-bold mb-4 text-red-600">Other Health Programs</h3>
+        <div id="other-programs" class="space-y-4"></div>
     </div>
-  </div>
+</div>
 
-  <script>
+<script>
     $(document).ready(async function () {
-      const params = new URLSearchParams(window.location.search);
-      const programId = params.get("health");
+        const params = new URLSearchParams(window.location.search);
+        const programId = params.get("health");
 
-      try {
-        const response = await fetch('/assets/json/projects.json');
-        const data = await response.json();
+        try {
+            const response = await fetch('/assets/json/projects.json');
+            const data = await response.json();
 
-        // Find the specific health program
-        let program = null;
-        data.HelpAge_SriLanka_Events_And_Programs_2024_25.forEach(category => {
-          if (category.category === "Health & Medical" && category.programs) {
-            const found = category.programs.find(p => p.id === programId);
-            if (found) program = found;
-          }
-        });
-
-        // Render main program
-        if (program) {
-          $("#health-container").html(renderProgramHTML(program));
-        } else {
-          $("#health-container").html('<p class="text-red-500 text-center">Program not found.</p>');
-        }
-
-        // Get other health programs
-        const otherPrograms = [];
-        data.HelpAge_SriLanka_Events_And_Programs_2024_25.forEach(category => {
-          if (category.category === "Health & Medical" && category.programs) {
-            category.programs.forEach(p => {
-              if (p.id !== programId) {
-                otherPrograms.push(p);
-              }
+            // Find the specific health program
+            let program = null;
+            data.HelpAge_SriLanka_Events_And_Programs_2024_25.forEach(category => {
+                if (category.category === "Health & Medical" && category.programs) {
+                    const found = category.programs.find(p => p.id === programId);
+                    if (found) program = found;
+                }
             });
-          }
-        });
 
-        // Render other programs (show top 5)
-        const otherProgramsHTML = otherPrograms.slice(0, 5).map(p => `
+            // Render main program
+            if (program) {
+                $("#health-container").html(renderProgramHTML(program));
+            } else {
+                $("#health-container").html('<p class="text-red-500 text-center">Program not found.</p>');
+            }
+
+            // Get other health programs
+            const otherPrograms = [];
+            data.HelpAge_SriLanka_Events_And_Programs_2024_25.forEach(category => {
+                if (category.category === "Health & Medical" && category.programs) {
+                    category.programs.forEach(p => {
+                        if (p.id !== programId) {
+                            otherPrograms.push(p);
+                        }
+                    });
+                }
+            });
+
+            // Render other programs (show top 5)
+            const otherProgramsHTML = otherPrograms.slice(0, 5).map(p => `
               <a href="?health=${p.id}" class="flex items-center bg-white shadow rounded-xl overflow-hidden hover:shadow-xl transition-shadow duration-300 p-4">
                   <div class="flex-1">
                       <h4 class="font-semibold text-gray-800 hover:text-red-600 text-sm mb-1">${p.name}</h4>
@@ -67,20 +67,20 @@ require_once '../layouts/header.php';
                   </div>
               </a>
           `).join('');
-        $("#other-programs").html(otherProgramsHTML);
+            $("#other-programs").html(otherProgramsHTML);
 
-      } catch (err) {
-        $("#health-container").html('<p class="text-red-500 text-center">Failed to load program data.</p>');
-        console.error(err);
-      } finally {
-        $('#loading-state').fadeOut(300, function () { $(this).remove(); });
-      }
+        } catch (err) {
+            $("#health-container").html('<p class="text-red-500 text-center">Failed to load program data.</p>');
+            console.error(err);
+        } finally {
+            $('#loading-state').fadeOut(300, function () { $(this).remove(); });
+        }
 
-      function renderProgramHTML(program) {
-    // Helper to check if budget exists
-    const hasBudget = program.budget && program.budget.amount;
+        function renderProgramHTML(program) {
+            // Helper to check if budget exists
+            const hasBudget = program.budget && program.budget.amount;
 
-    return `
+            return `
 <div class="bg-white shadow-xl shadow-gray-200/50 rounded-3xl overflow-hidden mb-10 border border-gray-100 transition-all duration-300 hover:shadow-2xl">
     
     ${/* 1. Header Image with Gradient Overlay */ ''}
@@ -225,33 +225,65 @@ require_once '../layouts/header.php';
         </div>
         ` : ''}
 
-        ${/* 5. NEW: Image Gallery Section */ ''}
         ${program.image_gallery && program.image_gallery.length > 0 ? `
-        <div class="mt-8 pt-8 border-t border-gray-100">
+        <div class="mt-8 pt-8 border-t border-gray-200">
             <h2 class="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-2">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                </svg>
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                        </svg>
                 Gallery Highlights
-                <span class="text-sm font-normal text-gray-400 ml-2">(${program.image_gallery.length} images)</span>
+                        <span class="text-sm font-normal text-gray-400 ml-2">(${program.image_gallery.length} images)</span>
             </h2>
-            
+
             <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                 ${program.image_gallery.map((img, index) => `
-                <div class="relative group overflow-hidden rounded-xl aspect-square bg-gray-100 shadow-sm cursor-pointer">
-                    <img src="${img}" loading="lazy" alt="Gallery image ${index + 1}" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500 ease-in-out">
-                    <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300"></div>
+                    <div class="relative group overflow-hidden rounded-xl aspect-square bg-gray-100 shadow-sm cursor-pointer gallery-item" data-src="${img}">
+                    <img src="${img}" loading="lazy" alt="Gallery image ${index + 1}"
+                        class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors"></div>
                 </div>
                 `).join('')}
             </div>
         </div>
+
+        <!-- Image Modal -->
+        <div id="imageModal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/80">
+            <button id="closeModal"
+                class="absolute top-5 right-5 text-white text-3xl font-bold">&times;</button>
+            <img id="modalImage" class="max-w-[90%] max-h-[90%] rounded-xl shadow-2xl">
+        </div>
         ` : ''}
 
-    </div>
-</div>
+
+            </div>
+        </div>
 `;
-}
+        }
     });
-  </script>
+</script>
+<script>
+    $(document).on('click', '.gallery-item', function () {
+        const imgSrc = $(this).data('src');
+        $('#modalImage').attr('src', imgSrc);
+        $('#imageModal').removeClass('hidden').addClass('flex');
+    });
+
+    $(document).on('click', '#closeModal, #imageModal', function (e) {
+        if (e.target.id === 'imageModal' || e.target.id === 'closeModal') {
+            $('#imageModal').addClass('hidden').removeClass('flex');
+            $('#modalImage').attr('src', '');
+        }
+    });
+
+    // ESC key support
+    $(document).on('keydown', function (e) {
+        if (e.key === 'Escape') {
+            $('#imageModal').addClass('hidden').removeClass('flex');
+            $('#modalImage').attr('src', '');
+        }
+    });
+</script>
+
 
 <?php include '../layouts/footer.php'; ?>
