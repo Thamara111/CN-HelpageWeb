@@ -67,7 +67,7 @@ require_once '../layouts/header.php';
             </div>
 
             <div>
-                <img src="/assets/images/sec-1.png" alt="Health Programs" class="rounded-2xl">
+                <img src="/assets/images/sec-1.webp" alt="Health Programs" class="rounded-2xl">
             </div>
 
         </div>

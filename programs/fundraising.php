@@ -79,7 +79,7 @@ require_once '../layouts/header.php';
 
             </div>
             <div>
-                <img src="/assets/images/sec-1.png" alt="" class="rounded-2xl">
+                <img src="/assets/images/sec-1.webp" alt="" class="rounded-2xl">
             </div>
         </div>
     </div>

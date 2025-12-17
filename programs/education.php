@@ -39,18 +39,25 @@ require_once '../layouts/header.php';
                 <h2 class="text-2xl md:text-3xl 2xl:text-6xl font-bold mb-4 md:mb-6 lg:mb-6 xl:mb-6 2xl:mb-8">
                     Empowering Our Elders Through Knowledge</h2>
                 <p class="text-gray-700 mb-4 md:mb-6 lg:mb-6 xl:mb-6 2xl:mb-8 text-justify">
-                    HelpAge Sri Lanka is dedicated to enhancing the knowledge and skills of senior citizens through various educational programs. We focus on critical areas such as health literacy, legal rights, and digital skills to empower our elders to navigate the modern world confidently.
+                    HelpAge Sri Lanka is dedicated to enhancing the knowledge and skills of senior citizens through
+                    various educational programs. We focus on critical areas such as health literacy, legal rights, and
+                    digital skills to empower our elders to navigate the modern world confidently.
                 </p>
 
                 <ul class="mb-4 md:mb-6 lg:mb-6 xl:mb-6 2xl:mb-8">
-                    <li class="my-4"><i class="fa-solid fa-check bg-green-500 p-2 rounded-xl mx-2"></i>Workshops on health and wellness topics</li>
-                    <li class="my-4"><i class="fa-solid fa-check bg-green-500 p-2 rounded-xl mx-2"></i>Legal rights education and advocacy</li>
-                    <li class="my-4"><i class="fa-solid fa-check bg-green-500 p-2 rounded-xl mx-2"></i>Digital literacy training for seniors</li>
-                    <li class="my-4"><i class="fa-solid fa-check bg-green-500 p-2 rounded-xl mx-2"></i>Community outreach programs to raise awareness</li>
+                    <li class="my-4"><i class="fa-solid fa-check bg-green-500 p-2 rounded-xl mx-2"></i>Workshops on
+                        health and wellness topics</li>
+                    <li class="my-4"><i class="fa-solid fa-check bg-green-500 p-2 rounded-xl mx-2"></i>Legal rights
+                        education and advocacy</li>
+                    <li class="my-4"><i class="fa-solid fa-check bg-green-500 p-2 rounded-xl mx-2"></i>Digital literacy
+                        training for seniors</li>
+                    <li class="my-4"><i class="fa-solid fa-check bg-green-500 p-2 rounded-xl mx-2"></i>Community
+                        outreach programs to raise awareness</li>
                 </ul>
 
                 <p class="text-gray-700 mb-4">
-                    Recent impact: Over 5,000 seniors educated through workshops, 1,000+ participants in digital literacy programs, and numerous community events held to promote awareness.
+                    Recent impact: Over 5,000 seniors educated through workshops, 1,000+ participants in digital
+                    literacy programs, and numerous community events held to promote awareness.
                 </p>
 
                 <!-- <a href="/w-donation"
@@ -62,7 +69,7 @@ require_once '../layouts/header.php';
 
             </div>
             <div>
-                <img src="/assets/images/sec-1.png" alt="" class="rounded-2xl">
+                <img src="/assets/images/sec-1.webp" alt="" class="rounded-2xl">
             </div>
         </div>
     </div>

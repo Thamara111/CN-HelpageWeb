@@ -37,12 +37,17 @@ require_once '../layouts/header.php';
             <div>
                 <h4 class="text-red-600 mb-4">Special Projects</h4>
                 <h2 class="text-2xl md:text-3xl 2xl:text-6xl font-bold mb-4 md:mb-6 lg:mb-6 xl:mb-6 2xl:mb-8">
-    “Caring for older people, uplifting communities, and creating a future of dignity and security.”
-</h2>
+                    “Caring for older people, uplifting communities, and creating a future of dignity and security.”
+                </h2>
 
-<p class="text-gray-700 mb-4 md:mb-6 lg:mb-6 xl:mb-6 2xl:mb-8 text-justify">
-    Led by Head of Programmes Mr. Chaminda de Silva, HelpAge Sri Lanka’s Programme Division ensures dignified ageing through rights advocacy, medical outreach, and humanitarian response. Supported by 13 head office staff and 5 field coordinators in key districts (Ampara, Jaffna, Galle, Matara, Hambantota), we manage vital initiatives like the Sponsor a Grandparent (SaG) Programme and Mobile Medical Unit (MMU) camps. Together, we are dedicated to building a future where every older person in Sri Lanka lives with security, respect, and hope.
-</p>
+                <p class="text-gray-700 mb-4 md:mb-6 lg:mb-6 xl:mb-6 2xl:mb-8 text-justify">
+                    Led by Head of Programmes Mr. Chaminda de Silva, HelpAge Sri Lanka’s Programme Division ensures
+                    dignified ageing through rights advocacy, medical outreach, and humanitarian response. Supported by
+                    13 head office staff and 5 field coordinators in key districts (Ampara, Jaffna, Galle, Matara,
+                    Hambantota), we manage vital initiatives like the Sponsor a Grandparent (SaG) Programme and Mobile
+                    Medical Unit (MMU) camps. Together, we are dedicated to building a future where every older person
+                    in Sri Lanka lives with security, respect, and hope.
+                </p>
 
                 <ul class="grid grid-cols-1 md:grid-cols-2 gap-x-8 mb-4 md:mb-6 lg:mb-6 xl:mb-6 2xl:mb-8">
                     <li class="my-4 flex">
@@ -116,7 +121,7 @@ require_once '../layouts/header.php';
 
             </div>
             <div>
-                <img src="/assets/images/sec-1.png" alt="" class="rounded-2xl">
+                <img src="/assets/images/sec-1.webp" alt="" class="rounded-2xl">
             </div>
         </div>
     </div>

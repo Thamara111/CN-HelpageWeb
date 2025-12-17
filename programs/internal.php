@@ -47,18 +47,23 @@ require_once '../layouts/header.php';
                 </p>
 
                 <ul class=" mb-4 md:mb-6 lg:mb-6 xl:mb-6 2xl:mb-8">
-                    <li class="my-4"><i class="fa-solid fa-check bg-green-500 p-2 rounded-xl mx-2"></i>Capacity building:
+                    <li class="my-4"><i class="fa-solid fa-check bg-green-500 p-2 rounded-xl mx-2"></i>Capacity
+                        building:
                         regular training on elderly care, safeguarding and case management</li>
-                    <li class="my-4"><i class="fa-solid fa-check bg-green-500 p-2 rounded-xl mx-2"></i>Volunteer recruitment,
+                    <li class="my-4"><i class="fa-solid fa-check bg-green-500 p-2 rounded-xl mx-2"></i>Volunteer
+                        recruitment,
                         onboarding and mentorship programmes to expand community reach</li>
-                    <li class="my-4"><i class="fa-solid fa-check bg-green-500 p-2 rounded-xl mx-2"></i>Wellbeing & support for staff:
+                    <li class="my-4"><i class="fa-solid fa-check bg-green-500 p-2 rounded-xl mx-2"></i>Wellbeing &
+                        support for staff:
                         counselling, feedback forums and recognition initiatives</li>
-                    <li class="my-4"><i class="fa-solid fa-check bg-green-500 p-2 rounded-xl mx-2"></i>Internal events and workshops:
+                    <li class="my-4"><i class="fa-solid fa-check bg-green-500 p-2 rounded-xl mx-2"></i>Internal events
+                        and workshops:
                         peer learning, best-practice sharing and community engagement activities</li>
                 </ul>
 
                 <p class="text-gray-700 mb-4">
-                    Recent impact: 1,200+ staff & volunteers trained, 45 internal learning events delivered and sustained
+                    Recent impact: 1,200+ staff & volunteers trained, 45 internal learning events delivered and
+                    sustained
                     volunteer networks supporting over 8,000 older people with social, practical and care services.
                 </p>
 
@@ -72,7 +77,7 @@ require_once '../layouts/header.php';
 
             </div>
             <div>
-                <img src="/assets/images/sec-1.png" alt="" class="rounded-2xl">
+                <img src="/assets/images/sec-1.webp" alt="" class="rounded-2xl">
             </div>
         </div>
     </div>
@@ -134,7 +139,7 @@ require_once '../layouts/header.php';
 
                 // 3. Loop and Append
                 $.each(internalData, function (index, item) {
-                   const flexDirection = (index % 2 === 0) ? '' : 'flex-row-reverse';
+                    const flexDirection = (index % 2 === 0) ? '' : 'flex-row-reverse';
 
                     const card = `
                     <div class="flex ${flexDirection} rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300 h-64 bg-white overflow-hidden">
@@ -156,7 +161,7 @@ require_once '../layouts/header.php';
                         </a>
                     </div>
                 </div>`;
-                    
+
                     container.append(card);
                 });
 
