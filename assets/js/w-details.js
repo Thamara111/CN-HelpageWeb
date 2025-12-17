@@ -89,7 +89,7 @@ $(document).ready(function () {
                 const html = `
                     <div class="col-span-1 md:col-span-2 bg-white p-6 rounded-xl shadow-sm border border-gray-100">
                         <h1 class="text-4xl font-bold mb-6 text-gray-900 leading-tight">${donation.title}</h1>
-                        <img src="${donation.image}" alt="${donation.title}" class="rounded-xl w-full h-96 object-cover object-center mb-6 shadow-md">
+                        <img src="${donation.image}" alt="${donation.title}" class="rounded-xl w-full h-96 object-cover object-center mb-6 shadow-md" loading="lazy">
                          <div class="inline-block md:hidden bg-red-500 text-white font-bold text-lg px-6 py-4 mb-2 rounded-xl hover:bg-red-600 transition-all duration-200 w-full text-center shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
                         <a href="#donate" class="text-lg font-semibold">Donation Details</a>
                     </div>
