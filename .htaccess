@@ -1,9 +1,43 @@
+# =====================================
+# BROWSER CACHING (ADD THIS AT THE TOP)
+# =====================================
+<IfModule mod_expires.c>
+  ExpiresActive On
+
+  # Images
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType image/png  "access plus 1 year"
+  ExpiresByType image/jpg  "access plus 1 year"
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/gif  "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+
+  # Fonts
+  ExpiresByType font/woff2 "access plus 1 year"
+
+  # CSS & JS
+  ExpiresByType text/css "access plus 1 month"
+  ExpiresByType application/javascript "access plus 1 month"
+</IfModule>
+
+<IfModule mod_headers.c>
+  <FilesMatch "\.(webp|png|jpg|jpeg|gif|svg|woff2)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+</IfModule>
+
+# =====================================
+# PHP HANDLER
+# =====================================
 <IfModule mime_module>
   AddHandler application/x-httpd-ea-php81 .php .php8 .phtml
 </IfModule>
 
 Options -MultiViews
 
+# =====================================
+# REWRITE RULES (UNCHANGED)
+# =====================================
 RewriteEngine On
 
 RewriteCond %{REQUEST_FILENAME} -f
@@ -29,6 +63,7 @@ RewriteRule ^ed-message/?$ ed-message.php [L]
 RewriteRule ^publications/?$ Reports.php [L]
 RewriteRule ^privacy-policy/?$ privacy-policy.php [L]
 RewriteRule ^terms-conditions/?$ terms.php [L]
+
 RewriteRule ^community-details/?$ programs/community-details.php [L]
 RewriteRule ^community/?$ programs/community.php [L]
 RewriteRule ^education-details/?$ programs/education-details.php [L]
@@ -43,18 +78,16 @@ RewriteRule ^internal-details/?$ programs/internal-details.php [L]
 RewriteRule ^internal/?$ programs/internal.php [L]
 RewriteRule ^special-projects-details/?$ programs/special-projects-details.php [L]
 RewriteRule ^special-projects/?$ programs/special-projects.php [L]
+
 RewriteRule ^pay-safe/?$ donate.php [L]
 RewriteRule ^multiple-donation/?$ multiple-donation.php [L]
 RewriteRule ^donation-details/?$ donation-details.php [L]
+
 RewriteRule ^service-mobile-medical-unit/?$ services/mobile-medical-unit.php [L]
 RewriteRule ^service-distribution-of-disability-equipment/?$ services/distribution-of-disability-equipment.php [L]
 RewriteRule ^service-eye-hospital/?$ services/eye-hospital.php [L]
 RewriteRule ^service-ayurvedic-center/?$ services/ayurvedic-center.php [L]
 RewriteRule ^service-day-center/?$ services/day-center.php [L]
-
-
-
-
 
 RewriteRule ^cms_view/?$ CMS/cms_view.php [L]
 RewriteRule ^cms_ctrl/?$ CMS/cms_ctrl.php [L]
@@ -63,8 +96,5 @@ RewriteRule ^cms_type_blog/?$ CMS/cms_type_blog.php [L]
 RewriteRule ^cms_type_promo/?$ CMS/cms_type_promo.php [L]
 RewriteRule ^cms_type_meta/?$ CMS/cms_type_meta.php [L]
 RewriteRule ^cms_class/?$ CMS/cms_class.php [L]
-
-
-
 
 RewriteRule ^(.*)$ index.php [QSA,L]
