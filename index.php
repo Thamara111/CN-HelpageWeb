@@ -80,7 +80,7 @@ require_once 'layouts/home-hero.php';
 
             </div>
             <div>
-                <img src="/assets/images/sec-1.png" alt="" class="rounded-2xl">
+                <img src="/assets/images/sec-1.webp" alt="" class="rounded-2xl">
             </div>
         </div>
     </div>
@@ -156,14 +156,14 @@ require_once 'layouts/home-hero.php';
                     <!-- Image 4 - Center Right -->
                     <div
                         class="absolute top-1/2 right-12 -translate-y-1/2 w-32 h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 transform rotate-8 hover:rotate-0 transition-all duration-500 hover:scale-110 hover:z-10">
-                        <img src="/assets/images/sec-1.png" alt="Elderly Care 4"
+                        <img src="/assets/images/sec-1.webp" alt="Elderly Care 4"
                             class="w-full h-full rounded-2xl shadow-xl object-cover border-4 border-white">
                     </div>
 
                     <!-- Image 5 - Bottom Left -->
                     <div
                         class="absolute bottom-8 left-12 w-28 h-28 md:w-36 md:h-36 lg:w-44 lg:h-44 transform rotate-6 hover:rotate-0 transition-all duration-500 hover:scale-110 hover:z-10">
-                        <img src="/assets/images/img2.png" alt="Elderly Care 5"
+                        <img src="/assets/images/img2.webp" alt="Elderly Care 5"
                             class="w-full h-full rounded-2xl shadow-xl object-cover border-4 border-white">
                     </div>
 
@@ -364,7 +364,7 @@ require_once 'layouts/home-hero.php';
     </section> -->
 
 <!-- quick donation -->
-<section class="bg-[url('/assets/images/donate.png')] bg-center bg-cover">
+<section class="bg-[url('/assets/images/donate.webp')] bg-center bg-cover">
     <div class="bg-black bg-opacity-50 py-12">
         <div class="container mx-auto px-6 py-12 backdrop-blur-md rounded-2xl">
             <div class="grid grid-cols-1 grid-cols-1 md:grid-cols-2 lg:gap-6">
@@ -526,15 +526,14 @@ require_once 'layouts/home-hero.php';
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
 
                 <!-- Video Card 1 -->
-                <div class="bg-gray-100 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300 p-6">
+                <div class="bg-gray-100 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
                     <div class="aspect-video w-full rounded-xl overflow-hidden mb-4">
-                        <iframe src="https://www.youtube.com/embed/rOjg1F_vQKg?feature=oembed"
-                            class="w-full h-full object-cover" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen title="HelpAge Sri Lanka Video 1">
-                        </iframe>
-                    </div>
+                        <lite-youtube videoid="rOjg1F_vQKg" class="w-full h-full object-cover rounded-t-lg shadow-lg"
+                            title="HelpAge Sri Lanka Video 1">
+                        </lite-youtube>
 
+                    </div>
+                    <div class="p-6">
                     <div class="flex flex-wrap items-center gap-4 mb-3">
                         <p class="text-gray-600 text-sm">
                             by <a href="#"
@@ -555,46 +554,47 @@ require_once 'layouts/home-hero.php';
                     </p>
                 </div>
 
+                </div>
+
                 <!-- Video Card 2 -->
-                <div class="bg-gray-100 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300 p-6">
+                <div class="bg-gray-100 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
                     <div class="aspect-video w-full rounded-xl overflow-hidden mb-4">
-                        <iframe src="https://www.youtube.com/embed/3PVYidddW8s?feature=oembed"
-                            class="w-full h-full object-cover" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen title="HelpAge Sri Lanka Video 2">
-                        </iframe>
+
+                        <lite-youtube videoid="3PVYidddW8s" class="w-full h-full object-cover rounded-t-lg shadow-lg"
+                            title="HelpAge Sri Lanka Video 2"></lite-youtube>
                     </div>
 
-                    <div class="flex flex-wrap items-center gap-4 mb-3">
-                        <p class="text-gray-600 text-sm">
-                            by <a href="#"
-                                class="font-semibold text-gray-900 hover:text-red-600 transition-colors">HelpAge Sri
-                                Lanka</a>
+                    <div class="p-6">
+                        <div class="flex flex-wrap items-center gap-4 mb-3">
+                            <p class="text-gray-600 text-sm">
+                                by <a href="#"
+                                    class="font-semibold text-gray-900 hover:text-red-600 transition-colors">HelpAge Sri
+                                    Lanka</a>
+                            </p>
+                            <p class="text-gray-500 text-sm">Mar 2, 2023</p>
+                            <p class="text-gray-500 text-sm">0:44 Min</p>
+                        </div>
+
+                        <h3 class="font-semibold text-lg md:text-xl text-gray-900 mb-3 line-clamp-2">
+                            HelpAge Sri Lanka Eye Hospital Cataract Beneficiary
+                        </h3>
+
+                        <p class="text-gray-700 text-sm leading-relaxed">
+                            Planning is powerful. Discover how collaboration, energy, and purpose-driven teamwork
+                            turn ideas into real impact in our volunteer programs.
                         </p>
-                        <p class="text-gray-500 text-sm">Mar 2, 2023</p>
-                        <p class="text-gray-500 text-sm">0:44 Min</p>
                     </div>
 
-                    <h3 class="font-semibold text-lg md:text-xl text-gray-900 mb-3 line-clamp-2">
-                        HelpAge Sri Lanka Eye Hospital Cataract Beneficiary
-                    </h3>
-
-                    <p class="text-gray-700 text-sm leading-relaxed">
-                        Planning is powerful. Discover how collaboration, energy, and purpose-driven teamwork
-                        turn ideas into real impact in our volunteer programs.
-                    </p>
                 </div>
 
                 <!-- Video Card 3 -->
-                <div class="bg-gray-100 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300 p-6">
+                <div class="bg-gray-100 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
                     <div class="aspect-video w-full rounded-xl overflow-hidden mb-4">
-                        <iframe src="https://www.youtube.com/embed/GdWkEVRVyTE?feature=oembed"
-                            class="w-full h-full object-cover" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen title="HelpAge Sri Lanka Video 3">
-                        </iframe>
-                    </div>
 
+                        <lite-youtube videoid="GdWkEVRVyTE" class="w-full h-full object-cover rounded-t-lg shadow-lg"
+                            title="HelpAge Sri Lanka Video 3"></lite-youtube>
+                    </div>
+                    <div class="p-6">
                     <div class="flex flex-wrap items-center gap-4 mb-3">
                         <p class="text-gray-600 text-sm">
                             by <a href="#"
@@ -612,6 +612,7 @@ require_once 'layouts/home-hero.php';
                     <p class="text-gray-700 text-sm leading-relaxed">
                         HelpAge Sri Lanka Programmes - Social Media Communication
                     </p>
+                </div>
                 </div>
 
             </div>
