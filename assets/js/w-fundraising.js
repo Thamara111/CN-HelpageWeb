@@ -10,7 +10,7 @@ $(document).ready(function () {
     $.each(data, function (index, item) {
       const card = `
             <div class="fund-card bg-gradient-to-r from-gray-50 to-gray-200 flex flex-col justify-center border-2 border-gray-300 rounded-2xl hover:shadow-xl transition-shadow duration-300">
-                <img src="${item.image}" alt="${item.title}" class="rounded-t-lg w-full h-52 object-cover">
+                <img src="${item.image}" alt="${item.title}" class="rounded-t-lg w-full h-52 object-cover" loading="lazy">
                 <div class="p-4">
                     <h3 class="font-semibold text-lg mt-4 truncate">${item.title}</h3>
                     <p class="text-gray-700 text-sm mt-3">${item.mini_description}</p>
