@@ -5,20 +5,20 @@
         <div class="relative h-full overflow-hidden min-h-screen">
             <!-- Slides -->
             <div class="carousel-item hidden duration-700 ease-in-out min-h-screen" data-carousel-item>
-                <img src="/assets/images/hero.png"
+                <img src="/assets/images/hero.webp"
                     class="absolute block w-full h-full object-cover md:-translate-x-1/2 md:-translate-y-1/2 md:top-1/2 md:left-1/2"
                     alt="HelpAge Sri Lanka Hero">
                 <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center py-8 md:py-0">
                     <div class="container mx-auto px-4 sm:px-6 text-center">
                         <div class="flex justify-center items-center mb-4 md:mb-8">
                             <div
-                                class="w-32 h-32 md:w-48 md:h-48 rounded-full bg-white/20 backdrop-blur-xl flex justify-center items-center shadow-2xl border border-white/30">
+                                class="w-28 h-28 md:w-32 md:h-32 2xl:w-48 2xl:h-48 rounded-full bg-white/20 backdrop-blur-xl flex justify-center items-center shadow-2xl border border-white/30">
                                 <img src="/assets/images/logo-sri-lanka.webp" alt="Logo"
-                                    class="w-20 h-20 md:w-32 md:h-32 object-contain" />
+                                    class="w-20 h-20 md:w-28 md:h-28 2xl:w-32 2xl:h-32 object-contain" />
                             </div>
                         </div>
                         <h1
-                            class="text-2xl sm:text-3xl md:text-6xl lg:text-7xl font-bold text-white mt-4 md:mt-8 mb-4 md:mb-6 leading-tight mx-8 md:mx-4">
+                            class="text-2xl sm:text-3xl md:text-5xl 2xl:text-7xl font-bold text-white mt-4 md:mt-8 mb-4 md:mb-6 leading-tight mx-8 md:mx-4">
                             Supporting Elderly Citizens in Sri Lanka
                         </h1>
                         <p
@@ -38,19 +38,20 @@
 
             <!-- Item 2 -->
             <div class="carousel-item hidden duration-700 ease-in-out min-h-screen" data-carousel-item>
-                <img src="/assets/images/1.png"
+                <img src="/assets/images/1.webp"
                     class="absolute block w-full h-full object-cover md:-translate-x-1/2 md:-translate-y-1/2 md:top-1/2 md:left-1/2"
                     alt="Elderly Care">
                 <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center py-8 md:py-0">
                     <div class="container mx-auto px-4 sm:px-6 text-center">
                         <div class="flex justify-center items-center mb-4 md:mb-8">
                             <div
-                                class="w-16 h-16 md:w-20 md:h-20 rounded-full bg-red-600/80 backdrop-blur-xl flex justify-center items-center shadow-2xl border border-white/30">
-                                <i class="fa-solid fa-heart-pulse text-white text-xl md:text-3xl"></i>
+                                class="w-28 h-28 md:w-32 md:h-32 2xl:w-48 2xl:h-48 rounded-full bg-white/20 backdrop-blur-xl flex justify-center items-center shadow-2xl border border-white/30">
+                                <img src="/assets/images/logo-sri-lanka.webp" alt="Logo"
+                                    class="w-20 h-20 md:w-28 md:h-28 2xl:w-32 2xl:h-32 object-contain" />
                             </div>
                         </div>
                         <h2
-                            class="text-xl sm:text-2xl md:text-5xl lg:text-6xl font-bold text-white mt-4 md:mt-8 mb-4 md:mb-6 leading-tight">
+                            class="text-xl sm:text-2xl md:text-4xl 2xl:text-6xl font-bold text-white mt-4 md:mt-8 mb-4 md:mb-6 leading-tight">
                             Healthcare & Medical Support
                         </h2>
                         <p
@@ -99,12 +100,13 @@
                     <div class="container mx-auto px-4 sm:px-6 text-center">
                         <div class="flex justify-center items-center mb-4 md:mb-8">
                             <div
-                                class="w-16 h-16 md:w-20 md:h-20 rounded-full bg-red-600/80 backdrop-blur-xl flex justify-center items-center shadow-2xl border border-white/30">
-                                <i class="fa-solid fa-utensils text-white text-xl md:text-3xl"></i>
+                                class="w-28 h-28 md:w-32 md:h-32 2xl:w-48 2xl:h-48 rounded-full bg-white/20 backdrop-blur-xl flex justify-center items-center shadow-2xl border border-white/30">
+                                <img src="/assets/images/logo-sri-lanka.webp" alt="Logo"
+                                    class="w-20 h-20 md:w-28 md:h-28 2xl:w-32 2xl:h-32 object-contain" />
                             </div>
                         </div>
                         <h2
-                            class="text-xl sm:text-2xl md:text-5xl lg:text-6xl font-bold text-white mt-4 md:mt-8 mb-4 md:mb-6 leading-tight">
+                            class="text-xl sm:text-2xl md:text-4xl 2xl:text-6xl font-bold text-white mt-4 md:mt-8 mb-4 md:mb-6 leading-tight">
                             Nutrition & Daily Meals
                         </h2>
                         <p
@@ -113,44 +115,21 @@
                             initiatives.
                         </p>
                         <div
-                            class="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4 md:gap-6 max-w-3xl mx-auto mb-4 md:mb-8">
+                            class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 sm:gap-3 md:gap-4 max-w-4xl mx-auto mb-4 md:mb-8">
                             <div
-                                class="bg-white/20 backdrop-blur-sm rounded-lg sm:rounded-xl p-3 sm:p-4 md:p-6 border border-white/30 text-left mx-8 md:mx-2 hidden md:block">
-                                <h3 class="text-lg sm:text-xl font-bold text-white mb-2 sm:mb-3">Day Centre Meals
-                                </h3>
-                                <ul class="text-white space-y-1 sm:space-y-2 text-xs sm:text-sm">
-                                    <li class="flex items-center gap-1 sm:gap-2">
-                                        <i class="fa-solid fa-check text-green-400 text-xs sm:text-sm"></i>
-                                        <span>Breakfast for 40 elders - Rs. 8,000</span>
-                                    </li>
-                                    <li class="flex items-center gap-1 sm:gap-2">
-                                        <i class="fa-solid fa-check text-green-400 text-xs sm:text-sm"></i>
-                                        <span>Lunch for 40 elders - Rs. 10,000</span>
-                                    </li>
-                                    <li class="flex items-center gap-1 sm:gap-2">
-                                        <i class="fa-solid fa-check text-green-400 text-xs sm:text-sm"></i>
-                                        <span>Evening Tea - Rs. 4,000</span>
-                                    </li>
-                                </ul>
+                                class="bg-white/20 backdrop-blur-sm rounded-lg p-2 sm:p-3 md:p-4 border border-white/30 mx-8 md:mx-2">
+                                <i class="fa-solid fa-users text-lg sm:text-xl md:text-2xl text-white mb-1 sm:mb-2"></i>
+                                <p class="text-white font-semibold text-xs sm:text-sm md:text-base">500+ elders served daily</p>
                             </div>
                             <div
-                                class="bg-white/20 backdrop-blur-sm rounded-lg sm:rounded-xl p-3 sm:p-4 md:p-6 border border-white/30 text-left mx-8 md:mx-2">
-                                <h3 class="text-lg sm:text-xl font-bold text-white mb-2 sm:mb-3">Impact Statistics
-                                </h3>
-                                <ul class="text-white space-y-1 sm:space-y-2 text-xs sm:text-sm">
-                                    <li class="flex items-center gap-1 sm:gap-2">
-                                        <i class="fa-solid fa-users text-yellow-400 text-xs sm:text-sm"></i>
-                                        <span>500+ elders served daily</span>
-                                    </li>
-                                    <li class="flex items-center gap-1 sm:gap-2">
-                                        <i class="fa-solid fa-heart text-red-400 text-xs sm:text-sm"></i>
-                                        <span>15,000+ meals monthly</span>
-                                    </li>
-                                    <li class="flex items-center gap-1 sm:gap-2">
-                                        <i class="fa-solid fa-hand-holding-heart text-pink-400 text-xs sm:text-sm"></i>
-                                        <span>25 communities reached</span>
-                                    </li>
-                                </ul>
+                                class="bg-white/20 backdrop-blur-sm rounded-lg p-2 sm:p-3 md:p-4 border border-white/30 mx-8 md:mx-2">
+                                <i class="fa-solid fa-heart text-lg sm:text-xl md:text-2xl text-white mb-1 sm:mb-2"></i>
+                                <p class="text-white font-semibold text-xs sm:text-sm md:text-base">15,000+ meals monthly</p>
+                            </div>
+                            <div
+                                class="bg-white/20 backdrop-blur-sm rounded-lg p-2 sm:p-3 md:p-4 border border-white/30 mx-8 md:mx-2">
+                                <i class="fa-solid fa-hand-holding-heart text-lg sm:text-xl md:text-2xl text-white mb-1 sm:mb-2"></i>
+                                <p class="text-white font-semibold text-xs sm:text-sm md:text-base">25 communities reached</p>
                             </div>
                         </div>
                         <a href="/w-donation"
