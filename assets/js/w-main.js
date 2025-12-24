@@ -18,7 +18,7 @@ $(document).ready(function () {
                         data-id="${item.id}"
                     >
                     </label>
-                    <img src="${item.image}" alt="" class="rounded-t-lg w-full h-48 object-cover" loading="lazy" data-id="${item.id}">
+                    <img src="${item.image}" alt="${item.title}" class="rounded-t-lg w-full h-48 object-cover" loading="lazy" data-id="${item.id}">
                     <h3 class="font-semibold text-lg mt-4 truncate px-6">${item.title}</h3>
                     <p class="text-gray-700 text-sm mt-4 px-6">${item.minidescription}</p>
                     <p class="text-green-800 text-lg mt-4 px-6">${item.amount}</p>
