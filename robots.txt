@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+Disallow: /CMS/
+Disallow: /layouts/
+Disallow: /components/
+
+Sitemap: https://helpagesl.org/sitemap.xml
