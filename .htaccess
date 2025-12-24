@@ -1,3 +1,7 @@
+# SEO & AI files
+RewriteRule ^robots\.txt$ robots.txt [L]
+RewriteRule ^sitemap\.xml$ sitemap.php [L]
+RewriteRule ^llms\.txt$ llms.php [L]
 # =====================================
 # BROWSER CACHING (ADD THIS AT THE TOP)
 # =====================================
@@ -64,30 +68,35 @@ RewriteRule ^publications/?$ Reports.php [L]
 RewriteRule ^privacy-policy/?$ privacy-policy.php [L]
 RewriteRule ^terms-conditions/?$ terms.php [L]
 
-RewriteRule ^community-details/?$ programs/community-details.php [L]
-RewriteRule ^community/?$ programs/community.php [L]
-RewriteRule ^education-details/?$ programs/education-details.php [L]
-RewriteRule ^education/?$ programs/education.php [L]
-RewriteRule ^emergency-details/?$ programs/emergency-details.php [L]
-RewriteRule ^emergency/?$ programs/emergency.php [L]
-RewriteRule ^fundraising-details/?$ programs/fundraising-details.php [L]
-RewriteRule ^fundraising/?$ programs/fundraising.php [L]
-RewriteRule ^health-details/?$ programs/health-details.php [L]
-RewriteRule ^health/?$ programs/health.php [L]
-RewriteRule ^internal-details/?$ programs/internal-details.php [L]
-RewriteRule ^internal/?$ programs/internal.php [L]
-RewriteRule ^special-projects-details/?$ programs/special-projects-details.php [L]
-RewriteRule ^special-projects/?$ programs/special-projects.php [L]
+RewriteRule ^programs-community-details/?$ programs/community-details.php [L]
+RewriteRule ^programs-community-elder-care/?$ programs/community.php [L]
+RewriteRule ^programs-education-details/?$ programs/education-details.php [L]
+RewriteRule ^programs-education-awareness/?$ programs/education.php [L]
+RewriteRule ^programs-emergency-details/?$ programs/emergency-details.php [L]
+RewriteRule ^programs-emergency-humanitarian/?$ programs/emergency.php [L]
+RewriteRule ^programs-fundraising-details/?$ programs/fundraising-details.php [L]
+RewriteRule ^programs-fundraising/?$ programs/fundraising.php [L]
+RewriteRule ^programs-health-details/?$ programs/health-details.php [L]
+RewriteRule ^programs-health/?$ programs/health.php [L]
+RewriteRule ^programs-internal-details/?$ programs/internal-details.php [L]
+RewriteRule ^programs-internal-events/?$ programs/internal.php [L]
+RewriteRule ^programs-special-projects-details/?$ programs/special-projects-details.php [L]
+RewriteRule ^programs-special-projects/?$ programs/special-projects.php [L]
 
 RewriteRule ^pay-safe/?$ donate.php [L]
 RewriteRule ^multiple-donation/?$ multiple-donation.php [L]
 RewriteRule ^donation-details/?$ donation-details.php [L]
 
 RewriteRule ^service-mobile-medical-unit/?$ services/mobile-medical-unit.php [L]
+RewriteRule ^service-mobile-medical-unit-details/?$ services/mobile-medical-unit-details.php [L]
 RewriteRule ^service-distribution-of-disability-equipment/?$ services/distribution-of-disability-equipment.php [L]
+RewriteRule ^service-distribution-of-disability-equipment-details/?$ services/distribution-of-disability-equipment-details.php [L]
 RewriteRule ^service-eye-hospital/?$ services/eye-hospital.php [L]
+RewriteRule ^service-eye-hospital-details/?$ services/eye-hospital-details.php [L]
 RewriteRule ^service-ayurvedic-center/?$ services/ayurvedic-center.php [L]
+RewriteRule ^service-ayurvedic-center-details/?$ services/ayurvedic-center-details.php [L]
 RewriteRule ^service-day-center/?$ services/day-center.php [L]
+RewriteRule ^service-day-center-details/?$ services/day-center-details.php [L]
 
 RewriteRule ^cms_view/?$ CMS/cms_view.php [L]
 RewriteRule ^cms_ctrl/?$ CMS/cms_ctrl.php [L]
@@ -97,4 +106,12 @@ RewriteRule ^cms_type_promo/?$ CMS/cms_type_promo.php [L]
 RewriteRule ^cms_type_meta/?$ CMS/cms_type_meta.php [L]
 RewriteRule ^cms_class/?$ CMS/cms_class.php [L]
 
-RewriteRule ^(.*)$ index.php [QSA,L]
+ErrorDocument 404 /404.php
+
+
+# Catch-all for valid internal pages
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(home|about|contact|w-donation|w-donation-details|w-fundraising|w-fundraising-details|gallery|blogs|blog-details|volunteering|faqs|chairman-message|ed-message|publications|privacy-policy|terms-conditions)$ index.php?page=$1 [QSA,L]
+
+
