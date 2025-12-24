@@ -1,7 +1,15 @@
 <?php
+
+$meta_title = "Distribution of Disability Equipment - HelpAge Sri Lanka";
+$meta_description = "Learn more about HelpAge Sri Lanka's Distribution of Disability Equipment and how you can contribute to improving the lives of elderly citizens in Sri Lanka.";
+$meta_keywords = "HelpAge Sri Lanka, Distribution of Disability Equipment, Senior Citizens, Elderly Care, Non-Profit Organization, Healthcare, Social Inclusion, Economic Security";
+$meta_canonical = "https://helpagesl.org/service-distribution-of-disability-equipment";
+$og_image = "https://helpagesl.org/assets/images/og-disability-equipment.webp";
+
 require_once '../layouts/head.php';
 require_once '../layouts/header.php';
 ?>
+
 
 <section class="relative h-screen flex items-center justify-center text-center text-white overflow-hidden">
 
@@ -12,12 +20,12 @@ require_once '../layouts/header.php';
 
     <div class="relative z-10 px-4">
         <h2 class="text-4xl md:text-6xl font-bold mb-4">Distribution of Disability Equipment</h2>
-            <p class="text-gray-200 mb-12 max-w-2xl mx-auto">
-                Our community and elder care initiatives aim to provide essential support and services to elderly
-                citizens
-                across Sri Lanka. From regular health check-ups to specialized medical care, we ensure our seniors
-                receive the attention they deserve.
-            </p>
+        <p class="text-gray-200 mb-12 max-w-2xl mx-auto">
+            Our community and elder care initiatives aim to provide essential support and services to elderly
+            citizens
+            across Sri Lanka. From regular health check-ups to specialized medical care, we ensure our seniors
+            receive the attention they deserve.
+        </p>
 
         <a href="#disability-container1"
             class="group inline-flex items-center bg-white text-black pl-4 pr-2 py-2 rounded-full hover:bg-black hover:text-white transition duration-300 mb-4">
@@ -88,7 +96,7 @@ require_once '../layouts/header.php';
                 </p>
 
                 <!-- Button -->
-                <a href="/community-details?community=${item.id}" 
+                <a href="/service-distribution-of-disability-equipment-details?disability-equipment=${item.id}" 
                 class="inline-block bg-black text-white hover:bg-gray-800 py-2 px-4 rounded-2xl text-sm w-max">
                 View Details
                 </a>

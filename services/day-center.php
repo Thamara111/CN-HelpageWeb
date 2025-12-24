@@ -1,7 +1,17 @@
 <?php
+
+$meta_title = "Day Center - HelpAge Sri Lanka";
+$meta_description = "Learn more about HelpAge Sri Lanka's Day Center and how you can contribute to improving the lives of elderly citizens in Sri Lanka.";
+$meta_keywords = "HelpAge Sri Lanka, Day Center, Senior Citizens, Elderly Care, Non-Profit Organization, Healthcare, Social Inclusion, Economic Security";
+$meta_canonical = "https://helpagesl.org/service-day-center";
+
+// Optional Open Graph image
+$og_image = "https://helpagesl.org/assets/images/og-day-center.webp";
 require_once '../layouts/head.php';
+
 require_once '../layouts/header.php';
 ?>
+
 
 <section class="relative h-screen flex items-center justify-center text-center text-white overflow-hidden">
 
@@ -12,9 +22,11 @@ require_once '../layouts/header.php';
 
     <div class="relative z-10 px-4">
         <h2 class="text-4xl md:text-6xl font-bold mb-4">Day Center</h2>
-            <p class="text-gray-200 mb-12 max-w-2xl mx-auto">
-                HelpAge Sri Lanka’s Day Center provides a safe, friendly, and supportive space for senior citizens to spend their day with dignity and joy. We offer recreational activities, social engagement, health monitoring, and essential day-time care to improve the wellbeing of elders who may otherwise remain isolated at home.
-            </p>
+        <p class="text-gray-200 mb-12 max-w-2xl mx-auto">
+            HelpAge Sri Lanka’s Day Center provides a safe, friendly, and supportive space for senior citizens to spend
+            their day with dignity and joy. We offer recreational activities, social engagement, health monitoring, and
+            essential day-time care to improve the wellbeing of elders who may otherwise remain isolated at home.
+        </p>
 
         <a href="#health-donations-container"
             class="group inline-flex items-center bg-white text-black pl-4 pr-2 py-2 rounded-full hover:bg-black hover:text-white transition duration-300 mb-4">
@@ -31,7 +43,10 @@ require_once '../layouts/header.php';
         <div class="text-center mb-12">
             <h2 class="text-4xl md:text-6xl font-bold mb-4">What We Do for Day Center</h2>
             <p class="text-gray-500 mb-12 max-w-2xl mx-auto">
-                Our Day Center focuses on enhancing the daily lives of elderly citizens through structured activities, nutrition support, mental stimulation, and companionship. We provide a warm environment where seniors can interact, participate in hobbies, receive basic health check-ups, and stay active—helping them maintain independence and emotional wellbeing.
+                Our Day Center focuses on enhancing the daily lives of elderly citizens through structured activities,
+                nutrition support, mental stimulation, and companionship. We provide a warm environment where seniors
+                can interact, participate in hobbies, receive basic health check-ups, and stay active—helping them
+                maintain independence and emotional wellbeing.
             </p>
         </div>
         <section class="w-full px-4 md:px-8  bg-white">
@@ -82,7 +97,7 @@ require_once '../layouts/header.php';
                 </p>
 
                 <!-- Button -->
-                <a href="/community-details?community=${item.id}" 
+                <a href="/service-day-center-details?day-center=${item.id}" 
                 class="inline-block bg-black text-white hover:bg-gray-800 py-2 px-4 rounded-2xl text-sm w-max">
                 View Details
                 </a>

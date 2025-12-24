@@ -1,7 +1,15 @@
 <?php
+
+$meta_title = "Ayurvedic Center - HelpAge Sri Lanka";
+$meta_description = "Learn more about HelpAge Sri Lanka's Ayurvedic Center and how you can contribute to improving the lives of elderly citizens in Sri Lanka.";
+$meta_keywords = "HelpAge Sri Lanka, Ayurvedic Center, Senior Citizens, Elderly Care, Non-Profit Organization, Healthcare, Social Inclusion, Economic Security";
+$meta_canonical = "https://helpagesl.org/service-ayurvedic-center";
+$og_image = "https://helpagesl.org/assets/images/og-ayurvedic-center.webp";
+
 require_once '../layouts/head.php';
 require_once '../layouts/header.php';
 ?>
+
 
 <section class="relative h-screen flex items-center justify-center text-center text-white overflow-hidden">
 
@@ -88,7 +96,7 @@ require_once '../layouts/header.php';
                 </p>
 
                 <!-- Button -->
-                <a href="/community-details?community=${item.id}" 
+                <a href="/service-ayurvedic-center-details?ayurvedic-center=${item.id}" 
                 class="inline-block bg-black text-white hover:bg-gray-800 py-2 px-4 rounded-2xl text-sm w-max">
                 View Details
                 </a>
