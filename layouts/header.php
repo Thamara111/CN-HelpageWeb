@@ -41,7 +41,7 @@
                             <div class="w-1/2 bg-white flex flex-col justify-center">
                                 <ul class="space-y-2 w-full max-w-xs mx-auto">
                                     <li>
-                                        <a href="/health"
+                                        <a href="/programs-health"
                                             class="flex items-center w-full justify-start px-6 py-3 hover:bg-red-50 rounded-lg text-base font-medium text-gray-700 hover:text-red-600 transition-all duration-200 group border-l-4 border-transparent hover:border-red-500 text-left">
                                             <i
                                                 class="fa-solid fa-heart-pulse mr-4 text-red-500 group-hover:scale-110 transition-transform duration-200"></i>
@@ -49,7 +49,7 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/community"
+                                        <a href="/programs-community-elder-care"
                                             class="flex items-center px-6 py-3 hover:bg-red-50 rounded-lg text-base font-medium text-gray-700 hover:text-red-600 transition-all duration-200 group border-l-4 border-transparent hover:border-red-500 text-left">
                                             <i
                                                 class="fa-solid fa-people-roof mr-4 text-red-500 group-hover:scale-110 transition-transform duration-200"></i>
@@ -57,7 +57,7 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/emergency"
+                                        <a href="/programs-emergency-humanitarian"
                                             class="flex items-center px-6 py-3 hover:bg-red-50 rounded-lg text-base font-medium text-gray-700 hover:text-red-600 transition-all duration-200 group border-l-4 border-transparent hover:border-red-500 text-left">
                                             <i
                                                 class="fa-solid fa-handshake-angle mr-4 text-red-500 group-hover:scale-110 transition-transform duration-200"></i>
@@ -65,7 +65,7 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/education"
+                                        <a href="/programs-education-awareness"
                                             class="flex items-center px-6 py-3 hover:bg-red-50 rounded-lg text-base font-medium text-gray-700 hover:text-red-600 transition-all duration-200 group border-l-4 border-transparent hover:border-red-500 text-left">
                                             <i
                                                 class="fa-solid fa-graduation-cap mr-4 text-red-500 group-hover:scale-110 transition-transform duration-200"></i>
@@ -73,7 +73,7 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/fundraising"
+                                        <a href="/programs-fundraising"
                                             class="flex items-center px-6 py-3 hover:bg-red-50 rounded-lg text-base font-medium text-gray-700 hover:text-red-600 transition-all duration-200 group border-l-4 border-transparent hover:border-red-500 text-left">
                                             <i
                                                 class="fa-solid fa-hand-holding-heart mr-4 text-red-500 group-hover:scale-110 transition-transform duration-200"></i>
@@ -81,7 +81,7 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/internal"
+                                        <a href="/programs-internal-events"
                                             class="flex items-center px-6 py-3 hover:bg-red-50 rounded-lg text-base font-medium text-gray-700 hover:text-red-600 transition-all duration-200 group border-l-4 border-transparent hover:border-red-500 text-left">
                                             <i
                                                 class="fa-solid fa-people-carry-box mr-4 text-red-500 group-hover:scale-110 transition-transform duration-200"></i>
@@ -89,7 +89,7 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/special-projects"
+                                        <a href="/programs-special-projects"
                                             class="flex items-center px-6 py-3 hover:bg-red-50 rounded-lg text-base font-medium text-gray-700 hover:text-red-600 transition-all duration-200 group border-l-4 border-transparent hover:border-red-500 text-left">
                                             <i
                                                 class="fa-solid fa-people-carry-box mr-4 text-red-500 group-hover:scale-110 transition-transform duration-200"></i>
@@ -105,45 +105,45 @@
                     <ul id="mobileMenuPrograms"
                         class="hidden fixed bottom-20 left-0 bg-white text-black rounded-2xl shadow-2xl flex-col py-4 w-56 text-center md:hidden z-50 border border-gray-200">
                         <li>
-                            <a href="/health"
+                            <a href="/programs-health"
                                 class="flex items-center px-4 py-3 hover:bg-red-50 text-sm font-medium text-gray-700 hover:text-red-600 text-left">
                                 <i class="fa-solid fa-heart-pulse mr-3 text-red-500"></i> Health & Medical
                             </a>
                         </li>
                         <li>
-                            <a href="/community"
+                            <a href="/programs-community-elder-care"
                                 class="flex items-center px-4 py-3 hover:bg-red-50 text-sm font-medium text-gray-700 hover:text-red-600 text-left">
                                 <i class="fa-solid fa-people-roof mr-3 text-red-500"></i> Community & Elder Care
                             </a>
                         </li>
                         <li>
-                            <a href="/emergency"
+                            <a href="/programs-emergency-humanitarian"
                                 class="flex items-center px-4 py-3 hover:bg-red-50 text-sm font-medium text-gray-700 hover:text-red-600 text-left">
                                 <i class="fa-solid fa-handshake-angle mr-3 text-red-500"></i> Emergency &
                                 Humanitarian
                             </a>
                         </li>
                         <li>
-                            <a href="/education"
+                            <a href="/programs-education-awareness"
                                 class="flex items-center px-4 py-3 hover:bg-red-50 text-sm font-medium text-gray-700 hover:text-red-600 text-left">
                                 <i class="fa-solid fa-graduation-cap mr-3 text-red-500"></i> Education & Awareness
                             </a>
                         </li>
                         <li>
-                            <a href="/fundraising"
+                            <a href="/programs-fundraising"
                                 class="flex items-center px-4 py-3 hover:bg-red-50 text-sm font-medium text-gray-700 hover:text-red-600 text-left">
                                 <i class="fa-solid fa-hand-holding-heart mr-3 text-red-500"></i> Fundraising &
                                 Community
                             </a>
                         </li>
                         <li>
-                            <a href="/internal"
+                            <a href="/programs-internal-events"
                                 class="flex items-center px-4 py-3 hover:bg-red-50 text-sm font-medium text-gray-700 hover:text-red-600 text-left">
                                 <i class="fa-solid fa-people-carry-box mr-3 text-red-500"></i> HR & Internal Events
                             </a>
                         </li>
                         <li>
-                            <a href="/special-projects"
+                            <a href="/programs-special-projects"
                                 class="flex items-center px-4 py-3 hover:bg-red-50 text-sm font-medium text-gray-700 hover:text-red-600 text-left">
                                 <i class="fa-solid fa-people-carry-box mr-3 text-red-500"></i> Special Projects
                             </a>
@@ -262,7 +262,7 @@
                 <!-- Donate Now Button -->
                 <li>
                     <button
-                        class="bg-white text-red-600 px-4 sm:px-6 py-2 sm:py-3 rounded-full hover:bg-red-700 hover:text-white transition-all duration-300 text-sm sm:text-base flex items-center justify-center gap-2 transform hover:scale-105 shadow-lg"
+                        class="text-white bg-red-700 px-4 sm:px-6 py-2 sm:py-3 rounded-full hover:bg-red-800 hover:text-white transition-all duration-300 text-sm sm:text-base flex items-center justify-center gap-2 transform scale-105 hover:scale-110 shadow-xl"
                         onclick="window.location.href='/w-donation'">
                         <span class="hidden md:inline">Donate Now</span>
                         <i class="fa-solid fa-heart md:hidden animate-pulse text-red-600 text-lg"></i>
@@ -324,14 +324,14 @@
                                                 <span>About Us</span>
                                             </a>
                                         </li>
-                                        <li>
+                                        <!-- <li>
                                             <a href="/gallery"
                                                 class="flex items-center px-6 py-3 hover:bg-red-50 text-base font-medium text-gray-700 hover:text-red-600 transition-all duration-200 group rounded-lg border-l-4 border-transparent hover:border-red-500">
                                                 <i
                                                     class="fa-solid fa-images mr-4 text-red-500 group-hover:scale-110 transition-transform duration-200"></i>
                                                 <span>Gallery</span>
                                             </a>
-                                        </li>
+                                        </li> -->
                                         <li>
                                             <a href="/blogs"
                                                 class="flex items-center px-6 py-3 hover:bg-red-50 text-base font-medium text-gray-700 hover:text-red-600 transition-all duration-200 group rounded-lg border-l-4 border-transparent hover:border-red-500">
@@ -395,13 +395,13 @@
                                 <span>About Us</span>
                             </a>
                         </li>
-                        <li>
+                        <!-- <li>
                             <a href="/gallery"
                                 class="flex items-center px-4 py-3 hover:bg-red-50 text-sm font-medium text-gray-700 hover:text-red-600 transition-all duration-200 group">
                                 <i class="fa-solid fa-images mr-3 text-red-500"></i>
                                 <span>Gallery</span>
                             </a>
-                        </li>
+                        </li> -->
                         <li>
                             <a href="/blogs"
                                 class="flex items-center px-4 py-3 hover:bg-red-50 text-sm font-medium text-gray-700 hover:text-red-600 transition-all duration-200 group">

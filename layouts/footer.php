@@ -12,7 +12,7 @@
 
             <a href="/contact"
                 class="inline-flex items-center bg-white text-black px-5 py-2.5 rounded-full font-medium hover:bg-black hover:text-white transition duration-300 text-sm md:text-base">
-                Contact With Us
+                Contact Us
             </a>
         </div>
 
@@ -20,7 +20,7 @@
         <hr class="border-t border-gray-400 my-10">
 
         <!-- Bottom Grid -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 text-sm">
+        <div class="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-5 gap-10 text-sm">
             <!-- Logo & About -->
             <div class="text-center md:text-left">
                 <img src="/assets/images/logo-sri-lanka.webp" alt="HelpAge Sri Lanka Logo"
@@ -37,9 +37,9 @@
                 <ul class="space-y-2">
                     <li><a href="/" class="hover:text-gray-300">Home</a></li>
                     <li><a href="/about" class="hover:text-gray-300">About Us</a></li>
-                    <li><a href="/w-fundraise" class="hover:text-gray-300">Fundraising</a></li>
+                    <li><a href="/w-fundraising" class="hover:text-gray-300">Fundraising</a></li>
                     <li><a href="/w-donation" class="hover:text-gray-300">Donations</a></li>
-                    <li><a href="/gallery" class="hover:text-gray-300">Gallery</a></li>
+                    <!-- <li><a href="/gallery" class="hover:text-gray-300">Gallery</a></li> -->
                     <li><a href="/blogs" class="hover:text-gray-300">Blogs</a></li>
                     <li><a href="/volunteering" class="hover:text-gray-300">Volunteering</a></li>
                     <li><a href="/faqs" class="hover:text-gray-300">FAQs</a></li>
@@ -49,14 +49,35 @@
 
             <!-- Quick Links 2 -->
             <div class="text-center md:text-left">
-                <h3 class="text-lg font-semibold mb-3">programs</h3>
+                <h3 class="text-lg font-semibold mb-3">Programs</h3>
                 <ul class="space-y-2">
-                    <li><a href="/health" class="hover:text-gray-300">Health & Medical</a></li>
-                    <li><a href="/community" class="hover:text-gray-300">Community & Elder Care</a></li>
-                    <li><a href="/emergency" class="hover:text-gray-300">Emergency & Humanitarian</a></li>
-                    <li><a href="/education" class="hover:text-gray-300">Education & Awareness</a></li>
-                    <li><a href="/fundraising" class="hover:text-gray-300">Fundraising & Community Relations</a></li>
-                    <li><a href="/internal" class="hover:text-gray-300">Human Resources & Internal Events</a></li>
+                    <li><a href="/programs-health" class="hover:text-gray-300">Health & Medical</a></li>
+                    <li><a href="/programs-community-elder-care" class="hover:text-gray-300">Community & Elder Care</a>
+                    </li>
+                    <li><a href="/programs-emergency-humanitarian" class="hover:text-gray-300">Emergency &
+                            Humanitarian</a></li>
+                    <li><a href="/programs-education-awareness" class="hover:text-gray-300">Education & Awareness</a>
+                    </li>
+                    <li><a href="/programs-fundraising" class="hover:text-gray-300">Fundraising & Community
+                            Relations</a></li>
+                    <li><a href="/programs-internal-events" class="hover:text-gray-300">Human Resources & Internal
+                            Events</a></li>
+                    <li><a href="/programs-special-projects" class="hover:text-gray-300">Special Programs</a></li>
+                </ul>
+            </div>
+
+
+            <!-- Quick Links 2 -->
+            <div class="text-center md:text-left">
+                <h3 class="text-lg font-semibold mb-3">Services</h3>
+                <ul class="space-y-2">
+                    <li><a href="/service-mobile-medical-unit" class="hover:text-gray-300">Mobile Medical Unit</a></li>
+                    <li><a href="/service-distribution-of-disability-equipment" class="hover:text-gray-300">Distribution of Disability Equipment</a>
+                    </li>
+                    <li><a href="/service-eye-hospital" class="hover:text-gray-300">Eye Hospital</a></li>
+                    <li><a href="/service-ayurvedic-center" class="hover:text-gray-300">Ayurvedic Center</a>
+                    </li>
+                    <li><a href="/service-day-center" class="hover:text-gray-300">Day Center</a></li>
                 </ul>
             </div>
 
@@ -83,15 +104,13 @@
                             class="flex justify-center items-center w-10 h-10 bg-red-100 rounded-lg mb-3 sm:mb-0 sm:mr-4 flex-shrink-0">
                             <i class="fa-solid fa-phone text-red-600 text-lg"></i>
                         </span>
-                        <div class="text-gray-200 text-sm space-y-1">
-                            <div>
-                                <a href="tel:+94112803752" class="hover:text-red-100">+94 11 2803752</a> |
-                                <a href="tel:+94112803753" class="hover:text-red-100">+94 11 2803753</a> |
-                                <a href="tel:+94112803754" class="hover:text-red-100">+94 11 2803754</a>
-                            </div>
-                            <div>
-                                <a href="tel:+94117418977" class="hover:text-red-100">+94 11 7418977</a> |
-                                <a href="tel:+94117418981" class="hover:text-red-100">+94 11 7418981</a>
+                        <div class=" text-gray-200 text-sm space-y-1">
+                            <div class="flex flex-col">
+                                <a href="tel:+94112803752" class="flex-1 hover:text-red-100 hover:underline">+94 11 2803752</a>
+                                <a href="tel:+94112803753" class="flex-1 hover:text-red-100 hover:underline">+94 11 2803753</a>
+                                <a href="tel:+94112803754" class="flex-1 hover:text-red-100 hover:underline">+94 11 2803754</a>
+                                <a href="tel:+94117418977" class="flex-1 hover:text-red-100 hover:underline">+94 11 7418977</a>
+                                <a href="tel:+94117418981" class="flex-1 hover:text-red-100 hover:underline">+94 11 7418981</a>
                             </div>
                         </div>
                     </li>
