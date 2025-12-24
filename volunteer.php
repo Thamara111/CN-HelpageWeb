@@ -1,7 +1,20 @@
 <?php
+/* =============================
+   PAGE META
+   ============================= */
+$meta_title = "Volunteer - HelpAge Sri Lanka";
+$meta_description = "Join HelpAge Sri Lanka as a volunteer to support senior citizens in Sri Lanka. Make a difference in the lives of elderly people through your time and dedication.";
+$meta_keywords = "HelpAge Sri Lanka, Volunteer, Senior Citizens, Elderly Care, Non-Profit Organization, Healthcare, Social Inclusion, Economic Security";
+$meta_canonical = "https://helpagesl.org/volunteering";
+$og_image = "https://helpagesl.org/assets/images/og-volunteer.webp"; // optional Open Graph image
+
+/* =============================
+   LAYOUT
+   ============================= */
 require_once 'layouts/head.php';
 require_once 'layouts/header.php';
 ?>
+
 <!-- Volunteer Section -->
 <section class="">
     <div class="container mx-auto px-6 py-12">
@@ -18,7 +31,7 @@ require_once 'layouts/header.php';
         <div class="grid grid-cols-1 md:grid-cols-2 lg:gap-6">
             <div class="order-2 ">
                 <img src="./assets/images/volunteer.JPG"
-                    class="rounded-2xl border-2 border-gray-400 w-full h-full md:h-[66rem]" alt="">
+                    class="rounded-2xl border-2 border-gray-400 w-full h-full md:h-[66rem]" alt="Join as a Volunteer">
 
 
             </div>

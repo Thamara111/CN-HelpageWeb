@@ -1,7 +1,20 @@
 <?php
+/* =============================
+   PAGE META
+   ============================= */
+$meta_title = "Publications - HelpAge Sri Lanka";
+$meta_description = "Explore HelpAge Sri Lanka's publications, including research papers, reports, and newsletters that highlight our work and impact in supporting senior citizens.";
+$meta_keywords = "HelpAge Sri Lanka, Publications, Research Papers, Reports, Newsletters";
+$meta_canonical = "https://helpagesl.org/publications";
+$og_image = "https://helpagesl.org/assets/images/og-publications.webp"; // optional Open Graph image
+
+/* =============================
+   LAYOUT
+   ============================= */
 require_once 'layouts/head.php';
 require_once 'layouts/header.php';
 ?>
+
 
 <!-- Contact Section -->
 <section class="">

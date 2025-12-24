@@ -1,7 +1,15 @@
 <?php
+
+$meta_title = "About Us - HelpAge Sri Lanka";
+$meta_description = "Learn about HelpAge Sri Lanka, a non-profit organization dedicated to improving the quality of life for senior citizens across Sri Lanka since 1984.";
+$meta_keywords = "HelpAge Sri Lanka, About Us, Senior Citizens, Non-Profit Organization, Elderly Care, Healthcare, Social Inclusion, Economic Security";
+$meta_canonical = "https://helpagesl.org/about";
+$og_image = "https://helpagesl.org/assets/images/og-about.webp";
+
 require_once 'layouts/head.php';
 require_once 'layouts/header.php';
 ?>
+
 
 <section class="">
   <div class="container mx-auto px-6 py-12">

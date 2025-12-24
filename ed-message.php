@@ -1,7 +1,20 @@
 <?php
+/* =============================
+   PAGE META
+   ============================= */
+$meta_title = "Executive Director's Message - HelpAge Sri Lanka";
+$meta_description = "Read the Executive Director's message of HelpAge Sri Lanka, discussing the organization's initiatives, challenges, and future plans for supporting senior citizens.";
+$meta_keywords = "HelpAge Sri Lanka, Executive Director's Message, Senior Citizens, Elderly Care, Non-Profit Organization, Healthcare, Social Inclusion, Economic Security";
+$meta_canonical = "https://helpagesl.org/ed-message";
+$og_image = "https://helpagesl.org/assets/images/og-ed-message.webp"; // optional Open Graph image
+
+/* =============================
+   LAYOUT
+   ============================= */
 require_once 'layouts/head.php';
 require_once 'layouts/header.php';
 ?>
+
 
 <section class="bg-gray-50 py-12 px-6 md:px-12 lg:px-24">
   <div class="max-w-5xl mx-auto text-gray-800">

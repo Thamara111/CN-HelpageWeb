@@ -1,7 +1,20 @@
 <?php
+/* =============================
+   PAGE META
+   ============================= */
+$meta_title = "Contact Us - HelpAge Sri Lanka";
+$meta_description = "Get in touch with HelpAge Sri Lanka. Find our address, phone numbers, and email for inquiries, support, and partnership opportunities.";
+$meta_keywords = "HelpAge Sri Lanka, Contact Us, Address, Phone Number, Email";
+$meta_canonical = "https://helpagesl.org/contact";
+$og_image = "https://helpagesl.org/assets/images/og-contact.webp"; // add OG image if needed
+
+/* =============================
+   LAYOUT
+   ============================= */
 require_once 'layouts/head.php';
 require_once 'layouts/header.php';
 ?>
+
 
 <!-- Contact Section -->
 <section class="">

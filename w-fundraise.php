@@ -1,7 +1,20 @@
 <?php
+/* =============================
+   PAGE META
+   ============================= */
+$meta_title = "Fundraising - HelpAge Sri Lanka";
+$meta_description = "Support HelpAge Sri Lanka's fundraising initiatives to improve the lives of elderly citizens in Sri Lanka.";
+$meta_keywords = "HelpAge Sri Lanka, Fundraising, Senior Citizens, Elderly Care, Non-Profit Organization, Healthcare, Social Inclusion, Economic Security";
+$meta_canonical = "https://helpagesl.org/w-fundraising";
+$og_image = "https://helpagesl.org/assets/images/og-fundraising.webp"; // optional Open Graph image
+
+/* =============================
+   LAYOUT
+   ============================= */
 require_once 'layouts/head.php';
 require_once 'layouts/header.php';
 ?>
+
 
 <!-- Contact Section -->
 <section class="">

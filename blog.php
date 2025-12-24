@@ -1,7 +1,15 @@
 <?php
+
+$meta_title = "Blogs - HelpAge Sri Lanka";
+$meta_description = "Explore our collection of blogs focused on senior citizens, elderly care, and related topics from HelpAge Sri Lanka.";
+$meta_keywords = "HelpAge Sri Lanka, Blogs, Senior Citizens, Elderly Care, Articles, Insights, Non-Profit Organization, Healthcare, Social Inclusion, Economic Security";
+$meta_canonical = "https://helpagesl.org/blogs";
+$og_image = "https://helpagesl.org/assets/images/og-blogs.webp";
+
 require_once 'layouts/head.php';
 require_once 'layouts/header.php';
 ?>
+
 
 <!-- Contact Section -->
 <section class="">

@@ -1,7 +1,20 @@
 <?php
+/* =============================
+   PAGE META
+   ============================= */
+$meta_title = "FAQs - HelpAge Sri Lanka";
+$meta_description = "Frequently asked questions about HelpAge Sri Lanka, including donation information, tax-deductibility, and more.";
+$meta_keywords = "HelpAge Sri Lanka, FAQs, Donations, Tax Deductible, Recurring Donations";
+$meta_canonical = "https://helpagesl.org/faqs";
+$og_image = "https://helpagesl.org/assets/images/og-faqs.webp"; // optional Open Graph image
+
+/* =============================
+   LAYOUT
+   ============================= */
 require_once 'layouts/head.php';
 require_once 'layouts/header.php';
 ?>
+
 
 <!-- Contact Section -->
 <section class="">

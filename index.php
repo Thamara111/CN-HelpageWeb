@@ -1,8 +1,35 @@
 <?php
+
+$meta_title = "Home - HelpAge Sri Lanka";
+$meta_description = "HelpAge Sri Lanka is a charitable non-governmental Organization working for and on behalf of disadvantaged senior citizens in Sri Lanka to improve their quality of lives.";
+$meta_keywords = "HelpAge Sri Lanka, Senior Citizens, Elderly Care, Non-Profit Organization, Healthcare, Social Inclusion, Economic Security";
+$meta_canonical = "https://helpagesl.org/";
+$og_image = "https://helpagesl.org/assets/images/og-home.webp";
+
+$page = $_GET['page'] ?? 'home';
+
+$allowedPages = [
+    'home',
+    'about',
+    'contact',
+    'w-donation',
+    'w-donation-details',
+];
+
+if (!in_array($page, $allowedPages)) {
+    http_response_code(404);
+    require '404.php';
+    exit;
+}
+
 require_once 'layouts/head.php';
 require_once 'layouts/header.php';
-require_once 'layouts/home-hero.php';
+
+if ($page === 'home') {
+    require_once 'layouts/home-hero.php';
+}
 ?>
+
 
 <!-- three columns -->
 <section>
@@ -80,7 +107,7 @@ require_once 'layouts/home-hero.php';
 
             </div>
             <div>
-                <img src="/assets/images/sec-1.webp" alt="" class="rounded-2xl">
+                <img src="/assets/images/sec-1.webp" alt="Who We Are" class="rounded-2xl">
             </div>
         </div>
     </div>
@@ -534,25 +561,25 @@ require_once 'layouts/home-hero.php';
 
                     </div>
                     <div class="p-6">
-                    <div class="flex flex-wrap items-center gap-4 mb-3">
-                        <p class="text-gray-600 text-sm">
-                            by <a href="#"
-                                class="font-semibold text-gray-900 hover:text-red-600 transition-colors">HelpAge Sri
-                                Lanka</a>
+                        <div class="flex flex-wrap items-center gap-4 mb-3">
+                            <p class="text-gray-600 text-sm">
+                                by <a href="#"
+                                    class="font-semibold text-gray-900 hover:text-red-600 transition-colors">HelpAge Sri
+                                    Lanka</a>
+                            </p>
+                            <p class="text-gray-500 text-sm">Mar 2, 2023</p>
+                            <p class="text-gray-500 text-sm">1:43 Min</p>
+                        </div>
+
+                        <h3 class="font-semibold text-lg md:text-xl text-gray-900 mb-3 line-clamp-2">
+                            ஓட்டமாவடியில் முதியோருக்கு உலர் உணவு
+                        </h3>
+
+                        <p class="text-gray-700 text-sm leading-relaxed">
+                            HelpAge Sri Lanka conducted Economic Crisis Response Project in Sri Lanka with the support
+                            of the HelpAge International Global Emergency Fund. Published in Speedsam TV.
                         </p>
-                        <p class="text-gray-500 text-sm">Mar 2, 2023</p>
-                        <p class="text-gray-500 text-sm">1:43 Min</p>
                     </div>
-
-                    <h3 class="font-semibold text-lg md:text-xl text-gray-900 mb-3 line-clamp-2">
-                        ஓட்டமாவடியில் முதியோருக்கு உலர் உணவு
-                    </h3>
-
-                    <p class="text-gray-700 text-sm leading-relaxed">
-                        HelpAge Sri Lanka conducted Economic Crisis Response Project in Sri Lanka with the support
-                        of the HelpAge International Global Emergency Fund. Published in Speedsam TV.
-                    </p>
-                </div>
 
                 </div>
 
@@ -595,24 +622,24 @@ require_once 'layouts/home-hero.php';
                             title="HelpAge Sri Lanka Video 3"></lite-youtube>
                     </div>
                     <div class="p-6">
-                    <div class="flex flex-wrap items-center gap-4 mb-3">
-                        <p class="text-gray-600 text-sm">
-                            by <a href="#"
-                                class="font-semibold text-gray-900 hover:text-red-600 transition-colors">Helena
-                                Wallin</a>
+                        <div class="flex flex-wrap items-center gap-4 mb-3">
+                            <p class="text-gray-600 text-sm">
+                                by <a href="#"
+                                    class="font-semibold text-gray-900 hover:text-red-600 transition-colors">Helena
+                                    Wallin</a>
+                            </p>
+                            <p class="text-gray-500 text-sm">5 months ago</p>
+                            <p class="text-gray-500 text-sm">0:33 Min</p>
+                        </div>
+
+                        <h3 class="font-semibold text-lg md:text-xl text-gray-900 mb-3 line-clamp-2">
+                            HelpAge Sri Lanka Eye Hospital Cataract Beneficiary
+                        </h3>
+
+                        <p class="text-gray-700 text-sm leading-relaxed">
+                            HelpAge Sri Lanka Programmes - Social Media Communication
                         </p>
-                        <p class="text-gray-500 text-sm">5 months ago</p>
-                        <p class="text-gray-500 text-sm">0:33 Min</p>
                     </div>
-
-                    <h3 class="font-semibold text-lg md:text-xl text-gray-900 mb-3 line-clamp-2">
-                        HelpAge Sri Lanka Eye Hospital Cataract Beneficiary
-                    </h3>
-
-                    <p class="text-gray-700 text-sm leading-relaxed">
-                        HelpAge Sri Lanka Programmes - Social Media Communication
-                    </p>
-                </div>
                 </div>
 
             </div>
