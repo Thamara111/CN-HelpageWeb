@@ -1,11 +1,22 @@
 <?php
+
+$meta_title = "Community & Elder Care - HelpAge Sri Lanka";
+$meta_description = "Learn more about HelpAge Sri Lanka's community programs and initiatives aimed at improving the lives of elderly citizens in Sri Lanka.";
+$meta_keywords = "HelpAge Sri Lanka, Community Programs, Elderly Care, Senior Citizens, Non-Profit Organization, Healthcare, Social Inclusion, Economic Security";
+$meta_canonical = "https://helpagesl.org/programs/community-elder-care";
+
+// Optional Open Graph image
+$og_image = "https://helpagesl.org/assets/images/og-community-elder-care.webp";
+
 require_once '../layouts/head.php';
 require_once '../layouts/header.php';
 ?>
+
 <section class="relative h-screen flex items-center justify-center text-center text-white overflow-hidden">
     <!-- Background video -->
 
-    <img class="absolute inset-0 w-full h-full object-cover" src="/assets/images/projects/community.jpg" alt="">
+    <img class="absolute inset-0 w-full h-full object-cover" src="/assets/images/projects/community.jpg"
+        alt="community hero">
 
     <!-- Overlay (optional for better readability) -->
     <div class="absolute inset-0 bg-black/50"></div>
@@ -19,7 +30,7 @@ require_once '../layouts/header.php';
             across Sri Lanka. From regular health check-ups to specialized medical care, we ensure our seniors
             receive the attention they deserve.
         </p>
-        <a href=""
+        <a href="#container"
             class="group inline-flex items-center bg-white text-black pl-4 pr-2 py-2 rounded-full hover:bg-black hover:text-white transition duration-300 mb-4">
             Get Started
             <i
@@ -47,10 +58,12 @@ require_once '../layouts/header.php';
                 </p>
 
                 <ul class="mb-4 md:mb-6 lg:mb-6 xl:mb-6 2xl:mb-8">
-                    <li class="my-4"><i class="fa-solid fa-check bg-green-500 p-2 rounded-xl mx-2"></i>Home care assistant</li>
+                    <li class="my-4"><i class="fa-solid fa-check bg-green-500 p-2 rounded-xl mx-2"></i>Home care
+                        assistant</li>
                     <li class="my-4"><i class="fa-solid fa-check bg-green-500 p-2 rounded-xl mx-2"></i>Fundraising</li>
                     <li class="my-4"><i class="fa-solid fa-check bg-green-500 p-2 rounded-xl mx-2"></i>Day center</li>
-                    <li class="my-4"><i class="fa-solid fa-check bg-green-500 p-2 rounded-xl mx-2"></i>Ayurvedic center</li>
+                    <li class="my-4"><i class="fa-solid fa-check bg-green-500 p-2 rounded-xl mx-2"></i>Ayurvedic center
+                    </li>
                     <li class="my-4"><i class="fa-solid fa-check bg-green-500 p-2 rounded-xl mx-2"></i>Eye hospital</li>
                 </ul>
 
@@ -69,13 +82,13 @@ require_once '../layouts/header.php';
 
             </div>
             <div>
-                <img src="/assets/images/sec-1.webp" alt="" class="rounded-2xl">
+                <img src="/assets/images/sec-1.webp" alt="Community & Elder Care" class="rounded-2xl">
             </div>
         </div>
     </div>
 </section>
 
-<section class="py-12">
+<section id="container" class="py-12">
     <div class="container mx-auto px-6 py-12">
         <div class="w-full px-4 md:px-8 bg-white">
             <h2 class="text-3xl font-bold mb-4 text-center">Community & Elder Care Donations</h2>
@@ -192,7 +205,7 @@ require_once '../layouts/header.php';
                     <p class="text-gray-700 text-sm leading-relaxed line-clamp-3 mb-4">
                         ${item.mini_description}
                     </p>
-                    <a href="/community-details?community=${item.id}" 
+                    <a href="/programs-community-details?community=${item.id}" 
                        class="inline-block bg-black text-white hover:bg-gray-800 py-2 px-4 rounded-2xl text-sm w-max">
                        View Details
                     </a>

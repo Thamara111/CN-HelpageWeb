@@ -1,7 +1,16 @@
 <?php
 require_once '../layouts/head.php';
+
+// Meta tags
+$meta_title = "Health & Medical Program Details - HelpAge Sri Lanka";
+$meta_description = "Learn more about HelpAge Sri Lanka's health and medical programs and how you can contribute to improving the lives of elderly citizens in Sri Lanka.";
+$meta_keywords = "HelpAge Sri Lanka, Health Programs, Medical Care, Senior Citizens, Elderly Care, Non-Profit Organization, Healthcare, Social Inclusion, Economic Security";
+$meta_canonical = "https://helpagesl.org/programs/health-details";
+$og_image = "https://helpagesl.org/assets/images/og-health-program.webp";
+
 require_once '../layouts/header.php';
 ?>
+
 
 
 <!-- Health Program Details Section -->

@@ -1,7 +1,15 @@
 <?php
 require_once '../layouts/head.php';
+
+$meta_title = "Special Projects - HelpAge Sri Lanka";
+$meta_description = "Learn more about HelpAge Sri Lanka's special projects programs and how you can contribute to improving the lives of elderly citizens in Sri Lanka.";
+$meta_keywords = "HelpAge Sri Lanka, Special Projects Programs, Senior Citizens, Elderly Care, Non-Profit Organization, Healthcare, Social Inclusion, Economic Security";
+$meta_canonical = "https://helpagesl.org/programs/special-projects";
+$og_image = "https://helpagesl.org/assets/images/og-special-projects.webp";
+
 require_once '../layouts/header.php';
 ?>
+
 
 
 <!-- Special Projects Program Details Section -->
@@ -77,10 +85,10 @@ require_once '../layouts/header.php';
         }
 
         function renderProgramHTML(program) {
-    // Helper to check if budget exists
-    const hasBudget = program.budget && program.budget.amount;
+            // Helper to check if budget exists
+            const hasBudget = program.budget && program.budget.amount;
 
-    return `
+            return `
 <div class="bg-white shadow-xl shadow-gray-200/50 rounded-3xl overflow-hidden mb-10 border border-gray-100 transition-all duration-300 hover:shadow-2xl">
     
     ${/* 1. Header Image with Gradient Overlay */ ''}

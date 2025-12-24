@@ -1,62 +1,71 @@
 <?php
 require_once '../layouts/head.php';
+
+// Meta tags
+$meta_title = "Human Resources & Internal Events - HelpAge Sri Lanka";
+$meta_description = "Learn more about HelpAge Sri Lanka's human resources and internal events programs and how you can contribute to improving the lives of elderly citizens in Sri Lanka.";
+$meta_keywords = "HelpAge Sri Lanka, Human Resources Programs, Internal Events, Senior Citizens, Elderly Care, Non-Profit Organization, Healthcare, Social Inclusion, Economic Security";
+$meta_canonical = "https://helpagesl.org/programs/internal-events";
+$og_image = "https://helpagesl.org/assets/images/og-internal-events.webp";
+
 require_once '../layouts/header.php';
 ?>
+
 
 
 <!-- Human Resources & Internal Events events Details Section -->
 <div class="max-w-7xl mx-auto px-4 py-12 grid grid-cols-1 lg:grid-cols-3 gap-8">
 
-  <!-- Main Human Resources & Internal Events events Content -->
-  <div class="lg:col-span-2">
-    <div id="internal-container" class=""></div>
-    <div id="loading-state" class="text-center py-8 text-gray-500">Loading events details...</div>
-  </div>
+    <!-- Main Human Resources & Internal Events events Content -->
+    <div class="lg:col-span-2">
+        <div id="internal-container" class=""></div>
+        <div id="loading-state" class="text-center py-8 text-gray-500">Loading events details...</div>
+    </div>
 
-  <!-- Other Human Resources & Internal Events events Sidebar -->
-  <div class="space-y-6">
-    <h3 class="text-xl font-bold mb-4 text-red-600">Other Human Resources & Internal Events </h3>
-    <div id="other-events" class="space-y-4"></div>
-  </div>
+    <!-- Other Human Resources & Internal Events events Sidebar -->
+    <div class="space-y-6">
+        <h3 class="text-xl font-bold mb-4 text-red-600">Other Human Resources & Internal Events </h3>
+        <div id="other-events" class="space-y-4"></div>
+    </div>
 </div>
 
 <script>
-  $(document).ready(async function () {
-    const params = new URLSearchParams(window.location.search);
-    const eventsId = params.get("internal");
+    $(document).ready(async function () {
+        const params = new URLSearchParams(window.location.search);
+        const eventsId = params.get("internal");
 
-    try {
-      const response = await fetch('/assets/json/projects.json');
-      const data = await response.json();
+        try {
+            const response = await fetch('/assets/json/projects.json');
+            const data = await response.json();
 
-      // Find the specific Human Resources & Internal Events event
-      let event = null;
-      data.HelpAge_SriLanka_Events_And_Programs_2024_25.forEach(category => {
-        if (category.category === "Human Resources & Internal Events" && category.events) {
-          const found = category.events.find(p => p.id === eventsId);
-          if (found) event = found;
-        }
-      });
+            // Find the specific Human Resources & Internal Events event
+            let event = null;
+            data.HelpAge_SriLanka_Events_And_Programs_2024_25.forEach(category => {
+                if (category.category === "Human Resources & Internal Events" && category.programs) {
+                    const found = category.programs.find(p => p.id === eventsId);
+                    if (found) event = found;
+                }
+            });
 
-      // Render main event
-      if (event) {
-        $("#internal-container").html(renderProgramHTML(event));
-      } else {
-        $("#internal-container").html('<p class="text-red-500 text-center">Event not found.</p>');
-      }
+            // Render main event
+            if (event) {
+                $("#internal-container").html(renderProgramHTML(event));
+            } else {
+                $("#internal-container").html('<p class="text-red-500 text-center">Event not found.</p>');
+            }
 
-      // Get other Human Resources & Internal Events (excluding the selected one)
-      const otherEvents = [];
-      data.HelpAge_SriLanka_Events_And_Programs_2024_25.forEach(category => {
-        if (category.category === "Human Resources & Internal Events" && category.events) {
-          category.events.forEach(p => {
-            if (p.id !== eventsId) otherEvents.push(p);
-          });
-        }
-      });
+            // Get other Human Resources & Internal Events (excluding the selected one)
+            const otherEvents = [];
+            data.HelpAge_SriLanka_Events_And_Programs_2024_25.forEach(category => {
+                if (category.category === "Human Resources & Internal Events" && category.programs) {
+                    category.programs.forEach(p => {
+                        if (p.id !== eventsId) otherEvents.push(p);
+                    });
+                }
+            });
 
-      // Render other events (limit to top 5)
-      const otherEventsHTML = otherEvents.slice(0, 5).map(p => `
+            // Render other events (limit to top 5)
+            const otherEventsHTML = otherEvents.slice(0, 5).map(p => `
             <a href="?internal=${p.id}" 
                class="flex items-center bg-white shadow rounded-xl overflow-hidden hover:shadow-xl transition-shadow duration-300 p-4">
                 <div class="flex-1">
@@ -66,20 +75,20 @@ require_once '../layouts/header.php';
                 </div>
             </a>
         `).join('');
-      $("#other-events").html(otherEventsHTML);
+            $("#other-events").html(otherEventsHTML);
 
-    } catch (err) {
-      $("#internal-container").html('<p class="text-red-500 text-center">Failed to load event data.</p>');
-      console.error(err);
-    } finally {
-      $('#loading-state').fadeOut(300, function () { $(this).remove(); });
-    }
+        } catch (err) {
+            $("#internal-container").html('<p class="text-red-500 text-center">Failed to load event data.</p>');
+            console.error(err);
+        } finally {
+            $('#loading-state').fadeOut(300, function () { $(this).remove(); });
+        }
 
-    function renderProgramHTML(program) {
-      // Helper to check if budget exists
-      const hasBudget = program.budget && program.budget.amount;
+        function renderProgramHTML(program) {
+            // Helper to check if budget exists
+            const hasBudget = program.budget && program.budget.amount;
 
-      return `
+            return `
 <div class="bg-white shadow-xl shadow-gray-200/50 rounded-3xl overflow-hidden mb-10 border border-gray-100 transition-all duration-300 hover:shadow-2xl">
     
     ${/* 1. Header Image with Gradient Overlay */ ''}

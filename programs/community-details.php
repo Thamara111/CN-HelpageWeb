@@ -1,64 +1,74 @@
 <?php
+
+$meta_title = "Community Program Details - HelpAge Sri Lanka";
+$meta_description = "Learn more about HelpAge Sri Lanka's community programs and initiatives aimed at improving the lives of elderly citizens in Sri Lanka.";
+$meta_keywords = "HelpAge Sri Lanka, Community Programs, Elderly Care, Senior Citizens, Non-Profit Organization, Healthcare, Social Inclusion, Economic Security";
+$meta_canonical = "https://helpagesl.org/programs/community-details";
+
+// Optional Open Graph image
+$og_image = "https://helpagesl.org/assets/images/og-community-program.webp";
+
 require_once '../layouts/head.php';
 require_once '../layouts/header.php';
 ?>
 
 
+
 <!-- Community Program Details Section -->
 <div class="max-w-7xl mx-auto px-4 py-12 grid grid-cols-1 lg:grid-cols-3 gap-8">
 
-  <!-- Main Community Program Content -->
-  <div class="lg:col-span-2">
-    <div id="community-container" class=""></div>
-    <div id="loading-state" class="text-center py-8 text-gray-500">Loading program details...</div>
-  </div>
+    <!-- Main Community Program Content -->
+    <div class="lg:col-span-2">
+        <div id="community-container" class=""></div>
+        <div id="loading-state" class="text-center py-8 text-gray-500">Loading program details...</div>
+    </div>
 
-  <!-- Other Community Programs Sidebar -->
-  <div class="space-y-6">
-    <h3 class="text-xl font-bold mb-4 text-red-600">Other Community Programs</h3>
-    <div id="other-programs" class="space-y-4"></div>
-  </div>
+    <!-- Other Community Programs Sidebar -->
+    <div class="space-y-6">
+        <h3 class="text-xl font-bold mb-4 text-red-600">Other Community Programs</h3>
+        <div id="other-programs" class="space-y-4"></div>
+    </div>
 </div>
 
 <script>
-  $(document).ready(async function () {
-    const params = new URLSearchParams(window.location.search);
-    const programId = params.get("community");
+    $(document).ready(async function () {
+        const params = new URLSearchParams(window.location.search);
+        const programId = params.get("community");
 
-    try {
-      const response = await fetch('/assets/json/projects.json');
-      const data = await response.json();
+        try {
+            const response = await fetch('/assets/json/projects.json');
+            const data = await response.json();
 
-      // Find the specific community program
-      let program = null;
-      data.HelpAge_SriLanka_Events_And_Programs_2024_25.forEach(category => {
-        if (category.category === "Community & Elder Care" && category.programs) {
-          const found = category.programs.find(p => p.id === programId);
-          if (found) program = found;
-        }
-      });
+            // Find the specific community program
+            let program = null;
+            data.HelpAge_SriLanka_Events_And_Programs_2024_25.forEach(category => {
+                if (category.category === "Community & Elder Care" && category.programs) {
+                    const found = category.programs.find(p => p.id === programId);
+                    if (found) program = found;
+                }
+            });
 
-      // Render main program
-      if (program) {
-        $("#community-container").html(renderProgramHTML(program));
-      } else {
-        $("#community-container").html('<p class="text-red-500 text-center">Program not found.</p>');
-      }
-
-      // Get other community programs
-      const otherPrograms = [];
-      data.HelpAge_SriLanka_Events_And_Programs_2024_25.forEach(category => {
-        if (category.category === "Community & Elder Care" && category.programs) {
-          category.programs.forEach(p => {
-            if (p.id !== programId) {
-              otherPrograms.push(p);
+            // Render main program
+            if (program) {
+                $("#community-container").html(renderProgramHTML(program));
+            } else {
+                $("#community-container").html('<p class="text-red-500 text-center">Program not found.</p>');
             }
-          });
-        }
-      });
 
-      // Render other programs (show top 5)
-      const otherProgramsHTML = otherPrograms.slice(0, 5).map(p => `
+            // Get other community programs
+            const otherPrograms = [];
+            data.HelpAge_SriLanka_Events_And_Programs_2024_25.forEach(category => {
+                if (category.category === "Community & Elder Care" && category.programs) {
+                    category.programs.forEach(p => {
+                        if (p.id !== programId) {
+                            otherPrograms.push(p);
+                        }
+                    });
+                }
+            });
+
+            // Render other programs (show top 5)
+            const otherProgramsHTML = otherPrograms.slice(0, 5).map(p => `
               <a href="?community=${p.id}" class="flex items-center bg-white shadow rounded-xl overflow-hidden hover:shadow-xl transition-shadow duration-300 p-4">
                   <div class="flex-1">
                       <h4 class="font-semibold text-gray-800 hover:text-red-600 text-sm mb-1">${p.name}</h4>
@@ -67,20 +77,20 @@ require_once '../layouts/header.php';
                   </div>
               </a>
           `).join('');
-      $("#other-programs").html(otherProgramsHTML);
+            $("#other-programs").html(otherProgramsHTML);
 
-    } catch (err) {
-      $("#community-container").html('<p class="text-red-500 text-center">Failed to load program data.</p>');
-      console.error(err);
-    } finally {
-      $('#loading-state').fadeOut(300, function () { $(this).remove(); });
-    }
+        } catch (err) {
+            $("#community-container").html('<p class="text-red-500 text-center">Failed to load program data.</p>');
+            console.error(err);
+        } finally {
+            $('#loading-state').fadeOut(300, function () { $(this).remove(); });
+        }
 
-    function renderProgramHTML(program) {
-    // Helper to check if budget exists
-    const hasBudget = program.budget && program.budget.amount;
+        function renderProgramHTML(program) {
+            // Helper to check if budget exists
+            const hasBudget = program.budget && program.budget.amount;
 
-    return `
+            return `
 <div class="bg-white shadow-xl shadow-gray-200/50 rounded-3xl overflow-hidden mb-10 border border-gray-100 transition-all duration-300 hover:shadow-2xl">
     
     ${/* 1. Header Image with Gradient Overlay */ ''}

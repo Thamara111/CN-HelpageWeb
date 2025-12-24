@@ -1,12 +1,23 @@
 <?php
+
+$meta_title = "Education & Awareness - HelpAge Sri Lanka";
+$meta_description = "Learn more about HelpAge Sri Lanka's education programs and initiatives aimed at improving the lives of children and youth in Sri Lanka.";
+$meta_keywords = "HelpAge Sri Lanka, Education Programs, Youth Development, Children, Non-Profit Organization, Healthcare, Social Inclusion, Economic Security";
+$meta_canonical = "https://helpagesl.org/programs/education-awareness";
+
+// Optional Open Graph image
+$og_image = "https://helpagesl.org/assets/images/og-education-awareness.webp";
+
 require_once '../layouts/head.php';
 require_once '../layouts/header.php';
 ?>
 
+
 <section class="relative h-screen flex items-center justify-center text-center text-white overflow-hidden">
     <!-- Background video -->
 
-    <img class="absolute inset-0 w-full h-full object-cover" src="/assets/images/projects/education.jpg" alt="">
+    <img class="absolute inset-0 w-full h-full object-cover" src="/assets/images/projects/education.jpg"
+        alt="education hero">
 
     <!-- Overlay (optional for better readability) -->
     <div class="absolute inset-0 bg-black/50"></div>
@@ -20,7 +31,7 @@ require_once '../layouts/header.php';
             across Sri Lanka. From health education to legal rights awareness, we ensure our seniors
             receive the knowledge they need to live with dignity.
         </p>
-        <a href=""
+        <a href="#education-donations-container"
             class="group inline-flex items-center bg-white text-black pl-4 pr-2 py-2 rounded-full hover:bg-black hover:text-white transition duration-300 mb-4">
             Get Started
             <i
@@ -69,14 +80,14 @@ require_once '../layouts/header.php';
 
             </div>
             <div>
-                <img src="/assets/images/sec-1.webp" alt="" class="rounded-2xl">
+                <img src="/assets/images/sec-1.webp" alt="Education & Awareness" class="rounded-2xl">
             </div>
         </div>
     </div>
 </section>
 
 <!-- Contact Section -->
-<section class="">
+<section id="education-donations-container" class="">
     <div class="container mx-auto px-6 py-12">
         <div class="w-full px-4 md:px-8  bg-white">
             <div id="education-container" class="grid grid-cols-1  gap-8">
@@ -130,7 +141,7 @@ require_once '../layouts/header.php';
         </p>
 
         <!-- Button -->
-        <a href="/emergency-details?emergency=${item.id}" 
+        <a href="/programs-education-details?education=${item.id}" 
            class="inline-block bg-black text-white hover:bg-gray-800 py-2 px-4 rounded-2xl text-sm w-max">
            View Details
         </a>

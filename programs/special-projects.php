@@ -1,12 +1,20 @@
 <?php
 require_once '../layouts/head.php';
+
+$meta_title = "Special Projects - HelpAge Sri Lanka";
+$meta_description = "Learn more about HelpAge Sri Lanka's special projects programs and how you can contribute to improving the lives of elderly citizens in Sri Lanka.";
+$meta_keywords = "HelpAge Sri Lanka, Special Projects Programs, Senior Citizens, Elderly Care, Non-Profit Organization, Healthcare, Social Inclusion, Economic Security";
+$meta_canonical = "https://helpagesl.org/programs/special-projects";
+$og_image = "https://helpagesl.org/assets/images/og-special-projects.webp";
+
 require_once '../layouts/header.php';
 ?>
 
+
 <section class="relative h-screen flex items-center justify-center text-center text-white overflow-hidden">
     <!-- Background video -->
-
-    <img class="absolute inset-0 w-full h-full object-cover" src="/assets/images/projects/emergency.jpg" alt="">
+    <img class="absolute inset-0 w-full h-full object-cover" src="/assets/images/projects/emergency.jpg"
+        alt="emergency hero">
 
     <!-- Overlay (optional for better readability) -->
     <div class="absolute inset-0 bg-black/50"></div>
@@ -20,7 +28,7 @@ require_once '../layouts/header.php';
             faced by senior communities. Through targeted programs, collaborative partnerships, and sustainable
             development efforts, we strive to create long-term positive impact.
         </p>
-        <a href=""
+        <a href="#special-donations-container"
             class="group inline-flex items-center bg-white text-black pl-4 pr-2 py-2 rounded-full hover:bg-black hover:text-white transition duration-300 mb-4">
             Get Started
             <i
@@ -121,7 +129,7 @@ require_once '../layouts/header.php';
 
             </div>
             <div>
-                <img src="/assets/images/sec-1.webp" alt="" class="rounded-2xl">
+                <img src="/assets/images/sec-1.webp" alt="Special Projects" class="rounded-2xl">
             </div>
         </div>
     </div>
@@ -129,7 +137,7 @@ require_once '../layouts/header.php';
 
 
 <!-- Contact Section -->
-<section class="">
+<section id="special-donations-container" class="">
     <div class="container mx-auto px-6 py-12">
         <div class="w-full px-4 md:px-8  bg-white">
             <h2 class="text-3xl font-bold mb-4 text-center">What We Do for Special Projects</h2>
@@ -189,7 +197,7 @@ require_once '../layouts/header.php';
         </p>
 
         <!-- Button -->
-        <a href="/special-projects-details?special-projects=${item.id}" 
+        <a href="/programs-special-projects-details?special-projects=${item.id}" 
         class="inline-block bg-black text-white hover:bg-gray-800 py-2 px-4 rounded-2xl text-sm w-max">
         View Details
         </a>
@@ -211,14 +219,5 @@ require_once '../layouts/header.php';
     });
 
 </script>
-
-
-
-
-
-
-
-
-
 
 <?php include '../layouts/footer.php'; ?>
