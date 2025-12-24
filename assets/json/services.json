@@ -37,34 +37,34 @@
                         12,
                         20,
                         21
+                    ],
+                    "image_gallery": [
+                        "/assets/images/services/mmu/mmu1.webp",
+                        "/assets/images/services/mmu/mmu2.webp",
+                        "/assets/images/services/mmu/mmu3.webp",
+                        "/assets/images/services/mmu/mmu4.webp",
+                        "/assets/images/services/mmu/mmu5.webp",
+                        "/assets/images/services/mmu/mmu6.webp",
+                        "/assets/images/services/mmu/mmu7.webp",
+                        "/assets/images/services/mmu/mmu8.webp",
+                        "/assets/images/services/mmu/mmu9.webp",
+                        "/assets/images/services/mmu/mmu10.webp",
+                        "/assets/images/services/mmu/mmu11.webp",
+                        "/assets/images/services/mmu/mmu12.webp",
+                        "/assets/images/services/mmu/mmu13.webp",
+                        "/assets/images/services/mmu/mmu14.webp",
+                        "/assets/images/services/mmu/mmu15.webp",
+                        "/assets/images/services/mmu/mmu16.webp",
+                        "/assets/images/services/mmu/mmu17.webp",
+                        "/assets/images/services/mmu/mmu18.webp",
+                        "/assets/images/services/mmu/mmu19.webp",
+                        "/assets/images/services/mmu/mmu20.webp",
+                        "/assets/images/services/mmu/mmu21.webp",
+                        "/assets/images/services/mmu/mmu22.webp",
+                        "/assets/images/services/mmu/mmu23.webp",
+                        "/assets/images/services/mmu/mmu24.webp"
                     ]
                 }
-            ],
-            "images": [
-                "/assets/images/services/mmu/mmu1.webp",
-                "/assets/images/services/mmu/mmu2.webp",
-                "/assets/images/services/mmu/mmu3.webp",
-                "/assets/images/services/mmu/mmu4.webp",
-                "/assets/images/services/mmu/mmu5.webp",
-                "/assets/images/services/mmu/mmu6.webp",
-                "/assets/images/services/mmu/mmu7.webp",
-                "/assets/images/services/mmu/mmu8.webp",
-                "/assets/images/services/mmu/mmu9.webp",
-                "/assets/images/services/mmu/mmu10.webp",
-                "/assets/images/services/mmu/mmu11.webp",
-                "/assets/images/services/mmu/mmu12.webp",
-                "/assets/images/services/mmu/mmu13.webp",
-                "/assets/images/services/mmu/mmu14.webp",
-                "/assets/images/services/mmu/mmu15.webp",
-                "/assets/images/services/mmu/mmu16.webp",
-                "/assets/images/services/mmu/mmu17.webp",
-                "/assets/images/services/mmu/mmu18.webp",
-                "/assets/images/services/mmu/mmu19.webp",
-                "/assets/images/services/mmu/mmu20.webp",
-                "/assets/images/services/mmu/mmu21.webp",
-                "/assets/images/services/mmu/mmu22.webp",
-                "/assets/images/services/mmu/mmu23.webp",
-                "/assets/images/services/mmu/mmu24.webp"
             ]
         },
         {
@@ -137,7 +137,7 @@
                     "mini_date": "Sep 2024",
                     "date": "International training 23–27 Sep 2024; in-country training 11–12 Nov 2024; FY 2024/25 programme activity",
                     "mini_description": "Capacity-building grant to strengthen HASL’s humanitarian response capabilities, including international training and follow-up in Sri Lanka.",
-                    "description": "The SHAPE Project (HelpAge International) provided USD 7,949 to strengthen HASL’s humanitarian preparedness and response capacity. Three HASL staff attended a 5-day training in Kathmandu (23–27 Sep 2024) covering project management; upon return they delivered in-country training (11–12 Nov 2024) in finance, monitoring & evaluation and safeguarding. SHAPE aimed to institutionalise improved processes for emergency response and programme management. (page: 17)",
+                    "description": "The SHAPE Project (HelpAge International) provided USD 7,949 to strengthen HASL’s humanitarian preparedness and response capacity. Three HASL staff attended a 5-day training in Kathmandu (23–27 Sep 2024) covering project management; upon return they delivered in-country training (11–12 Nov 2024) in finance, monitoring & evaluation and safeguarding. SHAPE aimed to institutionalise improved processes for emergency response and programme management.",
                     "page_numbers": [
                         16,
                         17
@@ -164,11 +164,11 @@
                         17,
                         18,
                         19
+                    ],
+                    "image_gallery": [
+                        "/assets/images/services/disability-equipment/def1.jpg"
                     ]
                 }
-            ],
-            "images": [
-                "/assets/images/services/disability-equipment/def1.jpg"
             ]
         },
         {
@@ -220,45 +220,45 @@
                         23,
                         24,
                         25
+                    ],
+                    "image_gallery": [
+                        "/assets/images/services/eye-hospital/eye-hospital-milestone3.webp",
+                        "/assets/images/services/eye-hospital/eye-hospital-milestone4.webp",
+                        "/assets/images/services/eye-hospital/eye-hospital-milestone5.webp",
+                        "/assets/images/services/eye-hospital/eye-hospital-milestone6.webp",
+                        "/assets/images/services/eye-hospital/eye-hospital-milestone1.webp",
+                        "/assets/images/services/eye-hospital/eye-hospital-milestone2.webp",
+                        "/assets/images/services/eye-hospital/eye-hospital-milestone7.webp",
+                        "/assets/images/services/eye-hospital/eye-hospital-milestone8.webp",
+                        "/assets/images/services/eye-hospital/eye-hospital-milestone9.webp",
+                        "/assets/images/services/eye-hospital/eye-hospital-milestone10.webp",
+                        "/assets/images/services/eye-hospital/eye-hospital-milestone11.webp",
+                        "/assets/images/services/eye-hospital/eye-hospital-milestone12.webp",
+                        "/assets/images/services/eye-hospital/eye-hospital-milestone13.webp",
+                        "/assets/images/services/eye-hospital/eye-hospital-milestone14.webp",
+                        "/assets/images/services/eye-hospital/eye-hospital-milestone15.webp",
+                        "/assets/images/services/eye-hospital/eye-hospital-milestone16.webp",
+                        "/assets/images/services/eye-hospital/eye-hospital-milestone17.webp",
+                        "/assets/images/services/eye-hospital/eye-hospital-milestone18.webp",
+                        "/assets/images/services/eye-hospital/eye-hospital-milestone19.webp",
+                        "/assets/images/services/eye-hospital/eye-hospital-milestone20.webp",
+                        "/assets/images/services/eye-hospital/eye-hospital-milestone21.webp",
+                        "/assets/images/services/eye-hospital/eye-hospital-milestone22.webp",
+                        "/assets/images/services/eye-hospital/eye-hospital-milestone23.webp",
+                        "/assets/images/services/eye-hospital/eye-hospital-milestone24.webp",
+                        "/assets/images/services/eye-hospital/eye-hospital-milestone25.webp",
+                        "/assets/images/services/eye-hospital/eye-hospital-milestone26.webp",
+                        "/assets/images/services/eye-hospital/eye-hospital-milestone27.webp",
+                        "/assets/images/services/eye-hospital/eye-hospital-milestone28.webp",
+                        "/assets/images/services/eye-hospital/eye-hospital-milestone29.webp",
+                        "/assets/images/services/eye-hospital/eye-hospital-milestone30.webp",
+                        "/assets/images/services/eye-hospital/eye-hospital-milestone31.webp",
+                        "/assets/images/services/eye-hospital/eye-hospital-milestone32.webp",
+                        "/assets/images/services/eye-hospital/eye-hospital-milestone33.webp",
+                        "/assets/images/services/eye-hospital/eye-hospital-milestone34.webp",
+                        "/assets/images/services/eye-hospital/eye-hospital-milestone35.webp"
                     ]
                 }
-            ],
-            "images": [
-                "/assets/images/services/eye-hospital/eye-hospital-milestone3.webp",
-                "/assets/images/services/eye-hospital/eye-hospital-milestone4.webp",
-                "/assets/images/services/eye-hospital/eye-hospital-milestone5.webp",
-                "/assets/images/services/eye-hospital/eye-hospital-milestone6.webp",
-                "/assets/images/services/eye-hospital/eye-hospital-milestone1.webp",
-                "/assets/images/services/eye-hospital/eye-hospital-milestone2.webp",
-                "/assets/images/services/eye-hospital/eye-hospital-milestone7.webp",
-                "/assets/images/services/eye-hospital/eye-hospital-milestone8.webp",
-                "/assets/images/services/eye-hospital/eye-hospital-milestone9.webp",
-                "/assets/images/services/eye-hospital/eye-hospital-milestone10.webp",
-                "/assets/images/services/eye-hospital/eye-hospital-milestone11.webp",
-                "/assets/images/services/eye-hospital/eye-hospital-milestone12.webp",
-                "/assets/images/services/eye-hospital/eye-hospital-milestone13.webp",
-                "/assets/images/services/eye-hospital/eye-hospital-milestone14.webp",
-                "/assets/images/services/eye-hospital/eye-hospital-milestone15.webp",
-                "/assets/images/services/eye-hospital/eye-hospital-milestone16.webp",
-                "/assets/images/services/eye-hospital/eye-hospital-milestone17.webp",
-                "/assets/images/services/eye-hospital/eye-hospital-milestone18.webp",
-                "/assets/images/services/eye-hospital/eye-hospital-milestone19.webp",
-                "/assets/images/services/eye-hospital/eye-hospital-milestone20.webp",
-                "/assets/images/services/eye-hospital/eye-hospital-milestone21.webp",
-                "/assets/images/services/eye-hospital/eye-hospital-milestone22.webp",
-                "/assets/images/services/eye-hospital/eye-hospital-milestone23.webp",
-                "/assets/images/services/eye-hospital/eye-hospital-milestone24.webp",
-                "/assets/images/services/eye-hospital/eye-hospital-milestone25.webp",
-                "/assets/images/services/eye-hospital/eye-hospital-milestone26.webp",
-                "/assets/images/services/eye-hospital/eye-hospital-milestone27.webp",
-                "/assets/images/services/eye-hospital/eye-hospital-milestone28.webp",
-                "/assets/images/services/eye-hospital/eye-hospital-milestone29.webp",
-                "/assets/images/services/eye-hospital/eye-hospital-milestone30.webp",
-                "/assets/images/services/eye-hospital/eye-hospital-milestone31.webp",
-                "/assets/images/services/eye-hospital/eye-hospital-milestone32.webp",
-                "/assets/images/services/eye-hospital/eye-hospital-milestone33.webp",
-                "/assets/images/services/eye-hospital/eye-hospital-milestone34.webp",
-                "/assets/images/services/eye-hospital/eye-hospital-milestone35.webp"
             ]
         },
         {
@@ -338,12 +338,12 @@
                         32,
                         33,
                         34
+                    ],
+                    "image_gallery": [
+                        "/assets/images/services/day-center/day-center1.webp",
+                        "/assets/images/services/day-center/day-center2.webp"
                     ]
                 }
-            ],
-            "images": [
-                "/assets/images/services/day-center/day-center1.webp",
-                "/assets/images/services/day-center/day-center2.webp"
             ]
         }
     ]
