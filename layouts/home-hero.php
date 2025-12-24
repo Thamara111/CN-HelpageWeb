@@ -82,7 +82,7 @@
                             </div>
                         </div>
                         <a href="/w-donation"
-                            class="group inline-flex items-center bg-red-600 text-white pl-4 pr-2 py-2 rounded-full hover:bg-white hover:text-black transition duration-300">
+                            class="group inline-flex items-center bg-red-600 text-white pl-4 pr-2 py-2 rounded-full hover:bg-white hover:text-black transition duration-300 mt-10">
                             Support Healthcare
                             <i
                                 class="fa-solid fa-arrow-right bg-white text-red-600 p-3 rounded-full ml-3 transition duration-300 group-hover:bg-red-600 group-hover:text-white"></i>
@@ -133,7 +133,7 @@
                             </div>
                         </div>
                         <a href="/w-donation"
-                            class="group inline-flex items-center bg-red-600 text-white pl-4 pr-2 py-2 rounded-full hover:bg-white hover:text-black transition duration-300">
+                            class="group inline-flex items-center bg-red-600 text-white pl-4 pr-2 py-2 rounded-full hover:bg-white hover:text-black transition duration-300 mt-10">
                             Sponsor Meals
                             <i
                                 class="fa-solid fa-arrow-right bg-white text-red-600 p-3 rounded-full ml-3 transition duration-300 group-hover:bg-red-600 group-hover:text-white"></i>
@@ -206,7 +206,7 @@
         </div>
 
         <!-- Indicators -->
-        <div
+        <!-- <div
             class="absolute z-30 flex -translate-x-1/2 bottom-4 sm:bottom-6 md:bottom-8 left-1/2 space-x-2 sm:space-x-3">
             <button type="button"
                 class="indicator w-3 h-3 sm:w-4 sm:h-4 rounded-full bg-white/50 hover:bg-white transition-all duration-300"
@@ -217,10 +217,10 @@
             <button type="button"
                 class="indicator w-3 h-3 sm:w-4 sm:h-4 rounded-full bg-white/50 hover:bg-white transition-all duration-300"
                 data-slide-to="2"></button>
-            <!-- <button type="button"
+            <button type="button"
             class="indicator w-3 h-3 sm:w-4 sm:h-4 rounded-full bg-white/50 hover:bg-white transition-all duration-300"
-            data-slide-to="3"></button> -->
-        </div>
+            data-slide-to="3"></button>
+        </div> -->
 
         <!-- Controls -->
         <button data-carousel-prev
