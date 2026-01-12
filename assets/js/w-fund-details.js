@@ -101,7 +101,7 @@ $(document).ready(function () {
 
                     // 2. Validation
                     if (total <= 0) {
-                        alert("Please enter a valid funding amount.");
+                        $('<div class="fixed top-4 right-4 bg-red-500 text-white px-6 py-3 rounded-lg shadow-lg">Please enter a valid funding amount.</div>').appendTo('body').delay(3000).fadeOut(function () { $(this).remove(); });
                         return;
                     }
 

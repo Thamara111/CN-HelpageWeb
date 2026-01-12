@@ -72,7 +72,8 @@
                 <h3 class="text-lg font-semibold mb-3">Services</h3>
                 <ul class="space-y-2">
                     <li><a href="/service-mobile-medical-unit" class="hover:text-gray-300">Mobile Medical Unit</a></li>
-                    <li><a href="/service-distribution-of-disability-equipment" class="hover:text-gray-300">Distribution of Disability Equipment</a>
+                    <li><a href="/service-distribution-of-disability-equipment" class="hover:text-gray-300">Distribution
+                            of Disability Equipment</a>
                     </li>
                     <li><a href="/service-eye-hospital" class="hover:text-gray-300">Eye Hospital</a></li>
                     <li><a href="/service-ayurvedic-center" class="hover:text-gray-300">Ayurvedic Center</a>
@@ -106,11 +107,16 @@
                         </span>
                         <div class=" text-gray-200 text-sm space-y-1">
                             <div class="flex flex-col">
-                                <a href="tel:+94112803752" class="flex-1 hover:text-red-100 hover:underline">+94 11 2803752</a>
-                                <a href="tel:+94112803753" class="flex-1 hover:text-red-100 hover:underline">+94 11 2803753</a>
-                                <a href="tel:+94112803754" class="flex-1 hover:text-red-100 hover:underline">+94 11 2803754</a>
-                                <a href="tel:+94117418977" class="flex-1 hover:text-red-100 hover:underline">+94 11 7418977</a>
-                                <a href="tel:+94117418981" class="flex-1 hover:text-red-100 hover:underline">+94 11 7418981</a>
+                                <a href="tel:+94112803752" class="flex-1 hover:text-red-100 hover:underline">+94 11
+                                    2803752</a>
+                                <a href="tel:+94112803753" class="flex-1 hover:text-red-100 hover:underline">+94 11
+                                    2803753</a>
+                                <a href="tel:+94112803754" class="flex-1 hover:text-red-100 hover:underline">+94 11
+                                    2803754</a>
+                                <a href="tel:+94117418977" class="flex-1 hover:text-red-100 hover:underline">+94 11
+                                    7418977</a>
+                                <a href="tel:+94117418981" class="flex-1 hover:text-red-100 hover:underline">+94 11
+                                    7418981</a>
                             </div>
                         </div>
                     </li>
@@ -222,7 +228,7 @@
             e.preventDefault();
             let amount = $('input[name="donation_amount"]:checked').val();
             if (amount === 'custom') amount = $('#customAmount').val();
-            alert('Donation submitted! Amount: Rs. ' + amount);
+            $('<div class="fixed top-4 right-4 bg-green-500 text-white px-6 py-3 rounded-lg shadow-lg">Donation submitted! Amount: Rs. ' + amount + '</div>').appendTo('body').delay(3000).fadeOut(function () { $(this).remove(); });
         });
     });
 </script>
