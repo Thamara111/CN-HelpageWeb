@@ -92,17 +92,31 @@ $(document).ready(function () {
                     $("#totalAmount").text(`Rs. ${value.toLocaleString("en-IN")}`);
                 });
 
+                // Handle "Proceed to Fund" Button Click
                 $("#fund-details").on("click", "#fundNowBtn", function (e) {
                     e.preventDefault();
 
+                    // 1. Get the amount entered by the user
                     const total = parseFloat($("#fund_amount").val()) || 0;
 
-                    localStorage.setItem("fundTotal", total);
-                    localStorage.setItem("fundTitle", fund.title);
-                    localStorage.setItem("fundId", fund.id);
+                    // 2. Validation
+                    if (total <= 0) {
+                        alert("Please enter a valid funding amount.");
+                        return;
+                    }
 
-                    // redirect to next page
-                    window.location.href = "/pay-safe";
+                    // 3. Get Project Details (Ensure 'fund' variable exists in your page context)
+                    // If 'fund' is not defined globally, replace these with static strings or DOM grabs
+                    const title = (typeof fund !== 'undefined') ? fund.title : "Project Funding";
+                    const id = (typeof fund !== 'undefined') ? fund.id : "GEN-001";
+
+                    // 4. Save to LocalStorage
+                    localStorage.setItem("fundTotal", total);
+                    localStorage.setItem("fundTitle", title);
+                    localStorage.setItem("fundId", id);
+
+                    // 5. Open the Modal (Function defined in Script 2)
+                    populateAndOpenFundModal();
                 });
 
             } else {
