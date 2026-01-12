@@ -3,11 +3,11 @@
     GLOBAL SEO DEFAULTS (CAN BE OVERRIDDEN PER PAGE)
    ===================================================== */
 
-$meta_title       = $meta_title       ?? "HelpAge Sri Lanka";
+$meta_title = $meta_title ?? "HelpAge Sri Lanka";
 $meta_description = $meta_description ?? "HelpAge Sri Lanka is a non-profit organization dedicated to improving the quality of life of senior citizens across Sri Lanka.";
-$meta_keywords    = $meta_keywords    ?? "HelpAge Sri Lanka, elderly care, senior citizens, donations";
-$meta_canonical   = $meta_canonical   ?? "https://helpagesl.org/";
-$og_image         = $og_image         ?? "https://helpagesl.org/assets/images/og-default.webp";
+$meta_keywords = $meta_keywords ?? "HelpAge Sri Lanka, elderly care, senior citizens, donations";
+$meta_canonical = $meta_canonical ?? "https://helpagesl.org/";
+$og_image = $og_image ?? "https://helpagesl.org/assets/images/og-default.webp";
 
 /* =====================================================
     BREADCRUMBS (OPTIONAL)
@@ -149,6 +149,41 @@ $breadcrumbs = $breadcrumbs ?? [];
 
 
     <style>
+        /* Custom Scrollbar Styling */
+        /* Works on Chrome, Edge, and Safari */
+        ::-webkit-scrollbar {
+            width: 10px;
+            /* Width of the vertical scrollbar */
+            height: 10px;
+            /* Height of the horizontal scrollbar */
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #e7e5e4;
+            /* Background of the track (Tailwind stone-200) */
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: #78716c;
+            /* Color of the handle (Tailwind stone-500) */
+            border-radius: 20px;
+            /* Makes the handle round */
+            border: 2px solid #e7e5e4;
+            /* Creates a padding effect around the handle */
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background-color: #44403c;
+            /* Darker color on hover (Tailwind stone-700) */
+        }
+
+        /* Works on Firefox */
+        * {
+            scrollbar-width: thin;
+            scrollbar-color: #78716c #e7e5e4;
+            /* thumb color / track color */
+        }
+
         /* Custom keyframes (exactly like your original) */
         @keyframes square1 {
             0% {
