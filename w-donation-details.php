@@ -31,7 +31,7 @@ require_once 'layouts/header.php';
 
          <div class="relative transform overflow-hidden rounded-2xl bg-white text-left shadow-2xl transition-all 
                   w-full sm:max-w-lg md:max-w-xl border border-gray-200 
-                  max-h-[90vh] overflow-y-auto"> <button type="button" id="closeModalBtn"
+                  max-h-[95dvh] overflow-y-auto"> <button type="button" id="closeModalBtn"
                class="absolute top-3 right-3 sm:top-4 sm:right-4 text-gray-400 hover:text-gray-600 hover:bg-gray-100 rounded-full p-2 transition-colors z-20 focus:outline-none focus:ring-2 focus:ring-red-500">
                <span class="sr-only">Close</span>
                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
@@ -43,7 +43,7 @@ require_once 'layouts/header.php';
             <div class="bg-white px-4 pb-6 pt-5 sm:p-6 sm:pb-8">
 
                <div class="text-center mb-6">
-                  <h2 class="text-2xl md:text-3xl font-bold text-red-700 mb-2">
+                  <h2 class="text-lg md:text-xl 2xl:text-2xl font-bold text-red-700 mb-2">
                      Make a Donation
                   </h2>
                   <p class="text-gray-600 text-sm md:text-base px-2">
@@ -54,42 +54,42 @@ require_once 'layouts/header.php';
                <form id="donationForm" action="#" method="POST">
 
                   <div
-                     class="flex flex-col justify-center items-center mb-6 bg-red-50 border border-red-100 rounded-xl p-4 sm:p-5">
+                     class="flex flex-col justify-center items-center mb-6 bg-red-50 border border-red-100 rounded-xl p-2 2xl:p-4">
                      <div id="selected-donations-list"
-                        class="text-center w-full space-y-1 mb-2 max-h-32 overflow-y-auto custom-scrollbar">
+                        class="text-center w-full space-y-1 max-h-32 overflow-y-auto custom-scrollbar">
                      </div>
                      <div class="h-px w-full bg-red-200 my-2"></div>
-                     <p class="text-xl sm:text-2xl font-bold text-red-600 text-center">
+                     <p class="text-lg md:text-xl 2xl:text-2xl font-bold text-red-600 text-center">
                         Total: <span id="finalTotal">Rs. 0</span>
                      </p>
                   </div>
 
                   <div class="space-y-4">
-                     <h3 class="text-lg font-bold text-gray-900 flex items-center">
+                     <h3 class="text-lg 2xl:text-2xl font-bold text-gray-900 flex items-center">
                         <i class="fas fa-user-circle mr-2 text-red-500 text-xl"></i> Your Information
                      </h3>
 
                      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <div>
-                           <label for="name" class="block text-sm font-semibold text-gray-700 mb-1">Full Name <span
+                           <label for="name" class="block text-xs 2xl:text-sm font-semibold text-gray-700 mb-1">Full Name <span
                                  class="text-red-500">*</span></label>
                            <input type="text" id="name" name="name" required
-                              class="block w-full rounded-lg border border-gray-300 px-3 py-3 text-gray-900 shadow-sm focus:border-red-500 focus:ring-2 focus:ring-red-200 sm:text-sm outline-none transition-all"
+                              class="block w-full rounded-lg border border-gray-300 px-3 py-2 text-gray-900 shadow-sm focus:border-red-500 focus:ring-2 focus:ring-red-200 text-xs 2xl:text-sm outline-none transition-all"
                               placeholder="Enter full name" />
                         </div>
 
                         <div>
-                           <label for="email" class="block text-sm font-semibold text-gray-700 mb-1">Email <span
+                           <label for="email" class="block text-xs 2xl:text-sm font-semibold text-gray-700 mb-1">Email <span
                                  class="text-red-500">*</span></label>
                            <input type="email" id="email" name="email" required
-                              class="block w-full rounded-lg border border-gray-300 px-3 py-3 text-gray-900 shadow-sm focus:border-red-500 focus:ring-2 focus:ring-red-200 sm:text-sm outline-none transition-all"
+                              class="block w-full rounded-lg border border-gray-300 px-3 py-2 text-gray-900 shadow-sm focus:border-red-500 focus:ring-2 focus:ring-red-200 text-xs 2xl:text-sm outline-none transition-all"
                               placeholder="Enter email address" />
                         </div>
 
                         <div class="md:col-span-2">
-                           <label for="message" class="block text-sm font-semibold text-gray-700 mb-1">Message</label>
+                           <label for="message" class="block text-xs 2xl:text-sm font-semibold text-gray-700 mb-1">Message</label>
                            <textarea id="message" name="message"
-                              class="block w-full rounded-lg border border-gray-300 px-3 py-3 text-gray-900 shadow-sm focus:border-red-500 focus:ring-2 focus:ring-red-200 sm:text-sm outline-none transition-all resize-none"
+                              class="block w-full rounded-lg border border-gray-300 px-3 py-2 text-gray-900 shadow-sm focus:border-red-500 focus:ring-2 focus:ring-red-200 text-xs 2xl:text-sm outline-none transition-all resize-none"
                               placeholder="Optional message..." rows="2"></textarea>
                         </div>
                      </div>
@@ -100,7 +100,7 @@ require_once 'layouts/header.php';
                         class="flex items-center bg-gray-50 p-3 rounded-lg border border-gray-200 cursor-pointer hover:bg-gray-100 transition-colors">
                         <input type="checkbox" id="anonymous-yes" name="anonymous" value="yes"
                            class="h-5 w-5 text-red-600 focus:ring-red-500 rounded border-gray-300" />
-                        <span class="ml-3 text-sm font-medium text-gray-700 select-none">
+                        <span class="ml-3 text-xs 2xl:text-sm font-medium text-gray-700 select-none">
                            Keep my donation anonymous
                         </span>
                      </label>
@@ -108,7 +108,7 @@ require_once 'layouts/header.php';
 
                   <div class="mt-6 sm:mt-8">
                      <button type="submit"
-                        class="w-full bg-red-600 hover:bg-red-700 text-white font-bold text-lg py-3.5 px-4 rounded-xl transition-all duration-300 transform active:scale-95 shadow-lg flex items-center justify-center space-x-2">
+                        class="w-full bg-red-600 hover:bg-red-700 text-white font-bold text-xs 2xl:text-sm py-3 2xl:py-3.5 px-4 rounded-xl transition-all duration-300 transform active:scale-95 shadow-lg flex items-center justify-center space-x-2">
                         <i class="fas fa-heart"></i>
                         <span>Pay Securely</span>
                      </button>
@@ -174,7 +174,7 @@ require_once 'layouts/header.php';
          const donationTitles = JSON.parse(localStorage.getItem("donationTitles")) || ["General Donation"];
 
          if (amount <= 0) {
-            alert("Please select or enter a valid donation amount.");
+            $('<div class="fixed top-4 right-4 bg-red-500 text-white px-6 py-3 rounded-lg shadow-lg">Please select or enter a valid donation amount.</div>').appendTo('body').delay(3000).fadeOut(function () { $(this).remove(); });
             return;
          }
 
