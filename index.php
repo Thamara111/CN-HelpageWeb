@@ -481,32 +481,6 @@ if ($page === 'home') {
                                     class="prev-btn bg-gray-200 text-gray-700 font-semibold py-3 px-6 rounded-full hover:bg-gray-300 w-full sm:w-auto">
                                     Previous
                                 </button>
-                                <button type="button"
-                                    class="next-btn bg-red-600 text-white font-semibold py-3 px-6 rounded-full hover:bg-red-700 w-full sm:w-auto">
-                                    Next
-                                </button>
-                            </div>
-                        </div>
-
-                        <!-- STEP 3: Payment Details -->
-                        <div class="form-step hidden">
-                            <h2 class="text-xl font-semibold mb-4 text-gray-800 text-center sm:text-left">Payment
-                                Details</h2>
-                            <div class="space-y-4">
-                                <input type="text" name="card_number" placeholder="Card Number" required
-                                    class="w-full border border-gray-300 rounded-xl p-3 focus:ring-2 focus:ring-red-600">
-                                <div class="grid grid-cols-2 gap-4">
-                                    <input type="text" name="expiry" placeholder="MM/YY" required
-                                        class="border border-gray-300 rounded-xl p-3 focus:ring-2 focus:ring-red-600">
-                                    <input type="text" name="cvv" placeholder="CVV" required
-                                        class="border border-gray-300 rounded-xl p-3 focus:ring-2 focus:ring-red-600">
-                                </div>
-                            </div>
-                            <div class="mt-6 flex flex-col sm:flex-row justify-between gap-3 sm:gap-0">
-                                <button type="button"
-                                    class="prev-btn bg-gray-200 text-gray-700 font-semibold py-3 px-6 rounded-full hover:bg-gray-300 w-full sm:w-auto">
-                                    Previous
-                                </button>
                                 <button type="submit"
                                     class="bg-red-600 text-white font-semibold py-3 px-6 rounded-full hover:bg-red-700 w-full sm:w-auto">
                                     Donate Now
@@ -516,7 +490,122 @@ if ($page === 'home') {
 
                     </form>
                 </div>
+                <script>
+                    $(document).ready(function () {
+                        const $steps = $(".form-step");
+                        let currentStep = 0;
 
+                        // --- 1. HANDLE CUSTOM AMOUNT VISIBILITY ---
+                        $('input[name="donation_amount"]').on('change', function () {
+                            if ($(this).val() === 'custom') {
+                                $('#customAmountContainer').removeClass('hidden').find('input').focus();
+                            } else {
+                                $('#customAmountContainer').addClass('hidden');
+                            }
+                        });
+
+                        // --- 2. MULTI-STEP NAVIGATION ---
+
+                        // Next Button Click
+                        $(".next-btn").on("click", function () {
+                            if (validateStep(currentStep)) {
+                                $steps.eq(currentStep).addClass("hidden");
+                                currentStep++;
+                                $steps.eq(currentStep).removeClass("hidden");
+                            }
+                        });
+
+                        // Previous Button Click
+                        $(".prev-btn").on("click", function () {
+                            $steps.eq(currentStep).addClass("hidden");
+                            currentStep--;
+                            $steps.eq(currentStep).removeClass("hidden");
+                        });
+
+                        // Simple Validation Function
+                        function validateStep(stepIndex) {
+                            let isValid = true;
+                            const $currentStep = $steps.eq(stepIndex);
+
+                            // Step 1: Amount Validation
+                            if (stepIndex === 0) {
+                                const selectedRadio = $('input[name="donation_amount"]:checked').val();
+                                if (!selectedRadio) {
+                                    $('<div class="fixed top-4 right-4 bg-red-500 text-white px-6 py-3 rounded-lg shadow-lg">Please select a donation amount.</div>').appendTo('body').delay(3000).fadeOut(function () { $(this).remove(); });
+                                    isValid = false;
+                                } else if (selectedRadio === 'custom') {
+                                    const customAmount = $('#customAmount').val();
+                                    if (!customAmount || customAmount <= 0) {
+                                        $('<div class="fixed top-4 right-4 bg-red-500 text-white px-6 py-3 rounded-lg shadow-lg">Please enter a valid custom amount.</div>').appendTo('body').delay(3000).fadeOut(function () { $(this).remove(); });
+                                        isValid = false;
+                                    }
+                                }
+                            }
+
+                            // Step 2: Personal Details Validation
+                            if (stepIndex === 1) {
+                                const name = $('input[name="name"]').val().trim();
+                                const email = $('input[name="email"]').val().trim();
+                                if (!name || !email) {
+                                    $('<div class="fixed top-4 right-4 bg-red-500 text-white px-6 py-3 rounded-lg shadow-lg">Please fill in your name and email.</div>').appendTo('body').delay(3000).fadeOut(function () { $(this).remove(); });
+                                    isValid = false;
+                                }
+                            }
+
+                            return isValid;
+                        }
+
+                        // --- 3. FORM SUBMISSION & PAYSAFE CONNECTION ---
+                        $("#donationForm").on("submit", function (e) {
+                            e.preventDefault();
+
+                            // 1. Get Selected Amount
+                            let amount = 0;
+                            const selectedRadio = $('input[name="donation_amount"]:checked').val();
+
+                            if (selectedRadio === 'custom') {
+                                amount = parseFloat($('#customAmount').val());
+                            } else {
+                                amount = parseFloat(selectedRadio);
+                            }
+
+                            if (!amount || amount <= 0) {
+                                $('<div class="fixed top-4 right-4 bg-red-500 text-white px-6 py-3 rounded-lg shadow-lg">Invalid donation amount.</div>').appendTo('body').delay(3000).fadeOut(function () { $(this).remove(); });
+                                return;
+                            }
+
+                            // 2. Get User Details
+                            const name = $('input[name="name"]').val().trim() || "Anonymous";
+                            const email = $('input[name="email"]').val().trim();
+                            // We do not use card details here because PaySafe handles that securely on the redirect page.
+
+                            // 3. Prepare PaySafe Parameters
+                            const currency = "LKR";
+                            const description = "Donation"; // Or use $('textarea[name="description"]').val()
+
+                            // Generate Unique Order ID
+                            const now = new Date();
+                            const datePart = now.getFullYear().toString().slice(-2) +
+                                String(now.getMonth() + 1).padStart(2, "0") +
+                                String(now.getDate()).padStart(2, "0");
+                            const randomPart = Math.floor(Math.random() * 9000) + 1000;
+                            const cleanName = name.replace(/[^a-zA-Z0-9]/g, "").toUpperCase().slice(0, 6);
+                            const orderId = `SW${datePart}${cleanName}${randomPart}`;
+
+                            // 4. Construct API URL
+                            // Encoding parameters to ensure URL safety
+                            const paymentUrl = `https://helpage.go.digitable.io/paysafe/sey?currency=${currency}&amount=${amount}&orderId=${orderId}&description=${encodeURIComponent(description)}&customerName=${encodeURIComponent(name)}&customerEmail=${encodeURIComponent(email)}`;
+
+                            console.log("Redirecting to:", paymentUrl);
+
+                            // 5. UX: Change Button Text & Redirect
+                            const $btn = $(this).find('button[type="submit"]');
+                            $btn.prop('disabled', true).html('<i class="fas fa-spinner fa-spin"></i> Processing...');
+
+                            window.location.href = paymentUrl;
+                        });
+                    });
+                </script>
             </div>
         </div>
 </section>
