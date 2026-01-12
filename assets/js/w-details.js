@@ -185,11 +185,13 @@ $(document).ready(function () {
                     updateTotal();
                 });
 
-                // Donate button click
+                // ✅ Donate button click (Updated for Popup)
                 $("#donation-details").on("click", "#donateNowBtn", function (e) {
                     e.preventDefault();
 
-                    const donationTitles = [donation.title];
+                    // 1. Gather Data (Same as before)
+                    // Note: Ensure 'donation' variable exists in your scope, otherwise remove the first line
+                    const donationTitles = (typeof donation !== 'undefined' && donation.title) ? [donation.title] : [];
                     const selectedSubDonations = [];
 
                     $(".subDonationCheck:checked").each(function () {
@@ -202,11 +204,16 @@ $(document).ready(function () {
                         donationTitles.push(`${title} (x${qty})`);
                     });
 
-                    localStorage.setItem("donationTotal", currentTotal);
+                    // 2. Save to LocalStorage (Useful for persistence)
+                    // Note: Ensure 'currentTotal' is calculated in your code before this runs
+                    if (typeof currentTotal !== 'undefined') {
+                        localStorage.setItem("donationTotal", currentTotal);
+                    }
                     localStorage.setItem("donationTitles", JSON.stringify(donationTitles));
                     localStorage.setItem("subDonations", JSON.stringify(selectedSubDonations));
 
-                    window.location.href = "/pay-safe";
+                    // 3. Trigger the Modal (Calls function in Script 2)
+                    populateAndOpenModal();
                 });
             } else {
                 $("#donation-details").html("<p class='text-center text-gray-600 text-lg'>Donation not found. Please select a valid donation.</p>");
