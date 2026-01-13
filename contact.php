@@ -19,7 +19,7 @@ require_once 'layouts/header.php';
 <!-- Contact Section -->
 <section class="">
     <div class="container mx-auto px-6 py-12">
-        <div class="text-center mb-12">
+        <div class="text-center mb-12" data-aos="fade-down" data-aos-duration="1500">
             <h2 class="text-4xl md:text-6xl font-bold mb-4">Contact Us</h2>
             <p class="text-gray-700 mb-12 max-w-2xl mx-auto">
                 Whether you’re looking to support our mission, join as a volunteer,
@@ -28,7 +28,7 @@ require_once 'layouts/header.php';
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:gap-6">
-            <div>
+            <div  data-aos="fade-right" data-aos-duration="1500">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.3267453069902!2d79.90160557570597!3d6.851380419264845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae25a8ecbe19b9d%3A0x220a2b392e8b57fc!2sHelpAge%20Sri%20Lanka!5e0!3m2!1sen!2slk!4v1760957553605!5m2!1sen!2slk"
                     width="100%" height="450" style="border: 0" allowfullscreen="" loading="lazy"
@@ -99,7 +99,7 @@ require_once 'layouts/header.php';
 
             </div>
 
-            <div>
+            <div  data-aos="fade-left" data-aos-duration="1500">
                 <form action="submit_form.php" method="POST"
                     class="border border-gray-50 p-8 rounded-2xl shadow-md w-full mx-auto">
 

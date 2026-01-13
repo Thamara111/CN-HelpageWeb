@@ -10,9 +10,9 @@ require_once 'layouts/head.php';
 require_once 'layouts/header.php';
 ?>
 
-
+<!-- About Us Section -->
 <section class="">
-  <div class="container mx-auto px-6 py-12">
+  <div class="container mx-auto px-6 py-12" data-aos="fade-down" data-aos-duration="1500">
     <div class="text-center mb-8 md:mb-12">
       <h2 class="text-4xl md:text-6xl font-bold mb-4">About Us</h2>
       <p class="text-gray-700 mb-12 max-w-5xl mx-auto">
@@ -66,7 +66,7 @@ require_once 'layouts/header.php';
 <section>
   <div class="container mx-auto px-6 py-12">
     <div class="grid grid-cols-1 grid-cols-1 md:grid-cols-2 lg:gap-6">
-      <div>
+      <div  data-aos="fade-right" data-aos-duration="1500">
         <h4 class="text-red-600 text-red-600 mb-4 md:mb-6 lg:mb-6 xl:mb-6 2xl:mb-8">
           Chairman's Message
         </h4>
@@ -96,7 +96,7 @@ require_once 'layouts/header.php';
             class="fa-solid fa-arrow-right bg-white text-red-600 p-3 rounded-full ml-3 transition duration-300 group-hover:bg-red-600 group-hover:text-white"></i>
         </a>
       </div>
-      <div class="flex justify-center items-center">
+      <div class="flex justify-center items-center" data-aos="fade-left" data-aos-duration="1500">
         <img src="/assets/images/chairman.png" alt="Chairman" class="rounded-2xl border-2 border-gray-400" />
       </div>
     </div>
@@ -111,10 +111,10 @@ require_once 'layouts/header.php';
 <section>
   <div class="container mx-auto px-6 py-12">
     <div class="grid grid-cols-1 grid-cols-1 md:grid-cols-2 lg:gap-6">
-      <div class="flex justify-center items-center">
+      <div class="flex justify-center items-center" data-aos="fade-right" data-aos-duration="1500">
         <img src="/assets/images/ed.png" alt="ed" class="rounded-2xl border-2 border-gray-400" />
       </div>
-      <div>
+      <div data-aos="fade-left" data-aos-duration="1500">
         <h4 class="text-red-600 mb-4 md:mb-6 lg:mb-6 xl:mb-6 2xl:mb-8">
           Executive Director's Message
         </h4>
@@ -154,7 +154,7 @@ require_once 'layouts/header.php';
 
 <section>
   <div class="container mx-auto px-6 py-12">
-    <div class="flex flex-col justify-center items-center space-y-2">
+    <div class="flex flex-col justify-center items-center space-y-2" data-aos="fade-up" data-aos-duration="1500">
       <h4 class="text-red-600 mb-4">Our Team</h4>
 
       <!-- Left Content -->
@@ -172,7 +172,7 @@ require_once 'layouts/header.php';
 
     <section class="px-6 md:px-0 py-12 bg-white">
       <!-- Top Row (Chairman + Deputy) -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-10">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-10"  data-aos="fade-up" data-aos-duration="1500">
         <div class="flex flex-col items-center text-center">
           <img src="/assets/images/chairman.png" alt="Chairman"
             class="rounded-lg w-full h-64 object-cover shadow-md hover:shadow-lg transition duration-300" />
@@ -193,7 +193,7 @@ require_once 'layouts/header.php';
       </div>
 
       <!-- Team Members Grid -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8" data-aos="fade-up" data-aos-duration="1500">
         <div class="flex flex-col items-center text-center">
           <img src="/assets/images/team1.png" alt="Team Member"
             class="rounded-lg w-full h-64 object-cover shadow-md hover:shadow-lg transition duration-300" />

@@ -19,7 +19,7 @@ require_once 'layouts/header.php';
 <!-- Contact Section -->
 <section class="">
     <div class="container mx-auto px-6 py-12">
-        <div class="text-center mb-12">
+        <div class="text-center mb-12" data-aos="fade-down" data-aos-duration="1500">
             <h2 class="text-4xl md:text-6xl font-bold mb-4">Publications</h2>
             <p class="text-gray-500 mb-12 max-w-2xl mx-auto">
                 At HelpAge Sri Lanka, we believe that sharing knowledge and research is vital
@@ -29,7 +29,7 @@ require_once 'layouts/header.php';
             </p>
         </div>
 
-        <div id="report-container" class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div id="report-container" class="grid grid-cols-1 md:grid-cols-3 gap-8" data-aos="fade-up" data-aos-duration="1500">
         </div>
         <div id="loading-state" class="text-center text-gray-500 mt-8">
             Loading Reports...

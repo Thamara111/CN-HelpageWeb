@@ -34,7 +34,7 @@ if ($page === 'home') {
 <!-- three columns -->
 <section>
     <div class="container mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-3 gap-6">
-        <div class="flex flex-col md:flex-row p-2">
+        <div class="flex flex-col md:flex-row p-2" data-aos="fade-right" data-aos-duration="1500">
             <div class="flex justify-center items-center px-4">
                 <i
                     class="fa-solid fa-hand-holding-heart bg-red-100 p-6 rounded-2xl  text-4xl text-red-600 mb-2 md:mb-0"></i>
@@ -46,7 +46,7 @@ if ($page === 'home') {
                     emotional support to elders who need it most.</p>
             </div>
         </div>
-        <div class="flex flex-col md:flex-row p-2">
+        <div class="flex flex-col md:flex-row p-2" data-aos="zoom-in" data-aos-duration="1500">
             <div class="flex justify-center items-center px-4">
                 <i class="fa-solid fa-bowl-food bg-red-100 p-6 rounded-2xl  text-4xl text-red-600 mb-2 md:mb-0"></i>
             </div>
@@ -58,7 +58,7 @@ if ($page === 'home') {
                     often go hungry and unseen.</p>
             </div>
         </div>
-        <div class="flex flex-col md:flex-row p-2">
+        <div class="flex flex-col md:flex-row p-2" data-aos="fade-left" data-aos-duration="1500">
             <div class="flex justify-center items-center px-4">
                 <i class="fa-solid fa-shield-heart text-4xl bg-red-100 p-6 rounded-2xl text-red-600 mb-2 md:mb-0"></i>
             </div>
@@ -78,7 +78,7 @@ if ($page === 'home') {
 <section>
     <div class="container mx-auto px-6 py-12">
         <div class="grid grid-cols-1 grid-cols-1 md:grid-cols-2 lg:gap-6">
-            <div>
+            <div data-aos="fade-right" data-aos-duration="1500">
                 <h4 class="text-red-600 mb-4 ">Who We Are.</h4>
                 <h2 class="text-2xl md:text-3xl 2xl:text-6xl font-bold mb-4 md:mb-6 lg:mb-6 xl:mb-6 2xl:mb-8">
                     The Heart Behind Our Work</h2>
@@ -98,15 +98,15 @@ if ($page === 'home') {
                         built for underserved children</li>
                 </ul>
 
-                <a href="/w-donation"
-                    class="group inline-flex items-center bg-red-600 text-white pl-4 pr-2 py-2 rounded-full hover:bg-white hover:text-black transition duration-300 mb-4 md:mb-2">
-                    Donations
+                <a href="/about"
+                    class="group inline-flex items-center bg-red-600 text-white pl-4 pr-2 py-2 rounded-full hover:bg-white hover:text-black transition duration-300 mb-4 md:mb-2 hover:border border-red-600">
+                    Our Story
                     <i
                         class="fa-solid fa-arrow-right bg-white text-red-600 p-3 rounded-full ml-3 transition duration-300 group-hover:bg-red-600 group-hover:text-white"></i>
                 </a>
 
             </div>
-            <div>
+            <div data-aos="fade-left" data-aos-duration="1500">
                 <img src="/assets/images/sec-1.webp" alt="Who We Are" class="rounded-2xl">
             </div>
         </div>
@@ -119,7 +119,7 @@ if ($page === 'home') {
 <section>
     <div class="container mx-auto px-6 py-12">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div>
+            <div data-aos="fade-right" data-aos-duration="1500">
                 <h2 class="text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold mb-12">
                     Give Hope. Support. Dignity.
                 </h2>
@@ -128,7 +128,7 @@ if ($page === 'home') {
                     medical aid, food, and emotional support to live with dignity and independence.
                 </p>
             </div>
-            <div>
+            <div data-aos="fade-left" data-aos-duration="1500">
                 <p class="text-gray-700 mb-12">
                     Each donation funds vital programs like free cataract surgeries, mobile medical clinics, and
                     elder homes.
@@ -136,14 +136,15 @@ if ($page === 'home') {
                 </p>
                 <a href="/w-donation"
                     class="group inline-flex items-center border-2 border-black bg-white text-black pl-4 pr-2 py-2 rounded-full hover:bg-black hover:text-white transition duration-300 mb-4">
-                    View Donations
+                    Make a Difference
                     <i
                         class="fa-solid fa-arrow-right bg-black text-white p-3 rounded-full ml-3 transition duration-300 group-hover:bg-white group-hover:text-black"></i>
                 </a>
             </div>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4" id="latestDonations">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4" id="latestDonations" data-aos="fade-up"
+            data-aos-duration="1500">
             <!-- Latest donations will be injected here -->
         </div>
 
@@ -159,46 +160,46 @@ if ($page === 'home') {
                 <!-- Image Container with Grid Layout -->
                 <div class="relative w-full max-w-md mx-auto h-96 md:h-[500px]">
 
-                    <!-- Image 1 - Top Left -->
                     <div
                         class="absolute top-0 left-0 w-32 h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 transform -rotate-6 hover:rotate-0 transition-all duration-500 hover:scale-110 hover:z-10">
                         <img src="/assets/images/help1.JPG" alt="Elderly Care 1"
-                            class="w-full h-full rounded-2xl shadow-xl object-cover border-4 border-white">
+                            class="w-full h-full rounded-2xl shadow-xl object-cover border-4 border-white"
+                            data-aos="fade-right" data-aos-duration="500">
                     </div>
 
-                    <!-- Image 2 - Top Right -->
                     <div
                         class="absolute top-4 right-4 w-28 h-28 md:w-36 md:h-36 lg:w-44 lg:h-44 transform rotate-3 hover:rotate-0 transition-all duration-500 hover:scale-110 hover:z-10">
                         <img src="/assets/images/help2.JPG" alt="Elderly Care 2"
-                            class="w-full h-full rounded-2xl shadow-xl object-cover border-4 border-white">
+                            class="w-full h-full rounded-2xl shadow-xl object-cover border-4 border-white"
+                            data-aos="fade-left" data-aos-duration="1500">
                     </div>
 
-                    <!-- Image 3 - Center Left -->
                     <div
                         class="absolute top-1/2 left-8 -translate-y-1/2 w-36 h-36 md:w-44 md:h-44 lg:w-52 lg:h-52 transform -rotate-12 hover:rotate-0 transition-all duration-500 hover:scale-110 hover:z-10">
                         <img src="/assets/images/help3.JPG" alt="Elderly Care 3"
-                            class="w-full h-full rounded-2xl shadow-xl object-cover border-4 border-white">
+                            class="w-full h-full rounded-2xl shadow-xl object-cover border-4 border-white"
+                            data-aos="fade-right" data-aos-duration="500">
                     </div>
 
-                    <!-- Image 4 - Center Right -->
                     <div
                         class="absolute top-1/2 right-12 -translate-y-1/2 w-32 h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 transform rotate-8 hover:rotate-0 transition-all duration-500 hover:scale-110 hover:z-10">
                         <img src="/assets/images/sec-1.webp" alt="Elderly Care 4"
-                            class="w-full h-full rounded-2xl shadow-xl object-cover border-4 border-white">
+                            class="w-full h-full rounded-2xl shadow-xl object-cover border-4 border-white"
+                            data-aos="fade-left" data-aos-duration="1500">
                     </div>
 
-                    <!-- Image 5 - Bottom Left -->
                     <div
                         class="absolute bottom-8 left-12 w-28 h-28 md:w-36 md:h-36 lg:w-44 lg:h-44 transform rotate-6 hover:rotate-0 transition-all duration-500 hover:scale-110 hover:z-10">
                         <img src="/assets/images/img2.webp" alt="Elderly Care 5"
-                            class="w-full h-full rounded-2xl shadow-xl object-cover border-4 border-white">
+                            class="w-full h-full rounded-2xl shadow-xl object-cover border-4 border-white"
+                            data-aos="fade-right" data-aos-duration="500">
                     </div>
 
-                    <!-- Image 6 - Bottom Right -->
                     <div
                         class="absolute bottom-4 right-0 w-32 h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 transform -rotate-3 hover:rotate-0 transition-all duration-500 hover:scale-110 hover:z-10">
                         <img src="/assets/images/manu.JPG" alt="Elderly Care 6"
-                            class="w-full h-full rounded-2xl shadow-xl object-cover border-4 border-white">
+                            class="w-full h-full rounded-2xl shadow-xl object-cover border-4 border-white"
+                            data-aos="fade-left" data-aos-duration="1500">
                     </div>
 
                     <!-- Decorative Background Element -->
@@ -219,26 +220,27 @@ if ($page === 'home') {
 
 
             <!-- Content Section -->
-            <div class="order-1 col-span-2 md:order-2 animate-slide-in-right">
-                <!-- Heading -->
-                <h4 class="text-red-600 font-semibold text-lg mb-2 tracking-wide">
-                    For You </h4>
+            <div class="order-1 col-span-2 md:order-2">
 
-                <!-- Main Title -->
-                <h2 class="text-3xl md:text-3xl xl:text-6xl font-bold text-gray-800 mb-6 leading-tight">
+                <h4 class="text-red-600 font-semibold text-lg mb-2 tracking-wide" data-aos="fade-down"
+                    data-aos-duration="1000">
+                    For You
+                </h4>
+
+                <h2 class="text-3xl md:text-3xl xl:text-6xl font-bold text-gray-800 mb-6 leading-tight"
+                    data-aos="fade-down" data-aos-duration="1000" data-aos-delay="100">
                     How can you help us?
                 </h2>
 
-                <!-- Services Grid -->
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <!-- Eye Hospital Card -->
-                    <div
-                        class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border-l-4 border-red-500">
+
+                    <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border-l-4 border-red-500"
+                        data-aos="fade-right" data-aos-duration="1000">
                         <div class="flex items-center gap-4 mb-4">
                             <div class="bg-red-100 p-3 rounded-full">
                                 <i class="fa-solid fa-eye text-2xl text-red-600"></i>
                             </div>
-                            <h3 class="text-lg md:text-xl  font-bold text-gray-800">
+                            <h3 class="text-lg md:text-xl font-bold text-gray-800">
                                 Eye Hospital
                             </h3>
                         </div>
@@ -255,9 +257,8 @@ if ($page === 'home') {
                         </div>
                     </div>
 
-                    <!-- Day Centre Card -->
-                    <div
-                        class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border-l-4 border-red-500">
+                    <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border-l-4 border-red-500"
+                        data-aos="fade-left" data-aos-duration="1000" data-aos-delay="100">
                         <div class="flex items-center gap-4 mb-4">
                             <div class="bg-red-100 p-3 rounded-full">
                                 <i class="fa-solid fa-house-medical text-2xl text-red-600"></i>
@@ -269,8 +270,8 @@ if ($page === 'home') {
                         <div class="space-y-3">
                             <p class="text-gray-700 text-sm flex items-start gap-2">
                                 <i class="fa-solid fa-star text-red-500 mt-1 flex-shrink-0"></i>
-                                <span>Donations for Breakfast (Rs.8,000), Lunch (Rs.10,000) and Tea (Rs.4,000) for
-                                    40 elders.</span>
+                                <span>Donations for Breakfast (Rs.8,000), Lunch (Rs.10,000) and Tea (Rs.4,000) for 40
+                                    elders.</span>
                             </p>
                             <p class="text-gray-700 text-sm flex items-start gap-2">
                                 <i class="fa-solid fa-star text-red-500 mt-1 flex-shrink-0"></i>
@@ -280,9 +281,8 @@ if ($page === 'home') {
                         </div>
                     </div>
 
-                    <!-- Mobility Equipment Card -->
-                    <div
-                        class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border-l-4 border-red-500">
+                    <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border-l-4 border-red-500"
+                        data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
                         <div class="flex items-center gap-4 mb-4">
                             <div class="bg-red-100 p-3 rounded-full">
                                 <i class="fa-solid fa-wheelchair text-2xl text-red-600"></i>
@@ -294,15 +294,13 @@ if ($page === 'home') {
                         <p class="text-gray-700 text-sm flex items-start gap-2">
                             <i class="fa-solid fa-star text-red-500 mt-1 flex-shrink-0"></i>
                             <span>Your donations towards wheel chairs and walking aids such as crutches and walking
-                                frames
-                                and Hearing aids. Used wheel chairs and other mobility equipment are also
+                                frames and Hearing aids. Used wheel chairs and other mobility equipment are also
                                 accepted.</span>
                         </p>
                     </div>
 
-                    <!-- Mobile Medical Unit Card -->
-                    <div
-                        class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border-l-4 border-red-500">
+                    <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border-l-4 border-red-500"
+                        data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
                         <div class="flex items-center gap-4 mb-4">
                             <div class="bg-red-100 p-3 rounded-full">
                                 <i class="fa-solid fa-truck-medical text-2xl text-red-600"></i>
@@ -318,8 +316,8 @@ if ($page === 'home') {
                     </div>
                 </div>
 
-                <!-- Call to Action Button -->
-                <div class="mt-8 flex justify-center md:justify-start">
+                <div class="mt-8 flex justify-center md:justify-start" data-aos="fade-up" data-aos-duration="1000"
+                    data-aos-delay="400">
                     <a href="/w-donation"
                         class="group inline-flex items-center bg-red-600 text-white pl-4 pr-2 py-2 rounded-full hover:bg-white hover:text-black transition duration-300">
                         Support Our Causes
@@ -337,17 +335,18 @@ if ($page === 'home') {
     <div class="container mx-auto px-6 py-12">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
-                <h2 class="text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold mb-12">
+                <h2 class="text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold mb-12"
+                    data-aos="fade-right" data-aos-duration="1500">
                     Every Contribution Builds a Brighter Tomorrow
                 </h2>
                 <p class="text-gray-700 mb-12">
                     Our fundraising initiatives bring together compassionate individuals and communities to support
-                    Sri Lanka’s
+                    Sri Lanka's
                     most vulnerable elders. Each campaign is a step toward restoring hope, health, and happiness in
                     their lives.
                 </p>
             </div>
-            <div>
+            <div data-aos="fade-left" data-aos-duration="1500">
                 <p class="text-gray-700 mb-12">
                     From medical care and nutrition to safe housing and companionship, your support fuels programs
                     that uplift
@@ -355,9 +354,9 @@ if ($page === 'home') {
                     their second
                     chance at life.
                 </p>
-                <a href="/w-donation"
+                <a href="/w-fundraising"
                     class="group inline-flex items-center border-2 border-black bg-white text-black pl-4 pr-2 py-2 rounded-full hover:bg-black hover:text-white transition duration-300 mb-4">
-                    Donate Now
+                    Join Our Fundraisers
                     <i
                         class="fa-solid fa-arrow-right bg-black text-white p-3 rounded-full ml-3 transition duration-300 group-hover:bg-white group-hover:text-black"></i>
                 </a>
@@ -365,7 +364,8 @@ if ($page === 'home') {
         </div>
 
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4" id="latestFundraising">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4" id="latestFundraising" data-aos="fade-up"
+            data-aos-duration="1500">
             <!-- Latest donations will be injected here -->
         </div>
 
@@ -395,13 +395,13 @@ if ($page === 'home') {
     <div class="bg-black bg-opacity-50 py-12">
         <div class="container mx-auto px-6 py-12 backdrop-blur-md rounded-2xl">
             <div class="grid grid-cols-1 grid-cols-1 md:grid-cols-2 lg:gap-6">
-                <div>
+                <div data-aos="fade-right" data-aos-duration="1500">
                     <h4 class="text-red-200 mb-4 md:mb-6 lg:mb-6 xl:mb-6 2xl:mb-8">
                         Every act of kindness counts.
                     </h4>
                     <h2
                         class="text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold mb-4 md:mb-6 lg:mb-6 xl:mb-6 2xl:mb-8 text-white">
-                        Give now to bring comfort and care to Sri Lanka’s elderly.
+                        Give now to bring comfort and care to Sri Lanka's elderly.
                     </h2>
                     <p class="text-gray-400 mb-12">
                         A quick donation can provide medicine, warm meals, and a helping hand to those who once gave
@@ -410,7 +410,8 @@ if ($page === 'home') {
                     </p>
                 </div>
 
-                <div class="flex items-center justify-center w-full px-4 sm:px-0">
+                <div class="flex items-center justify-center w-full px-4 sm:px-0" data-aos="fade-left"
+                    data-aos-duration="1500">
                     <form id="donationForm"
                         class="relative w-full max-w-xl mx-auto bg-white p-6 sm:p-8 rounded-2xl shadow-md overflow-hidden">
 
@@ -614,15 +615,15 @@ if ($page === 'home') {
 <section>
     <div class="container mx-auto px-6 py-12">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div>
+            <div data-aos="fade-right" data-aos-duration="1500">
                 <h2 class="text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold mb-12">What’s New
                 </h2>
                 <p class="text-gray-700 mb-12">
                     Discover the latest stories, initiatives, and milestones shaping our journey to care for Sri
-                    Lanka’s elderly.
+                    Lanka's elderly.
                 </p>
             </div>
-            <div>
+            <div data-aos="fade-left" data-aos-duration="1500">
                 <p class="text-gray-700 mb-4">
                     From free cataract surgery camps to elder home renovation projects and medical outreach
                     programs, we’re making steady progress toward a kinder tomorrow.
@@ -638,8 +639,9 @@ if ($page === 'home') {
             </div>
         </div>
 
-        <section class="w-full px-4 md:px-8 py-12 bg-white">
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="w-full px-4 md:px-8 py-12 bg-white">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8" data-aos="fade-up"
+                data-aos-duration="1500">
 
                 <!-- Video Card 1 -->
                 <div class="bg-gray-100 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
@@ -732,7 +734,7 @@ if ($page === 'home') {
                 </div>
 
             </div>
-        </section>
+        </div>
 
         <style>
             .line-clamp-2 {

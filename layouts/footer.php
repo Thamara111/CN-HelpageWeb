@@ -2,7 +2,7 @@
 <footer class="bg-red-800 text-white py-16">
     <div class="container mx-auto px-6">
         <!-- Top Section -->
-        <div class="text-center py-6">
+        <div class="text-center py-6"  data-aos="fade-up" data-aos-duration="1500">
             <h4 class="text-white mb-3 text-base uppercase tracking-wide">Get in Touch</h4>
             <h2 class="text-3xl md:text-5xl font-bold mb-6 leading-tight">We’d Love to Hear from You</h2>
             <p class="text-gray-200 max-w-2xl mx-auto mb-8 text-sm md:text-base">
@@ -20,7 +20,7 @@
         <hr class="border-t border-gray-400 my-10">
 
         <!-- Bottom Grid -->
-        <div class="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-5 gap-10 text-sm">
+        <div class="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-5 gap-10 text-sm"  data-aos="fade-up" data-aos-duration="1500">
             <!-- Logo & About -->
             <div class="text-center md:text-left">
                 <img src="/assets/images/logo-sri-lanka.webp" alt="HelpAge Sri Lanka Logo"
@@ -149,6 +149,15 @@
     </div>
 </footer>
 
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({
+        once: true,
+        offset: 50,
+        duration: 1000,
+        easing: 'ease-out-cubic',
+    });
+</script>
 <!-- <script>
         $(document).ready(function () {
             $(window).scroll(function () {

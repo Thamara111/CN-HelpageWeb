@@ -47,12 +47,12 @@ require_once 'layouts/header.php';
       // Render other blogs
       const otherBlogs = data.filter(b => b.id !== blogId).slice(0, 5); // show top 5
       const otherBlogsHTML = otherBlogs.map(b => `
-            <a href="?blog=${b.id}" class="flex items-center bg-white shadow rounded-xl overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                <img src="${b.image}" alt="${b.title}" class="w-20 h-20 object-cover">
-                <div class="p-3">
-                    <h4 class="font-semibold text-gray-800 hover:text-red-600 text-sm">${b.title}</h4>
-                    <p class="text-gray-500 text-xs">${b.date}</p>
-                </div>
+            <a href="?blog=${b.id}" class="flex items-center bg-white shadow rounded-xl overflow-hidden hover:shadow-xl transition-shadow duration-300" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="${otherBlogs.indexOf(b) * 200}">
+              <img src="${b.image}" alt="${b.title}" class="w-20 h-20 object-cover">
+              <div class="p-3">
+                <h4 class="font-semibold text-gray-800 hover:text-red-600 text-sm">${b.title}</h4>
+                <p class="text-gray-500 text-xs">${b.date}</p>
+              </div>
             </a>
         `).join('');
       $("#other-blogs").html(otherBlogsHTML);

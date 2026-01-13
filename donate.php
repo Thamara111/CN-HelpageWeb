@@ -18,8 +18,8 @@
   <!-- Header -->
   <section class="bg-gradient-to-r from-orange-700 to-red-800 text-white">
     <a href="/" class="flex justify-center items-center">
-      <img src="/assets/images/logo-sri-lanka.webp" alt="HelpAge Sri Lanka Logo" 
-           class="w-24 md:w-32 h-20 md:h-24 py-2 transition-all duration-300" />
+      <img src="/assets/images/logo-sri-lanka.webp" alt="HelpAge Sri Lanka Logo"
+        class="w-24 md:w-32 h-20 md:h-24 py-2 transition-all duration-300" />
     </a>
   </section>
 
@@ -55,19 +55,22 @@
             </h3>
             <div class="grid grid-cols-2 gap-4 md:gap-6">
               <div>
-                <label for="name" class="block text-base md:text-lg font-semibold text-gray-700 mb-2 md:mb-3">Full Name *</label>
+                <label for="name" class="block text-base md:text-lg font-semibold text-gray-700 mb-2 md:mb-3">Full Name
+                  *</label>
                 <input type="text" id="name" name="name" required
                   class="border border-gray-300 md:border-2 rounded-lg md:rounded-xl p-3 md:p-4 w-full text-base md:text-lg focus:border-red-500 focus:ring-2 focus:ring-red-200 transition-all duration-200"
                   placeholder="Enter your full name" />
               </div>
               <div>
-                <label for="email" class="block text-base md:text-lg font-semibold text-gray-700 mb-2 md:mb-3">Email *</label>
+                <label for="email" class="block text-base md:text-lg font-semibold text-gray-700 mb-2 md:mb-3">Email
+                  *</label>
                 <input type="email" id="email" name="email" required
                   class="border border-gray-300 md:border-2 rounded-lg md:rounded-xl p-3 md:p-4 w-full text-base md:text-lg focus:border-red-500 focus:ring-2 focus:ring-red-200 transition-all duration-200"
                   placeholder="your.email@example.com" />
               </div>
               <div class="col-span-2">
-                <label for="message" class="block text-base md:text-lg font-semibold text-gray-700 mb-2 md:mb-3">Your Message *</label>
+                <label for="message" class="block text-base md:text-lg font-semibold text-gray-700 mb-2 md:mb-3">Your
+                  Message *</label>
                 <textarea id="message" name="message" required
                   class="border border-gray-300 md:border-2 rounded-lg md:rounded-xl p-3 md:p-4 w-full text-base md:text-lg focus:border-red-500 focus:ring-2 focus:ring-red-200 transition-all duration-200"
                   placeholder="Share your message of support..." rows="3"></textarea>
@@ -81,7 +84,8 @@
               <i class="fas fa-eye-slash mr-2 md:mr-3 text-red-500"></i>
               Anonymous Donation
             </h3>
-            <div class="flex items-center justify-center bg-gray-50 p-3 md:p-4 rounded-lg md:rounded-xl border border-gray-200 md:border-2">
+            <div
+              class="flex items-center justify-center bg-gray-50 p-3 md:p-4 rounded-lg md:rounded-xl border border-gray-200 md:border-2">
               <input type="checkbox" id="anonymous-yes" name="anonymous" value="yes"
                 class="h-5 w-5 md:h-6 md:w-6 text-red-600 focus:ring-red-500 rounded transition duration-200" />
               <label for="anonymous-yes" class="ml-3 md:ml-4 text-base md:text-lg font-semibold text-gray-700">
@@ -116,7 +120,8 @@
           </p>
         </div>
         <div>
-          <a href="/terms-conditions" class="text-gray-400 hover:text-gray-200 text-sm md:text-base transition-colors duration-200">
+          <a href="/terms-conditions"
+            class="text-gray-400 hover:text-gray-200 text-sm md:text-base transition-colors duration-200">
             Terms & Conditions
           </a>
         </div>
@@ -133,7 +138,7 @@
 
       // ✅ Update donation summary
       if (donationTitles.length > 0 && donationTotal > 0) {
-        const titlesList = donationTitles.map(title => 
+        const titlesList = donationTitles.map(title =>
           `<p class="text-gray-800 font-medium text-sm md:text-base">${title}</p>`
         ).join("");
         $("#selected-donations").append(titlesList);
@@ -177,4 +182,5 @@
     });
   </script>
 </body>
+
 </html>

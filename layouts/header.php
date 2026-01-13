@@ -8,7 +8,7 @@
 <header
     class="fixed bottom-0 md:bottom-4 left-1/2 transform -translate-x-1/2 w-full md:w-[50%] xl:w-[50%] 2xl:w-[35%] z-40">
     <div
-        class="flex justify-center items-center py-2 sm:py-3 px-4 sm:px-6 bg-gradient-to-r from-orange-400 to-red-600 shadow-md rounded-t-2xl md:rounded-full">
+        class="flex justify-center items-center py-2 sm:py-3 px-4 sm:px-6 bg-gradient-to-r from-orange-400 to-red-600 shadow-md rounded-t-2xl md:rounded-full" data-aos="fade-up" data-aos-duration="1500">
         <nav class="w-full relative">
             <ul
                 class="flex flex-wrap justify-center items-center gap-3 sm:gap-6 text-sm sm:text-base md:text-lg font-medium text-white text-center">
@@ -229,13 +229,15 @@
                         <li>
                             <a href="/service-mobile-medical-unit"
                                 class="flex items-center px-4 py-3 hover:bg-red-50 text-sm font-medium text-gray-700 hover:text-red-600 text-left">
-                                <i class="fa-solid fa-heart-pulse mr-3 text-red-500"></i><span> Mobile Medical Unit</span>
+                                <i class="fa-solid fa-heart-pulse mr-3 text-red-500"></i><span> Mobile Medical
+                                    Unit</span>
                             </a>
                         </li>
                         <li>
                             <a href="/service-distribution-of-disability-equipment"
                                 class="flex items-center px-4 py-3 hover:bg-red-50 text-sm font-medium text-gray-700 hover:text-red-600 text-left">
-                                <i class="fa-solid fa-people-roof mr-3 text-red-500"></i><span> Distribution of Disability Equipment</span>
+                                <i class="fa-solid fa-people-roof mr-3 text-red-500"></i><span> Distribution of
+                                    Disability Equipment</span>
                             </a>
                         </li>
                         <li>
@@ -247,7 +249,8 @@
                         <li>
                             <a href="/service-ayurvedic-center"
                                 class="flex items-center px-4 py-3 hover:bg-red-50 text-sm font-medium text-gray-700 hover:text-red-600 text-left">
-                                <i class="fa-solid fa-graduation-cap mr-3 text-red-500"></i> <span>Ayurvedic Center</span>
+                                <i class="fa-solid fa-graduation-cap mr-3 text-red-500"></i> <span>Ayurvedic
+                                    Center</span>
                             </a>
                         </li>
                         <li>
@@ -264,7 +267,7 @@
                     <button
                         class="text-white bg-red-700 px-4 sm:px-6 py-2 sm:py-3 rounded-full hover:bg-red-800 hover:text-white transition-all duration-300 text-sm sm:text-base flex items-center justify-center gap-2 transform scale-105 hover:scale-110 shadow-xl"
                         onclick="window.location.href='/w-donation'">
-                        <span class="hidden md:inline">Donate Now</span>
+                        <span class="hidden md:inline">Help Now</span>
                         <i class="fa-solid fa-heart md:hidden animate-pulse text-red-600 text-lg"></i>
                     </button>
                 </li>

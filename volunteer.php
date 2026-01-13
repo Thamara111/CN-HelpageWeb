@@ -18,7 +18,7 @@ require_once 'layouts/header.php';
 <!-- Volunteer Section -->
 <section class="">
     <div class="container mx-auto px-6 py-12">
-        <div class="text-center mb-12">
+        <div class="text-center mb-12" data-aos="fade-down" data-aos-duration="1500">
             <h2 class="text-4xl md:text-6xl font-bold mb-4">Join as a Volunteer</h2>
             <p class="text-gray-700 mb-12 max-w-2xl mx-auto">
                 Be part of a meaningful journey to bring hope and happiness to the elderly across Sri Lanka.
@@ -29,14 +29,14 @@ require_once 'layouts/header.php';
 
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:gap-6">
-            <div class="order-2 ">
+            <div class="order-2 " data-aos="fade-left" data-aos-duration="1500">
                 <img src="./assets/images/volunteer.JPG"
                     class="rounded-2xl border-2 border-gray-400 w-full h-full md:h-[66rem]" alt="Join as a Volunteer">
 
 
             </div>
 
-            <div claas="order-1 mb-4 md:mb-0">
+            <div class="order-1 mb-4 md:mb-0" data-aos="fade-right" data-aos-duration="1500">
                 <form action="submit_volunteer.php" method="POST"
                     class="border border-gray-100 h-full md:h-[66rem] p-8 rounded-2xl shadow-md w-full mx-auto bg-white">
 

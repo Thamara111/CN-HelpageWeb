@@ -13,10 +13,8 @@ require_once 'layouts/header.php';
 
 <section class="bg-gray-50 py-12 px-6 md:px-12 lg:px-24">
   <div class="max-w-5xl mx-auto text-gray-800">
-    <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-8">
-      Chairman’s Message
-    </h2>
-
+    <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-8" data-aos="fade-up" data-duration="1500">Chairman’s Message</h2>
+  
     <div class="space-y-6 text-gray-700 leading-relaxed">
       <div class="flex justify-center items-center space-x-0 md:space-x-4 flex-col md:flex-row">
         <div class="space-y-6 flex justify-center items-center text-justify order-2 md:order-none  w-full md:w-1/2">
