@@ -22,7 +22,7 @@ require_once '../layouts/header.php';
     <div class="absolute inset-0 bg-black/50"></div>
 
     <!-- Hero content -->
-    <div class="relative z-10 px-4">
+    <div class="relative z-10 px-4" data-aos="fade-up" data-aos-duration="1500">
         <h2 class="text-4xl md:text-6xl font-bold mb-4">Community & Elder Care</h2>
         <p class="text-gray-200 mb-12 max-w-2xl mx-auto">
             Our community and elder care initiatives aim to provide essential support and services to elderly
@@ -44,7 +44,7 @@ require_once '../layouts/header.php';
 <section>
     <div class="container mx-auto px-6 py-12">
         <div class="grid grid-cols-1 grid-cols-1 md:grid-cols-2 lg:gap-6">
-            <div>
+            <div data-aos="fade-right" data-aos-duration="1500">
                 <h4 class="text-red-600 mb-4">Community & Elder Care</h4>
                 <h2 class="text-2xl md:text-3xl 2xl:text-6xl font-bold mb-4 md:mb-6 lg:mb-6 xl:mb-6 2xl:mb-8">
                     Supporting Our Elders in Their Daily Lives
@@ -81,7 +81,7 @@ require_once '../layouts/header.php';
                 </a> -->
 
             </div>
-            <div>
+            <div data-aos="fade-left" data-aos-duration="1500">
                 <img src="/assets/images/sec-1.webp" alt="Community & Elder Care" class="rounded-2xl">
             </div>
         </div>
@@ -91,15 +91,15 @@ require_once '../layouts/header.php';
 <section id="container" class="py-12">
     <div class="container mx-auto px-6 py-12">
         <div class="w-full px-4 md:px-8 bg-white">
-            <h2 class="text-3xl font-bold mb-4 text-center">Community & Elder Care Donations</h2>
+            <h2 class="text-3xl font-bold mb-4 text-center" data-aos="fade-up" data-aos-duration="1500">Community & Elder Care Donations</h2>
 
-            <p class="text-gray-600 mb-12 max-w-3xl text-center mx-auto">
+            <p class="text-gray-600 mb-12 max-w-3xl text-center mx-auto" data-aos="fade-up" data-aos-duration="1500">
                 Support our Community & Elder Care initiatives by choosing a program below. Your contribution helps
                 provide medicines, mobile clinics and essential screenings for elders in need across Sri Lanka.
             </p>
 
             <div id="community-donations-container"
-                class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8"></div>
+                class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8" data-aos="fade-up" data-aos-duration="1500"></div>
 
             <div id="loading-donations" class="text-center text-gray-500 mt-8">
                 Loading donations...
@@ -155,14 +155,14 @@ require_once '../layouts/header.php';
 <section class="">
     <div class="container mx-auto px-6 pb-12">
         <div class="w-full px-4 md:px-8  bg-white">
-            <h2 class="text-3xl font-bold mb-4 text-center">What We Do for Community & Elder Care</h2>
+            <h2 class="text-3xl font-bold mb-4 text-center" data-aos="fade-up" data-aos-duration="1500">What We Do for Community & Elder Care</h2>
 
-            <p class="text-gray-600 mb-12 max-w-3xl text-center mx-auto">
+            <p class="text-gray-600 mb-12 max-w-3xl text-center mx-auto" data-aos="fade-up" data-aos-duration="1500">
                 HelpAge Sri Lanka provides essential medical support for elderly communities across the nation.
                 These programs focus on early detection, treatment, eye care, mobility support and preventive
                 healthcare — reaching seniors who need it most.
             </p>
-            <div id="community-container" class="grid grid-cols-1 gap-8">
+            <div id="community-container" class="grid grid-cols-1 gap-8" data-aos="fade-up" data-aos-duration="1500">
             </div>
             <div id="loading-state" class="text-center text-gray-500 mt-8">
                 Loading...

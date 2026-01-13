@@ -21,7 +21,7 @@ require_once '../layouts/header.php';
     <div class="absolute inset-0 bg-black/50"></div>
 
     <!-- Hero content -->
-    <div class="relative z-10 px-4">
+    <div class="relative z-10 px-4" data-aos="fade-up" data-aos-duration="1500">
         <h2 class="text-4xl md:text-6xl font-bold mb-4">Fundraising & Community Relations</h2>
         <p class="text-gray-200 mb-12 max-w-2xl mx-auto">
             Our fundraising and community relations initiatives aim to provide essential support and resources
@@ -43,7 +43,7 @@ require_once '../layouts/header.php';
 <section>
     <div class="container mx-auto px-6 py-12">
         <div class="grid grid-cols-1 grid-cols-1 md:grid-cols-2 lg:gap-6">
-            <div>
+            <div data-aos="fade-right" data-aos-duration="1500">
                 <h4 class="text-red-600 mb-4">Fundraising & Community Relations</h4>
                 <h2 class="text-2xl md:text-3xl 2xl:text-6xl font-bold mb-4 md:mb-6 lg:mb-6 xl:mb-6 2xl:mb-8">
                     Uniting Communities to Support Our Elders
@@ -88,14 +88,14 @@ require_once '../layouts/header.php';
                 </a> -->
 
             </div>
-            <div>
+            <div data-aos="fade-left" data-aos-duration="1500">
                 <img src="/assets/images/sec-1.webp" alt="Fundraising & Community Relations" class="rounded-2xl">
             </div>
         </div>
     </div>
 </section>
 
-<section id="fundraising-donations-container" class="py-12">
+<!-- <section id="fundraising-donations-container" class="py-12">
     <div class="container mx-auto px-6 py-12">
         <div class="w-full px-4 md:px-8 bg-white">
             <h2 class="text-3xl font-bold mb-4 text-center">Fundraising & Community Relations Donations</h2>
@@ -114,9 +114,9 @@ require_once '../layouts/header.php';
             </div>
         </div>
     </div>
-</section>
+</section> -->
 
-<script>
+<!-- <script>
     $(document).ready(function () {
         const container = $("#fundraising-donations-container");
         const loading = $("#loading-donations");
@@ -157,11 +157,11 @@ require_once '../layouts/header.php';
             loading.html('<p class="text-red-500">Failed to load donations. Please try again later.</p>');
         });
     });
-</script>
+</script> -->
 
 <!-- Contact Section -->
 <section class="">
-    <div class="container mx-auto px-6 pb-12">
+    <div class="container mx-auto px-6 pb-12" data-aos="fade-up" data-aos-duration="1500">
         <h2 class="text-3xl font-bold mb-4 text-center">What We Do for Fundraising & Community Relations</h2>
 
         <p class="text-gray-600 mb-12 max-w-3xl text-center mx-auto">

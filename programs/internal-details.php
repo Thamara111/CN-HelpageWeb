@@ -17,7 +17,7 @@ require_once '../layouts/header.php';
 <div class="max-w-7xl mx-auto px-4 py-12 grid grid-cols-1 lg:grid-cols-3 gap-8">
 
     <!-- Main Human Resources & Internal Events events Content -->
-    <div class="lg:col-span-2">
+    <div class="lg:col-span-2" data-aos="fade-right" data-aos-duration="1500">
         <div id="internal-container" class=""></div>
         <div id="loading-state" class="text-center py-8 text-gray-500">Loading events details...</div>
     </div>
@@ -65,9 +65,9 @@ require_once '../layouts/header.php';
             });
 
             // Render other events (limit to top 5)
-            const otherEventsHTML = otherEvents.slice(0, 5).map(p => `
+            const otherEventsHTML = otherEvents.slice(0, 5).map((p, index) => `
             <a href="?internal=${p.id}" 
-               class="flex items-center bg-white shadow rounded-xl overflow-hidden hover:shadow-xl transition-shadow duration-300 p-4">
+               class="flex items-center bg-white shadow rounded-xl overflow-hidden hover:shadow-xl transition-shadow duration-300 p-4" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="${index * 200}">
                 <div class="flex-1">
                     <h4 class="font-semibold text-gray-800 hover:text-red-600 text-sm mb-1">${p.name}</h4>
                     <p class="text-gray-500 text-xs">${p.mini_date}</p>

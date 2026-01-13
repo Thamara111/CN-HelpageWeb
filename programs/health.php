@@ -20,7 +20,7 @@ require_once '../layouts/header.php';
 
     <div class="absolute inset-0 bg-black/50"></div>
 
-    <div class="relative z-10 px-4">
+    <div class="relative z-10 px-4" data-aos="fade-up" data-aos-duration="1500">
         <h2 class="text-4xl md:text-6xl font-bold mb-4">Health & Medical</h2>
         <p class="text-gray-200 mb-12 max-w-2xl mx-auto">
             Our health and medical initiatives aim to provide essential healthcare services to elderly citizens
@@ -45,7 +45,7 @@ require_once '../layouts/header.php';
     <div class="container mx-auto px-6 py-12">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
 
-            <div>
+            <div data-aos="fade-right" data-aos-duration="1500">
                 <h4 class="text-red-600 mb-4">Health & Medical Care</h4>
                 <h2 class="text-2xl md:text-3xl 2xl:text-6xl font-bold mb-4">
                     Caring for the Health of Our Elders
@@ -75,7 +75,7 @@ require_once '../layouts/header.php';
                 </p>
             </div>
 
-            <div>
+            <div data-aos="fade-left" data-aos-duration="1500">
                 <img src="/assets/images/sec-1.webp" alt="Health Programs" class="rounded-2xl">
             </div>
 
@@ -88,14 +88,14 @@ require_once '../layouts/header.php';
 <section class="py-12">
     <div class="container mx-auto px-6 py-12">
         <div class="w-full px-4 md:px-8 bg-white">
-            <h2 class="text-3xl font-bold mb-4 text-center">Health & Medical Donations</h2>
+            <h2 class="text-3xl font-bold mb-4 text-center" data-aos="fade-up" data-aos-duration="1500" >Health & Medical Donations</h2>
 
-            <p class="text-gray-600 mb-12 max-w-3xl text-center mx-auto">
+            <p class="text-gray-600 mb-12 max-w-3xl text-center mx-auto" data-aos="fade-up" data-aos-duration="1500" data-delay="200">
                 Support our Health & Medical initiatives by choosing a program below. Your contribution helps
                 provide medicines, mobile clinics and essential screenings for elders in need across Sri Lanka.
             </p>
 
-            <div id="health-donations-container"
+            <div id="health-donations-container"  data-aos="fade-up" data-aos-duration="1500" data-delay="400"
                 class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8"></div>
 
             <div id="loading-donations" class="text-center text-gray-500 mt-8">
@@ -155,7 +155,7 @@ require_once '../layouts/header.php';
         <div class="w-full px-4 md:px-8 bg-white">
 
 
-            <div id="health-container" class="grid grid-cols-1 gap-8"></div>
+            <div id="health-container" class="grid grid-cols-1 gap-8" data-aos="fade-up" data-aos-duration="1500"></div>
 
             <div id="loading-programs" class="text-center text-gray-500 mt-8">
                 Loading programs...
