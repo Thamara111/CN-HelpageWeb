@@ -71,23 +71,24 @@ require_once 'layouts/header.php';
 
                      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <div>
-                           <label for="name" class="block text-xs 2xl:text-sm font-semibold text-gray-700 mb-1">Full Name <span
-                                 class="text-red-500">*</span></label>
+                           <label for="name" class="block text-xs 2xl:text-sm font-semibold text-gray-700 mb-1">Full
+                              Name <span class="text-red-500">*</span></label>
                            <input type="text" id="name" name="name" required
                               class="block w-full rounded-lg border border-gray-300 px-3 py-2 text-gray-900 shadow-sm focus:border-red-500 focus:ring-2 focus:ring-red-200 text-xs 2xl:text-sm outline-none transition-all"
                               placeholder="Enter full name" />
                         </div>
 
                         <div>
-                           <label for="email" class="block text-xs 2xl:text-sm font-semibold text-gray-700 mb-1">Email <span
-                                 class="text-red-500">*</span></label>
+                           <label for="email" class="block text-xs 2xl:text-sm font-semibold text-gray-700 mb-1">Email
+                              <span class="text-red-500">*</span></label>
                            <input type="email" id="email" name="email" required
                               class="block w-full rounded-lg border border-gray-300 px-3 py-2 text-gray-900 shadow-sm focus:border-red-500 focus:ring-2 focus:ring-red-200 text-xs 2xl:text-sm outline-none transition-all"
                               placeholder="Enter email address" />
                         </div>
 
                         <div class="md:col-span-2">
-                           <label for="message" class="block text-xs 2xl:text-sm font-semibold text-gray-700 mb-1">Message</label>
+                           <label for="message"
+                              class="block text-xs 2xl:text-sm font-semibold text-gray-700 mb-1">Message</label>
                            <textarea id="message" name="message"
                               class="block w-full rounded-lg border border-gray-300 px-3 py-2 text-gray-900 shadow-sm focus:border-red-500 focus:ring-2 focus:ring-red-200 text-xs 2xl:text-sm outline-none transition-all resize-none"
                               placeholder="Optional message..." rows="2"></textarea>
@@ -196,7 +197,7 @@ require_once 'layouts/header.php';
          console.log("Redirecting to:", paymentUrl);
 
          // Optional: Show loading state on button
-         $(this).find("button[type='submit']").text("Redirecting...");
+         $(this).find("button[type='submit']").text("Please Wait...");
 
          window.location.href = paymentUrl;
       });
