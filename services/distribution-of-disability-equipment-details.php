@@ -15,7 +15,7 @@ require_once '../layouts/header.php';
 <div class="max-w-7xl mx-auto px-4 py-12 grid grid-cols-1 lg:grid-cols-3 gap-8">
 
     <!-- Main Content -->
-    <div class="lg:col-span-2">
+    <div class="lg:col-span-2" data-aos="fade-right" data-aos-duration="1500">
         <div id="disability-container"></div>
         <div id="loading-state" class="text-center py-8 text-gray-500">
             Loading services details...
@@ -31,50 +31,50 @@ require_once '../layouts/header.php';
 </div>
 
 <script>
-$(document).ready(async function () {
+    $(document).ready(async function () {
 
-    const params = new URLSearchParams(window.location.search);
-    const programId = params.get("disability-equipment");
+        const params = new URLSearchParams(window.location.search);
+        const programId = params.get("disability-equipment");
 
-    if (!programId) {
-        $("#disability-container").html(
-            '<p class="text-red-500 text-center">Invalid service request.</p>'
-        );
-        return;
-    }
-
-    try {
-        const response = await fetch('/assets/json/services.json');
-        const data = await response.json();
-
-        let program = null;
-        let currentCategory = null;
-
-        // ✅ Find program from Services
-        data.Services.forEach(category => {
-            const found = category.services_list?.find(p => p.id === programId);
-            if (found) {
-                program = found;
-                currentCategory = category;
-            }
-        });
-
-        // Render main program
-        if (program) {
-            $("#disability-container").html(renderProgramHTML(program));
-        } else {
+        if (!programId) {
             $("#disability-container").html(
-                '<p class="text-red-500 text-center">Program not found.</p>'
+                '<p class="text-red-500 text-center">Invalid service request.</p>'
             );
+            return;
         }
 
-        // Render sidebar programs (same category)
-        if (currentCategory && currentCategory.services_list.length > 1) {
-            const sidebarHTML = currentCategory.services_list
-                .filter(p => p.id !== programId)
-                .map(p => `
+        try {
+            const response = await fetch('/assets/json/services.json');
+            const data = await response.json();
+
+            let program = null;
+            let currentCategory = null;
+
+            // ✅ Find program from Services
+            data.Services.forEach(category => {
+                const found = category.services_list?.find(p => p.id === programId);
+                if (found) {
+                    program = found;
+                    currentCategory = category;
+                }
+            });
+
+            // Render main program
+            if (program) {
+                $("#disability-container").html(renderProgramHTML(program));
+            } else {
+                $("#disability-container").html(
+                    '<p class="text-red-500 text-center">Program not found.</p>'
+                );
+            }
+
+            // Render sidebar programs (same category)
+            if (currentCategory && currentCategory.services_list.length > 1) {
+                const filteredPrograms = currentCategory.services_list.filter(p => p.id !== programId);
+                const sidebarHTML = filteredPrograms
+                    .map((p, index) => `
                     <a href="?disability-equipment=${p.id}"
-                       class="block bg-white shadow rounded-xl p-4 hover:shadow-xl transition">
+                       class="block bg-white shadow rounded-xl p-4 hover:shadow-xl transition" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="${index * 200}">
                         <h4 class="font-semibold text-gray-800 text-sm mb-1 hover:text-red-600">
                             ${p.name}
                         </h4>
@@ -84,32 +84,32 @@ $(document).ready(async function () {
                         </p>
                     </a>
                 `)
-                .join('');
+                    .join('');
 
-            $("#other-programs").html(sidebarHTML);
-        } else {
-            $("#other-programs").html(
-                '<p class="text-gray-400 text-sm">No other services available.</p>'
+                $("#other-programs").html(sidebarHTML);
+            } else {
+                $("#other-programs").html(
+                    '<p class="text-gray-400 text-sm">No other services available.</p>'
+                );
+            }
+
+        } catch (err) {
+            console.error(err);
+            $("#disability-container").html(
+                '<p class="text-red-500 text-center">Failed to load services data.</p>'
             );
+        } finally {
+            $('#loading-state').fadeOut(300, function () {
+                $(this).remove();
+            });
         }
 
-    } catch (err) {
-        console.error(err);
-        $("#disability-container").html(
-            '<p class="text-red-500 text-center">Failed to load services data.</p>'
-        );
-    } finally {
-        $('#loading-state').fadeOut(300, function () {
-            $(this).remove();
-        });
-    }
+        // ===============================
+        // Render Program HTML
+        // ===============================
+        function renderProgramHTML(program) {
 
-    // ===============================
-    // Render Program HTML
-    // ===============================
-    function renderProgramHTML(program) {
-
-        return `
+            return `
 <div class="bg-white shadow-xl rounded-3xl overflow-hidden border border-gray-100">
 
     <!-- Header Image -->
@@ -190,7 +190,7 @@ $(document).ready(async function () {
             <h2 class="text-2xl font-bold mb-4">Full Description</h2>
             <p>${program.description}</p>
         </div>
-${program.image_gallery && program.image_gallery.length > 0 ? `
+            ${program.image_gallery && program.image_gallery.length > 0 ? `
         <div class="mt-8 pt-8 border-t border-gray-200">
             <h2 class="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-2">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -222,8 +222,8 @@ ${program.image_gallery && program.image_gallery.length > 0 ? `
     </div>
 </div>
         `;
-    }
-});
+        }
+    });
 </script>
 <script>
     $(document).on('click', '.gallery-item', function () {

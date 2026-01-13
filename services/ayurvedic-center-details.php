@@ -15,7 +15,7 @@ require_once '../layouts/header.php';
 <div class="max-w-7xl mx-auto px-4 py-12 grid grid-cols-1 lg:grid-cols-3 gap-8">
 
     <!-- Main Content -->
-    <div class="lg:col-span-2">
+    <div class="lg:col-span-2" data-aos="fade-right" data-aos-duration="1500">
         <div id="ayurvedic-center-container"></div>
         <div id="loading-state" class="text-center py-8 text-gray-500">
             Loading services details...
@@ -72,9 +72,9 @@ $(document).ready(async function () {
         if (currentCategory && currentCategory.services_list.length > 1) {
             const sidebarHTML = currentCategory.services_list
                 .filter(p => p.id !== programId)
-                .map(p => `
+                .map((p, index) => `
                     <a href="?ayurvedic-center=${p.id}"
-                       class="block bg-white shadow rounded-xl p-4 hover:shadow-xl transition">
+                       class="block bg-white shadow rounded-xl p-4 hover:shadow-xl transition" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="${index * 200}">
                         <h4 class="font-semibold text-gray-800 text-sm mb-1 hover:text-red-600">
                             ${p.name}
                         </h4>
