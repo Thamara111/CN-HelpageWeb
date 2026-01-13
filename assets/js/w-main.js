@@ -9,21 +9,24 @@ $(document).ready(function () {
       const card = `
 
             <div class="relative flex flex-col justify-center bg-gradient-to-r from-gray-50 to-gray-200 border border-gray-300 rounded-2xl shadow hover:shadow-xl transition-shadow duration-300 donation-card">
-                    <label class="absolute top-4 right-4 flex items-center space-x-2">
+                    <label class="absolute -top-2 -right-2 flex items-center space-x-2 z-20">
                     <input 
-                        type="checkbox"
-                        name="select"
-                        id="select${item.id}"
-                        class="donation-checkbox w-5 h-5 border-gray-300 rounded-full text-green-600 focus:ring-green-500 hidden"
-                        data-id="${item.id}"
+                      type="checkbox"
+                      name="select"
+                      id="select${item.id}"
+                      class="donation-checkbox appearance-none w-5 h-5 rounded-full border-2 border-gray-400 bg-white
+                            checked:bg-green-600 checked:border-green-600 
+                            focus:outline-none focus:ring-2 focus:ring-green-500 cursor-pointer accent-green-600"
+                      data-id="${item.id}"
                     >
+
                     </label>
                     <img src="${item.image}" alt="${item.title}" class="rounded-t-lg w-full h-48 object-cover" loading="lazy" data-id="${item.id}">
                     <h3 class="font-semibold text-lg mt-4 truncate px-6">${item.title}</h3>
                     <p class="text-gray-700 text-sm mt-4 px-6">${item.minidescription}</p>
                     <p class="text-green-800 text-lg mt-4 px-6">${item.amount}</p>
                     <a href="/w-donation-details?donation=${item.id}"
-                        class="mt-4 inline-block bg-gray-50 border-2 border-black text-center text-black hover:bg-black hover:text-white py-2 px-4 rounded-2xl mb-4 mx-4">Proceed to Donate</a>
+                        class="mt-4 inline-block bg-gray-50 border-2 border-black text-center text-black hover:bg-black hover:text-white py-2 px-4 rounded-2xl mb-4 mx-4">Donate Now</a>
                 </div>`;
 
       container.append(card);
@@ -40,42 +43,40 @@ $(document).ready(function () {
     );
   });
 
-  // Select All functionality - just show checkboxes, don't select
-  $("button").on("click", function () {
-    if ($(this).text() === "Select All") {
-      // Show all checkboxes without selecting them
-      $(".donation-checkbox").removeClass("hidden");
-      $(this).text("Cancel Selection");
-    } else {
-      // Hide all checkboxes
-      $(".donation-checkbox").addClass("hidden");
-      $(".donation-checkbox").prop("checked", false);
-      $(this).text("Select All");
+  // // Select All functionality - just show checkboxes, don't select
+  // $("button").on("click", function () {
+  //   if ($(this).text() === "Select All") {
+  //     // Show all checkboxes without selecting them
+  //     $(".donation-checkbox").removeClass("hidden");
+  //     $(this).text("Cancel Selection");
+  //   } else {
+  //     // Hide all checkboxes
+  //     $(".donation-checkbox").addClass("hidden");
+  //     $(".donation-checkbox").prop("checked", false);
+  //     $(this).text("Select All");
 
-      // Hide donate button
-      $(".fixed.bottom-0").addClass("hidden");
-    }
-  });
+  //     // Hide donate button
+  //     $(".fixed.bottom-0").addClass("hidden");
+  //   }
+  // });
 
-  // Individual checkbox functionality
   $(document).on("change", ".donation-checkbox", function () {
     const checkedCount = $(".donation-checkbox:checked").length;
 
     if (checkedCount > 0) {
-      // Show donate button
-      $(".fixed.bottom-0").removeClass("hidden");
+      $("#multi-donate-bar").removeClass("hidden");
     } else {
-      // Hide donate button
-      $(".fixed.bottom-0").addClass("hidden");
+      $("#multi-donate-bar").addClass("hidden");
     }
   });
+
 
   // Search functionality
   $("#search-input").on("input", function () {
     const searchTerm = $(this).val().toLowerCase();
 
     $(".donation-card").each(function () {
-      const title = $(this).find("h2").text().toLowerCase();
+      const title = $(this).find("h3").text().toLowerCase();
       if (title.includes(searchTerm)) {
         $(this).show();
       } else {
@@ -84,19 +85,17 @@ $(document).ready(function () {
     });
   });
 
-  // Donate Now button click - pass selected items via URL
-  $(document).on("click", ".fixed button", function () {
+  $("#go-to-multiple").on("click", function () {
     const selectedItems = [];
 
     $(".donation-checkbox:checked").each(function () {
-      const itemId = $(this).data("id");
-      selectedItems.push(itemId);
+      selectedItems.push($(this).data("id"));
     });
 
-    // Redirect to multiple donations page with selected IDs as URL parameters
-    if (selectedItems.length > 0) {
-      const queryString = selectedItems.map((id) => `donation=${id}`).join("&");
-      window.location.href = `/multiple-donation.html?${queryString}`;
-    }
+    if (selectedItems.length === 0) return;
+
+    const query = selectedItems.map(id => `donation=${id}`).join("&");
+    window.location.href = `/multiple-donation?${query}`;
   });
+
 });

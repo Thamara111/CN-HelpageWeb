@@ -19,7 +19,7 @@ require_once 'layouts/header.php';
 <!-- Contact Section -->
 <section class="">
   <div class="container mx-auto px-6 py-12">
-    <div class="text-center mb-12">
+    <div class="text-center mb-12" data-aos="fade-down" data-aos-duration="1500">
       <h2 class="text-4xl md:text-6xl font-bold mb-4">Donations</h2>
       <p class="text-gray-500 mb-12 max-w-2xl mx-auto">
         Your generosity fuels our mission to support elderly citizens across
@@ -27,8 +27,16 @@ require_once 'layouts/header.php';
         in improving their quality of life.
       </p>
     </div>
+    <div class="fixed top-8 right-8 p-4 hidden z-50" id="multi-donate-bar">
+      <button id="go-to-multiple"
+        class="w-full bg-red-500 text-white font-bold py-3 px-4 rounded-xl hover:bg-red-600 transition">
+        Proceed with Selected Donations
+      </button>
+    </div>
+
     <div id="donation-container"
-      class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-4 gap-8 mt-8">
+      class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-4 gap-8 mt-8"
+      data-aos="fade-up" data-aos-duration="1500">
       <!-- Additional donation cards can be added here -->
     </div>
   </div>
