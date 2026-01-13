@@ -50,7 +50,7 @@ RewriteRule . - [L]
 RewriteCond %{REQUEST_FILENAME} -d
 RewriteRule . - [L]
 
-RewriteRule ^home/?$ home.php [L]
+RewriteRule ^home/?$ index.php [L]
 RewriteRule ^about/?$ about-us.php [L]
 RewriteRule ^contact/?$ contact.php [L]
 RewriteRule ^w-donation/?$ w-donation.php [L]
@@ -112,6 +112,6 @@ ErrorDocument 404 /404.php
 # Catch-all for valid internal pages
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(home|about|contact|w-donation|w-donation-details|w-fundraising|w-fundraising-details|gallery|blogs|blog-details|volunteering|faqs|chairman-message|ed-message|publications|privacy-policy|terms-conditions)$ index.php?page=$1 [QSA,L]
+RewriteRule ^(home|about|contact|w-donation|w-donation-details|w-fundraising|w-fundraising-details|gallery|blogs|blog-details|volunteering|faqs|chairman-message|ed-message|publications|privacy-policy|terms-conditions|multiple-donation)$ index.php?page=$1 [QSA,L]
 
 
