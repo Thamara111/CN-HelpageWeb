@@ -25,7 +25,7 @@ $(document).ready(function () {
 
                 /*** --- FUND DETAILS HTML --- ***/
                 const html = `
-                    <div class="col-span-1 md:col-span-2 bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                    <div class="col-span-1 md:col-span-2 bg-white p-6 rounded-xl shadow-sm border border-gray-100" data-aos="fade-left" data-aos-duration="1500">
                         <h1 class="text-4xl font-bold mb-6 text-gray-900 leading-tight">${fund.title}</h1>
                         <img src="${fund.image}" alt="${fund.title}" class="rounded-xl w-full h-96 object-cover object-center mb-6 shadow-md" loading="lazy">
 
@@ -45,7 +45,7 @@ $(document).ready(function () {
                         
                     </div>
 
-                    <div id="fund" class="col-span-1 bg-white border-2 border-gray-100 rounded-xl p-8 shadow-lg max-w-md w-full hover:shadow-xl transition-shadow duration-300">
+                    <div id="fund" class="col-span-1 bg-white border-2 border-gray-100 rounded-xl p-8 shadow-lg max-w-md w-full hover:shadow-xl transition-shadow duration-300" data-aos="fade-right" data-aos-duration="1500">
                         <h1 class="text-2xl font-bold text-gray-900 mb-6 leading-tight">
                             Support this cause
                         </h1>
