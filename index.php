@@ -532,12 +532,12 @@ if ($page === 'home') {
                             if (stepIndex === 0) {
                                 const selectedRadio = $('input[name="donation_amount"]:checked').val();
                                 if (!selectedRadio) {
-                                    $('<div class="fixed top-4 right-4 bg-red-500 text-white px-6 py-3 rounded-lg shadow-lg">Please select a donation amount.</div>').appendTo('body').delay(3000).fadeOut(function () { $(this).remove(); });
+                                    $('<div class="fixed top-4 right-4 bg-red-500 text-white px-6 py-3 rounded-lg shadow-lg z-20">Please select a donation amount.</div>').appendTo('body').delay(3000).fadeOut(function () { $(this).remove(); });
                                     isValid = false;
                                 } else if (selectedRadio === 'custom') {
                                     const customAmount = $('#customAmount').val();
                                     if (!customAmount || customAmount <= 0) {
-                                        $('<div class="fixed top-4 right-4 bg-red-500 text-white px-6 py-3 rounded-lg shadow-lg">Please enter a valid custom amount.</div>').appendTo('body').delay(3000).fadeOut(function () { $(this).remove(); });
+                                        $('<div class="fixed top-4 right-4 bg-red-500 text-white px-6 py-3 rounded-lg shadow-lg z-20">Please enter a valid custom amount.</div>').appendTo('body').delay(3000).fadeOut(function () { $(this).remove(); });
                                         isValid = false;
                                     }
                                 }
@@ -548,7 +548,7 @@ if ($page === 'home') {
                                 const name = $('input[name="name"]').val().trim();
                                 const email = $('input[name="email"]').val().trim();
                                 if (!name || !email) {
-                                    $('<div class="fixed top-4 right-4 bg-red-500 text-white px-6 py-3 rounded-lg shadow-lg">Please fill in your name and email.</div>').appendTo('body').delay(3000).fadeOut(function () { $(this).remove(); });
+                                    $('<div class="fixed top-4 right-4 bg-red-500 text-white px-6 py-3 rounded-lg shadow-lg z-20">Please fill in your name and email.</div>').appendTo('body').delay(3000).fadeOut(function () { $(this).remove(); });
                                     isValid = false;
                                 }
                             }
