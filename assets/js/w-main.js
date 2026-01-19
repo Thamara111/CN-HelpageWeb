@@ -9,25 +9,25 @@ $(document).ready(function () {
       const card = `
 
             <div class="relative flex flex-col justify-center bg-gradient-to-r from-gray-50 to-gray-200 border border-gray-300 rounded-2xl shadow hover:shadow-xl transition-shadow duration-300 donation-card">
-                    <label class="absolute -top-2 -right-2 flex items-center space-x-2 z-20">
-                    <input 
-                      type="checkbox"
-                      name="select"
-                      id="select${item.id}"
-                      class="donation-checkbox appearance-none w-5 h-5 rounded-full border-2 border-gray-400 bg-white
+                  <label class="absolute -top-2 -right-2 flex items-center space-x-2 z-20">
+                  <input 
+                    type="checkbox"
+                    name="select"
+                    id="select${item.id}"
+                    class="donation-checkbox appearance-none w-5 h-5 rounded-full border-2 border-gray-400 bg-white
                             checked:bg-green-600 checked:border-green-600 
                             focus:outline-none focus:ring-2 focus:ring-green-500 cursor-pointer accent-green-600"
-                      data-id="${item.id}"
-                    >
+                    data-id="${item.id}"
+                  >
 
-                    </label>
-                    <img src="${item.image}" alt="${item.title}" class="rounded-t-lg w-full h-48 object-cover" loading="lazy" data-id="${item.id}">
-                    <h3 class="font-semibold text-lg mt-4 truncate px-6">${item.title}</h3>
-                    <p class="text-gray-700 text-sm mt-4 px-6">${item.minidescription}</p>
-                    <p class="text-green-800 text-lg mt-4 px-6">${item.amount}</p>
-                    <a href="/w-donation-details?donation=${item.id}"
+                </label>
+                <img src="${item.image}" alt="${item.title}" class="rounded-t-lg w-full h-48 object-cover" loading="lazy" data-id="${item.id}">
+                <h3 class="font-semibold text-lg mt-4 truncate px-6">${item.title}</h3>
+                <p class="text-gray-700 text-sm mt-4 px-6">${item.minidescription}</p>
+                <p class="text-green-800 text-lg mt-4 px-6">${item.amount}</p>
+                <a href="/w-donation-details?donation=${item.id}"
                         class="mt-4 inline-block bg-gray-50 border-2 border-black text-center text-black hover:bg-black hover:text-white py-2 px-4 rounded-2xl mb-4 mx-4">Donate Now</a>
-                </div>`;
+            </div>`;
 
       container.append(card);
     });
@@ -63,12 +63,38 @@ $(document).ready(function () {
   $(document).on("change", ".donation-checkbox", function () {
     const checkedCount = $(".donation-checkbox:checked").length;
 
+    // Show / hide multi donate bar
     if (checkedCount > 0) {
       $("#multi-donate-bar").removeClass("hidden");
     } else {
       $("#multi-donate-bar").addClass("hidden");
     }
+
+    $(document).on("change", ".donation-checkbox", function () {
+      const checkedCount = $(".donation-checkbox:checked").length;
+
+      // Show / hide multi donate bar
+      if (checkedCount > 0) {
+        $("#multi-donate-bar").removeClass("hidden");
+      } else {
+        $("#multi-donate-bar").addClass("hidden");
+      }
+
+      // ✅ Success message when checked
+      if ($(this).is(":checked")) {
+        $('<div class="fixed top-2 right-8 bg-green-500 text-white px-6 py-3 rounded-lg shadow-lg z-50">' +
+          'Donation selected successfully' +
+          '</div>')
+          .appendTo('body')
+          .delay(2500)
+          .fadeOut(function () {
+            $(this).remove();
+          });
+      }
+    });
+
   });
+
 
 
   // Search functionality
