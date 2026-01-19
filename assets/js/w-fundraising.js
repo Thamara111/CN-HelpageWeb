@@ -33,12 +33,28 @@ $(document).ready(function () {
                 </div>
 
                 <!-- Buttons -->
-                <div class="w-full mt-6 flex flex-col sm:flex-row justify-between gap-3">
-                    <a href="/w-fundraising-details?fund=${item.id}"
-                        class="w-full mt-4 inline-block bg-gray-50 border-2 border-black text-center text-black hover:bg-black hover:text-white py-2 px-4 rounded-2xl  mb-4 mx-4">View More</a>
-                        <a href="/w-fundraising-details?fund=${item.id}"
-                        class="w-full mt-4 inline-block bg-black border-2 border-black text-center text-white hover:bg-white hover:text-black py-2 px-4 rounded-2xl  mb-4 mx-4">Donate Now</a>
-                </div>
+                <div class="flex flex-col items-center mt-4 py-6 mx-auto">
+                    <div class="w-full flex flex-col sm:flex-row justify-center gap-3 px-4">
+
+                      <a href="/w-fundraising-details?fund=${item.id}"
+                        class="w-full sm:w-auto max-w-xs
+                                bg-gray-50 border-2 border-black text-center text-black
+                                hover:bg-black hover:text-white
+                                py-2 px-6 rounded-2xl">
+                        View More
+                      </a>
+
+                      <a href="/w-fundraising-details?fund=${item.id}"
+                        class="w-full sm:w-auto max-w-xs
+                                bg-black border-2 border-black text-center text-white
+                                hover:bg-white hover:text-black
+                                py-2 px-6 rounded-2xl">
+                        Donate Now
+                      </a>
+
+                    </div>
+                  </div>
+
                 </div>
             </div>`;
 
