@@ -5,7 +5,7 @@
             <!-- Carousel Container -->
             <div id="partners-carousel" class="flex space-x-6 overflow-hidden">
                 <!-- Partner Item -->
-                <a href="https://www.who.int/" target="_blank" class="group flex-none flex justify-center items-center p-4 bg-white rounded-2xl hover:shadow-lg 
+                <a href="https://www.who.int/" target="_blank" class="group flex-none flex justify-center items-center p-4 bg-white rounded-2xl 
                 transition-all duration-300 transform hover:-translate-y-1">
                     <div class="relative flex justify-center items-center">
                         <img src="/assets/images/who.webp" alt="World Health Organization" class="max-h-20 object-contain transition-all duration-300 
@@ -13,72 +13,72 @@
                     </div>
                 </a>
 
-                <a href="https://www.unfpa.org/" target="_blank" class="group flex-none flex justify-center items-center p-4 bg-white rounded-2xl hover:shadow-lg 
+                <a href="https://www.unfpa.org/" target="_blank" class="group flex-none flex justify-center items-center p-4 bg-white rounded-2xl 
                 transition-all duration-300 transform hover:-translate-y-1">
                     <div class="relative flex justify-center items-center">
                         <img src="/assets/images/unicef.webp" alt="UNFPA" class="max-h-20 object-contain transition-all duration-300 
                         group-hover:scale-105 group-hover:brightness-110">
-                        <div class="absolute inset-0 bg-green-500 opacity-0 group-hover:opacity-5 rounded-lg 
+                        <div class="absolute inset-0 rounded-lg 
                         transition-opacity duration-300"></div>
                     </div>
                 </a>
 
-                <a href="https://www.helpage.org/" target="_blank" class="group flex-none flex justify-center items-center p-4 bg-white rounded-2xl hover:shadow-lg 
+                <a href="https://www.helpage.org/" target="_blank" class="group flex-none flex justify-center items-center p-4 bg-white rounded-2xl 
                 transition-all duration-300 transform hover:-translate-y-1">
                     <div class="relative flex justify-center items-center">
                         <img src="/assets/images/helpage-int.webp" alt="helpage international" class="max-h-20 object-contain transition-all duration-300 
                         group-hover:scale-105 group-hover:brightness-110">
-                        <div class="absolute inset-0 bg-purple-500 opacity-0 group-hover:opacity-5 rounded-lg 
+                        <div class="absolute inset-0 rounded-lg 
                         transition-opacity duration-300"></div>
                     </div>
                 </a>
 
-                <a href="https://www.helpage.de/" target="_blank" class="group flex-none flex justify-center items-center p-4 bg-white rounded-2xl hover:shadow-lg 
+                <a href="https://www.helpage.de/" target="_blank" class="group flex-none flex justify-center items-center p-4 bg-white rounded-2xl
                 transition-all duration-300 transform hover:-translate-y-1">
                     <div class="relative flex justify-center items-center">
                         <img src="/assets/images/had-logo-kleint.webp" alt="HAD" class="max-h-20 object-contain transition-all duration-300 
                         group-hover:scale-105 group-hover:brightness-110">
-                        <div class="absolute inset-0 bg-purple-500 opacity-0 group-hover:opacity-5 rounded-lg 
+                        <div class="absolute inset-0 rounded-lg 
                         transition-opacity duration-300"></div>
                     </div>
                 </a>
 
-                <a href="https://tvsupreme.lk/" target="_blank" class="group flex-none flex justify-center items-center p-4 bg-white rounded-2xl hover:shadow-lg 
+                <a href="https://tvsupreme.lk/" target="_blank" class="group flex-none flex justify-center items-center p-4 bg-white rounded-2xl
                 transition-all duration-300 transform hover:-translate-y-1">
                     <div class="relative flex justify-center items-center">
                         <img src="/assets/images/Supreme_tv.webp" alt="Supreme TV" class="max-h-20 object-contain transition-all duration-300 bg-black/80 px-4
                         group-hover:scale-105 group-hover:brightness-110">
-                        <div class="absolute inset-0 bg-red-500 opacity-0 group-hover:opacity-5 rounded-lg 
+                        <div class="absolute inset-0 rounded-lg 
                         transition-opacity duration-300"></div>
                     </div>
                 </a>
 
-                <a href="https://supreme.lk/" target="_blank" class="group flex-none flex justify-center items-center p-4 bg-white rounded-2xl hover:shadow-lg 
+                <a href="https://supreme.lk/" target="_blank" class="group flex-none flex justify-center items-center p-4 bg-white rounded-2xl 
                 transition-all duration-300 transform hover:-translate-y-1">
                     <div class="relative flex justify-center items-center">
                         <img src="/assets/images/supream-g.webp" alt="Supreme G" class="max-h-20 object-contain transition-all duration-300 bg-black/80 px-4
                         group-hover:scale-105 group-hover:brightness-110">
-                        <div class="absolute inset-0 bg-orange-500 opacity-0 group-hover:opacity-5 rounded-lg 
+                        <div class="absolute inset-0 rounded-lg 
                         transition-opacity duration-300"></div>
                     </div>
                 </a>
 
-                <a href="https://supreme.lk/csr-2/" target="_blank" class="group flex-none flex justify-center items-center p-4 bg-white rounded-2xl hover:shadow-lg 
+                <a href="https://supreme.lk/csr-2/" target="_blank" class="group flex-none flex justify-center items-center p-4 bg-white rounded-2xl 
                 transition-all duration-300 transform hover:-translate-y-1">
                     <div class="relative flex justify-center items-center">
                         <img src="/assets/images/supream-care.webp" alt="Supreme Care" class="max-h-20 object-contain transition-all duration-300 bg-black px-8
                         group-hover:scale-105 group-hover:brightness-110">
-                        <div class="absolute inset-0 bg-teal-500 opacity-0 group-hover:opacity-5 rounded-lg 
+                        <div class="absolute inset-0 rounded-lg 
                         transition-opacity duration-300"></div>
                     </div>
                 </a>
 
-                <a href="https://friendsdiaper.in/" target="_blank" class="group flex-none flex justify-center items-center p-4 bg-white rounded-2xl hover:shadow-lg 
+                <a href="https://friendsdiaper.in/" target="_blank" class="group flex-none flex justify-center items-center p-4 bg-white rounded-2xl 
                 transition-all duration-300 transform hover:-translate-y-1">
                     <div class="relative flex justify-center items-center">
                         <img src="/assets/images/Friends-Logo.webp" alt="Friends" class="max-h-20 object-contain transition-all duration-300 
                         group-hover:scale-105 group-hover:brightness-110">
-                        <div class="absolute inset-0 bg-pink-500 opacity-0 group-hover:opacity-5 rounded-lg 
+                        <div class="absolute inset-0 rounded-lg 
                         transition-opacity duration-300"></div>
                     </div>
                 </a>
