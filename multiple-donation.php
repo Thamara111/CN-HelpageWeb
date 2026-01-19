@@ -66,14 +66,139 @@ require_once 'layouts/header.php';
         </section>
     </main>
 
-    
+    <section id="fundModal" class="fixed inset-0 z-50 hidden" aria-labelledby="modal-title" role="dialog"
+        aria-modal="true">
+
+        <div class="fixed inset-0 bg-gray-900 bg-opacity-75 transition-opacity backdrop-blur-sm" id="modalBackdrop">
+        </div>
+
+        <div class="fixed inset-0 z-10 overflow-y-auto">
+            <div class="flex min-h-full items-center justify-center p-4 text-center sm:p-0">
+
+                <div class="relative transform overflow-hidden rounded-2xl bg-white text-left shadow-2xl transition-all 
+                        w-full sm:max-w-lg border border-gray-200 
+                        max-h-[95dvh] overflow-y-auto">
+
+                    <button type="button" id="closeModalBtn"
+                        class="absolute top-4 right-4 text-gray-400 hover:text-gray-600 hover:bg-gray-100 rounded-full p-2 transition-colors z-20 focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+
+                    <div class="bg-white px-4 pb-4 pt-5 sm:p-6 sm:pb-6">
+
+                        <h2 class="text-lg md:text-xl 2xl:text-2xl font-bold text-green-700 mb-2 text-center">
+                            Confirm Funding
+                        </h2>
+                        <p class="text-gray-600 text-sm text-center mb-6 px-4">
+                            Complete your details to proceed.
+                        </p>
+
+                        <form id="fundForm" action="#" method="POST">
+
+                            <div
+                                class="flex flex-col justify-center items-center mb-6 bg-green-50 border border-green-100 rounded-xl p-2 2xl:p-4">
+                                <p id="modal-fund-title" class="text-gray-800 font-semibold text-center"></p>
+                                <div class="h-px w-full bg-green-200 my-2"></div>
+                                <p class="text-lg md:text-xl 2xl:text-2xl font-bold text-green-600 text-center">
+                                    Total: <span id="modal-fund-total">Rs. 0</span>
+                                </p>
+                            </div>
+
+                            <div class="space-y-4">
+                                <h3 class="text-lg 2xl:text-2xl font-bold text-gray-900 flex items-center">
+                                    <i class="fas fa-user-circle mr-2 text-green-500 text-xl"></i> Your Information
+                                </h3>
+
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+
+                                    <div>
+                                        <label for="name"
+                                            class="block text-xs 2xl:text-sm font-semibold text-gray-700 mb-1">Full Name
+                                            *</label>
+                                        <input type="text" id="name" name="name" required
+                                            class="border border-gray-300 rounded-lg p-2 w-full focus:border-green-500 focus:ring-2 focus:ring-green-200 outline-none transition-all  text-xs 2xl:text-sm"
+                                            placeholder="Enter full name" />
+                                    </div>
+
+                                    <div>
+                                        <label for="email"
+                                            class="block  text-xs 2xl:text-sm font-semibold text-gray-700 mb-1">Email
+                                            *</label>
+                                        <input type="email" id="email" name="email" required
+                                            class="border border-gray-300 rounded-lg p-2 w-full focus:border-green-500 focus:ring-2 focus:ring-green-200 outline-none transition-all  text-xs 2xl:text-sm"
+                                            placeholder="Enter email address" />
+                                    </div>
+
+                                    <div class="md:col-span-2">
+                                        <label for="message"
+                                            class="block  text-xs 2xl:text-sm font-semibold text-gray-700 mb-1">Message</label>
+                                        <textarea id="message" name="message"
+                                            class="border border-gray-300 rounded-lg p-2 w-full focus:border-green-500 focus:ring-2 focus:ring-green-200 outline-none transition-all resize-none  text-xs 2xl:text-sm"
+                                            placeholder="Optional message..." rows="2"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mt-4">
+                                <label
+                                    class="flex items-center bg-gray-50 p-3 rounded-lg border border-gray-200 cursor-pointer hover:bg-gray-100 transition">
+                                    <input type="checkbox" id="anonymous-yes" name="anonymous" value="yes"
+                                        class="h-3 2xl:h-5 w-3 2xl:w-5 text-green-600 focus:ring-green-500 rounded border-gray-300" />
+                                    <span class="ml-3  text-xs 2xl:text-sm font-medium text-gray-700 select-none">
+                                        Keep my funding anonymous
+                                    </span>
+                                </label>
+                            </div>
+
+                            <div class="mt-6">
+                                <button type="submit"
+                                    class="w-full bg-green-600 hover:bg-green-700 text-white font-bold  text-xs 2xl:text-sm py-3 2xl:py-3.5 px-4 rounded-xl transition-all duration-300 transform active:scale-95 shadow-lg flex items-center justify-center space-x-2">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Proceed to Pay</span>
+                                </button>
+                                <div class="mt-3 flex items-center justify-center space-x-1 text-xs text-gray-500">
+                                    <i class="fas fa-lock text-green-500"></i>
+                                    <span>Secure and encrypted payment</span>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <script>
+        // --- HELPER: Extract numeric amount from string ---
         function extractAmount(amountStr) {
             if (!amountStr) return 0;
             if (amountStr.includes('-')) amountStr = amountStr.split('-')[0].trim();
             const numeric = amountStr.match(/\d+(?:,\d{3})*(?:\.\d+)?/);
             return numeric ? parseFloat(numeric[0].replace(/,/g, "")) : 0;
+        }
+
+        // --- HELPER: Open the Modal ---
+        function populateAndOpenFundModal() {
+            // Load data from storage (set by the "Proceed" button)
+            const storedTotal = localStorage.getItem("fundTotal") || 0;
+            const storedTitle = localStorage.getItem("fundTitle") || "General Donation";
+
+            // Update Modal UI
+            $("#modal-fund-title").text(storedTitle);
+            $("#modal-fund-total").text(`Rs. ${Number(storedTotal).toLocaleString()}`);
+
+            // Show Modal
+            $("#fundModal").removeClass("hidden");
+            $("body").addClass("overflow-hidden"); // Stop background scrolling
+        }
+
+        // --- HELPER: Close the Modal ---
+        function closeFundModal() {
+            $("#fundModal").addClass("hidden");
+            $("body").removeClass("overflow-hidden");
         }
 
         $(document).ready(function () {
@@ -83,6 +208,7 @@ require_once 'layouts/header.php';
             const loadingState = $('#loading-state');
             let totalAmount = 0;
 
+            // --- 1. LOAD DONATION DATA ---
             const params = new URLSearchParams(window.location.search);
             let selectedIds = params.getAll('donation');
             if (selectedIds.length === 0 && params.get('donation')) {
@@ -113,7 +239,7 @@ require_once 'layouts/header.php';
                     const amountValue = extractAmount(item.amount);
                     totalAmount += amountValue;
 
-                    // Build sub-donation HTML (if any)
+                    // Build sub-donation HTML
                     let subHtml = "";
                     if (item.subDonations && item.subDonations.length > 0) {
                         subHtml = `
@@ -126,6 +252,7 @@ require_once 'layouts/header.php';
                                 <input type="checkbox" class="subDonationCheck" 
                                     data-amount="${sub.amount}" 
                                     data-id="${item.id}" 
+                                    data-title="${sub.title}"
                                     id="sub${item.id}-${index}">
                                 <label for="sub${item.id}-${index}" class="text-sm font-medium text-gray-800">${sub.title}</label>
                             </div>
@@ -151,7 +278,7 @@ require_once 'layouts/header.php';
                     <img src="${item.image}" alt="${item.title}" class="w-24 h-24 rounded-lg object-cover flex-shrink-0">
                     <div class="flex flex-col md:flex-row justify-between flex-1">
                         <div>
-                            <h3 class="text-xl font-bold text-gray-900 mb-1">${item.title}</h3>
+                            <h3 class="text-xl font-bold text-gray-900 mb-1 donation-title-text">${item.title}</h3>
                         <p class="text-gray-600 mb-3">
                             ${isNaN(amountValue) || amountValue === 0 && !/\d/.test(item.amount)
                             ? item.amount
@@ -175,10 +302,10 @@ require_once 'layouts/header.php';
                     container.append(html);
                 });
 
-                // --- INITIAL TOTAL DISPLAY ---
                 $("#total-amount").text(`Rs. ${totalAmount.toLocaleString()}`);
 
-                // --- DONATION QTY CHANGE ---
+                // --- EVENTS ---
+                // Recalculate on Main Qty Change
                 container.on("input", ".donation-qty", function () {
                     const id = $(this).data("id");
                     const qty = parseInt($(this).val()) || 1;
@@ -188,7 +315,7 @@ require_once 'layouts/header.php';
                     recalcTotal();
                 });
 
-                // --- SUB-DONATION CHECKBOX ---
+                // Checkbox toggle logic
                 container.on("change", ".subDonationCheck", function () {
                     const $this = $(this);
                     const id = $this.data("id");
@@ -207,7 +334,7 @@ require_once 'layouts/header.php';
                     recalcTotal();
                 });
 
-                // --- SUB-DONATION QTY CHANGE ---
+                // Sub-donation Qty Change
                 container.on("input", ".subDonationQty", function () {
                     const qty = parseInt($(this).val()) || 1;
                     const amount = parseFloat($(this).data("amount"));
@@ -218,50 +345,62 @@ require_once 'layouts/header.php';
                     recalcTotal();
                 });
 
-                // --- RECALCULATE TOTAL ---
                 function recalcTotal() {
                     let total = 0;
-
-                    // Add main donations
                     $(".donation-qty").each(function () {
                         const q = parseInt($(this).val()) || 1;
                         const a = parseFloat($(this).data("amount"));
                         total += q * a;
                     });
-
-                    // Add sub-donations
                     $(".subDonationCheck:checked").each(function () {
                         const parent = $(this).data("id");
                         const amount = parseFloat($(this).data("amount"));
                         const qty = parseInt($(`.subDonationQty[data-parent="${parent}"][data-amount="${amount}"]`).val()) || 1;
                         total += qty * amount;
                     });
-
                     $("#total-amount").text(`Rs. ${total.toLocaleString()}`);
                 }
 
-                // --- PROCEED TO PAYMENT ---
+                // --- 2. UPDATED CLICK HANDLER (TRIGGERS MODAL, NOT REDIRECT) ---
                 $('#proceed-to-payment').click(function () {
                     const totalText = $("#total-amount").text();
                     const totalNumeric = totalText.replace(/[^\d]/g, "");
                     const total = parseFloat(totalNumeric) || 0;
 
+                    if (total <= 0) {
+                        alert("Please select at least one donation.");
+                        return;
+                    }
+
+                    // Gather Titles
                     const titles = [];
                     $(".donation-item").each(function () {
-                        const title = $(this).find("h3").text().trim();
-                        titles.push(title);
+                        // Main Item
+                        const mainTitle = $(this).find(".donation-title-text").text().trim();
+                        const mainQty = $(this).find(".donation-qty").val() || 1;
+                        if (mainQty > 1) {
+                            titles.push(`${mainTitle} (x${mainQty})`);
+                        } else {
+                            titles.push(mainTitle);
+                        }
 
+                        // Sub Items
                         $(this).find(".subDonationCheck:checked").each(function () {
-                            const subTitle = $(this).next("label").text().trim();
+                            const subTitle = $(this).data("title");
                             const qty = $(this).closest("li").find(".subDonationQty").val() || 1;
                             titles.push(`${subTitle} (x${qty})`);
                         });
                     });
 
-                    localStorage.setItem("donationTotal", total);
-                    localStorage.setItem("donationTitles", JSON.stringify(titles));
+                    // Join titles into a string string for the API description
+                    const descriptionStr = titles.join(", ");
 
-                    window.location.href = "/pay-safe";
+                    // Save to LocalStorage using the keys the Modal expects
+                    localStorage.setItem("fundTotal", total);
+                    localStorage.setItem("fundTitle", descriptionStr);
+
+                    // Open the Modal
+                    populateAndOpenFundModal();
                 });
 
             }).fail(function () {
@@ -269,8 +408,49 @@ require_once 'layouts/header.php';
                 loadingState.hide();
                 emptyState.removeClass('hidden');
             });
+
+            // --- 3. MODAL LOGIC & DIRECT API SUBMISSION ---
+
+            // Close buttons
+            $("#closeModalBtn, #modalBackdrop").on("click", closeFundModal);
+
+            // Form Submit -> Direct API Redirect
+            $("#fundForm").on("submit", function (e) {
+                e.preventDefault();
+
+                const name = $("#name").val().trim() || "Anonymous";
+                const email = $("#email").val().trim();
+
+                // Retrieve final data
+                const amount = Number(localStorage.getItem("fundTotal")) || 0;
+                const title = localStorage.getItem("fundTitle") || "Donation";
+                const currency = "LKR";
+
+                if (amount <= 0) {
+                    alert("Invalid amount");
+                    return;
+                }
+
+                // Generate Order ID
+                const now = new Date();
+                const datePart = now.getFullYear().toString().slice(-2)
+                    + String(now.getMonth() + 1).padStart(2, "0")
+                    + String(now.getDate()).padStart(2, "0");
+                const randomPart = Math.floor(Math.random() * 9000) + 1000;
+                const cleanName = name.replace(/[^a-zA-Z0-9]/g, "").toUpperCase().slice(0, 6);
+                const orderId = `HELP${datePart}${cleanName}${randomPart}`;
+
+                // Build Payment URL
+                const description = encodeURIComponent(title);
+                const paymentUrl = `https://helpage.go.digitable.io/paysafe/sey?currency=${currency}&amount=${amount}&orderId=${orderId}&description=${description}&email=${encodeURIComponent(email)}`;
+
+                // Show loading on button
+                $(this).find("button[type='submit']").html('<i class="fas fa-spinner fa-spin animate-spin"></i> Processing...');
+
+                // Redirect directly to API
+                window.location.href = paymentUrl;
+            });
         });
     </script>
 
-
-<?php require_once 'layouts/footer.php'; ?>
+    <?php require_once 'layouts/footer.php'; ?>
