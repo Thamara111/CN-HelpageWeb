@@ -193,9 +193,10 @@ require_once 'layouts/header.php';
          const cleanName = name.replace(/[^a-zA-Z0-9]/g, "").toUpperCase().slice(0, 6);
          const orderId = `SW${datePart}${cleanName}${randomPart}`;
 
-         // ✅ Redirect to payment gateway with address
+         // ✅ Redirect to payment gateway with address and name
          const addressParam = encodeURIComponent(address);
-         const paymentUrl = `https://helpage.go.digitable.io/paysafe/sey?currency=${currency}&amount=${amount}&orderId=${orderId}&description=${donationsParam}&address=${addressParam}`;
+         const nameParam = encodeURIComponent(name);
+         const paymentUrl = `https://helpage.go.digitable.io/paysafe/sey?currency=${currency}&amount=${amount}&orderId=${orderId}&description=${donationsParam}&address=${addressParam}&name=${nameParam}`;
 
          console.log("Redirecting to:", paymentUrl);
 
