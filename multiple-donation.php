@@ -123,12 +123,13 @@ require_once 'layouts/header.php';
                                     </div>
 
                                     <div>
-                                        <label for="email"
-                                            class="block  text-xs 2xl:text-sm font-semibold text-gray-700 mb-1">Email
+                                        <label for="address"
+                                            class="block  text-xs 2xl:text-sm font-semibold text-gray-700 mb-1">Home
+                                            Address
                                             *</label>
-                                        <input type="email" id="email" name="email" required
+                                        <input type="text" id="address" name="address" required
                                             class="border border-gray-300 rounded-lg p-2 w-full focus:border-green-500 focus:ring-2 focus:ring-green-200 outline-none transition-all  text-xs 2xl:text-sm"
-                                            placeholder="Enter email address" />
+                                            placeholder="Enter home address" />
                                     </div>
 
                                     <div class="md:col-span-2">
@@ -419,7 +420,7 @@ require_once 'layouts/header.php';
                 e.preventDefault();
 
                 const name = $("#name").val().trim() || "Anonymous";
-                const email = $("#email").val().trim();
+                const address = $("#address").val().trim();
 
                 // Retrieve final data
                 const amount = Number(localStorage.getItem("fundTotal")) || 0;
@@ -442,7 +443,7 @@ require_once 'layouts/header.php';
 
                 // Build Payment URL
                 const description = encodeURIComponent(title);
-                const paymentUrl = `https://helpage.go.digitable.io/paysafe/sey?currency=${currency}&amount=${amount}&orderId=${orderId}&description=${description}&email=${encodeURIComponent(email)}`;
+                const paymentUrl = `https://helpage.go.digitable.io/paysafe/sey?currency=${currency}&amount=${amount}&orderId=${orderId}&description=${description}&address=${encodeURIComponent(address`)}&name=${encodeURIComponent(name)}`;
 
                 // Show loading on button
                 $(this).find("button[type='submit']").html('<i class="fas fa-spinner fa-spin animate-spin"></i> Processing...');
