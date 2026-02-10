@@ -77,7 +77,7 @@ if ($page === 'home') {
 <!-- Who We Are. -->
 <section>
     <div class="container mx-auto px-6 py-12">
-        <div class="grid grid-cols-1 grid-cols-1 md:grid-cols-2 lg:gap-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:gap-6">
             <div data-aos="fade-right" data-aos-duration="1500">
                 <h4 class="text-red-600 mb-4 ">Who We Are.</h4>
                 <h2 class="text-2xl md:text-3xl 2xl:text-6xl font-bold mb-4 md:mb-6 lg:mb-6 xl:mb-6 2xl:mb-8">
