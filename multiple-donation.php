@@ -443,7 +443,7 @@ require_once 'layouts/header.php';
 
                 // Build Payment URL
                 const description = encodeURIComponent(title);
-                const paymentUrl = `https://helpage.go.digitable.io/paysafe/sey?currency=${currency}&amount=${amount}&orderId=${orderId}&description=${description}&address=${encodeURIComponent(address`)}&name=${encodeURIComponent(name)}`;
+                const paymentUrl = `https://helpage.go.digitable.io/paysafe/sey?currency=${currency}&amount=${amount}&orderId=${orderId}&description=${description}&name=${encodeURIComponent(name)}&address=${encodeURIComponent(address)}`;
 
                 // Show loading on button
                 $(this).find("button[type='submit']").html('<i class="fas fa-spinner fa-spin animate-spin"></i> Processing...');
