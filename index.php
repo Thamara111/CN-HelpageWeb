@@ -394,7 +394,7 @@ if ($page === 'home') {
 <section class="bg-[url('/assets/images/donate.webp')] bg-center bg-cover">
     <div class="bg-black bg-opacity-50 py-12">
         <div class="container mx-auto px-6 py-12 backdrop-blur-md rounded-2xl">
-            <div class="grid grid-cols-1 grid-cols-1 md:grid-cols-2 lg:gap-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:gap-6">
                 <div data-aos="fade-right" data-aos-duration="1500">
                     <h4 class="text-red-200 mb-4 md:mb-6 lg:mb-6 xl:mb-6 2xl:mb-8">
                         Every act of kindness counts.
@@ -472,7 +472,7 @@ if ($page === 'home') {
                             <div class="space-y-4">
                                 <input type="text" name="name" placeholder="Full Name" required
                                     class="w-full border border-gray-300 rounded-xl p-3 focus:ring-2 focus:ring-red-600">
-                                <input type="email" name="email" placeholder="Email Address" required
+                                <input type="text" name="address" placeholder="Home Address" required
                                     class="w-full border border-gray-300 rounded-xl p-3 focus:ring-2 focus:ring-red-600">
                                 <textarea name="description" placeholder="Write a short message..." rows="3"
                                     class="w-full border border-gray-300 rounded-xl p-3 focus:ring-2 focus:ring-red-600"></textarea>
@@ -546,9 +546,9 @@ if ($page === 'home') {
                             // Step 2: Personal Details Validation
                             if (stepIndex === 1) {
                                 const name = $('input[name="name"]').val().trim();
-                                const email = $('input[name="email"]').val().trim();
-                                if (!name || !email) {
-                                    $('<div class="fixed top-4 right-4 bg-red-500 text-white px-6 py-3 rounded-lg shadow-lg z-20">Please fill in your name and email.</div>').appendTo('body').delay(3000).fadeOut(function () { $(this).remove(); });
+                                const address = $('input[name="address"]').val().trim();
+                                if (!name || !address) {
+                                    $('<div class="fixed top-4 right-4 bg-red-500 text-white px-6 py-3 rounded-lg shadow-lg z-20">Please fill in your name and address.</div>').appendTo('body').delay(3000).fadeOut(function () { $(this).remove(); });
                                     isValid = false;
                                 }
                             }
@@ -577,7 +577,7 @@ if ($page === 'home') {
 
                             // 2. Get User Details
                             const name = $('input[name="name"]').val().trim() || "Anonymous";
-                            const email = $('input[name="email"]').val().trim();
+                            const address = $('input[name="address"]').val().trim();
                             // We do not use card details here because PaySafe handles that securely on the redirect page.
 
                             // 3. Prepare PaySafe Parameters
@@ -595,7 +595,7 @@ if ($page === 'home') {
 
                             // 4. Construct API URL
                             // Encoding parameters to ensure URL safety
-                            const paymentUrl = `https://helpage.go.digitable.io/paysafe/sey?currency=${currency}&amount=${amount}&orderId=${orderId}&description=${encodeURIComponent(description)}&customerName=${encodeURIComponent(name)}&customerEmail=${encodeURIComponent(email)}`;
+                            const paymentUrl = `https://helpage.go.digitable.io/paysafe/sey?currency=${currency}&amount=${amount}&orderId=${orderId}&description=${encodeURIComponent(description)}&customerName=${encodeURIComponent(name)}&customerAddress=${encodeURIComponent(address)}`;
 
                             console.log("Redirecting to:", paymentUrl);
 

@@ -67,21 +67,24 @@ require_once 'layouts/header.php';
                      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
 
                         <div>
-                           <label for="name" class="block text-xs 2xl:text-sm font-semibold text-gray-700 mb-1">Full Name *</label>
+                           <label for="name" class="block text-xs 2xl:text-sm font-semibold text-gray-700 mb-1">Full
+                              Name *</label>
                            <input type="text" id="name" name="name" required
                               class="border border-gray-300 rounded-lg p-2 w-full focus:border-green-500 focus:ring-2 focus:ring-green-200 outline-none transition-all  text-xs 2xl:text-sm"
                               placeholder="Enter full name" />
                         </div>
 
                         <div>
-                           <label for="email" class="block  text-xs 2xl:text-sm font-semibold text-gray-700 mb-1">Email *</label>
-                           <input type="email" id="email" name="email" required
+                           <label for="address" class="block  text-xs 2xl:text-sm font-semibold text-gray-700 mb-1">Home
+                              Address *</label>
+                           <input type="text" id="address" name="address" required
                               class="border border-gray-300 rounded-lg p-2 w-full focus:border-green-500 focus:ring-2 focus:ring-green-200 outline-none transition-all  text-xs 2xl:text-sm"
-                              placeholder="Enter email address" />
+                              placeholder="Enter home address" />
                         </div>
 
                         <div class="md:col-span-2">
-                           <label for="message" class="block  text-xs 2xl:text-sm font-semibold text-gray-700 mb-1">Message</label>
+                           <label for="message"
+                              class="block  text-xs 2xl:text-sm font-semibold text-gray-700 mb-1">Message</label>
                            <textarea id="message" name="message"
                               class="border border-gray-300 rounded-lg p-2 w-full focus:border-green-500 focus:ring-2 focus:ring-green-200 outline-none transition-all resize-none  text-xs 2xl:text-sm"
                               placeholder="Optional message..." rows="2"></textarea>
@@ -152,6 +155,7 @@ require_once 'layouts/header.php';
          e.preventDefault();
 
          const name = $("#name").val().trim() || "Anonymous";
+         const address = $("#address").val().trim() || "";
 
          // Retrieve final data from storage
          const amount = Number(localStorage.getItem("fundTotal")) || 0;
@@ -174,7 +178,7 @@ require_once 'layouts/header.php';
 
          // Build URL
          const description = encodeURIComponent(title);
-         const paymentUrl = `https://helpage.go.digitable.io/paysafe/sey?currency=${currency}&amount=${amount}&orderId=${orderId}&description=${description}`;
+         const paymentUrl = `https://helpage.go.digitable.io/paysafe/sey?currency=${currency}&amount=${amount}&orderId=${orderId}&description=${description}&name=${encodeURIComponent(name)}&address=${encodeURIComponent(address)}`;
 
          console.log("Redirecting to:", paymentUrl);
 

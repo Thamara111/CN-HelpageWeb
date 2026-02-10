@@ -79,11 +79,12 @@ require_once 'layouts/header.php';
                         </div>
 
                         <div>
-                           <label for="email" class="block text-xs 2xl:text-sm font-semibold text-gray-700 mb-1">Email
+                           <label for="address" class="block text-xs 2xl:text-sm font-semibold text-gray-700 mb-1">Home
+                              Address
                               <span class="text-red-500">*</span></label>
-                           <input type="email" id="email" name="email" required
+                           <input type="text" id="address" name="address" required
                               class="block w-full rounded-lg border border-gray-300 px-3 py-2 text-gray-900 shadow-sm focus:border-red-500 focus:ring-2 focus:ring-red-200 text-xs 2xl:text-sm outline-none transition-all"
-                              placeholder="Enter email address" />
+                              placeholder="Enter home address" />
                         </div>
 
                         <div class="md:col-span-2">
@@ -167,6 +168,7 @@ require_once 'layouts/header.php';
          e.preventDefault();
 
          const name = $("#name").val().trim() || "Anonymous";
+         const address = $("#address").val().trim() || "";
          // Grab total from LocalStorage or the DOM text
          const amount = Number(localStorage.getItem("donationTotal")) || 0;
          const currency = "LKR";
@@ -191,8 +193,9 @@ require_once 'layouts/header.php';
          const cleanName = name.replace(/[^a-zA-Z0-9]/g, "").toUpperCase().slice(0, 6);
          const orderId = `SW${datePart}${cleanName}${randomPart}`;
 
-         // ✅ Redirect to payment gateway
-         const paymentUrl = `https://helpage.go.digitable.io/paysafe/sey?currency=${currency}&amount=${amount}&orderId=${orderId}&description=${donationsParam}`;
+         // ✅ Redirect to payment gateway with address
+         const addressParam = encodeURIComponent(address);
+         const paymentUrl = `https://helpage.go.digitable.io/paysafe/sey?currency=${currency}&amount=${amount}&orderId=${orderId}&description=${donationsParam}&address=${addressParam}`;
 
          console.log("Redirecting to:", paymentUrl);
 
