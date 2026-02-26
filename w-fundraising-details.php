@@ -178,7 +178,7 @@ require_once 'layouts/header.php';
 
          // Build URL
          const description = encodeURIComponent(title);
-         const paymentUrl = `https://helpage.go.digitable.io/paysafe/sey?currency=${currency}&amount=${amount}&orderId=${orderId}&description=${description}&name=${encodeURIComponent(name)}&address=${encodeURIComponent(address)}`;
+         const paymentUrl = `https://helpage.go.digitable.io/paysafe/sey?currency=${currency}&amount=${amount}&orderId=${orderId}&description=${description}&name=${name}&address=${address}`;
 
          console.log("Redirecting to:", paymentUrl);
 

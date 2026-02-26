@@ -595,7 +595,7 @@ if ($page === 'home') {
 
                             // 4. Construct API URL
                             // Encoding parameters to ensure URL safety
-                            const paymentUrl = `https://helpage.go.digitable.io/paysafe/sey?currency=${currency}&amount=${amount}&orderId=${orderId}&description=${encodeURIComponent(description)}&customerName=${encodeURIComponent(name)}&customerAddress=${encodeURIComponent(address)}`;
+                            const paymentUrl = `https://helpage.go.digitable.io/paysafe/sey?currency=${currency}&amount=${amount}&orderId=${orderId}&description=${description}&customerName=${name}&customerAddress=${address}`;
 
                             console.log("Redirecting to:", paymentUrl);
 
