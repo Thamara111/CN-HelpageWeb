@@ -68,8 +68,7 @@ require_once __DIR__ . '/../layouts/header.php';
 
 <div id="editorModal"
    class="hidden fixed inset-0 z-[100] bg-slate-900/90 backdrop-blur-md flex items-center justify-center p-4">
-   <div
-      class="bg-white w-full max-w-6xl rounded-[2rem] overflow-hidden shadow-2xl flex flex-col md:flex-row h-[95dvh]">
+   <div class="bg-white w-full max-w-6xl rounded-[2rem] overflow-hidden shadow-2xl flex flex-col md:flex-row h-[95dvh]">
 
       <div
          class="flex-1 bg-slate-50 p-6 md:p-12 flex flex-col items-center justify-center relative border-r border-slate-100 overflow-hidden">
@@ -80,8 +79,10 @@ require_once __DIR__ . '/../layouts/header.php';
             </svg>
          </button>
 
-         <div id="stage" class="relative shadow-2xl origin-center transition-all bg-white overflow-hidden">
-            <img id="modalTemplateImg" src="" class="max-h-[60vh] md:max-h-[70vh] block" alt="">
+         <div id="stage"
+            class="relative shadow-2xl origin-center transition-all bg-white overflow-hidden flex items-center justify-center min-h-[70vh]">
+            <img id="modalTemplateImg" src="" class="max-h-[80vh] md:max-h-[85dvh] w-auto block object-contain" alt="">
+
             <div id="modalUserLayer" class="hidden absolute cursor-move border-2 border-dashed border-blue-400 group">
                <img id="modalUserImg" src="" class="w-full h-full pointer-events-none" alt="">
                <div
