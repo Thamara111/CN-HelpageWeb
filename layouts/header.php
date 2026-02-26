@@ -25,7 +25,7 @@
                         class="hidden absolute bottom-16 left-1/2 transform -translate-x-1/2 bg-white text-black rounded-2xl shadow-2xl border border-gray-200 w-[42rem] h-[32rem] overflow-hidden z-50 transition-all duration-300 opacity-0 scale-95 group-hover:opacity-100 group-hover:scale-100">
                         <div class="flex h-full">
                             <div class="w-1/2 relative bg-gradient-to-br from-red-50 to-orange-50">
-                                <img src="./assets/images/help3.JPG" class="w-full h-full object-cover"
+                                <img src="/assets/images/help3.JPG" class="w-full h-full object-cover"
                                     alt="HelpAge Sri Lanka" />
                                 <div
                                     class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6">
@@ -160,7 +160,7 @@
                         class="hidden absolute bottom-16 left-1/2 transform -translate-x-1/2 bg-white text-black rounded-2xl shadow-2xl border border-gray-200 w-[42rem] h-[28rem] overflow-hidden z-50 transition-all duration-300 opacity-0 scale-95 group-hover:opacity-100 group-hover:scale-100">
                         <div class="flex h-full">
                             <div class="w-1/2 relative bg-gradient-to-br from-red-50 to-orange-50">
-                                <img src="./assets/images/help3.JPG" class="w-full h-full object-cover"
+                                <img src="/assets/images/help3.JPG" class="w-full h-full object-cover"
                                     alt="HelpAge Sri Lanka" />
                                 <div
                                     class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6">
@@ -287,7 +287,7 @@
                         class="hidden absolute bottom-16 left-1/2 transform -translate-x-1/2 bg-white text-black rounded-2xl shadow-2xl border border-gray-200 w-[42rem] h-[32rem] overflow-hidden z-50 transition-all duration-300 opacity-0 scale-95 group-hover:opacity-100 group-hover:scale-100">
                         <div class="flex h-full">
                             <div class="w-1/2 relative bg-gradient-to-br from-red-50 to-orange-50">
-                                <img src="./assets/images/manu.JPG" class="w-full h-full object-cover"
+                                <img src="/assets/images/manu.JPG" class="w-full h-full object-cover"
                                     alt="HelpAge Sri Lanka" />
                                 <div
                                     class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6">
