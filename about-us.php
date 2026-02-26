@@ -65,9 +65,9 @@ require_once 'layouts/header.php';
 <!-- Chairman's Message -->
 <section>
   <div class="container mx-auto px-6 py-12">
-    <div class="grid grid-cols-1 grid-cols-1 md:grid-cols-2 lg:gap-6">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:gap-6">
       <div  data-aos="fade-right" data-aos-duration="1500">
-        <h4 class="text-red-600 text-red-600 mb-4 md:mb-6 lg:mb-6 xl:mb-6 2xl:mb-8">
+        <h4 class="text-red-600 mb-4 md:mb-6 lg:mb-6 xl:mb-6 2xl:mb-8">
           Chairman's Message
         </h4>
         <h2
@@ -110,7 +110,7 @@ require_once 'layouts/header.php';
 <!-- Executive Director's Message -->
 <section>
   <div class="container mx-auto px-6 py-12">
-    <div class="grid grid-cols-1 grid-cols-1 md:grid-cols-2 lg:gap-6">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:gap-6">
       <div class="flex justify-center items-center" data-aos="fade-right" data-aos-duration="1500">
         <img src="/assets/images/ed.png" alt="ed" class="rounded-2xl border-2 border-gray-400" />
       </div>
