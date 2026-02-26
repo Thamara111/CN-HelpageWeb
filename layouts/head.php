@@ -81,7 +81,9 @@ $breadcrumbs = $breadcrumbs ?? [];
 
     <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
     <link href="/assets/cdn/aos.css" rel="stylesheet">
-
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.6.2/cropper.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.6.2/cropper.min.js"></script>
 
     <script type="application/ld+json">
     {
@@ -362,6 +364,47 @@ $breadcrumbs = $breadcrumbs ?? [];
 
         .animate-square5 {
             animation: square5 2.4s ease-in-out infinite;
+        }
+
+        /* e-card */
+        /* simple “stage” */
+        #stage {
+            position: relative;
+            width: 900px;
+            max-width: 100%;
+            aspect-ratio: 16 / 9;
+            background: #0b1220;
+            border-radius: 16px;
+            overflow: hidden;
+        }
+
+        #templateImg {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        #userLayer {
+            position: absolute;
+            left: 120px;
+            top: 120px;
+            width: 240px;
+            height: 240px;
+            cursor: move;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 20px 80px rgba(0, 0, 0, .35);
+        }
+
+        #userLayer img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transform-origin: center;
+            user-select: none;
+            pointer-events: none;
         }
     </style>
 </head>
