@@ -53,7 +53,7 @@ $breadcrumbs = $breadcrumbs ?? [];
     <meta property="og:image:height" content="630">
 
     <!-- Prevents Google from indexing the error page -->
-    <meta name="robots" content="noindex, follow">
+    <meta name="robots" content="index, follow">
 
     <link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon" />
     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
